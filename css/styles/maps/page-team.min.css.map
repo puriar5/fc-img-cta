@@ -1,0 +1,1 @@
+{"version":3,"sources":["page-team.scss"],"names":[],"mappings":"AACI,yBADJ,cAEQ,kBAAY,CAAA","file":"../page-team.min.css","sourcesContent":[".text-cta-box{\n    @media(min-width: 768px){\n        margin-top: 10.2rem;\n    }\n}\n"]}

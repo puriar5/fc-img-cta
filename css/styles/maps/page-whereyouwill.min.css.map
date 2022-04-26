@@ -1,0 +1,1 @@
+{"version":3,"sources":["page-whereyouwill.scss"],"names":[],"mappings":"AAGA,mBACI,wBAAS,CAET,0BACI,SAAK","file":"../page-whereyouwill.min.css","sourcesContent":["\n@import \"../common-imports\";\n\n.quote-single-dark {\n    padding: 20.8rem 0 8.8rem;\n\n    &__thumb {\n        top: 100px;\n    }\n\n}\n\n"]}
