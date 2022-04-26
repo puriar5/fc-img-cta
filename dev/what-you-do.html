@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'Foodcorps - Policy Action Center'})
+    <link rel="stylesheet" href="css/styles/page-what-you-do.min.css" />
+</head>
+
+<body>
+
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html', {
+                'headerSkin':   'theme-header--white',
+                'menuSkin'  :   'menu-toggler--white',
+            })
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--left" data-focus="#first-link">
+                <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+            </div>
+            <main class="theme-main">
+
+
+                <!-- Leadspace lead video -->
+                @@include('includes/modules/section/lead-video.html',{
+                    'h1Title'               :       'Connect Kids to Healthy Food in School',
+                    'showHideDescription'   :       'd-none',
+                    'showHideButton'        :       'd-none',
+                    'posterImage'           :       'image-connect-kids@2x.jpg',
+                    'showHideCta'           :       'd-none',
+                    'ctaText'               :       '',
+                    'figCaption'            :       'Lorem ipsum image credit dolor',
+                })
+                <!-- /Leadspace lead video -->
+                
+
+                <!-- Section Text with Box Card -->
+                  @@include('includes/modules/section/text-with-cta-box.html', {
+                    'bgColor'           : 'bg-dark-green',
+                    'para'              : ''
+                })
+                <!-- /Section Text with Box Card -->
+
+               <!-- Image l text R -->
+               <section class="image-l-text-r image-l-text-r--narrow bg-dark-green position-relative">
+                <div class="image-l-text-r__img">
+                    <img src="images/img_real-food@2x.png" width="620" height="719" alt="happy people eating food on a park bench"
+                        class="img-fluid">
+                        <div class="image-l-text-r__offset fst-italic">
+                            Lorem ipsum image credit dolor
+                        </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="col-md-6">
+                            <div class="image-l-text-r__text">
+                                <h3>Make real food a part of the curriculum</h3>
+                                <p>
+                                    As a service member, you’ll implement FoodCorps’ evidence-based strategies to help schools serve the needs of kids
+                                    through food education and nourishing meals. The majority of a service member’s time is spent teaching in the classroom
+                                    and garden, and the amount you are spending on each of the below activities will vary.
+                                </p>
+                                <p>Download the position description.</p>
+                                <a href="#" class="btn btn-primary btn-bubble">Action for Equity & Inclusion</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Image l text R -->
+
+            <!-- Icon Grid x3 // Icon Text -->
+            @@include('includes/modules/section/icon-grid-three.html',{
+                'bgColor'   :   'bg-sand',
+                "results"  : {
+                    "list": [
+                        {
+                        'imgLocation'                   :   'images/svg-hands.svg',
+                        'h4Title'                       :   'Lead hands-on lessons',
+                        'description'                   :   'You’ll teach students to grow, cook, and taste new foods, not only changing their preferences but potentially changing their lives by making healthy, delicious food central to their daily experience. You’ll collaborate with teachers on integrating food into the curriculum, and you may help organize field trips to local farms or visits from chefs.'
+                        },
+                        {
+                        'imgLocation'                   :   'images/svg-lunch.svg',
+                        'h4Title'                       :   'Influence healthy school meals',
+                        'description'                   :   'You’ll cultivate a cafeteria experience that excites kids to try new foods and naturally steers them toward the healthiest options, empowering them to take control of their eating experience. Youll get kids in the cafeteria to try samples during taste tests, and you may even work with food service directors and farmers to get local foods onto the lunch line.'
+                        },
+                        {
+                        'imgLocation'                   :   'images/svg-health.svg',
+                        'h4Title'                       :   'Build a schoolwide culture of health',
+                        'description'                   :   'Together with the school community, you’ll work to ensure that the whole school environment—from hallways to classrooms to the cafeteria—celebrates healthy food. You may plan family cooking nights and organize healthy fundraisers.'
+                        },
+                        {
+                        'imgLocation'                   :   'images/svg-training.svg',
+                        'h4Title'                       :   'Lorem training  headline dolor',
+                        'description'                   :   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                        },
+                        {
+                        'imgLocation'                   :   'images/svg-community.svg',
+                        'h4Title'                       :   'Lorem become part of the FC community',
+                        'description'                   :   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                        },
+                    ]
+                },
+            })
+            <!-- Icon Grid x3 // Icon Text -->
+
+
+            <!-- Image BL Text R Reverse(image-bl-text-r) -->
+            <section class="image-bl-text-r image-bl-text-r--reverse">
+                <div class="image-bl-text-r__bg">
+                    <svg width="1441" height="734" viewBox="0 0 1441 734" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M790.337 349.415C645.573 349.415 312.625 302.872 0 522.5V716C180.965 523.01 395.669 397.181 790.337 349.415Z"
+                            fill="#4FB075" />
+                        <path class="quote-svg-bg" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1441 0.360107C1384.39 282.485 1131.13 353.543 866.331 349.79C601.534 346.037 192.965 349.688 2.84314e-05 671V734C107.798 734 588.578 734 1441 734V0.360107Z"
+                            fill="#eae0d5" />
+                    </svg>
+                </div>
+                <div class="image-bl-text-r__wrapper">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-5 col-lg-5">
+                                <div class="image-bl-text-r__left sticky-md-top">
+                                    <figure class="thumbnail-img">
+                                        <img src="images/image_serving@1.5x.png" alt="Thumbnail Image">
+                                    </figure>
+                                    <figcaption>Lorem ipsum image credit dolor</figcaption>
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-lg-7 col-xl-6">
+                                <div class="image-bl-text-r__right">
+                                    <p>Serving as an <a href="">AmeriCorps member</a> with FoodCorps is a full-time, eleven and a half month commitment. The 1,700 hours you’ll serve between August to July will mostly take place during school and business hours, but evenings and weekends are occasionally required. You’ll also join us in Portland, Oregon in early August for a week-long orientation (don’t worry, we’ll cover the costs).
+                                    </p>
+                                    <p>
+                                        Want to know what it’s like to serve in a particular community?Contact the corresponding regional program coordinator, program manager, or director via the Connect section of the state’s page.
+                                    </p>
+                                </div>
+                                <div class="image-bl-text-r__footer">
+                                    <a href='' class='btn btn-primary btn-bubble mt-6' title='title'>Where you’ll serve</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Image BL Text R Reverse(image-bl-text-r) -->
+
+
+            <!-- skillet-stories (Skillet Stories) -->
+            @@include('includes/modules/section/skillet-stories-02.html',{
+
+            })
+            <!-- skillet-stories (Skillet Stories) -->
+
+
+            <!-- Section Form Module with Checkbox -->
+             @@include('includes/modules/section/form-module--01.html',{
+                'bodyMoving'      :   true,
+                'bodyMovingPath'  : 'images/icon-partner-form.json',
+                'title'         :       'Sign up to learn more about serving',
+                'text'          :       'Aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+            })
+            <!-- /Section Form Module -->
+
+            </main>
+        </div>
+        @@include('includes/footer.html')
+        @@include('includes/scripts.html')
+        
+    </div>
+</body>
+
+</html>

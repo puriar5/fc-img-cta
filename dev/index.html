@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'FoodCorps'})
+        <link rel="stylesheet" href="css/styles/page-home.min.css" />
+        
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html', {
+                    <!-- 'headerSkin': 'theme-header--dark' -->
+                })
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+                </div>
+                <main class="theme-main">
+                    @@include('includes/modules/above-the-fold/leadspace-a.html',{
+                        'bgImgPath'             : 'hero-home@2x.png',
+                        'bgImgSm'             : 'hero-home-sm@2x.png',
+                        'bgCurvePath'           : 'hero-curve.svg',
+                        'bgColor'               : 'bg-sand',
+                        'headline'              : 'Food can change everything. And school is the place to start.',
+                        'heroContent'           : 'Our vision: By 2030, every kid in America — regardless of race, place, or class — will have access to hands-on food education and healthy food in schools.',
+                        'linkText'              : 'The Case for Food in Schools'
+                        
+                        
+                    })
+                    @@include('includes/modules/section/featured-icon.html',{
+                        'bgColor'               :   'bg-light',
+                        'iconName'              :   'icon-peace@2x.png',
+                        'bodyMoving'            :   true,
+                        'bodyMovingPath': 'images/icon-peace.json',
+
+                    })
+                    @@include('includes/modules/section/select-grid-2-2.html',{
+                        'bgColor'                               : 'bg-light',
+                        'h2Title'                               :   'Here’s what you can do',
+                    })
+                    @@include('includes/modules/section/image-l-text-r.html',{
+                        bgColor                 :   '',
+                    })
+                    @@include('includes/modules/section/quote-l-image-r.html',{
+                        'quoteBg'           :       'quote-bg.svg',
+                        'iconQuote'         :       'icon-quote@2x.png',
+                        'h3Title'           :       'Lorem ipsum quote from somewhere story dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+                        'quoteColor'        :       'text-white',
+                        'linkText'          :       'Lorem Impact Page CTA',
+                        'mainFigure'        :       'fpo-quote-img.webp',
+                        'figCaption'        :       'Lorem ipsum image credit dolor',
+                        'bodyMoving'        :       true,
+                        'bodyMovingPath'    :       'images/icon-quote.json',
+                    })
+                    @@include('includes/modules/section/skillet-stories.html')
+                </main>
+            </div>
+            @@include('includes/footer.html')
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

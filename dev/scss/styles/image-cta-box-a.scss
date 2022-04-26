@@ -1,0 +1,325 @@
+@import "../common-imports";
+
+.image-ctabox-a {
+    margin-top: 0;
+    height: 50.4rem;
+    overflow: hidden;
+
+    @include media-breakpoint-up(md) {
+        height: 44.2rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 64.6rem;
+    }
+
+    &__text {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 2.4rem;
+        padding-right: 8%;
+        z-index: 9;
+
+        @include media-breakpoint-up(md) {
+            padding-right: 0;
+        }
+
+        &--caption {
+            margin-top: 0;
+            font-size: 1.4rem;
+
+            @include media-breakpoint-up(md) {
+                font-size: 1.2rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                font-size: 1.4rem;
+            }
+        }
+
+        h2 {
+            font-weight: $font-weight-semibold;
+            margin-bottom: 1.6rem;
+
+            @include media-breakpoint-up(md) {
+                margin-bottom: 2rem;
+                margin-right: -5%;
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin-right: 0;
+                margin-bottom: 2.8rem;
+            }
+        }
+    }
+
+    &__bgimg {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 50.4rem;
+
+        @include media-breakpoint-up(md) {
+            height: 44.2rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: 64.6rem;
+        }
+
+        &::before {
+            content: "";
+            opacity: 0.54;
+            background-image: linear-gradient(50deg, #000000 0%, rgba(0, 0, 0, 0.00) 82%);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+
+            @include media-breakpoint-up(md) {
+                max-width: 78.5%;
+            }
+
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.83;
+            background-image: linear-gradient(50deg, #000000 0%, rgba(0, 0, 0, 0.00) 82%);
+
+            @include media-breakpoint-up(md) {
+                max-width: 78.5%;
+            }
+        }
+
+
+        .overlay-1 &,
+        .overlay-5 &,
+        .overlay-8
+         {
+            &::before {
+                @include media-breakpoint-up(lg) {
+                    display: block;
+                }
+            }
+            &::after{
+                display: none;
+            }
+        }
+
+        .overlay-2 & {
+            &::before {
+                background-image: linear-gradient(9deg, #000000 19%, rgba(0, 0, 0, 0.00) 65%);
+
+                @include media-breakpoint-up(lg) {
+                    display: none;
+                }
+            }
+            &::after{
+                display: none;
+            }
+        }
+
+        .overlay-3 & {
+            &::before {
+                left: auto;
+                right: 0;
+                opacity: 0.83;
+                transform: scaleX(-1);
+
+                // background-image: linear-gradient(7deg, #000000 3%, #000000 5%, rgba(0,0,0,0.00) 47%);
+                @include media-breakpoint-up(lg) {
+                    display: block;
+                }
+            }
+        }
+
+        .overlay-6 &,
+        .overlay-7 &
+         {
+            &::before {
+                left: auto;
+                opacity: 0.54;
+                transform: scaleX(-1);
+                right: 0;
+                background-image: linear-gradient(21deg, #000000 0%, rgba(0, 0, 0, 0.00) 56%);
+                @include media-breakpoint-up(lg) {
+                    display: block;
+                }
+            }
+
+            &::after {
+                opacity: 0.54;
+                background-image: linear-gradient(50deg, #000000 0%, rgba(0, 0, 0, 0.00) 82%);
+            }
+        }
+
+        .overlay-4 & {
+            &::before {
+                opacity: 1;
+
+                @include media-breakpoint-up(lg) {
+                    display: block;
+                }
+            }
+            &::after{
+                display: none;
+            }
+        }
+
+        svg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: auto;
+            z-index: 9;
+
+            .bg-dark-green & {
+                path {
+                    fill: $dark-green;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 94% center;
+            transform: scale(1.1);
+
+            @include media-breakpoint-up(md) {
+                transform: none;
+                object-position: center 66%;
+            }
+
+            @include media-breakpoint-up(tb) {
+                object-position: center 40%;
+            }
+
+            .overlay-3 &{
+                object-position: 70% center;
+
+                @include media-breakpoint-up(md) {
+                    object-position: center 0;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    object-position: center 8%;
+                }
+            }
+
+            .overlay-4 & {
+                object-position: 88% center;
+
+                @include media-breakpoint-up(md) {
+                    object-position: center 25%;
+                }
+            }
+
+            .overlay-5 & {
+                @include media-breakpoint-down(md) {
+                    object-position: 70% center;
+                }
+            }
+
+            .overlay-7 & {
+                transform: none;
+                object-position: 58% center;
+                @include media-breakpoint-up(md){
+                    object-position: center 65%
+                }
+            }
+
+            .overlay-8 &{
+                object-position: 100% center;
+
+                @include media-breakpoint-up(md) {
+                    object-position: center 0;
+                }
+            }
+        }
+    }
+
+    &__reverse {
+        .image-ctabox-a__bgimg {
+            &::before {
+                left: auto;
+                right: 0;
+            }
+
+            img {
+                @include media-breakpoint-down(md) {
+                    object-position: 18% center;
+                }
+            }
+        }
+
+        .image-ctabox-a__text {
+            &--caption {
+                margin-top: 1.6rem;
+
+                @include media-breakpoint-up(md) {
+                    margin-top: 7.2rem;
+                }
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                >[class*="col-"] {
+                    padding-right: 0 !important;
+
+                    @include media-breakpoint-up(md) {
+                        width: 40%;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        width: 34%;
+                    }
+
+                    h2 {
+                        font-size: 2.8rem;
+                        line-height: 3rem;
+
+                        @include media-breakpoint-up(md) {
+                            font-size: 3.2rem;
+                            line-height: 3.6rem;
+                        }
+
+                        @include media-breakpoint-up(lg) {
+                            font-size: 4.5rem;
+                            line-height: 5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &--titlemargin {
+        h2 {
+            margin-right: 0;
+
+            @include media-breakpoint-up(lg) {
+                margin-right: -9.2rem;
+            }
+        }
+    }
+}

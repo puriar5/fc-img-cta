@@ -1,0 +1,28 @@
+@import '../common-imports';
+
+
+.two-col-body {
+
+    padding: 3.2rem 0;
+    @include media-breakpoint-up(md) {
+        padding: 7.2rem 0 3.9rem;
+    }
+    @include media-breakpoint-up(lg) {
+        padding: 12.2rem 0 6.9rem;
+    }
+
+    h2 {
+        margin-bottom: 3rem;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    p {
+        margin-top: 4rem;
+        @include media-breakpoint-up(md) {
+            margin-top: 0;
+        }
+    }
+
+}

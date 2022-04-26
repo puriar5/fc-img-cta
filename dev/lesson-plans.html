@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'Foodcorps - Lesson Plans'})
+    <link rel="stylesheet" href="css/styles/page-lesson-plans.min.css" />
+</head>
+
+<body>
+
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html', {
+                'headerSkin':   'theme-header--white',
+                'menuSkin'  :   'menu-toggler--white',
+            })
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--left" data-focus="#first-link">
+                <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+            </div>
+            <main class="theme-main">
+                
+
+                <!-- Leadspace Video -->
+                <section class="lead-video overflow-hidden position-relative d-flex align-items-md-center">
+                    <div class="hero-video hero-overlay">
+                        <video id="js-hero-video" poster="images/lesson-plans-leadspace@2x.png" muted="" autoplay="" loop=""
+                            style="object-fit: cover;width:100%;height:100%;" playsinline="">
+                            <source type="video/mp4" src="@@videoSource">
+                            <!-- <source type="video/mp4" src="https://player.vimeo.com/video/247880988.hd.mp4?h=65769a7948&autoplay=1&title=0&byline=0&portrait=0"> -->
+                        </video>
+                    </div>
+                    <div class="hero-content w-100 position-relative">
+                        <div class="container">
+                            <div class="row justify-content-between align-items-center align-items-tb-start align-items-lg-center">
+                                <div class="col-md-6 col-lg-5">
+                                    <h1 class="text-light">Lesson Plans</h1>
+                                </div>
+                                <div class="col-md-2 col-lg-1 text-end">
+                                    <figcaption class="lead-video-figcaption @@showHideCaption text-light">
+                                        <p class="eyebrow-2 fst-italic text-end">
+                                            Lorem ipsum photo credit dolor sit amet
+                                        </p>
+                                    </figcaption>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lead-video-bg">
+                        <div class="d-none d-md-block lead-video-bg-svg lead-video-bg-lg">
+                            <svg width="1440" height="327" viewBox="0 0 1440 327" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="bottom-wave"
+                                    d="M0 151.642C229.84 234.085 256.113 261.56 482.665 253.824C994.809 236.336 1088.24 17.4882 1440 0.5C1440 0.5 1440 116.261 1440 325.782L0 326.029C0 217.104 0 151.642 0 151.642Z"
+                                    fill="#00524c" />
+                                <path
+                                    d="M1439 0.5C1287.11 0.5 1030.78 108.632 959.834 141.336C888.883 174.04 470.65 341.767 0 141.336C0 234.591 0 276.084 0 265.816C347.42 360.655 689.758 316.731 1027.01 134.044C1174.68 54.0527 1334.5 0.5 1439 0.5Z"
+                                    fill="#4FB075" />
+                            </svg>
+                        </div>
+                        <div class="d-md-none lead-video-bg-svg lead-video-lg-sm">
+                            <svg width="375" height="72" viewBox="0 0 375 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="bottom-wave"
+                                    d="M0.23872 44.3963L206.284 48.8567L298.037 36.2748L375 4.27478V71.2748H0L0 47.472V45.2424"
+                                    fill="#00524c" />
+                                <path
+                                    d="M374.713 0.0357785C364.199 3.11357 375.005 -0.270239 360.963 6.20225C334.28 18.5011 176.996 81.578 0 6.20225C0 41.2724 0 56.8767 0 53.0152C167.568 66.4893 292.473 51.924 374.713 9.31944C375.116 9.11088 374.809 8.81821 374.713 8.02348C374.577 6.89446 374.653 5.1428 374.713 3.72019C374.771 2.33985 374.619 1.52672 374.713 0.83818C374.774 0.389369 375.327 -0.143977 374.713 0.0357785Z"
+                                    fill="#4FB075" />
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+                <script src="scripts/lead-video.js"></script>
+                <!-- /Leadspace Video -->
+
+
+                <!-- Section Featured Icon -->
+                <section class="featured-icon featured-icon--reverse position-relative bg-dark-green bg-transition" data-color="dark-green"> 
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-11 offset-lg-1">
+                                <div class="bodymoving featured-icon-figure">
+                                    <div class="js-bodymoving" data-path="images/icon-lesson.json"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Section Featured Icon -->
+
+
+                <!-- Two Col Body -->
+                <section class="two-col-body bg-dark-green text-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                    <p>
+                                        The FoodCorps Lessons include hands-on experiential activities to engage kids in learning about healthy food. These 96 lessons are for grades K-5, and are organized through this <a href="#">learning progression</a> by grade, season and theme. The lessons are tied to national academic standards and were developed following Culturally Responsive Teaching, Place Based Learning and Social and Emotional Learning best practices and frameworks.
+                                    </p>
+                                    <p>
+                                        Each lesson was developed with input from FoodCorps service members, community partners, and resource 
+                                    </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    specialists, and has been evaluated and updated to reflect recommendations from our community of food educators. This suite of lessons is inteded to guide food and garden educators to spark inquiry and love for healthy food and should be adapted to reflect the needs, identity, and culture of the community in which they are taught.
+                                </p>
+                                <p>
+                                    The lessons are evidence-based and have been developed guided by the FoodCorps Healthy School Progress Report Practices found in the <a href="#">Healthy School Toolkit.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Two Col Body -->
+
+
+                <!-- Section Intro Text & CTA Grid -->
+                <section class="intro-text-cta bg-sand">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-lg-5 col-xl-6">
+                                @@include('includes/modules/cards/card-intro-text-cta.html',{
+                                    'title': 'FoodCorps lesson progression',
+                                    'para': 'The FoodCorps Lesson Progression poster is a roadmap for making the most of FoodCorps lessons. It shows how these lessons relate to and build upon one another to support students in developing increasingly sophisticated knowledge of and skills in the six themes listed below:'
+                                })
+                            </div>
+                            <div class="col-md-11 col-lg-7 col-xl-6">
+                                <div class="cta-box-grid-x2">
+                                    <div class="cta-box-grid-x2-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="item swiper-slide">
+                                                <article class="card-cta-box position-relative bg-light text-center">
+                                                    <p class="body-3 mb-4 mb-md-6">
+                                                        View the FoodCorps Lesson Progression Poster here.
+                                                    </p>
+                                                    <a href="https://foodcorps.org/cms/assets/uploads/2020/11/Lessons-Progression-Poster-clean-FINAL-.pdf" class="btn btn-outline btn-bubble" target="_blank">Download</a>
+                                                    <div class="card-cta-box__mask"></div>
+                                                </article>
+                                            </div>
+                                        </div>
+                                        <div class="slider__controls">
+                                            <div class="slider__pagination"></div>
+                                        </div>
+                                        <div class="slider__controls slider__buttons">
+                                            <div class="slider__button-prev">
+                                                <i class="icon-arrow-left"></i>
+                                            </div>
+                                            <div class="slider__button-next">
+                                                <i class="icon-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <script src="scripts/box-grid-x2-slider.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-text-cta__footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="intro-footer-block">
+                                        <span class="eyebrow-1 text-uppercase text-primary">Conceptual</span>
+                                        <p class="body-1 mb-4 mb-md-8">Build student knowledge</p>
+                                        <ul class="ordered-list ordered-list__image">
+                                            <li>Living Up to Our Full Potential</li>
+                                            <li>Making Healthy Food Choices</li>
+                                            <li>Exploring the Ecology of Food</li>
+                                            <li>Connecting to Food, Culture, and Community</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="intro-footer-block">
+                                        <span class="eyebrow-1 text-uppercase text-primary">Skills-Focused</span>
+                                        <p class="body-1 mb-4 mb-md-8">Develop skills in gardening, cooking, and accessing healthy foods</p>
+                                        <ul class="ordered-list ordered-list__image">
+                                            <li>Growing and Accessing Healthy Food</li>
+                                            <li>Preparing Healthy Food</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Section Intro Text & CTA Grid -->
+
+
+                <section class="skillet-grid-c-lesson position-relative">
+                    <figure class="thumbnail-img skillet-grid-c-lesson__shape">
+                        <img src="images/column-text-bgshape@2x.png" alt="Shape">
+                    </figure>
+                    <div class="skillet-grid-c-lesson__filter">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="text-center mb-5 mb-md-8 mb-lg-15">Lesson plans</h2>
+                                    <form action="#">
+                                        <div class="row align-items-end justify-content-between">
+                                            <div class="col-lg-5">
+                                                <div class="form-group form-group-search">
+                                                    <input type="text" class="form-control" placeholder="Search for a lesson plan">
+                                                    <button type="submit" class="btn-submit">
+                                                        <span>Search</span><i class="icon-search"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="filter-col-right">
+                                                    <div class="form-group">
+                                                        <label>Filter by grade</label>
+                                                        <div class="custom-select">
+                                                            <select>
+                                                                <option>Select</option>
+                                                                <option>Select</option>
+                                                                <option>Select</option>
+                                                                <option>Select</option>
+                                                                <option>Select</option>
+                                                                <option>Select</option>
+                                                                <option>Select</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Filter by grade</label>
+                                                        <div class="custom-select">
+                                                            <select>
+                                                                <option>Select</option>
+                                                                <option>Select</option>
+                                                                <option>Select</option>
+                                                                <option>Select</option>
+                                                                <option>Select</option>
+                                                                <option>Select</option>
+                                                                <option>Select</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skillet-grid-c-lesson__grid">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <article class="card-b05 pb-6 pb-md-0 mb-6 mb-md-0">
+                                        <div class="card-b05-wrapper position-relative">
+                                            <figure class="card-b05-figure position-relative overflow-hidden">
+                                                <img src="images/grow-glow@2x.png"
+                                                    alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                                    class="position-absolute object-fit w-100 h-100">
+                                            </figure>
+                                            <div class="card-b05-content mt-3 mt-lg-0">
+                                                <span class="d-block eyebrow-3">
+                                                    Fall
+                                                </span>
+                                                <p class="sub-header mb-4 mb-lg-5">
+                                                    Go, Grow, Glow
+                                                </p>
+                                                <a href='' class='btn btn-narrow btn-primary btn-bubble' title='title'>Download</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-md-4">
+                                    <article class="card-b05 pb-6 pb-md-0 mb-6 mb-md-0">
+                                        <div class="card-b05-wrapper position-relative">
+                                            <figure class="card-b05-figure position-relative overflow-hidden">
+                                                <img src="images/people@2x.png"
+                                                    alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                                    class="position-absolute object-fit w-100 h-100">
+                                            </figure>
+                                            <div class="card-b05-content mt-3 mt-lg-0">
+                                                <span class="d-block eyebrow-3">
+                                                    Spring
+                                                </span>
+                                                <p class="sub-header mb-4 mb-lg-5">
+                                                    People Who Feed Us
+                                                </p>
+                                                <a href='' class='btn btn-narrow btn-primary btn-bubble' title='title'>Download</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-md-4">
+                                    <article class="card-b05 pb-6 pb-md-0 mb-6 mb-md-0">
+                                        <div class="card-b05-wrapper position-relative">
+                                            <figure class="card-b05-figure position-relative overflow-hidden">
+                                                <img src="images/class-soup@2x.png"
+                                                    alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                                    class="position-absolute object-fit w-100 h-100">
+                                            </figure>
+                                            <div class="card-b05-content mt-3 mt-lg-0">
+                                                <span class="d-block eyebrow-3">
+                                                    Fall
+                                                </span>
+                                                <p class="sub-header mb-4 mb-lg-5">
+                                                    If Our Class Were a Soup…
+                                                </p>
+                                                <a href='' class='btn btn-narrow btn-primary btn-bubble' title='title'>Download</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-md-4">
+                                    <article class="card-b05 pb-6 pb-md-0 mb-6 mb-md-0">
+                                        <div class="card-b05-wrapper position-relative">
+                                            <figure class="card-b05-figure position-relative overflow-hidden">
+                                                <img src="images/tasting@2x.png"
+                                                    alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                                    class="position-absolute object-fit w-100 h-100">
+                                            </figure>
+                                            <div class="card-b05-content mt-3 mt-lg-0">
+                                                <span class="d-block eyebrow-3">
+                                                    Fall
+                                                </span>
+                                                <p class="sub-header mb-4 mb-lg-5">
+                                                    Mindful Tasting
+                                                </p>
+                                                <a href='' class='btn btn-narrow btn-primary btn-bubble' title='title'>Download</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-md-4">
+                                    <article class="card-b05 pb-6 pb-md-0 mb-6 mb-md-0">
+                                        <div class="card-b05-wrapper position-relative">
+                                            <figure class="card-b05-figure position-relative overflow-hidden">
+                                                <img src="images/beans@2x.png"
+                                                    alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                                    class="position-absolute object-fit w-100 h-100">
+                                            </figure>
+                                            <div class="card-b05-content mt-3 mt-lg-0">
+                                                <span class="d-block eyebrow-3">
+                                                    Winter
+                                                </span>
+                                                <p class="sub-header mb-4 mb-lg-5">
+                                                    Bean Buddies
+                                                </p>
+                                                <a href='' class='btn btn-narrow btn-primary btn-bubble' title='title'>Download</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-md-4">
+                                    <article class="card-b05 pb-6 pb-md-0 mb-6 mb-md-0">
+                                        <div class="card-b05-wrapper position-relative">
+                                            <figure class="card-b05-figure position-relative overflow-hidden">
+                                                <img src="images/soup@2x.png"
+                                                    alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                                    class="position-absolute object-fit w-100 h-100">
+                                            </figure>
+                                            <div class="card-b05-content mt-3 mt-lg-0">
+                                                <span class="d-block eyebrow-3">
+                                                    Winter
+                                                </span>
+                                                <p class="sub-header mb-4 mb-lg-5">
+                                                    Stone Soup
+                                                </p>
+                                                <a href='' class='btn btn-narrow btn-primary btn-bubble' title='title'>Download</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-md-4">
+                                    <article class="card-b05 pb-6 pb-md-0 mb-6 mb-md-0">
+                                        <div class="card-b05-wrapper position-relative">
+                                            <figure class="card-b05-figure position-relative overflow-hidden">
+                                                <img src="images/insects@2x.png"
+                                                    alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                                    class="position-absolute object-fit w-100 h-100">
+                                            </figure>
+                                            <div class="card-b05-content mt-3 mt-lg-0">
+                                                <span class="d-block eyebrow-3">
+                                                    Fall
+                                                </span>
+                                                <p class="sub-header mb-4 mb-lg-5">
+                                                    Worm Bin Wonders
+                                                </p>
+                                                <a href='' class='btn btn-narrow btn-primary btn-bubble' title='title'>Download</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-md-4">
+                                    <article class="card-b05 pb-6 pb-md-0 mb-6 mb-md-0">
+                                        <div class="card-b05-wrapper position-relative">
+                                            <figure class="card-b05-figure position-relative overflow-hidden">
+                                                <img src="images/seeds@2x.png"
+                                                    alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                                    class="position-absolute object-fit w-100 h-100">
+                                            </figure>
+                                            <div class="card-b05-content mt-3 mt-lg-0">
+                                                <span class="d-block eyebrow-3">
+                                                    Fall
+                                                </span>
+                                                <p class="sub-header mb-4 mb-lg-5">
+                                                    How Seeds Travel
+                                                </p>
+                                                <a href='' class='btn btn-narrow btn-primary btn-bubble' title='title'>Download</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-md-4">
+                                    <article class="card-b05 pb-6 pb-md-0 mb-6 mb-md-0">
+                                        <div class="card-b05-wrapper position-relative">
+                                            <figure class="card-b05-figure position-relative overflow-hidden">
+                                                <img src="images/pickles@2x.png"
+                                                    alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                                    class="position-absolute object-fit w-100 h-100">
+                                            </figure>
+                                            <div class="card-b05-content mt-3 mt-lg-0">
+                                                <span class="d-block eyebrow-3">
+                                                    Fall
+                                                </span>
+                                                <p class="sub-header mb-4 mb-lg-5">
+                                                    Quick, Pickle That!
+                                                </p>
+                                                <a href='' class='btn btn-narrow btn-primary btn-bubble' title='title'>Download</a>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="row d-md-none">
+                                <div class="col text-center">
+                                    <a href="#" class="btn btn-loadmore">
+                                        Load More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skillet-grid-c-lesson-twocol">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="bullet-list">
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="bullet-list">
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section Lesson Grid X5 -->
+                    @@include('includes/modules/section/lesson-grid-x5.html')
+                    <!-- Section Lesson Grid X5 -->
+
+                    <div class="skillet-grid-c-lesson-twocol">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="bullet-list">
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="bullet-list">
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" target="_blank">
+                                                        <span class="text-primary">Season |</span></strong> Lorem Ipsum Lesson Title Dolor Sit Amet
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <!-- Section Skillet B -->
+                <section class="skillet-grid-b bg-dark-green">
+                    <div class="container">
+                        <h2 class="mb-9 text-light">Video lessons</h2>
+                        <div class="row skillet-grid-b-wrapper">
+                            <div class="col-md-4">
+                                <article class="card-b06 card-b06--video position-relative swiper-slide d-md-flex" data-js-href="https://www.youtube.com/watch?v=fHjZLRFwJIg">
+                                    <figure class="card-b06-figure overflow-hidden position-relative">
+                                        <img src="images/rolling-into-spring@2x.png"
+                                            alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                            class="img-thumb position-absolute object-fit w-100 h-100">
+                                        <img src="images/icon-play.svg" alt="" class="img-play">
+                                    </figure>
+                                    <div class="card-b06-content ms-md-4 mt-2 mt-md-0 d-flex flex-column">
+                                        <p class="subheadline-2-semibold mb-2 mb-md-1">
+                                            Rolling into Spring
+                                        </p>
+                                        <span class='card-b06-footer eyebrow-3 position-relative mt-auto' title='title'>Video</span>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-4">
+                                <article class="card-b06 card-b06--video position-relative swiper-slide d-md-flex" data-js-href="https://www.youtube.com/watch?v=cuXuZEKoOTA">
+                                    <figure class="card-b06-figure overflow-hidden position-relative">
+                                        <img src="images/lettuce@2x.png"
+                                            alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                            class="img-thumb position-absolute object-fit w-100 h-100">
+                                        <img src="images/icon-play.svg" alt="" class="img-play">
+                                    </figure>
+                                    <div class="card-b06-content ms-md-4 mt-2 mt-md-0 d-flex flex-column">
+                                        <p class="subheadline-2-semibold mb-2 mb-md-1">
+                                            Let Us Eat Lettuce!
+                                        </p>
+                                        <span class='card-b06-footer eyebrow-3 position-relative mt-auto' title='title'>Video</span>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-md-4">
+                                <article class="card-b06 card-b06--video position-relative swiper-slide d-md-flex" data-js-href="https://www.youtube.com/watch?v=7HclZ7Bs9D8">
+                                    <figure class="card-b06-figure overflow-hidden position-relative">
+                                        <img src="images/fruit-garland@2x.png"
+                                            alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                            class="img-thumb position-absolute object-fit w-100 h-100">
+                                        <img src="images/icon-play.svg" alt="" class="img-play">
+                                    </figure>
+                                    <div class="card-b06-content ms-md-4 mt-2 mt-md-0 d-flex flex-column">
+                                        <p class="subheadline-2-semibold mb-2 mb-md-1">
+                                            Dried Fruit Garland
+                                        </p>
+                                        <span class='card-b06-footer eyebrow-3 position-relative mt-auto' title='title'>Video</span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row skillet-grid-b-footer mt-10 mt-md-14 mt-lg-17 text-md-center @@showHideCta">
+                            <div class="col">
+                                <a href='https://docs.google.com/document/d/1fpkxAXCdoYMGNj63ThLvNgVi1soQdjBpeoXCIVw2Rek/edit' class='btn btn-primary btn-bubble' title='title' target="_blank">See full list of videos</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Section Skillet B -->
+
+
+                <!-- Section Image CTA -->
+                @@include('includes/modules/section/image-cta-box-a.html', {
+                    'bgColor'   : 'bg-dark-green',
+                    'showHide' : 'd-none',
+                    'thumb': 'images/bring-fc-to yourdistrict-cta.png',
+                    'title': 'Bring FoodCorps to your district',
+                    'text': 'Lorem ipsum dolor sit amet',
+                    'btnTxt': 'CTA to page'
+                })
+                <!-- /Section Image CTA -->
+
+
+
+            </main>
+        </div>
+        @@include('includes/footer.html')
+        @@include('includes/scripts.html')
+    </div>
+</body>
+
+</html>

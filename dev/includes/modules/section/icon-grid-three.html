@@ -1,0 +1,11 @@
+<section class="icon-grid-three @@bgColor bg-transition" data-color="sand">
+    <div class="container">
+        <div class="icon-grid-three-wrapper">
+        <div class="row">
+                @@for (var i = 0; i < results.list.length; i++) { 
+                    @@include('../cards/card-b03.html', `+(JSON.stringify(results.list[i]))+`) 
+                }
+            </div>
+        </div>
+    </div>
+</section>

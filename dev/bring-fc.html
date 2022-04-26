@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'FoodCorps'})
+    <link rel="stylesheet" href="css/styles/page-bring.min.css" />
+</head>
+
+<body>
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html', {
+            <!-- 'headerSkin': 'theme-header--dark' -->
+            })
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--left" data-focus="#first-link">
+                <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+            </div>
+            <main class="theme-main">
+                  <!-- CTA Box Grid X3 -->
+                  @@include('includes/modules/section/cta-box-grid-x3.html', {
+                    'bgColor': 'bg-sand'
+                })
+                <!-- /CTA Box Grid X3 -->
+                <section class="wide-image @@headerWide @@wideImageModifier bg-sand">
+                    <div class="wide-image-wrapper position-relative">
+                        <div class="wide-image-content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-6">
+                                        <div class="wide-image-description text-light">
+                                            <h4 class="mb-3">District Leaders & Nutrition Directors</h4>
+                                            <p>Are you a district leader or nutrition director seeking transformative
+                                                change for your students? Our district service model brings proven
+                                                success to school districts in states nationwide.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="wide-image-figcaption eyebrow-2 text-end fst-italic">
+                                            <p>Lorem ipsum image credit dolor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wide-image-bg overflow-hidden">
+                            <img src="images/hero-bring@1.2x.png" alt="" class="wide-image-bg-main">
+                        </div>
+                    </div>
+                </section>
+
+                @@include('includes/modules/section/case-study.html',{
+                    'title':'Rogue Valley, Oregon',
+                    'paragraph':'<p>The school year had just begun when wildfires devastated the communities of Phoenix and Talent, Oregon. Longtime FoodCorps partner <a href="https://www.rvfarm2school.org/">Rogue Valley Farm to School</a> (RVF2S) adapted its presence in Phoenix-Talent School District to make students’ mental health a priority. For service member Alicia Loebl, this meant teaching mindfulness and self-regulation practices, tailoring lessons to be responsive to students’ needs, and sometimes just being in community in the garden.</p><p>Alicia conducted pre- and post-lesson stress checks as part of a RVF2S evaluation to understand the effects of garden education on students coping with trauma. The results confirmed the program’s healing power: students felt better after being in the garden. An external evaluation found the benefits extended to teachers—both for their own healing and their relationship with students. The year of intense hardship built stronger bonds—and alignment—across the school community, says Rebecca Slosberg, Education Director at RVF2S. “One of the biggest things that we found,” says Rebecca, “is it’s all about relationship building.” </p>',
+                        "results"  : {
+                            "list": [
+                                {
+                                'imgLocation'                   :   'images/RV-img-1.png',
+                                },
+                                {
+                                'imgLocation'                   :   'images/RV-img-2.png',
+                                },
+                                {
+                                'imgLocation'                   :   'images/RV-img-3.png',
+                                },
+                            ]
+                        },
+                })
+
+                
+
+                @@include('includes/modules/section/bullettext-l-image-r.html',{
+                    'curveBg': 'bullettext-l-image-r--curvebg',
+                    'curveBgColor': 'bullettext-l-image-r--curvebg-sand',
+                    'type'        : 'narrow',
+                    'bgShowHide': 'd-block',
+                    'eyebrowShowHide':'d-none',
+                    'bulletTextModifier':'bullettext-l-image-r--reversed',
+                    'title':'What  makes a district ready for FoodCorps?',
+                    'subTitleShowHide':'d-none',
+                    'subTextShowHide':'d-block',
+                    'subText':'You are:',
+                    'textColor': 'text-dark',
+                     'mainImg':'img_district@2x.png',
+                     'altMainImg':'child sitting in classroom with her friends and instructors',
+                     'btnShowHide':'d-none',
+                     'offsetTextColor':'text-dark',
+                     'figCaption'   :   'Lorem ipsum image credit dolor',
+                     "results"  : {
+                         "list": [
+                             {
+                                 'listIconImg' : 'icon-check.svg',
+                                 'altIcon' : 'tick mark inside circle',
+                                 'listTitleShowHide' : 'd-none',
+                                 'listText' : 'Ready to think of food as a value center, not a cost center'
+                             },
+                             {
+                                'listIconImg' : 'icon-check.svg',
+                                'altIcon' : 'tick mark inside circle',
+                                'listTitleShowHide' : 'd-none',
+                                'listText' : 'Committed to making food and nutrition an essential part of each school day'
+                            },
+                            {
+                                'listIconImg' : 'icon-check.svg',
+                                'altIcon' : 'tick mark inside circle',
+                                'listTitleShowHide' : 'd-none',
+                                'listText' : 'Seeking new, scalable solutions to improve better health and equity for your students'
+                            },
+                            {
+                                'listIconImg' : 'icon-check.svg',
+                                'altIcon' : 'tick mark inside circle',
+                                'listTitleShowHide' : 'd-none',
+                                'listText' : 'A district with more than [XX]K students'
+                            },
+                         ]
+                     },
+                })
+
+                 <!-- Section Form Module -->
+                 @@include('includes/modules/section/form-module.html',{
+                    'title'           :       'Make your school or district a FoodCorps partner',
+                    'bodyMoving'      :   true,
+                    'bodyMovingPath'  : 'images/icon-partner-form.json',
+                    'text'            :       'Getting started with FoodCorps is simple. Just fill out the form on the right, and we’ll be in touch with you soon!',
+                })
+                <!-- /Section Form Module -->
+            </main>
+        </div>
+        @@include('includes/footer.html')
+        @@include('includes/scripts.html')
+    </div>
+</body>
+
+</html>

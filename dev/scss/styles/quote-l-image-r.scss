@@ -1,0 +1,599 @@
+@import "../common-imports";
+
+.quote-l-image-r {
+    background-color: transparent !important;
+    z-index: 9;
+
+    &__bg {
+        // opacity: 0;
+        transition: opacity 1s ease;
+
+        @include media-breakpoint-up(xxl) {
+            height: 72.5rem;
+        }
+
+        @include media-breakpoint-up(xxxl) {
+            height: 84rem;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        svg {
+            width: calc(100% + 0.2rem);
+            height: auto;
+            margin-left: -0.1rem;
+
+            @include media-breakpoint-up(xxxl) {
+                width: 110%;
+                margin-left: -10%;
+            }
+        }
+
+        .quote-svg-bg {
+            fill: $dark-green;
+
+            .quote-l-image-r--white & {
+                fill: $light;
+            }
+        }
+    }
+
+    &__wrapper {
+        z-index: 9;
+        margin-top: -11rem;
+        padding-bottom: 4rem;
+
+        @include media-breakpoint-up(md) {
+            margin-top: -20rem;
+            padding-bottom: 6.5rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-top: -28rem;
+            padding-bottom: 9rem;
+            min-height: 73rem;
+            margin-bottom: -2rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-bottom: 18.9rem;
+            margin-top: -34.8rem;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: 0;
+        }
+
+        @include media-breakpoint-up(xxxl) {
+            margin-top: -40.2rem;
+            min-height: 76rem;
+        }
+
+        &:before {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            left: 0;
+            background-color: $dark-green;
+            width: 200%;
+            pointer-events: none;
+            height: calc(100% - 10.8rem);
+            top: 10.8rem;
+
+            @include media-breakpoint-up(md) {
+                height: calc(100%);
+                top: 19rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                height: calc(100% - 28rem);
+                top: 27rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                height: calc(100% - 34.6rem);
+                top: 34.6rem;
+            }
+        }
+    }
+
+    &__figure {
+        text-align: right;
+
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            right: 0;
+            top: 4.7rem;
+            padding-bottom: 0;
+            background-color: transparent;
+        }
+
+        @include media-breakpoint-up(lg) {
+            top: 11rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            top: 6.9rem;
+        }
+
+        img {
+            height: 28.8rem;
+
+            @include media-breakpoint-up(md) {
+                height: 33.8rem;
+            }
+
+            @include media-breakpoint-up(tb) {
+                height: 42.8rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                height: 56rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                height: 66.2rem;
+            }
+        }
+    }
+
+    &__figcaption {
+        text-align: right;
+        margin-top: 0.8rem;
+        margin-right: 3.6rem;
+        font-style: italic;
+
+        @include media-breakpoint-up(md) {
+            margin-right: 8.8rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-right: 8.8rem;
+        }
+    }
+
+    &__icon {
+
+        margin-bottom: 2.4rem;
+
+        @include media-breakpoint-up(md) {
+            margin-left: 6rem;
+            margin-bottom: 6rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 5.4rem;
+            margin-left: 11.3rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 12rem;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: 5.4rem;
+        }
+
+        img,
+        .js-bodymoving {
+            height: 9.6rem;
+
+            @include media-breakpoint-up(xl) {
+                height: 9.6rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                height: 18.4rem;
+            }
+        }
+    }
+
+    &__content {
+        color: $light;
+        margin-bottom: 3.2rem;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 0;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-right: -8.31%;
+        }
+
+        @include media-breakpoint-up(xxxl) {
+            margin-right: 0;
+        }
+
+        .quote {
+            font-weight: $font-weight-light;
+        }
+
+        .eyebrow-1 {
+            font-weight: $font-weight-normal;
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 4rem;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                padding-right: 15%;
+            }
+        }
+    }
+
+    &--reversed {
+        .quote-l-image-r {
+            &__bg {
+                svg {
+                    transform: scaleX(-1);
+
+                    @include media-breakpoint-up(xxxl) {
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            &__figure {
+                right: auto;
+                text-align: left;
+            }
+
+            &__wrapper {
+                >.container {
+                    .row {
+                        flex-direction: row-reverse;
+                    }
+                }
+            }
+
+            &__figcaption {
+                text-align: left;
+                margin-right: 0;
+                margin-left: 3.6rem;
+
+                @include media-breakpoint-up(lg) {
+                    margin-left: 8.1rem;
+                }
+            }
+
+            &__content {
+
+                @include media-breakpoint-up(xxl) {
+                    margin-right: 0;
+                    margin-left: -8.31%;
+                }
+
+                @include media-breakpoint-up(xxxl) {
+                    margin-left: 8.33%;
+                }
+            }
+
+            &__icon {
+                text-align: right;
+
+                @include media-breakpoint-up(xxl) {
+                    margin-left: 0;
+                    margin-right: 11.3rem;
+                }
+            }
+        }
+    }
+
+    &--slider {
+        padding-bottom: 3.6rem;
+
+        @include media-breakpoint-up(lg) {
+            padding-bottom: 6.4rem;
+        }
+
+        .slider__controls {
+            max-width: none;
+
+            @include media-breakpoint-up(xxl) {
+                // margin-top: -7.2rem;
+            }
+
+            @include media-breakpoint-down(md) {
+                padding-bottom: 7rem;
+            }
+
+            .slider {
+                &__pagination {
+                    margin-top: 0;
+
+                    @include media-breakpoint-up(md) {
+                        height: 4.4rem;
+                        display: flex;
+                        align-items: center;
+                        margin-left: 4rem;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        justify-content: center;
+                        margin-left: 0;
+                    }
+
+                    .swiper-pagination-bullet {
+                        background-color: $sand;
+
+                        &-active {
+                            background-color: $yellow;
+                        }
+                    }
+                }
+
+                &__button-prev {
+                    @include media-breakpoint-down(md) {
+                        left: 7rem;
+                        right: auto;
+                    }
+                }
+
+                &__button-next {
+                    @include media-breakpoint-down(lg) {
+                        right: calc(44% - 48px);
+
+                        &:hover {
+                            right: calc(44% - 58px);
+                        }
+                    }
+
+                    @include media-breakpoint-down(md) {
+                        right: 7rem;
+                    }
+                }
+
+                &__button-prev,
+                &__button-next {
+                    @include media-breakpoint-down(md) {
+                        top: 0;
+                        margin-top: 5rem;
+                    }
+
+                    i {
+                        font-size: 4rem;
+
+                        @include media-breakpoint-up(md) {
+                            font-size: 4.2rem;
+                        }
+
+                        @include media-breakpoint-up(lg) {
+                            font-size: 4.4rem;
+                        }
+
+                        &::before {
+                            color: $dark-green;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .slider {
+            &__wrap {
+                min-height: auto;
+
+                @include media-breakpoint-up(lg) {
+                    // min-height: 40.4rem;
+                }
+
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 3.2rem;
+                }
+
+                .swiper {
+                    &-slide {
+                        height: auto !important;
+                    }
+                }
+            }
+        }
+
+        .quote-l-image-r {
+            &__wrapper {
+                padding-bottom: 0;
+
+                @include media-breakpoint-up(lg) {
+                    min-height: 70rem;
+                }
+
+                &::before {
+                    @include media-breakpoint-up(xl) {
+                        height: 100%;
+                    }
+                }
+            }
+
+            &__figure {
+                @include media-breakpoint-up(xl) {
+                    top: 4rem;
+                }
+            }
+
+            &__content {
+
+                padding-top: 12rem;
+
+                @include media-breakpoint-up(md) {
+                    padding-top: 14.6rem;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    padding-top: 23.8rem;
+                }
+
+                @include media-breakpoint-up(xxl) {
+                    margin-right: -11%;
+                    margin-bottom: 4rem;
+                }
+
+                @include media-breakpoint-up(xxxl) {
+                    margin-right: 2%;
+                }
+
+                .quote {
+                    margin-bottom: 1.2rem;
+
+                    @include media-breakpoint-up(md) {
+                        margin-bottom: 0.8rem;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                .eyebrow-1 {
+                    margin-bottom: 2.4rem;
+
+                    @include media-breakpoint-up(md) {
+                        margin-bottom: 2rem;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        margin-bottom: 4rem;
+                    }
+
+                    @include media-breakpoint-down(lg) {
+                        font-size: 1.2rem;
+                        line-height: 1.6rem;
+                    }
+                }
+            }
+
+            &__icon {
+                position: absolute;
+                top: 7%;
+                left: 9%;
+                z-index: 222;
+
+                @include media-breakpoint-up(md) {
+                    top: 28%;
+                    left: 4%;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    top: 23%;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    top: 33.5%;
+                    left: 5.5%;
+                }
+
+                @include media-breakpoint-up(xxxl) {
+                    top: 36.5%;
+                    left: 12%;
+                }
+            }
+        }
+    }
+
+    &.bg-light {
+        .quote-l-image-r {
+            &__bg {
+                .quote-svg-bg {
+                    fill: $light;
+                }
+            }
+
+            &__wrapper {
+                &::before {
+                    background-color: $light;
+                }
+            }
+
+            &__content {
+                color: $secondary;
+
+                .text-white {
+                    color: $secondary !important;
+                }
+            }
+        }
+    }
+
+    &.bg-dark-green {
+        .quote-l-image-r {
+            &__bg {
+                .quote-svg-bg {
+                    fill: $dark-green;
+                }
+            }
+
+            &__wrapper {
+                &::before {
+                    background-color: $dark-green;
+                }
+            }
+
+            &__content {
+                color: $light;
+
+                .text-white {
+                    color: $light !important;
+                }
+            }
+        }
+
+        .slider__controls .slider__button-prev i::before,
+        .slider__controls .slider__button-next i::before {
+            color: $light;
+        }
+        & + .image-ctabox-a{
+            background-color: $dark-green !important;
+        }
+    }
+
+    &.bg-sand {
+        .quote-l-image-r {
+            &__bg {
+                .quote-svg-bg {
+                    fill: $sand;
+                }
+            }
+
+            &__wrapper {
+                &::before {
+                    background-color: $sand;
+                }
+            }
+
+            &__content {
+                color: $secondary;
+
+                .text-white {
+                    color: $secondary !important;
+                }
+            }
+        }
+    }
+    &.bg-transparent {
+        .quote-l-image-r {
+            &__bg {
+                .quote-svg-bg {
+                    fill: transparent;
+                }
+            }
+
+            &__wrapper {
+                &::before {
+                    background-color: transparent;
+                }
+            }
+
+            &__content {
+                color: $secondary;
+
+                .text-white {
+                    color: $secondary !important;
+                }
+            }
+        }
+    }
+}

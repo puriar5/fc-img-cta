@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'Foodcorps - Impact'})
+    <link rel="stylesheet" href="css/styles/page-impact.min.css" />
+</head>
+
+<body>
+
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html', {
+                'headerSkin':   'theme-header--white',
+                'menuSkin'  :   'menu-toggler--white',
+            })
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--left" data-focus="#first-link">
+                <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+            </div>
+            <main class="theme-main">
+                
+
+                <!-- Leadspace Video -->
+                @@include('includes/modules/section/lead-video.html',{
+                    'dataColor'             :       'dark-green',
+                    'playThumb'             :       'images/icon-pause.svg',
+                    'h1Title'               :       'A Measurable Difference',
+                    'posterImage'           :       'hero-about-poster@2x.jpg',
+                    'videoSource'           :       'http://s3-us-west-2.amazonaws.com/hikercms/6/115/426/1644008677664.mp4',
+                    'showHideCta'           :       'd-none',
+                    'showHideCaption'       :       'd-none',
+                    'heroDescription'       :       'FoodCorps’ service directly improves the health and lives of students across the country and works to effect systems change at every level, from local districts to federal policy.'
+                })
+                <!-- /Leadspace Video -->
+
+
+                <!-- Section Featured Icon -->
+                <section class="featured-icon featured-icon--reverse position-relative bg-dark-green bg-transition" data-color="dark-green"> 
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-11 offset-lg-1">
+                                <div class="bodymoving featured-icon-figure">
+                                    <div class="js-bodymoving" data-path="images/icon-impact.json"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Section Featured Icon -->
+
+
+                <!-- Section Post -->
+                <section class="section-post bg-dark-green text-light">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <h1>Our impact</h1>
+                                <p>
+                                    Not just kids’ wellbeing, but racial, social, and educational inequities — all of this is bound up in the life-giving and life-changing substance of food. When you get involved with FoodCorps, you’re feeding kids today and nourishing their futures by connecting them in body, mind, and spirit to the importance and joy of food as they grow.
+                                </p>
+                                <p>
+                                    With FoodCorps, you can do that in four different ways:
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Section Post -->
+
+
+                <!-- Section Chart A -->
+                @@include('includes/modules/section/chart-a.html', {
+                    'bgColor' : 'bg-sand'
+                })
+                <!-- /Section Chart A -->
+
+
+                <!-- Section Quote l Image R -->
+                <section class="quote-l-image-r position-relative overflow-hidden quote-l-image-r--reversed bg-light">
+                    <div class="quote-l-image-r__bg">
+                        <svg width="1441" height="734" viewBox="0 0 1441 734" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M790.337 349.415C645.573 349.415 312.625 302.872 0 522.5V716C180.965 523.01 395.669 397.181 790.337 349.415Z"
+                                fill="#4FB075" />
+                            <path class="quote-svg-bg" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1441 0.360107C1384.39 282.485 1131.13 353.543 866.331 349.79C601.534 346.037 192.965 349.688 2.84314e-05 671V734C107.798 734 588.578 734 1441 734V0.360107Z"
+                                fill="#00524C" />
+                        </svg>
+                    </div>
+                    <div class="quote-l-image-r__wrapper position-relative">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-7 col-tb-6 col-lg-5 col-xl-6 col-xxxl-8">
+                                    <div class="quote-l-image-r__content">
+                                        <div class="bodymoving quote-l-image-r__icon">
+                                            <div class="js-bodymoving" data-path="images/icon-quote.json"></div>
+                                        </div>
+                                        <h3 class="quote @@quoteColor">
+                                            Lorem ipsum quote from The Skillet story dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                        </h3>
+                                        <a href='' class='link-text link-primary link-wobble' title='title'>Read Story CTA</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <figure class="quote-l-image-r__figure">
+                            <img src="images/fpo-quote-img-3@2x.png" alt="happy people eating food on a park bench">
+                            <figcaption class="quote-l-image-r__figcaption eyebrow-2 @@quoteColor fst-italic">
+                                Lorem ipsum image credit dolor
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+                <!-- /Section Quote l Image R -->
+
+
+                <!-- Section Chart B -->
+                @@include('includes/modules/section/chart-b.html', {
+                    'bgColor' : 'bg-white'
+                })
+                <!-- /Section Chart B -->
+
+
+                <!-- Section Chart C -->
+                @@include('includes/modules/section/chart-c.html', {
+                    'bgColor' : 'bg-dark-green'
+                })
+                <!-- /Section Chart C -->
+
+
+                <!-- Section Skillet Stories -->
+                <section class="skillet-stories text-light bg-dark-green">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2>Impactful stories</h2>
+                                <div class="slider">
+                                    <div class="slider__wrap swiper-wrapper">
+                                        <div class="item swiper-slide">
+                                            @@include('includes/modules/cards/card-food-court.html',{
+                                                'bgShape' :       'bg-yellow',
+                                                'shapeImg' :       'images/fpo-story-img.png'
+                                            })
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            @@include('includes/modules/cards/card-food-court.html',{
+                                                'bgShape' :       'bg-primary',
+                                                'shapeImg' :       'images/fpo-story-img-2.png'
+                                            })
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            @@include('includes/modules/cards/card-food-court.html',{
+                                                'bgShape' :       'bg-yellow',
+                                                'shapeImg' :       'images/fpo-story-img.png'
+                                            })
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            @@include('includes/modules/cards/card-food-court.html',{
+                                                'bgShape' :       'bg-primary',
+                                                'shapeImg' :       'images/fpo-story-img-2.png'
+                                            })
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            @@include('includes/modules/cards/card-food-court.html',{
+                                                'bgShape' :       'bg-yellow',
+                                                'shapeImg' :       'images/fpo-story-img.png'
+                                            })
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            @@include('includes/modules/cards/card-food-court.html',{
+                                                'bgShape' :       'bg-primary',
+                                                'shapeImg' :       'images/fpo-story-img-2.png'
+                                            })
+                                        </div>
+                                    </div>
+                                    <div class="slider__controls slider-01-control">
+                                        <div class="slider__pagination"></div>
+                                        <div class="slider__button-prev">
+                                            <i class="icon-arrow-left"></i>
+                                        </div>
+                                        <div class="slider__button-next">
+                                            <i class="icon-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="scripts/skillet-stories.js"></script>
+                </section>
+                <!-- /Section Skillet Stories -->
+
+
+            </main>
+        </div>
+        @@include('includes/footer.html')
+        @@include('includes/scripts.html')
+    </div>
+</body>
+
+</html>

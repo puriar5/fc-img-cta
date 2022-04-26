@@ -1,0 +1,16 @@
+@import '../common-imports';
+
+.policy-grid{
+    &-content{
+        margin-bottom: -4.8rem;
+        @include media-breakpoint-up(lg){
+            margin-bottom: -5.4rem;
+        }
+        .card-b02{
+            margin-bottom: 4.8rem;
+            @include media-breakpoint-up(lg){
+                margin-bottom: 5.4rem;
+            }
+        }
+    }
+}

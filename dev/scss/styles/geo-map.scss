@@ -1,0 +1,99 @@
+@import '../common-imports';
+
+
+.geo-map {
+    padding-bottom: 9.4rem;
+    &__filter {
+        padding: 4.3rem 0;
+        ul {
+            margin: 0 -6.2rem;
+            li {
+                padding: 0 6.2rem;
+                a {
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: $white;
+                    text-align: center;
+                    display: block;
+                    span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 6.6rem;
+                        width: 6.6rem;
+                        border-radius: 100%;
+                        border: 3px solid transparent;
+                        color: $white;
+                        background: $primary;
+                        font-size: 4.2rem;
+                        margin: 0 auto 1rem;
+                    }
+                }
+                &:last-child {
+                    a {
+                        span {
+                            font-size: 3rem;
+                        }
+                    }
+                }
+                &.active {
+                    a {
+                        font-weight: $font-weight-semibold;
+                        color: $yellow;
+                        span {
+                            border-color: $yellow;
+                            background: $white;
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.imapsSprite-group {
+    fill: none !important;
+    stroke: none !important;
+}
+
+.map-details-popup {
+    max-width: 375px;
+    border-radius: 18px;
+    background: #eae0d5;
+    overflow: hidden;
+    .row {
+        margin: 0;
+        align-items: center;
+        [class*="col-"] {
+            padding: 0;
+        }
+        .col-md-4 {
+            max-width: 119px;
+            width: auto;
+        }
+        .col-md-8 {
+            width: calc(100% - 119px);
+            padding-right: 25px;
+            padding-left: 20px;
+            span {
+                font-size: 13px;
+                text-transform: uppercase;
+                color: #4fb075;
+                display: block;
+                margin: 0 0 4px;
+                line-height: 1;
+                font-weight: 600;
+            }
+            h6 {
+                white-space: normal;
+                margin: 0;
+            }
+        }
+    }
+    img {
+        height: 100px !important;
+        width: 100% !important;
+        object-fit: cover;
+    }
+}

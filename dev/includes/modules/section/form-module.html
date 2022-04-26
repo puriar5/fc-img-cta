@@ -1,0 +1,123 @@
+<section id="form-module-partner" class="form-module-partner position-relative bg-dark-green" data-color="">
+    <div class="container">
+        @@if (bodyMoving === true) {
+            <div class="bodymoving thumbnail-img form-module-partner__icon">
+                <div class="js-bodymoving" data-path="@@bodyMovingPath"></div>
+            </div>
+        }
+        @@if (bodyMoving === false) {
+            <figure class="thumbnail-img form-module-partner__icon">
+                <img src="images/icon-partner-form@2x.png" alt="Icon Partner Form">
+            </figure>
+        }
+        <div class="row justify-content-between">
+            <div class="col-md-6 col-lg-5">
+                <div class="text-light mb-6 mb-md-0">
+                    <h3 class="mb-4 mb-md-5">@@title</h3>
+                    <p class="text-light">
+                        @@text
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="partners-form text-light">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="fullname">Full name*</label>
+                            <input type="text" class="form-control" name="fullname">
+                        </div>
+                        <div class="form-group">
+                            <label for="fullname">Email Address*</label>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="school">School*</label>
+                            <input type="text" class="form-control" name="school">
+                        </div>
+                        <div class="form-group mt-8 mt-md-10">
+                            <button type="submit" class="btn btn-dark btn-bubble" id="request-form">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Request Modal Form -->
+<div class="modal-request-form"> <!-- Submitted Class will be added after form submission -->
+
+    <!-- Close Button -->
+    <a href="javascript:void(0);" class="modal-request-form__close">
+        <i class="icon-close"></i>
+    </a>
+
+    <!-- Thumb -->
+    <figure class="thumbnail-img modal-request-form__background">
+        <img src="images/form-bg@2x.png" alt="Form Overlay">
+    </figure>
+     <!-- /Thumb -->
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-7">
+                <div class="inner">
+                    <h2 class="mb-8">Become a FoodCorps Partner</h2>
+                    <form action="#">
+                        <div class="form-group mb-8">
+                            <label for="name">Company name*</label>
+                            <input type="text" class="form-control" id="name" name="cname">
+                        </div>
+                        <div class="form-group mb-8">
+                            <label for="name">Full name*</label>
+                            <input type="text" class="form-control" id="name" name="fname">
+                        </div>
+                        <div class="form-group mb-8">
+                            <label for="name">Your title*</label>
+                            <input type="text" class="form-control" id="name" name="ytitle">
+                        </div>
+                        <div class="form-group mb-8">
+                            <label for="email">Email address*</label>
+                            <input type="text" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="form-group mb-8">
+                            <label for="dsize">Estimated donation size*</label>
+                            <div class="custom-select" id="dsize">
+                                <select>
+                                    <option>Select</option>
+                                    <option>Less than $10k</option>
+                                    <option>$10k–$24k</option>
+                                    <option>$25k–$99k</option>
+                                    <option>$100k–$249k</option>
+                                    <option>$250k+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group mb-8">
+                            <label for="howsoon">How soon do you want to partner?</label>
+                            <input type="text" class="form-control" id="howsoon" name="howsoon">
+                        </div>
+                        <div class="form-group mb-8">
+                            <label for="interest">Describe your interest in partnering with FoodCorps</label>
+                            <input type="text" class="form-control" id="interest" name="interest">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary" value="Send Message">
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="inner-thank-you text-white text-center">
+                    <h3 class="mb-8">Thank you, your request has successfully been submitted </h3>
+                    <a href="#" class="btn btn-primary btn-bubble">Close Window</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /Request Modal Form -->
+
+<script src="scripts/modal-form.js"></script>

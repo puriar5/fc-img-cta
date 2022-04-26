@@ -1,0 +1,263 @@
+@import "../common-imports";
+
+.benefits-of-service {
+    overflow: hidden;
+    padding: 3.6rem 0 4rem;
+
+    @include media-breakpoint-up(md) {
+        padding: 7rem 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 7.4rem 0 8rem;
+    }
+
+    &--hasNoSvg {
+        .hasSvg {
+            display: none;
+        }
+    }
+
+    &--hasSvg {
+        display: block;
+        background-color: transparent !important;
+        @include media-breakpoint-up(lg){
+            margin-bottom: -10rem;
+        }
+
+        svg {
+            @include position(absolute);
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: -30%;
+            width: 150%;
+            height: auto;
+            @include media-breakpoint-up(md){
+                left: 0;
+                width: 101%;
+                height: 102%;
+            }
+        }
+
+        .c-tab-accordion__maxWidth {
+            margin-top: -14%;
+
+            @include media-breakpoint-up(md) {
+                margin-top: -15%;
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin-top: -25%;
+            }
+        }
+
+        .benefits-of-service {
+            &-wrapper {
+                position: relative;
+
+                &:before {
+                    content: '';
+                    z-index: 0;
+                    position: absolute;
+                    left: 0;
+                    background-color: $dark-green;
+                    width: 100%;
+                    pointer-events: none;
+                    height: 201%;
+                    top: 8%;
+                    @include media-breakpoint-up(md){
+                        top: 22%;
+                    }
+                    @include media-breakpoint-up(lg){
+                        top: 55%;
+                    }
+                }
+
+                .container {
+                    position: relative;
+                    z-index: 1;
+                    margin-top: -3%;
+
+                    @include media-breakpoint-up(md) {
+                        margin-top: -15%;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        margin-top: -20.6%;
+                    }
+                }
+            }
+        }
+        &.bg-sand {
+            background-color: $dark-green !important;
+            .benefits-of-service {
+                &__hasBg {
+                    .quote-svg-bg {
+                        fill: $sand;
+                    }
+                }
+    
+                &-wrapper {
+                    color: $secondary;
+                    &::before {
+                        background-color: $sand;
+                    }
+                }
+    
+                &-content {
+    
+                    .text-white {
+                        color: $secondary !important;
+                    }
+                }
+            }
+        }
+        &.bg-dark-green {
+            background-color: $sand !important;
+            .benefits-of-service {
+                &__hasBg {
+                    .quote-svg-bg {
+                        fill: $dark-green;
+                    }
+                }
+    
+                &-wrapper {
+                    color: $light;
+                    &::before {
+                        background-color: $dark-green;
+                    }
+                }
+            }
+        }
+    }
+
+    &__hasBg {
+        position: relative;
+
+        padding-bottom: calc(734 / 1442 * 100%);
+        &-footer{
+            padding-bottom: calc(251 / 1442 * 100%);
+            margin-top: 10rem;
+            @include media-breakpoint-up(md){
+                margin-top: 11rem;
+            }
+            @include media-breakpoint-up(lg){
+                margin-top: 5.2rem;
+            }
+        }
+    }
+
+    &--reverse {
+        .benefits-of-service__hasBg {
+            svg {
+                transform: scaleX(-1);
+            }
+        }
+    }
+
+    
+
+
+
+    .title {
+        font-weight: 600;
+    }
+
+    .flipcard-slider {
+        margin: 0 -0.8rem;
+        padding: 0 10px;
+
+        @include media-breakpoint-up(lg) {
+            padding: 0;
+        }
+
+        .swiper-wrapper {
+            @include media-breakpoint-up(lg) {
+                flex-wrap: wrap;
+            }
+        }
+
+        .item {
+            &.swiper-slide {
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+
+                &.swiper-slide-active {
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: all;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: all;
+                }
+            }
+
+            @include media-breakpoint-up(md) {
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                transition: all 0.3s ease-in-out;
+            }
+
+            &.swiper-slide-active,
+            &.swiper-slide-next {
+                @include media-breakpoint-up(md) {
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: all;
+                }
+            }
+
+            @include media-breakpoint-up(lg) {
+                width: 33.33%;
+                padding: 0 0.8rem;
+            }
+        }
+
+        .slider__controls {
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+
+            .slider__pagination {
+                text-align: left;
+                margin-top: 2.5rem;
+
+                @include media-breakpoint-up(md) {
+                    text-align: center;
+                }
+            }
+
+            &.slider__buttons {
+                margin-top: 3.2rem;
+
+                .slider__button-prev,
+                .slider__button-next {
+                    margin-top: 0;
+                    font-size: 4rem;
+                }
+
+                i {
+                    &::before {
+                        color: #00524c;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .card-flip {
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 1.6rem;
+        }
+    }
+
+
+
+}

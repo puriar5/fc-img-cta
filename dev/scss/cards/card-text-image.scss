@@ -1,0 +1,64 @@
+
+.card-text-image {
+
+    padding: 6.4rem 2.7rem 2.3rem;
+    border-radius: 1.3rem;
+    box-shadow: 0 0.1rem 3.4rem 0 #e9e9e9;
+    position: relative;
+    background: $light;
+
+    @include media-breakpoint-up(md) {
+        padding: 8.3rem 3rem 5.5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 16rem 5.8rem 10.6rem 5.2rem;
+    }
+
+    &--alt {
+        background: $white;
+        box-shadow: none;
+    }
+
+    &__thumb {
+        position: absolute;
+        top: -4.7rem;
+        left: 2.7rem;
+        max-width: 9.6rem;
+
+        img {
+            transition: all 0.3s ease;
+        }
+
+        @include media-breakpoint-up(xl) {
+            max-width: 18.4rem;
+            top: -6.7rem;
+            left: 5.2rem;
+        }
+
+    }
+
+    h4 {
+        margin-bottom: 1.6rem;
+        font-family: 'Basier Circle';
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 1.8rem;
+            font-size: 3.2rem;
+            line-height: 3.6rem;
+        }
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        @include media-breakpoint-up(md) {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+    }
+
+}

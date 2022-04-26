@@ -1,0 +1,63 @@
+@import '../common-imports';
+
+
+.cta-box-grid-x2-slider {
+    @include media-breakpoint-up(lg) {
+        padding-left: 2.7rem;
+    }
+
+    .swiper-wrapper {
+        @include media-breakpoint-up(md) {
+            margin: 0 -3rem;
+        }
+        @include media-breakpoint-up(lg) {
+            margin: 0 -1.3rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .swiper-slide {
+            width: 50%;
+            @include media-breakpoint-up(md) {
+                padding: 0 3rem;
+            }
+            @include media-breakpoint-up(lg) {
+                padding: 0 1.3rem;
+            }
+            &-prev,
+            &-next {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+    .card-cta-box {
+        .btn-outline {
+            padding: 1.9rem 1.7rem;
+        }
+    }
+
+    .slider__controls {
+        &.slider__buttons {
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
+        }
+        .slider__pagination {
+            .swiper-pagination-bullet {
+                background: #eae0d5;
+                &-active {
+                    background: #f7b945;
+                }
+            }
+        }
+        .slider__button-prev,
+        .slider__button-next {
+            i::before {
+                color: #0c5a54;
+            }
+        }
+    }
+
+}

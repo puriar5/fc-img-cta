@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'FoodCorps | About'})
+        <link rel="stylesheet" href="css/styles/page-about.min.css" />
+        
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html', {
+                    'headerSkin':   'theme-header--white',
+                    'menuSkin'  :   'menu-toggler--white',
+                    'aboutIsActive' :   'is-active'
+                })
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content h-100">
+                        @@include('./includes/offcanvas.html',{
+                        })
+                    </div>
+                </div>
+                <main class="theme-main">
+                    @@include('includes/modules/section/lead-video.html',{
+                        'dataColor'             :       'dark-green',
+                        'playThumb'             :       'images/icon-pause.svg',
+                        'h1Title'               :       'About FoodCorps',
+                        'showHideDescription'   :       'd-none',
+                        'posterImage'           :       'hero-about-poster@2x.jpg',
+                        'videoSource'           :       'https://sample-videos.com/video123/mp4/480/big_buck_bunny_480p_20mb.mp4',
+                        'showHideCta'           :       'd-none',
+                        'showHideCaption'       :       'd-none',
+                    })
+
+                    @@include('includes/modules/section/bullettext-l-image-r.html',{
+                        'bgShowHide': 'd-none',
+                        'eyebrowShowHide':'d-none',
+                        'title':'Headline lorem ipsum',
+                        'subTitleShowHide':'d-none',
+                        'subTextShowHide':'d-none',
+                        'bgColor':'bg-dark-green',
+                        'textColor': 'text-white',
+                         'mainImg':'image_mission-vision@2x.png',
+                         'altMainImg':'happy people eating food on a park bench',
+                         'btnShowHide':'d-none',
+                         'offsetTextColor':'text-light',
+                         'figCaption'   :   'Lorem ipsum image credit dolor',
+                         "results"  : {
+                             "list": [
+                                 {
+                                     'listIconImg' : 'icon-star.svg',
+                                     'altIcon' : 'Star inside circle',
+                                     'listTitleShowHide' : 'd-block',
+                                     'listTitle' : 'Our Mission',
+                                     'listText' : 'Together with communities, FoodCorps connects kids to healthy food in school.'
+                                 },
+                                 {
+                                    'listIconImg' : 'icon-star.svg',
+                                    'altIcon' : 'Star inside circle',
+                                    'listTitleShowHide' : 'd-block',
+                                    'listTitle' : 'Our Vision',
+                                    'listText' : 'We are creating a future in which all our nation’s children—regardless of race, place or class—know what healthy food is, care where it comes from, and eat it every day.'
+                                },
+                                {
+                                    'listIconImg' : 'icon-star.svg',
+                                    'altIcon' : 'Star inside circle',
+                                    'listTitleShowHide' : 'd-block',
+                                    'listTitle' : 'Our Work',
+                                    'listText' : 'FoodCorps advances social health and justice through food by placing service members in schools across the nation; by supporting, influencing, and advocating for legislation and policy; and by providing resources for anyone passionate about bringing positive change to their community.'
+                                },
+                             ]
+                         },
+                    })
+                    @@include('includes/modules/section/select-grid-2-2--01.html',{
+                        'bgColor'                               :   'bg-sand',
+                        'h2Title'                               :   'Our work',
+                    })
+                    @@include('includes/modules/section/quote-l-image-r.html',{
+                        'bgColor'           :       'bg-light',
+                        'quoteBg'           :       'quote-bg-white.svg',
+                        'iconQuote'         :       'icon-quote-primary@2x.png',
+                        'h3Title'           :       'Lorem ipsum quote from The Skillet story dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+                        'linkText'          :       'Read Story CTA',
+                        'mainFigure'        :       'fpo-quote-img-2@2x.webp',
+                        'figCaption'        :       'Lorem ipsum image credit dolor',
+                        'bodyMoving'        :       true,
+                        'bodyMovingPath'    :       'images/icon-quote-green.json',
+                    })
+
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'bgColor'   : 'bg-light',
+                        'thumb': 'images/img-cta-01-sm@2x.jpg',
+                        'showHideEyebrow':'d-none',
+                        'title': 'Take action for food justice for kids',
+                        'text': 'Lorem ipsum dolor sit amet',
+                        'btnTxt': 'Join us'
+                    })
+
+                </main>
+            </div>
+            @@include('includes/footer.html')
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

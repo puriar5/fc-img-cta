@@ -1,0 +1,80 @@
+.card-b04{
+    &-figure{
+        border-radius: 0 12rem;
+        padding-bottom: calc(242 / 304 * 100%);
+        @include media-breakpoint-up(md){
+            border-radius: 0 11rem;
+            padding-bottom: calc(275 / 344 * 100%);
+        }
+        @include media-breakpoint-up(lg){
+            padding-bottom: calc(419 / 632 * 100%);
+            border-radius: 0 12rem;
+        }
+        &.bg-primary{
+            & + .card-b04-content{
+                .btn{
+                    background-color: $yellow;
+                }
+            }
+        }
+        &.bg-yellow{
+            & + .card-b04-content{
+                .btn{
+                    background-color: $primary;
+                    color: $light;
+                }
+            }
+        }
+    }
+    img{
+        object-position: center center;
+        border-radius: 11.4rem;
+        bottom: 0.6rem;
+        top: 0.6rem;
+        left: 0.5rem;
+        right: 0.5rem;
+        width: calc(100% - 1rem);
+        height: calc(100% - 1.2rem);
+        @include media-breakpoint-up(md){
+            left: 0.6rem;
+            right: 0.6rem;
+            width: calc(100% - 1.2rem);
+            height: calc(100% - 1.2rem);
+        }
+        @include media-breakpoint-up(lg){
+            left: 0.9rem;
+            top: 0.9rem;
+            right: 0.9rem;
+            bottom: 0.9rem;
+            width: calc(100% - 1.8rem);
+            height: calc(100% - 1.8rem);
+        }
+    }
+    &-content{
+        @include media-breakpoint-up(lg){
+            position: absolute;
+            left: 6.3rem;
+            bottom: 5.5rem;
+            color: $light;
+            padding-right: 15%;
+        }
+        .eyebrow-3{
+            @include media-breakpoint-up(lg){
+                color: $sand;
+            }
+        }
+        .sub-header{
+            @include media-breakpoint-up(lg){
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+        }
+        .btn{
+            background-color: $yellow;
+        }
+    }
+}

@@ -1,0 +1,403 @@
+<section class="filter-tabs bg-sand">
+    <div class="container">
+        <!-- <div class="tab-container">
+            <div class="tab-nav">
+                <div class="tab is-desktop d-none d-md-flex align-items-center justify-content-center mb-17">
+                    <button class="tablinks" onclick="openTab(event, 'tab1')" id="defaultOpen">Corporate Partners</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab2')">Foundation Partners</button>
+                    <button class="tablinks" onclick="openTab(event, 'tab3')">Government Partners</button>
+                </div>
+                <div class="filter-tabs-select mb-17 d-md-none">
+                    <select onchange="openTab(event, this.value)"> 
+                        <option value="tab1">Corporate Partners</option> 
+                        <option value="tab2">Foundation Partners</option> 
+                        <option value="tab3">Government Partners</option>
+                    </select>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="d-none d-md-block">
+            <ul class="nav nav-pills mb-3 d-flex align-items-center justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="nav-tab-01" data-bs-toggle="tab" data-bs-target="#nav-01"
+                        type="button" role="tab" aria-controls="nav-01" aria-selected="true">Corporate Partners</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="nav-tab-02" data-bs-toggle="tab" data-bs-target="#nav-02" type="button"
+                        role="tab" aria-controls="nav-02" aria-selected="false">Foundation Partners</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="nav-tab-03" data-bs-toggle="tab" data-bs-target="#nav-03" type="button"
+                        role="tab" aria-controls="nav-03" aria-selected="false">Government Partners</button>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="d-md-none">
+            <div class="pill-filter pill-filter--pc">
+                <button class="pill-filter--btn btn btn-primary active">
+                    Corporate Partners
+                </button>
+                <button class="pill-filter--btn btn btn-primary">
+                    Foundation Partners
+                </button>
+                <button class="pill-filter--btn btn btn-primary">
+                    Government Partners
+                </button>
+            </div>
+    
+            <div class="pill-filter--sp custom-select mb-10">
+                <select>
+                    <option>Corporate Partners</option>
+                    <option>Foundation Partners</option>
+                    <option>Government Partners</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-01" role="tabpanel" aria-labelledby="nav-tab-01">
+            <!-- Section Funder Partner Grid -->
+            @@include('funder-partner-grid.html',{
+                'h3Title'           :       'Hero for Healthy Kids',
+                'headerDescription' :       'Turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet',
+                'sliderName'        :       'slider-03',
+                "partners"  : {
+                    "list": [
+                        {
+                            'cardImage'            :   'logo-walmart-org@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        }
+                    ]
+                },
+            })
+            <!-- /Section Funder Partner Grid -->
+            <!-- Section Funder Partner Grid -->
+            @@include('funder-partner-grid.html',{
+                'h3Title'           :       'Partner for Healthy Kids',
+                'headerDescription' :       'Turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet',
+                'sliderName'        :       'slider-03',
+                "partners"  : {
+                    "list": [
+                        {
+                            'cardImage'            :   'logo-cs-cares@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        },
+                        {
+                            'cardImage'            :   'logo-new-balance@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        }
+                    ]
+                },
+            })
+            <!-- /Section Funder Partner Grid -->
+            <!-- Section Funder Partner Grid -->
+            @@include('funder-partner-grid.html',{
+                'h3Title'           :       'Partner for Healthy Kids',
+                'headerDescription' :       'Turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet',
+                'sliderName'        :       'slider-03',
+                "partners"  : {
+                    "list": [
+                        {
+                            'cardImage'            :   'logo-cs-cares@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        },
+                        {
+                            'cardImage'            :   'logo-new-balance@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        },
+                        {
+                            'cardImage'            :   'logo-sodexo@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        },
+                        {
+                            'cardImage'            :   'logo-boa@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        },
+                        {
+                            'cardImage'            :   'logo-campbells@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        },
+                    ]
+                },
+            })
+            <!-- /Section Funder Partner Grid -->
+            <!-- Section Funder Partner Grid -->
+            @@include('funder-partner-grid.html',{
+                'h3Title'           :       'Partner for Healthy Kids',
+                'headerDescription' :       'Turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet',
+                'sliderName'        :       'slider-03',
+                "partners"  : {
+                    "list": [
+                        {
+                            'cardImage'            :   'logo-cs-cares@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        },
+                        {
+                            'cardImage'            :   'logo-new-balance@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        },
+                        {
+                            'cardImage'            :   'logo-sodexo@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        },
+                        {
+                            'cardImage'            :   'logo-boa@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        },
+                        {
+                            'cardImage'            :   'logo-campbells@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        },
+                    ]
+                },
+            })
+            <!-- /Section Funder Partner Grid -->
+            <!-- Column Text With Bg -->
+                @@include('column-txt-withbg.html', {
+                    'showHide': 'd-block',
+                    'bgColor': 'bg-light',
+                    'hasThumb': 'thumb-is-active'
+                })
+            <!-- /Column Text With Bg -->
+        </div>
+        <div class="tab-pane fade" id="nav-02" role="tabpanel" aria-labelledby="nav-tab-02">
+
+            <!-- Section Column Text With Bg -->
+            <section class="column-txt-withbg thumb-not-active bg-sand position-relative">
+                <figure class="column-txt-withbg__shape w-100 bg-sand d-none">
+                    <img src="images/column-text-bgshape@2x.png" alt="Column Text Background Shape" class="w-100">
+                </figure>
+                <!-- <svg width="1441px" height="734px" viewBox="0 0 1441 734" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>bg wave@3x</title>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="1.5-Funders-&amp;-Partners-Corp" transform="translate(0.000000, -2343.000000)">
+                            <g id="bg-wave" transform="translate(0.000000, 2343.360000)">
+                                <path d="M789.337486,348.054886 C644.572889,348.054886 312.955702,305.607614 0.330701776,525.236144 C-0.817735724,578.751769 1.48695178,673.336136 0.330701776,718.226955 C181.295255,525.236144 394.668743,395.820511 789.337486,348.054886 Z" id="quote-corner-wave" fill="#4FB075"></path>
+                                <path d="M1440.3307,0 C1383.72133,282.125 1130.12758,352.182827 865.330702,348.429886 C600.533827,344.676944 192.964553,348.429886 0,669.742386 C0,669.742386 0,732.64 0,732.64 C107.797828,732.64 587.908062,732.64 1440.3307,732.64 C1440.3307,335.204351 1440.3307,90.9910176 1440.3307,0 Z" id="wave-light" fill="#FBFEF9"></path>
+                            </g>
+                        </g>
+                    </g>
+                </svg> -->
+                <div class="container position-relative">
+                    <h3 class="mb-4 mb-6 mb-9 d-none">Additional corporate support</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Adrienne’s Helping Hand</li>
+                                <li>Anonymous</li>
+                                <li>The Assouline-Lichten Foundation</li>
+                                <li>Atherton Family Foundation</li>
+                                <li>Blue Cross and Blue Shield of North Carolina Foundation</li>
+                                <li>Bob & Dolores Hope Foundation</li>
+                                <li>Booth Ferris Foundation</li>
+                                <li>Boulder Family Donor Fund</li>
+                                <li>The Burkehaven Family Foundation</li>
+                                <li>Chan Zuckerberg Initiative</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>The Charles Engelhard Foundation</li>
+                                <li>Community Foundation of Eastern Connecticut</li>
+                                <li>Connecticut Community Foundation</li>
+                                <li>DMC Foundation</li>
+                                <li>The EMWIGA Foundation</li>
+                                <li>Epstein/Roth Foundation</li>
+                                <li>Frank Loomis Palmer Fund</li>
+                                <li>Franklin and Catherine Johnson Foundation</li>
+                                <li>The Germeshausen Foundation, Inc.</li>
+                                <li>Hawai’i Community Foundation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Section Column Text With Bg -->
+            
+            <!-- Section Column Text With Bg -->
+            @@include('quote-l-image-r.html',{
+                'bgColor'           :       'bg-light',
+                'quoteModifier'     :       'quote-l-image-r--reversed',
+                'quoteBg'           :       'quote-bg-white.svg',
+                'quoteSkin'         :       'quote-l-image-r--white',
+                'iconQuote'         :       'icon-quote-primary@2x.png',
+                'h3Title'           :       'Lorem ipsum quote from The Skillet story dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+                'linkText'          :       'Read Story CTA',
+                'mainFigure'        :       'fpo-quote-img-3@2x.png',
+                'figCaption'        :       'Lorem ipsum image credit dolor',
+                'bodyMoving'        :       true,
+                'bodyMovingPath'    :       'images/icon-quote-green.json',
+            })
+            <!-- /Section Column Text With Bg -->
+
+            <!-- Section Column Text With Bg -->
+            <section class="column-txt-withbg thumb-not-active bg-sand position-relative">
+                <figure class="column-txt-withbg__shape w-100 bg-sand d-none">
+                    <img src="images/column-text-bgshape@2x.png" alt="Column Text Background Shape" class="w-100">
+                </figure>
+                <!-- <svg width="1441px" height="734px" viewBox="0 0 1441 734" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>bg wave@3x</title>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="1.5-Funders-&amp;-Partners-Corp" transform="translate(0.000000, -2343.000000)">
+                            <g id="bg-wave" transform="translate(0.000000, 2343.360000)">
+                                <path d="M789.337486,348.054886 C644.572889,348.054886 312.955702,305.607614 0.330701776,525.236144 C-0.817735724,578.751769 1.48695178,673.336136 0.330701776,718.226955 C181.295255,525.236144 394.668743,395.820511 789.337486,348.054886 Z" id="quote-corner-wave" fill="#4FB075"></path>
+                                <path d="M1440.3307,0 C1383.72133,282.125 1130.12758,352.182827 865.330702,348.429886 C600.533827,344.676944 192.964553,348.429886 0,669.742386 C0,669.742386 0,732.64 0,732.64 C107.797828,732.64 587.908062,732.64 1440.3307,732.64 C1440.3307,335.204351 1440.3307,90.9910176 1440.3307,0 Z" id="wave-light" fill="#FBFEF9"></path>
+                            </g>
+                        </g>
+                    </g>
+                </svg> -->
+                <div class="container position-relative">
+                    <h3 class="mb-4 mb-6 mb-9 d-none">Additional corporate support</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>The Health Fund</li>
+                                <li>The Healy Foundation</li>
+                                <li>Hearst Foundations</li>
+                                <li>Heinz Family Foundation</li>
+                                <li>Henry P. Kendall Foundation</li>
+                                <li>High Meadows Foundation</li>
+                                <li>Horizon Foundation</li>
+                                <li>J. Walton Bissell Foundation</li>
+                                <li>Johnson Ohana Foundation</li>
+                                <li>Joyce and Irving Goldman Family Foundation</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Krehbiel Family Foundation</li>
+                                <li>Kresge Foundation</li>
+                                <li>Laurie M. Tisch Illumination Fund</li>
+                                <li>The McCance Foundation</li>
+                                <li>Merck Family Fund</li>
+                                <li>Michael & Susan Dell Foundation</li>
+                                <li>New Profit Inc.</li>
+                                <li>New York State Health Foundation</li>
+                                <li>Newman’s Own Foundation</li>
+                                <li>Pisces Foundation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Section Column Text With Bg -->
+
+            <!-- Skillet CTA Box -->
+            @@include('skillet-cta-box.html',{
+                'showEyebrow'       :       false,
+                'title'           :       'Lorem headline for The Skillet',
+                'cta'          :       'Lorem CTA',
+                'bgColor' : 'bg-sand',
+                'background': 'images/skillet-cta-img@2x.png'
+            })
+            <!-- /Skillet CTA Box -->
+
+            <!-- Section Column Text With Bg -->
+            <section class="column-txt-withbg thumb-not-active bg-sand position-relative">
+                <figure class="column-txt-withbg__shape w-100 bg-sand d-none">
+                    <img src="images/column-text-bgshape@2x.png" alt="Column Text Background Shape" class="w-100">
+                </figure>
+                <!-- <svg width="1441px" height="734px" viewBox="0 0 1441 734" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>bg wave@3x</title>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="1.5-Funders-&amp;-Partners-Corp" transform="translate(0.000000, -2343.000000)">
+                            <g id="bg-wave" transform="translate(0.000000, 2343.360000)">
+                                <path d="M789.337486,348.054886 C644.572889,348.054886 312.955702,305.607614 0.330701776,525.236144 C-0.817735724,578.751769 1.48695178,673.336136 0.330701776,718.226955 C181.295255,525.236144 394.668743,395.820511 789.337486,348.054886 Z" id="quote-corner-wave" fill="#4FB075"></path>
+                                <path d="M1440.3307,0 C1383.72133,282.125 1130.12758,352.182827 865.330702,348.429886 C600.533827,344.676944 192.964553,348.429886 0,669.742386 C0,669.742386 0,732.64 0,732.64 C107.797828,732.64 587.908062,732.64 1440.3307,732.64 C1440.3307,335.204351 1440.3307,90.9910176 1440.3307,0 Z" id="wave-light" fill="#FBFEF9"></path>
+                            </g>
+                        </g>
+                    </g>
+                </svg> -->
+                <div class="container position-relative">
+                    <h3 class="mb-4 mb-6 mb-9 d-none">Additional corporate support</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>The Rainwater Charitable Foundation</li>
+                                <li>RWJF</li>
+                                <li>The Rockefeller Foundation</li>
+                                <li>The Rose E. Tucker Charitable Trust in Oregon</li>
+                                <li>The Russell Berrie Foundation</li>
+                                <li>Sangham Foundation</li>
+                                <li>Schmidt Family Foundation</li>
+                                <li>Share Our Strength</li>
+                                <li>Silicon Valley Community Foundation</li>
+                                <li>SKETCH Foundation</li>
+                                <li>Storper Family Foundation</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>The Stupski Foundation</li>
+                                <li>Threshold Foundation</li>
+                                <li>Tides Center</li>
+                                <li>Tides Foundation, on the recommendation of Tom Steyer and Kat Taylor</li>
+                                <li>The Wallace Alexander Gerbode Foundation</li>
+                                <li>W.K. Kellogg Foundation</li>
+                                <li>William and Sylvia Silberstein Foundation</li>
+                                <li>William K. Bowes, Jr. Foundation</li>
+                                <li>Woodcock Foundation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Section Column Text With Bg -->
+
+        </div>
+        <div class="tab-pane fade" id="nav-03" role="tabpanel" aria-labelledby="nav-tab-03">
+            <!-- Section Funder Partner Grid -->
+            @@include('funder-partner-grid.html',{
+                'h3Title'           :       'Partner for Healthy Kids',
+                'headerDescription' :       'Turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet',
+                'sliderName'        :       'slider-03',
+                "partners"  : {
+                    "list": [
+                        {
+                            'cardImage'            :   'logo-cs-cares@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        },
+                        {
+                            'cardImage'            :   'logo-new-balance@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        },
+                        {
+                            'cardImage'            :   'logo-sodexo@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        },
+                        {
+                            'cardImage'            :   'logo-boa@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        },
+                        {
+                            'cardImage'            :   'logo-campbells@2x.png',
+                            'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                            'cardBg'               :   'bg-purple'
+                        },
+                    ]
+                },
+            })
+            <!-- /Section Funder Partner Grid -->
+        </div>
+    </div>
+</section>

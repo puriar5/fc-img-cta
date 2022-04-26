@@ -1,0 +1,114 @@
+@import '../common-imports';
+
+
+.column-text-fixed-scroll {
+    padding: 5rem 0;
+    position: relative;
+    z-index: 1;
+
+    .para-list {
+        display: none;
+        @include media-breakpoint-up(md) {
+            padding-top: 4.4rem;
+        }
+    }
+
+    &.hasparalist {
+        .para-list {
+            display: block;
+        }
+        .card-text-with-icon {
+            display: none;
+        }
+    }
+
+    svg {
+        width: 230px;
+        height: 230px;
+    }
+
+    circle {
+        fill: none;
+        stroke-width: 480px;
+    }
+
+    &__left {
+        .thumbnail-img {
+            max-width: 16.6rem;
+            @include media-breakpoint-up(lg) {
+                max-width: 23rem;
+            }
+        }
+        h3 {
+            font-weight: $font-weight-semibold;
+        }
+        p {
+            @include media-breakpoint-up(xl) {
+                margin-bottom: 4rem;
+            }
+        }
+        .pie-chart-box__content {
+            width: calc(100% - 120px);
+            @include media-breakpoint-up(lg) {
+                width: calc(100% - 230px);
+            }
+        }
+    }
+
+    &__right {
+        padding-top: 3.2rem;
+        @include media-breakpoint-up(lg) {
+            padding-top: 4.5rem;
+        }
+    }
+
+    .pie-chart-box__content {
+        padding-left: 1.6rem;
+        @include media-breakpoint-up(lg) {
+            padding-left: 5.4rem;
+        }
+        p {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            @include media-breakpoint-up(md) {
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+            }
+        }
+    }
+
+    .card-text-with-icon {
+        display: flex;
+        align-items: flex-start;
+        .body-1 {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            font-weight: 600;
+            @include media-breakpoint-up(lg) {
+                font-size: 3.2rem;
+                line-height: 3.6rem;
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 3.2rem;
+            @include media-breakpoint-up(md) {
+                margin-bottom: 4.6rem;
+            }
+        }
+        img {
+            width: 3.2rem;
+            margin-right: 1.2rem;
+            position: relative;
+            top: -0.4rem;
+            @include media-breakpoint-up(md) {
+                width: 4rem;
+            }
+            @include media-breakpoint-up(lg) {
+                width: 6.6rem;
+                margin-right: 4.4rem;
+                top: -1rem;
+            }
+        }
+    }
+
+}

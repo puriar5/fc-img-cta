@@ -1,0 +1,189 @@
+@import "variables/variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?c0yfac') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?c0yfac') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?c0yfac##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-building {
+  &:before {
+    content: $icon-building;     
+  }
+}
+.icon-community {
+  &:before {
+    content: $icon-community;     
+  }
+}
+.icon-hand {
+  &:before {
+    content: $icon-hand;     
+  }
+}
+.icon-location {
+  &:before {
+    content: $icon-location;     
+  }
+}
+.icon-tree {
+  &:before {
+    content: $icon-tree;     
+  }
+}
+.icon-website {
+  &:before {
+    content: $icon-website;     
+  }
+}
+.icon-check {
+  &:before {
+    content: $icon-check; 
+  }
+}
+.icon-arrow-down {
+  &:before {
+    content: $icon-arrow-down; 
+  }
+}
+.icon-icon-arrow-left {
+  &:before {
+    content: $icon-icon-arrow-left; 
+  }
+}
+.icon-icon-arrow-right {
+  &:before {
+    content: $icon-icon-arrow-right; 
+  }
+}
+.icon-arrow-up {
+  &:before {
+    content: $icon-arrow-up; 
+  }
+}
+.icon-pause-simple {
+  &:before {
+    content: $icon-pause-simple; 
+  }
+}
+.icon-play {
+  &:before {
+    content: $icon-play; 
+  }
+}
+.icon-form-arrow-up {
+  &:before {
+    content: $icon-form-arrow-up; 
+  }
+}
+.icon-form-arrow-down {
+  &:before {
+    content: $icon-form-arrow-down; 
+  }
+}
+.icon-star .path1 {
+  &:before {
+    content: $icon-star-path1;  
+    color: rgb(79, 176, 117);
+  }
+}
+.icon-star .path2 {
+  &:before {
+    content: $icon-star-path2;  
+    margin-left: -1em;  
+    color: rgb(251, 254, 249);
+  }
+}
+.icon-star .path3 {
+  &:before {
+    content: $icon-star-path3;  
+    margin-left: -1em;  
+    color: rgb(251, 254, 249);
+  }
+}
+.icon-arrow-left {
+  &:before {
+    content: $icon-arrow-left;     
+  }
+}
+.icon-arrow-right {
+  &:before {
+    content: $icon-arrow-right;     
+  }
+}
+.icon-carrot {
+  &:before {
+    content: $icon-carrot;     
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close;     
+  }
+}
+.icon-email {
+  &:before {
+    content: $icon-email;     
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook; 
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram; 
+  }
+}
+.icon-linkedIn {
+  &:before {
+    content: $icon-linkedIn; 
+  }
+}
+.icon-pause {
+  &:before {
+    content: $icon-pause;     
+  }
+}
+.icon-pinterest {
+  &:before {
+    content: $icon-pinterest; 
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search;     
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter; 
+  }
+}
+.icon-youtube {
+  &:before {
+    content: $icon-youtube; 
+  }
+}
+

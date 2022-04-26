@@ -1,0 +1,44 @@
+<section
+    class="bullettext-l-image-r @@bulletTextModifier @@bulletTextModifierSp bullettext-l-image-r--@@type @@curveBg @@curveBgColor  @@bgColor pt-8 pt-md-0 position-relative">
+    <div class="bullettext-l-image-r__bg @@bgShowHide">
+        <svg width="1441" height="734" viewBox="0 0 1441 734" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M790.337 349.415C645.573 349.415 312.625 302.872 0 522.5V716C180.965 523.01 395.669 397.181 790.337 349.415Z"
+                fill="#4FB075" />
+            <path class="quote-svg-bg" fill-rule="evenodd" clip-rule="evenodd"
+                d="M1441 0.360107C1384.39 282.485 1131.13 353.543 866.331 349.79C601.534 346.037 192.965 349.688 2.84314e-05 671V734C107.798 734 588.578 734 1441 734V0.360107Z"
+                fill="#00524C" />
+        </svg>
+    </div>
+    <div class="bullettext-l-image-r__wrapper position-relative">
+        <div class="container-fluid">
+            <div class="row justify-content-lg-start">
+                <div class="col-md-7 col-lg-6">
+                    <div class="bullettext-l-image-r__text @@textColor">
+                        <span class="eyebrow-1 text-primary @@eyebrowShowHide">STEP 1</span>
+                        <div class="mb-lg-16 mb-7">
+                            <h2 class="@@titleShowHide">@@title</h2>
+                            <h3 class="@@subTitleShowHide">@@subTitle</h3>
+                            <p class="@@subTextShowHide">@@subText</p>
+                        </div>
+                        <ul>
+                            @@for (var i = 0; i < results.list.length; i++) { <li>
+                                @@include('../repeator/bullet-list-content.html', `+(JSON.stringify(results.list[i]))+`)
+                                </li>
+                                }
+                        </ul>
+                        <a href="#" class="btn btn-primary @@btnShowHide btn-bubble mt-11">What you’ll do</a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-6">
+                    <div class="bullettext-l-image-r__img sticky-md-top">
+                        <img src="images/@@mainImg" alt="@@altMainImg" class="img-fluid">
+                        <div class="bullettext-l-image-r__offset @@offsetTextColor fst-italic">
+                            @@figCaption
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,150 @@
+@import "../common-imports";
+
+
+.chart-a {
+    padding: 6rem 0;
+    @include media-breakpoint-up(lg) {
+        padding: 11rem 0;
+    }
+
+    &__heading {
+        font-weight: $font-weight-semibold;
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        @include media-breakpoint-up(lg) {
+            font-size: 4.5rem;
+            line-height: 4.5rem;
+        }
+    }
+
+    &__topic {
+        border-radius: 1.3rem;
+        text-align: center;
+        padding: 14.5px 15px;
+        @include media-breakpoint-up(lg) {
+            padding: 0.7rem 0;
+        }
+        .body-1 {
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+            font-weight: 500;
+            @include media-breakpoint-up(lg) {
+                font-size: 2.6rem;
+                line-height: 3.6rem;
+            }
+        }
+    }
+
+    &__panel__left {
+        padding-bottom: 3.2rem;
+        @include media-breakpoint-up(md) {
+            padding-bottom: 0;
+        }
+        
+        .box {
+            display: flex;
+            align-items: center;
+            &:not(:last-child) {
+                margin-bottom: 3.2rem;
+                @include media-breakpoint-up(md) {
+                    margin-bottom: 6.4rem;
+                }
+                @include media-breakpoint-up(lg) {
+                    margin-bottom: 3rem;
+                }
+            }
+            svg {
+                width: 14rem;
+                height: 14rem;
+                @include media-breakpoint-up(md) {
+                    width: 13.8rem;
+                    height: 13.8rem;
+                }
+                @include media-breakpoint-up(lg) {
+                    width: 23rem;
+                    height: 23rem;
+                }
+            }
+        
+            circle {
+                fill: none;
+                stroke-width: 480px;
+            }
+            .thumbnail-img {
+                width: 14.3rem;
+                @include media-breakpoint-up(md) {
+                    width: 16.6rem;
+                }
+                @include media-breakpoint-up(lg) {
+                    width: 23rem;
+                }
+            }
+            &__content {
+                width: calc(100% - 143px);
+                padding-left: 1.6rem;
+                @include media-breakpoint-up(md) {
+                    padding-left: 1.4rem;
+                    width: calc(100% - 166px);
+                }
+                @include media-breakpoint-up(lg) {
+                    padding-left: 5.2rem;
+                    width: calc(100% - 230px);
+                }
+                p {
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                    @include media-breakpoint-up(md) {
+                        font-size: 1.6rem;
+                        line-height: 2.2rem;
+                    }
+                    @include media-breakpoint-up(lg) {
+                        font-size: 1.8rem;
+                        line-height: 2.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__panel__right {
+        background: $light;
+        padding: 2.4rem 4rem 4rem;
+        border-radius: 1.3rem;
+        position: relative;
+        right: -100px;
+        @include media-breakpoint-up(md) {
+            padding: 2.4rem 5rem 4rem;
+            margin-left: 1.8rem;
+        }
+        @include media-breakpoint-up(lg) {
+            padding: 7.8rem 7.3rem;
+            margin-left: 0;
+        }
+
+        .row {
+            [class*="col-"] {
+                &:not(:last-child) {
+                    margin-bottom: 4rem;
+                    @include media-breakpoint-up(lg) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .box {
+            text-align: center;
+            .thumbnail-img {
+                img {
+                    max-height: 9.6rem;
+                    @include media-breakpoint-up(lg) {
+                        max-height: initial;
+                    }
+                }
+            }
+            h2 {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+
+@import "../common-imports";
+
+.contacts-grid-x3 {
+
+    h3 {
+        font-weight: $font-weight-semibold;
+    }
+
+    padding: 4rem 0;
+    @include media-breakpoint-up(lg) {
+        padding: 10rem 0;
+    }
+
+    .card-contact-map {
+        margin-bottom: 3.2rem;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 4rem;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 5.3rem;
+        }
+    }
+
+}

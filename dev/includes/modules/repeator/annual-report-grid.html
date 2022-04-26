@@ -1,0 +1,10 @@
+<div class="annual-report-grid  position-relative">
+      <h2>@@year</h2>
+      <div class="row">
+        @@for (var i = 0; i < results.list.length; i++) { 
+          <div class="col-md-4 col-lg-3  mb-12 mb-lg-15">
+              @@include('../cards/card-a05.html', `+(JSON.stringify(results.list[i]))+`)
+          </div>
+      }
+      </div>
+  </div>

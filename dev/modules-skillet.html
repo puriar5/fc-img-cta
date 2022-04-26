@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'FoodCorps Sections'})
+</head>
+
+<body>
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html', {
+            <!-- 'headerSkin': 'theme-header--dark' -->
+            })
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--left" data-focus="#first-link">
+                <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+            </div>
+            <main class="theme-main">
+
+                <header class="mt-20 py-20">
+                    <div class="container">
+                        <div class="row mt-20">
+                            <div class="col text-center">
+                                <h1>Skillet Modules</h1>
+                                <hr class="my-10" />
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="container">
+                    <h4 class="text-primary mb-8">Skillet Featured</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/skillet-featured.html',{
+                    'bgColor'       :       'bg-sand',
+                })
+
+                <div class="container">
+                    <h4 class="text-primary mb-8 mt-20">Skillet Grid A (Light)</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/skillet-grid-a.html',{
+                    'bgColor'       :       'bg-light',
+                })
+
+                <div class="container">
+                    <h4 class="text-primary mb-8 mt-20">Skillet Grid A (Dark)</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/skillet-grid-a.html',{
+                    'bgColor'       :       'bg-dark-green',
+                })
+
+                <div class="container">
+                    <h4 class="text-primary mb-8 mt-20">2 Column Link Text + Icon</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/two-col-link-text-icon.html',{
+                    'bgColor'       :       '',
+                    'iconName': 'images/icon-question.svg',
+                    'bodyMoving'    :   true,
+                    'bodyMovingPath': 'images/icon-question.json',
+                    'seeAllCta'     :   true,
+                })
+
+                <div class="container">
+                    <h4 class="text-primary mb-8 mt-20">Section Newsletter Signup B </h4>
+                    <hr class="my-10">
+                </div>
+
+                <section class="newsletter-signup-b bg-light position-relative overflow-hidden">
+                    <svg width="1442" height="1228" viewBox="0 0 1442 1228" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.296"
+                            d="M0 12.0173L40.056 17.1453C80.11 22.1133 160.222 32.3703 240.333 31.5673C320.444 30.7673 400.556 18.9083 480.667 9.93434C560.777 0.800337 640.889 -5.60966 721 7.21034C801.111 20.0303 881.222 52.0793 961.333 64.4183C1041.44 76.5963 1121.56 69.2253 1201.67 58.8093C1281.78 48.3933 1361.89 34.9333 1401.94 28.3623L1442 21.6323V1227.76H0V12.0173Z"
+                            fill="#EAE0D5" />
+                    </svg>
+                    <div class="newsletter-signup-b__inner position-relative">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10 col-lg-6">
+                                    <div class="form-wrapper">
+                                        <h3 class="mb-6 mb-lg-10">Newsletter</h3>
+                                        <p>Sign up for our nesletter and keep up with FoodCorps’ latest updates and stories.</p>
+                                        <div class="form-group mb-8 mb-lg-10">
+                                            <label for="emailid">Email address*</label>
+                                            <input type="email" class="form-control" id="emailid">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" class="btn btn-yellow" value="Continue">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container">
+                    <h4 class="text-primary mb-8 mt-20">Skillet Grid B (Light)</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/skillet-grid-b.html',{
+                    'bgColor'       :       '',
+                })
+
+                <div class="container">
+                    <h4 class="text-primary mb-8 mt-20">Skillet Grid B (Dark)</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/skillet-grid-b.html',{
+                    'bgColor'       :       'bg-dark-green',
+                })
+
+                <div class="container">
+                    <h4 class="text-primary mb-8 mt-20">Benefits Of Service with SVG</h4>
+                    <hr class="my-10">
+                </div>
+                 <!-- Benefits Of Service -->
+                @@include('includes/modules/section/benefit-of-service-01.html',{
+                    bgColor         :       "bg-sand"
+                })
+                <!-- /Benefits Of Service -->
+
+
+                <div class="container pt-20">
+                    <h4 class="text-primary mb-8 mt-20">Skillet Grid D</h4>
+                    <hr class="my-10">
+                </div>
+
+                 <!--Skillet Grid D -->
+                @@include('includes/modules/section/skillet-grid-d.html',{
+                    'svgModifier'       :       'skillet-grid-d--hasNoSvg',
+                    'bgColor'           :       'bg-light',
+                    'showTitle'         :       true,
+                    'h4Title'           :       'News',
+                    'articleCount'      :       '5',
+                    'loadMore'          :       true,
+                    'pagination'        :       true,
+                    "cardb06"  : {
+                        "list": [
+                            {
+                                'imgThumb'              :       'fpo-news-img@2x.png',
+                                'cardB06Modifier'       :       '',
+                                'videoPost'             :       false,
+                                'audioPost'             :       false,
+                                'metaData'              :       'month xx, 2022',
+                                'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                                'isPostExternal'        :       true,
+                                'metaExternal'          :       'Lorem News Platform Name'
+                            },
+                            {
+                                'imgThumb'              :       'fpo-news-img@2x.png',
+                                'cardB06Modifier'       :       'card-b06--video',
+                                'videoPost'             :       true,
+                                'audioPost'             :       false,
+                                'metaData'              :       'month xx, 2022',
+                                'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                                'isPostExternal'        :       true,
+                                'metaExternal'          :       'Lorem News Platform Name • Subscription required'
+                            },
+                            {
+                                'imgThumb'              :       'fpo-news-img@2x.png',
+                                'cardB06Modifier'       :       'card-b06--audio',
+                                'videoPost'             :       false,
+                                'audioPost'             :       true,
+                                'metaData'              :       'month xx, 2022',
+                                'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                                'isPostExternal'        :       false,
+                                'metaExternal'          :       ''
+                            },
+                            {
+                                'imgThumb'              :       'fpo-news-img@2x.png',
+                                'cardB06Modifier'       :       '',
+                                'videoPost'             :       false,
+                                'audioPost'             :       false,
+                                'metaData'              :       'month xx, 2022',
+                                'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                                'isPostExternal'        :       false,
+                                'metaExternal'          :       ''
+                            },
+                            {
+                                'imgThumb'              :       'fpo-news-img@2x.png',
+                                'cardB06Modifier'       :       '',
+                                'videoPost'             :       false,
+                                'audioPost'             :       false,
+                                'metaData'              :       'month xx, 2022',
+                                'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                                'isPostExternal'        :       false,
+                                'metaExternal'          :       ''
+                            },
+                        ]
+                    },
+                })
+                <!-- Skillet Grid D -->
+
+                <div class="container pt-20">
+                    <h4 class="text-primary mb-8 mt-20">Skillet Grid D with Svg</h4>
+                    <hr class="my-10">
+                </div>
+
+                 <!--Skillet Grid D -->
+                @@include('includes/modules/section/skillet-grid-d.html',{
+                    'svgModifier'       :       'skillet-grid-d--hasSvg',
+                    'bgColor'           :       'bg-light',
+                    'showTitle'         :       false,
+                    'h4Title'           :       '',
+                    'articleCount'      :       '5',
+                    'loadMore'          :       false,
+                    'pagination'        :       true,
+                    "cardb06"  : {
+                        "list": [
+                            {
+                                'imgThumb'              :       'fpo-news-img@2x.png',
+                                'cardB06Modifier'       :       '',
+                                'videoPost'             :       false,
+                                'audioPost'             :       false,
+                                'metaData'              :       'month xx, 2022',
+                                'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                                'isPostExternal'        :       true,
+                                'metaExternal'          :       'Lorem News Platform Name'
+                            },
+                            {
+                                'imgThumb'              :       'fpo-news-img@2x.png',
+                                'cardB06Modifier'       :       'card-b06--video',
+                                'videoPost'             :       true,
+                                'audioPost'             :       false,
+                                'metaData'              :       'month xx, 2022',
+                                'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                                'isPostExternal'        :       true,
+                                'metaExternal'          :       'Lorem News Platform Name • Subscription required'
+                            },
+                            {
+                                'imgThumb'              :       'fpo-news-img@2x.png',
+                                'cardB06Modifier'       :       'card-b06--audio',
+                                'videoPost'             :       false,
+                                'audioPost'             :       true,
+                                'metaData'              :       'month xx, 2022',
+                                'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                                'isPostExternal'        :       false,
+                                'metaExternal'          :       ''
+                            },
+                            {
+                                'imgThumb'              :       'fpo-news-img@2x.png',
+                                'cardB06Modifier'       :       '',
+                                'videoPost'             :       false,
+                                'audioPost'             :       false,
+                                'metaData'              :       'month xx, 2022',
+                                'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                                'isPostExternal'        :       false,
+                                'metaExternal'          :       ''
+                            },
+                            {
+                                'imgThumb'              :       'fpo-news-img@2x.png',
+                                'cardB06Modifier'       :       '',
+                                'videoPost'             :       false,
+                                'audioPost'             :       false,
+                                'metaData'              :       'month xx, 2022',
+                                'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                                'isPostExternal'        :       false,
+                                'metaExternal'          :       ''
+                            },
+                        ]
+                    },
+                })
+                <!-- Skillet Grid D -->
+
+
+                <div class="container pt-20">
+                    <h4 class="text-primary mb-8 mt-20">Skillet-cta-box</h4>
+                    <hr class="my-10">
+                </div>
+
+
+                 <!-- Skillet CTA Box -->
+                @@include('includes/modules/section/skillet-cta-box.html',{
+                    'title'             :       'Racism in School Food—And What We Can Do About It',
+                    'cta'               :       'Read story',
+                    'showEyebrow'       :       true,
+                    'bgColor'           :       '',
+                    'background'        :       'images/fpo-skillet-story-img@2x.png'
+                })
+                <!-- /Skillet CTA Box -->
+
+
+            <!-- Skillet CTA Box -->
+            @@include('includes/modules/section/skillet-cta-box.html',{
+                'title'             :       'Racism in School Food—And What We Can Do About It',
+                'cta'               :       'Lorem CTA',
+                'showEyebrow'       :       true,
+                'bgColor'           :       '',
+                'background'        :       'images/fpo-skillet-story-img@2x.png'
+            })
+            <!-- /Skillet CTA Box -->
+
+
+                <div class="container pt-20">
+                    <h4 class="text-primary mb-8 mt-20">Skillet Grid C</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/skillet-grid-c.html',{
+                    'bgColor'           :       '',
+                })
+                
+                <div class="container pt-20">
+                    <h4 class="text-primary mb-8 mt-20">Search Result</h4>
+                    <hr class="my-10">
+                </div>
+
+                <!-- Search Result -->
+                <section class="search-result search-result--skillet bg-light">
+                    <div class="search-result-form position-relative">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <form class="wpcf7-form init wpcf7-acceptance-as-validation form-inline">
+                                        <div class="d-flex position-relative">
+                                            <div class="form-group w-100 mb-0">
+                                                <input type="text" class="form-control" id="searchInput" aria-describedby="emailHelp"
+                                                    placeholder="What are you looking for?" />
+                                            </div>
+                                            <div class="form-group form-submit mb-0">
+                                                <input type="submit" class="btn btn-primary" value="Search">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <header
+                                    class="search-result-header d-md-flex align-items-lg-end position-relative mb-8 mb-md-12 mb-lg-15">
+                                    <figure class="bodymoving search-result-header-figure mb-4 mb-md-0">
+                                        <div class="js-bodymoving" data-path="images/icon-point.json"></div>
+                                    </figure>
+                                    <!-- <figure class="search-result-header-figure mb-4 mb-md-0">
+                                        <img src="images/icon-point.svg" alt="">
+                                    </figure> -->
+                                    <div class="search-result-header-content ms-md-10 ms-lg-11 mb-lg-6">
+                                        <h2 class="mb-2 mb-md-3 mb-lg-0">Search results for “Lorem”</h2>
+                                        <p class="body-3">About (xx) results</p>
+                                    </div>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Search Result -->
+
+
+
+                <section>
+                    <div class="container">
+                    </div>
+                </section>
+            </main>
+        </div>
+        @@include('includes/scripts.html')
+    </div>
+</body>
+
+</html>

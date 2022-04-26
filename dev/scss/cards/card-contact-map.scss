@@ -1,0 +1,26 @@
+
+.card-contact-map {
+
+    h5 {
+        font-family: 'Basier Circle';
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        @include media-breakpoint-up(lg) {
+            font-size: 2.6rem;
+            line-height: 3rem;
+        }
+    }
+
+    ul {
+        li {
+            &:not(:last-child) {
+                margin-bottom: 1.6rem;
+                @include media-breakpoint-up(lg) {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+}

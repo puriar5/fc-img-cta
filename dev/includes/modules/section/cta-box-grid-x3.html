@@ -1,0 +1,57 @@
+<section class="cta-box-grid-x3 @@bgColor position-relative">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <h1 class="mb-10 mb-md-25">How to Bring FoodCorps to Your District</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="boxgrid-slider">
+                    <div class="swiper-wrapper">
+                        <div class="item swiper-slide">
+                            @@include('../cards/card-cta-box.html',{
+                                'showHide': 'd-none',
+                                'title': '',
+                                'para' : '<strong>Are you a parent or community member</strong> looking to bring change to your school system? We have resources to help you here ',
+                                'bgColor': 'bg-light',
+                                'btnText': 'Change the system'
+                            })
+                        </div>
+                        <div class="item swiper-slide">
+                            @@include('../cards/card-cta-box.html',{
+                                'showHide': 'd-none',
+                                'title': '',
+                                'para' : '<strong>Are you an educator</strong> interested in FoodCorps classroom resources? Click here to view lesson plans and more',
+                                'bgColor': 'bg-light',
+                                'btnText': 'Resources'
+                            })
+                        </div>
+                        <div class="item swiper-slide">
+                            @@include('../cards/card-cta-box.html',{
+                                'showHide': 'd-none',
+                                'title': '',
+                                'para' : 'Lorem where FoodCorps serves now ipsum dolor sit amet aliquet ac enim et volutpat. Integer congue aliquam orci',
+                                'bgColor': 'bg-light',
+                                'btnText': 'Where you’ll serve'
+                            })
+                        </div>
+                    </div>
+                    <div class="slider__controls slider-01-control">
+                        <div class="slider__pagination"></div>
+                    </div>
+                    <div class="slider__controls slider-01-control slider__buttons">
+                        <div class="slider__button-prev">
+                            <i class="icon-arrow-left"></i>
+                        </div>
+                        <div class="slider__button-next">
+                            <i class="icon-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="scripts/slider-box-grid.js"></script>

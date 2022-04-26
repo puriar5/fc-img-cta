@@ -1,0 +1,212 @@
+.link {
+    &-text {
+        text-decoration: underline;
+    }
+
+    &-dark-green {
+        color: $dark-green;
+    }
+
+    &-wobble {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+
+        &:after {
+            content: "";
+            position: absolute;
+            height: 0.4rem;
+            width: calc(100% + 4px);
+            border-radius: 0.4rem;
+            left: -0.2rem;
+            bottom: -1.2rem;
+            background-color: $primary;
+            transition: 0.3s ease all .1s;
+        }
+
+        &.text-secondary {
+            &::after {
+                background-color: $secondary;
+            }
+        }
+
+        &.text-light {
+            &::after {
+                background-color: $light;
+            }
+        }
+
+        &:hover {
+            &::after {
+                bottom: -2rem;
+                transition: 0.4s ease all;
+            }
+        }
+    }
+
+    &-underline {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+
+        &:after {
+            content: "";
+            position: absolute;
+            height: 0.4rem;
+            width: calc(100% + 4px);
+            border-radius: 0.4rem;
+            left: -0.2rem;
+            bottom: -1.2rem;
+            background-color: $secondary;
+            transition: 0.3s ease all .1s;
+        }
+
+        &.line-primary {
+            &::after {
+                background-color: $primary;
+            }
+        }
+
+        &.line-red {
+            &::after {
+                background-color: $red;
+            }
+        }
+
+        &.line-yellow {
+            &::after {
+                background-color: $yellow;
+            }
+        }
+
+        &.line-magenta {
+            &::after {
+                background-color: $magenta;
+            }
+        }
+
+        &.line-purple {
+            &::after {
+                background-color: $purple;
+            }
+        }
+
+        &:hover {
+            &::after {
+                transition: 0.4s ease all;
+            }
+        }
+    }
+
+    &-animated-line {
+        a {
+            position: relative;
+
+            >.main {
+                display: flex;
+                align-items: center;
+                transition: all 0.2s;
+            }
+
+            .the-arrow {
+                width: 0.3rem;
+                transition: all 0.2s;
+
+                &.-left {
+                    position: absolute;
+                    top: 1.3rem;
+                    left: -3.8rem;
+
+                    >.shaft {
+                        width: 0;
+                        background-color: $orange;
+
+                        .background-line-primary & {
+                            background-color: $primary;
+                        }
+                        .background-line-red & {
+                            background-color: $red;
+                        }
+                        .background-line-yellow & {
+                            background-color: $orange;
+                        }
+                        .background-line-magenta & {
+                            background-color: $magenta;
+                        }
+                        .background-line-purple & {
+                            background-color: $purple;
+                        }
+                    }
+
+                    >.shaft {
+                        background-color: $orange;
+                        display: block;
+                        height: 0.3rem;
+                        position: relative;
+                        transition: all 0.2s;
+                        transition-delay: 0;
+                        will-change: transform;
+
+                        .background-line-primary & {
+                            background-color: $primary;
+                        }
+                        .background-line-red & {
+                            background-color: $red;
+                        }
+                        .background-line-yellow & {
+                            background-color: $orange;
+                        }
+                        .background-line-magenta & {
+                            background-color: $magenta;
+                        }
+                        .background-line-purple & {
+                            background-color: $purple;
+                        }
+
+                    }
+                }
+            }
+
+            &:hover {
+
+                >.the-arrow.-left {
+                    >.shaft {
+                        width: 5.2rem;
+                        transition-delay: 0.1s;
+                        background-color: $orange;
+
+                        .background-line-primary & {
+                            background-color: $primary;
+                        }
+                        .background-line-red & {
+                            background-color: $red;
+                        }
+                        .background-line-yellow & {
+                            background-color: $orange;
+                        }
+                        .background-line-magenta & {
+                            background-color: $magenta;
+                        }
+                        .background-line-purple & {
+                            background-color: $purple;
+                        }
+                    }
+                }
+
+                >.main {
+                    transform: translateX(0.3rem);
+                    transform: translateX(3.2rem);
+                }
+            }
+        }
+
+    }
+
+}
+
+.hide-link-text {
+    span {
+        text-indent: -9999px;
+    }
+}

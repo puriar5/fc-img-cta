@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'FoodCorps Sections'})
+</head>
+
+<body>
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html', {
+                <!-- 'headerSkin': 'theme-header--dark' -->
+            })
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--left" data-focus="#first-link">
+                <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+            </div>
+            <main class="theme-main">
+
+                <header class="mt-20 py-20">
+                    <div class="container">
+                        <div class="row mt-20">
+                            <div class="col text-center m">
+                                <h1>Sections B</h1>
+                                <hr class="my-10" />
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="container py-20 my-20">
+                    <h4 class="text-primary mb-8">Image BL Text R Reverse(image-bl-text-r)</h4>
+                    <hr class="my-10">
+                </div>
+
+                <section class="image-bl-text-r image-bl-text-r--reverse">
+                    <div class="image-bl-text-r__bg">
+                        <svg width="1441" height="734" viewBox="0 0 1441 734" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M790.337 349.415C645.573 349.415 312.625 302.872 0 522.5V716C180.965 523.01 395.669 397.181 790.337 349.415Z"
+                                fill="#4FB075" />
+                            <path class="quote-svg-bg" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1441 0.360107C1384.39 282.485 1131.13 353.543 866.331 349.79C601.534 346.037 192.965 349.688 2.84314e-05 671V734C107.798 734 588.578 734 1441 734V0.360107Z"
+                                fill="#eae0d5" />
+                        </svg>
+                    </div>
+                    <div class="image-bl-text-r__wrapper">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-5 col-lg-5">
+                                    <div class="image-bl-text-r__left sticky-md-top">
+                                        <figure class="thumbnail-img">
+                                            <img src="images/image_serving@2x.png" alt="Thumbnail Image">
+                                        </figure>
+                                        <figcaption>Lorem ipsum image credit dolor</figcaption>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-lg-7 col-xl-6">
+                                    <div class="image-bl-text-r__right">
+                                        <p>Serving as an <a href="">AmeriCorps member</a> with FoodCorps is a full-time, eleven and a half month commitment. The 1,700 hours you’ll serve between August to July will mostly take place during school and business hours, but evenings and weekends are occasionally required. You’ll also join us in Portland, Oregon in early August for a week-long orientation (don’t worry, we’ll cover the costs).
+                                        </p>
+                                        <p>
+                                            Want to know what it’s like to serve in a particular community?Contact the corresponding regional program coordinator, program manager, or director via the Connect section of the state’s page.
+                                        </p>
+                                    </div>
+                                    <div class="image-bl-text-r__footer">
+                                        <a href='' class='btn btn-primary btn-bubble mt-6' title='title'>Where you’ll serve</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container py-20 my-20">
+                    <h4 class="text-primary mb-8">Icon Grid x3 // Icon Text</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/icon-grid-three.html',{
+                    'bgColor'   :   'bg-sand',
+                    "results"  : {
+                        "list": [
+                        {
+                            'imgLocation'                   :   'images/svg-hands.svg',
+                            'h4Title'                       :   'Lead hands-on lessons',
+                            'description'                   :   'You’ll teach students to grow, cook, and taste new foods, not only changing their preferences but potentially changing their lives by making healthy, delicious food central to their daily experience. You’ll collaborate with teachers on integrating food into the curriculum, and you may help organize field trips to local farms or visits from chefs.'
+                            },
+                            {
+                            'imgLocation'                   :   'images/svg-lunch.svg',
+                            'h4Title'                       :   'Influence healthy school meals',
+                            'description'                   :   'You’ll cultivate a cafeteria experience that excites kids to try new foods and naturally steers them toward the healthiest options, empowering them to take control of their eating experience. Youll get kids in the cafeteria to try samples during taste tests, and you may even work with food service directors and farmers to get local foods onto the lunch line.'
+                            },
+                            {
+                            'imgLocation'                   :   'images/svg-health.svg',
+                            'h4Title'                       :   'Build a schoolwide culture of health',
+                            'description'                   :   'Together with the school community, you’ll work to ensure that the whole school environment—from hallways to classrooms to the cafeteria—celebrates healthy food. You may plan family cooking nights and organize healthy fundraisers.'
+                            },
+                            {
+                            'imgLocation'                   :   'images/svg-training.svg',
+                            'h4Title'                       :   'Lorem training  headline dolor',
+                            'description'                   :   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                            },
+                            {
+                            'imgLocation'                   :   'images/svg-community.svg',
+                            'h4Title'                       :   'Lorem become part of the FC community',
+                            'description'                   :   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                            },
+                        ]
+                    },
+                })
+
+
+                <div class="container py-20 my-20">
+                    <h4 class="text-primary mb-8">Featured Icon Reversed</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/featured-icon.html',{
+                    'bgColor'               :   'bg-light',
+                    'modifier'              :   'featured-icon--reverse',
+                    'iconName'              :   'icon-lesson.svg',
+                    'bodyMoving': true,
+                    'bodyMovingPath': 'images/icon-training-red.json',
+                })
+                
+                <div class="container py-20 my-20">
+                    <h4 class="text-primary mb-8">Featured Icon</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/featured-icon.html',{
+                    'bgColor'               :   'bg-light',
+                    'iconName'              :   'icon-peace@2x.png',
+                    'bodyMoving': true,
+                    'bodyMovingPath': 'images/icon-training-red.json',
+                })
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">Body Text (Two Column)</h4>
+                    <hr class="my-10">
+                </div>
+
+                 <!-- Two column body text -->
+                 @@include('includes/modules/section/two-col-body-text.html', {
+                    'bgcolor': 'bg-sand',
+                    'description'   :   '<p>Our mission, vision, policies, procedures, and Board agreements have been recently revisited to acknowledge systemic racism and classism, how they inform the problem we’re trying to solve, and how we must address them in order to achieve our mission. We actively work with other organizations and institutions to address systemic inequalities. We identify as a</p> <p> social justice organization and invite external partners to hold us accountable to our commitment. We require anti-oppression training programs for staff and board. And we are constantly finding and refining ways to engage funding and industry partners about our commitment to undoing racism and classism. This work is critical to achieving our shared goals.</p>'
+                })
+
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">Policy Grid</h4>
+                    <hr class="my-10">
+                </div>
+
+                 <!-- Policy Grid -->
+                 @@include('includes/modules/section/policy-grid.html', {
+                    'bgColor': 'bg-light',
+                })
+
+
+                <!-- /Section Quote Single Dark -->
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">Quote - Single (Light)</h4>
+                    <hr class="my-10">
+                </div>
+
+                 <!-- Section Quote Single Dark -->
+                 @@include('includes/modules/section/quote-single-dark.html', {
+                    'bgColor': 'bg-light',
+                    'textColor': '',
+                })
+                <!-- /Section Quote Single Dark -->
+
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">Quote - Single (Light)</h4>
+                    <hr class="my-10">
+                </div>
+
+                 <!-- Section Quote Single Dark -->
+                 @@include('includes/modules/section/quote-single-dark.html', {
+                    'bgColor': 'bg-sand',
+                    'textColor': '',
+                })
+                <!-- /Section Quote Single Dark -->
+
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">Quote - Single (Dark)</h4>
+                    <hr class="my-10">
+                </div>
+
+                 <!-- Section Quote Single Dark -->
+                 @@include('includes/modules/section/quote-single-dark.html', {
+                    'bgColor': 'bg-dark-green',
+                    'textColor': 'text-white',
+                })
+                <!-- /Section Quote Single Dark -->
+
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">funder-partner-grid(Funder Partner Grid)</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/funder-partner-grid.html',{
+                    'h3Title'           :       'Leader for Healthy Kids',
+                    'headerDescription' :       'Turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet',
+                    'sliderName'        :       'slider-01',
+                    "partners"  : {
+                        "list": [
+                            {
+                                'cardImage'            :   'logo-walmart-org@2x.png',
+                                'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                                'cardBg'               :   'bg-primary'
+
+                            },
+                        ]
+                    },
+                })
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">funder-partner-grid(Funder Partner Grid Slider)</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/funder-partner-grid.html',{
+                    'h3Title'           :       'Partner for Healthy Kids',
+                    'headerDescription' :       'Turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet',
+                    'sliderName'        :       'slider-03',
+                    "partners"  : {
+                        "list": [
+                            {
+                                'cardImage'            :   'logo-cs-cares@2x.png',
+                                'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                                'cardBg'               :   'bg-primary'
+                            },
+                            {
+                                'cardImage'            :   'logo-new-balance@2x.png',
+                                'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                                'cardBg'               :   'bg-red'
+                            },
+                            {
+                                'cardImage'            :   'logo-sodexo@2x.png',
+                                'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                                'cardBg'               :   'bg-yellow'
+                            },
+                            {
+                                'cardImage'            :   'logo-boa@2x.png',
+                                'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                                'cardBg'               :   'bg-magenta'
+                            },
+                            {
+                                'cardImage'            :   'logo-campbells@2x.png',
+                                'cardDescription'      :   'Lorem Rachel Ray’s Yum-O description copy aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla eros. Integer ut ante id risus.',
+                                'cardBg'               :   'bg-purple'
+                            },
+                        ]
+                    },
+                })
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">filter-tabs(Filter as tabs closed/open)</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/filter-tabs.html',{
+                })
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mt-20 mb-8 pt-20">text-card-slider(Text-card slider)</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/text-card-slider.html',{
+                    'quoteBg'           :       'quote-bg-white.svg',
+                    'quoteSkin'         :       'quote-l-image-r--white',
+                    'iconQuote'         :       'icon-quote-primary@2x.png',
+                    'h3Title'           :       'Lorem ipsum quote from The Skillet story dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+                    'linkText'          :       'Read Story CTA',
+                    'mainFigure'        :       'fpo-quote-img-2@2x.webp',
+                    'figCaption'        :       'Lorem ipsum image credit dolor',
+                    'bodyMoving'        :       true,
+                    'bodyMovingPath'    :       'images/icon-quote.json',
+                })
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">quote-l-image-r (Quote L + image R (white Reverse))</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/quote-l-image-r.html',{
+                    'quoteModifier'     :       'quote-l-image-r--reversed',
+                    'quoteBg'           :       'quote-bg-white.svg',
+                    'quoteSkin'         :       'quote-l-image-r--white',
+                    'iconQuote'         :       'icon-quote-primary@2x.png',
+                    'h3Title'           :       'Lorem ipsum quote from The Skillet story dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+                    'linkText'          :       'Read Story CTA',
+                    'mainFigure'        :       'fpo-quote-img-3@2x.png',
+                    'figCaption'        :       'Lorem ipsum image credit dolor',
+                    'bodyMoving'        :       true,
+                    'bodyMovingPath'    :       'images/icon-quote.json',
+                })
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">quote-l-image-r (Quote L + image R (Slider))</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/quote-l-image-r-slider.html',{
+                    'quoteSkin'         :       'quote-l-image-r--white',
+                    'quoteModifier'     :       'quote-l-image-r--slider',
+                    'iconQuote'         :       'icon-quote-primary@2x.png',
+                    'linkText'          :       'Read Story CTA',
+                    'mainFigure'        :       'fpo-quote-img-2@2x.webp',
+                    'figCaption'        :       'Lorem ipsum image credit dolor',
+                    'bodyMoving'        :       true,
+                    'bodyMovingPath'    :       'images/icon-quote-green.json',
+                })
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">quote-l-image-r (Quote L + image R (white))</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/quote-l-image-r.html',{
+                    'quoteBg'           :       'quote-bg-white.svg',
+                    'quoteSkin'         :       'quote-l-image-r--white',
+                    'iconQuote'         :       'icon-quote-primary@2x.png',
+                    'h3Title'           :       'Lorem ipsum quote from The Skillet story dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+                    'linkText'          :       'Read Story CTA',
+                    'mainFigure'        :       'fpo-quote-img-2@2x.webp',
+                    'figCaption'        :       'Lorem ipsum image credit dolor',
+                    'bodyMoving'        :       true,
+                    'bodyMovingPath'    :       'images/icon-quote.json',
+                    
+                })
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">quote-l-image-r (Quote L + image R (Dark))</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/quote-l-image-r.html',{
+                    'quoteBg'           :       'quote-bg.svg',
+                    'iconQuote'         :       'icon-quote@2x.png',
+                    'h3Title'           :       'Lorem ipsum quote from somewhere story dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+                    'quoteColor'        :       'text-white',
+                    'linkText'          :       'Lorem Impact Page CTA',
+                    'mainFigure'        :       'fpo-quote-img.webp',
+                    'figCaption'        :       'Lorem ipsum image credit dolor',
+                    'bodyMoving'        :       true,
+                    'bodyMovingPath'    :       'images/icon-quote.json',
+                })
+
+                <div class="container my-10">
+                    <h4 class="text-primary mb-8">search-result (Search Result)</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/search-result.html',{
+                    "results"  : {
+                        "list": [
+                            {
+                            'imgLocation'                   :   'images/fpo-search-img@2x.png',
+                            'title'                         :   'Lorem | Headline Of Page Search Result Term Exists On',
+                            'eyebrow1'                      :   'https://foodcorps.org/pagename',
+                            'description'                  :   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor quis nostrud exercitation ullamco enim ad minim veniam, quis nostrud exercitation…'
+                            },
+                            {
+                            'imgLocation'                   :   'images/fpo-search-img@2x.png',
+                            'title'                         :   'Lorem | Headline Of Page Search Result Term Exists On',
+                            'eyebrow1'                      :   'https://foodcorps.org/pagename',
+                            'description'                  :   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor quis nostrud exercitation ullamco enim ad minim veniam, quis nostrud exercitation…'
+                            },
+                            {
+                            'imgLocation'                   :   'images/fpo-search-img@2x.png',
+                            'title'                         :   'Lorem | Headline Of Page Search Result Term Exists On',
+                            'eyebrow1'                      :   'https://foodcorps.org/pagename',
+                            'description'                  :   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor quis nostrud exercitation ullamco enim ad minim veniam, quis nostrud exercitation…'
+                            },
+                            {
+                            'imgLocation'                   :   'images/fpo-search-img@2x.png',
+                            'title'                         :   'Lorem | Headline Of Page Search Result Term Exists On',
+                            'eyebrow1'                      :   'https://foodcorps.org/pagename',
+                            'description'                  :   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor quis nostrud exercitation ullamco enim ad minim veniam, quis nostrud exercitation…'
+                            },
+                            {
+                            'imgLocation'                   :   'images/fpo-search-img@2x.png',
+                            'title'                         :   'Lorem | Headline Of Page Search Result Term Exists On',
+                            'eyebrow1'                      :   'https://foodcorps.org/pagename',
+                            'description'                  :   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor quis nostrud exercitation ullamco enim ad minim veniam, quis nostrud exercitation…'
+                            }
+                        ]
+                    },
+                })
+
+                <div class="container my-10">
+                    <h4 class="text-primary mb-8">search-resources (Search Resources)</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/search-resources.html',{
+                    "results"  : {
+                        "list": [
+                            {
+                            'imgLocation'                   :   'images/fpo-search-img-02@2x.png',
+                            'title'                         :   'Resource title lorem ipsum dolor',
+                            },
+                            {
+                            'imgLocation'                   :   'images/fpo-search-img-02@2x.png',
+                            'title'                         :   'Resource title lorem ipsum dolor',
+                            },
+                            {
+                            'imgLocation'                   :   'images/resource-icon-img@2x.png',
+                            'title'                         :   'Resource title lorem ipsum dolor',
+                            },
+                            {
+                            'imgLocation'                   :   'images/fpo-search-img-03@2x.png',
+                            'title'                         :   'Resource title lorem ipsum dolor',
+                            },
+                            {
+                            'imgLocation'                   :   'images/fpo-search-img-02@2x.png',
+                            'title'                         :   'Resource title lorem ipsum dolor',
+                            },
+                            {
+                            'imgLocation'                   :   'images/resource-icon-img@2x.png',
+                            'title'                         :   'Resource title lorem ipsum dolor',
+                            },
+                            {
+                            'imgLocation'                   :   'images/fpo-search-img-03@2x.png',
+                            'title'                         :   'Resource title lorem ipsum dolor',
+                            },
+                            {
+                            'imgLocation'                   :   'images/fpo-search-img-02@2x.png',
+                            'title'                         :   'Resource title lorem ipsum dolor',
+                            },
+                            {
+                            'imgLocation'                   :   'images/resource-icon-img@2x.png',
+                            'title'                         :   'Resource title lorem ipsum dolor',
+                            },
+                        ]
+                    },
+                })
+                <div class="container my-10">
+                    <h4 class="text-primary mb-8">select-grid-2-2 (2x2 Select Grid)</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/select-grid-2-2.html',{
+                    'bgColor'                               : 'bg-light',
+                    'h2Title'                               :   'Here’s what you can do',
+                })
+                
+
+                <div class="container pt-10 mt-10">
+                    <h4 class="text-primary mb-8">contact-form(Text header A + Dropdown)</h4>
+                    <hr class="mt-10 mb-0">
+                </div>
+                @@include('includes/modules/section/contact-form.html')
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">text-cta-box(Text CTA box)</h4>
+                    <hr class="my-10">
+                </div>
+                @@include('includes/modules/section/text-cta-box.html',{
+                    'bodyMoving'            :   true,
+                    'bodyMovingPath'        : 'images/icon-question.json',
+                    'iconName'      :       'icon-question.svg',
+                    'h3Title'       :       'Are you interested in a career at FoodCorps?',
+                    'titleShowHide' :       'd-none',
+                    'paragraph'     :       'Want to volunteer or want to learn what joining the corps would be like in a specific state? Contact the state’s staff members via the Connect section of the state’s page.',
+                    'linkText'      :       'Lorem page cta'
+
+                })
+                <section>
+                    <div class="container">
+                    </div>
+                </section>
+            </main>
+        </div>
+        @@include('includes/scripts.html')
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+@import "../common-imports";
+
+.column-txt-withbg {
+
+    &.thumb-not-active {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    svg,
+    figure {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        @include media-breakpoint-up(xl) {
+            padding-top: 3rem;
+        }
+    }
+    padding-top: 16.7rem;
+    margin-top: -25%;
+    padding-bottom: 6rem;
+    
+    @include media-breakpoint-up(md) {
+        padding-bottom: 8rem;
+        padding-top: 30rem;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-top: 36rem;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-top: 51.5rem;
+        padding-bottom: 10.2rem;
+    }
+    @include media-breakpoint-up(xxxl) {
+        padding-top: 61rem;
+    }
+    h3 {
+        font-weight: 600;
+    }
+    .container {
+        @include media-breakpoint-up(md) {
+            max-width: 68rem;
+        }
+        @include media-breakpoint-up(lg) {
+            max-width: 80rem;
+        }
+        @include media-breakpoint-up(xl) {
+            max-width: 88rem;
+        }
+    }
+    .row {
+        @include media-breakpoint-up(xl) {
+            margin: 0 -9.75rem;
+        }
+        [class*="col-"] {
+            @include media-breakpoint-up(xl) {
+                padding: 0 9.75rem;
+            }
+            &:not(:last-child) {
+                ul {
+                    margin-bottom: 2.4rem;
+                    @include media-breakpoint-up(md) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    ul {
+        li {
+            &:not(:last-child) {
+                margin: 0 0 2.4rem;
+            }
+        }
+    }
+}

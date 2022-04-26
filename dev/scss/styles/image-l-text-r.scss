@@ -1,0 +1,167 @@
+@import "../common-imports";
+.image-l-text-r {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 15rem;
+    z-index: 9;
+    @include media-breakpoint-up(md){
+        padding-top: 6rem;
+        padding-bottom: 30rem;
+    }
+    @include media-breakpoint-up(xl){
+        overflow: visible;
+        padding-bottom: 34rem;
+    }
+    &__img {
+        position: relative;
+        max-width: 80%;
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 70%;
+            max-width: 41.2%;
+        }
+        @include media-breakpoint-up(lg) {
+            max-width: 62rem;
+            max-height: 100%;
+            margin-left: -0.1rem;
+        }
+        .svg-img {
+            max-width: 62rem;
+            max-height: 71.9rem;
+        }
+    }
+    &__text {
+        padding-top: 5.6rem;
+        @include media-breakpoint-up(lg) {
+            padding: 16.8rem 0 28.1rem;
+            max-width: 51.8rem;
+        }
+        h3,.h3{
+            font-weight: $font-weight-semibold;
+            margin-bottom: 1.2rem;
+        }
+        p{
+            margin-bottom: 2.4rem;
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__offset {
+        position: absolute;
+        bottom: 0;
+        max-width: 13rem;
+        font-size: 1.2rem;
+        bottom: -11%;
+        left: 13%;
+        line-height: 1.6rem;
+        @include media-breakpoint-up(md) {
+            bottom: 9%;
+            left: 3.2rem;
+            margin-top: 0.8rem;
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 1.4rem;
+            margin-top: 0;
+            bottom: 7%;
+            left: 15%;
+        }
+    }
+    &--reverse{
+        padding: 4rem 0 0;
+        @include media-breakpoint-up(md){
+            padding: 0;
+        }
+        .container{
+            .row{
+                flex-direction: column-reverse;
+                .col-md-6{
+                    @include media-breakpoint-up(lg){
+                        margin-left: 8.33%;
+                    }
+                }
+            }
+        }
+        .image-l-text-r{
+            &__img{
+                left: auto;
+                right: 0;
+                max-width: 38rem;
+                margin-left: auto;
+                @include media-breakpoint-up(md){
+                    height: 42rem;
+                }
+                @include media-breakpoint-up(lg){
+                    max-width: 55.5rem;
+                    height: 61.6rem;
+                }
+            }
+            &__text{
+                max-width: none;
+                padding-bottom: 4rem;
+                @include media-breakpoint-up(md){
+                    padding-top: 11.2rem;
+                    margin-right: -17.4%;
+                }
+                @include media-breakpoint-up(lg){
+                    margin-right: 0;
+                    padding-bottom: 12rem;
+                }
+                p{
+                    @include media-breakpoint-up(xxl){
+                        padding-right: 4rem;
+                    }
+                }
+            }
+            &__offset{
+                left: auto;
+                right: 15%;
+                bottom: auto;
+            }
+        }
+    }
+    &.bg-dark-green{
+        color: $light;
+    }
+    &--narrow{
+        padding-top: 0;
+        @include media-breakpoint-up(md){
+            padding-bottom: 10.2rem;
+        }
+        @include media-breakpoint-up(lg){
+            padding-bottom: 18.6rem;
+        }
+        .image-l-text-r{
+            &__img{
+                @include media-breakpoint-up(md){
+                    height: auto;
+                    top: 0;
+                }
+                @include media-breakpoint-up(lg){
+                    max-width: 48rem;
+                }
+
+                @include media-breakpoint-up(xxxl){
+                    max-width: 57.1rem;
+                }
+            }
+            &__text{
+                padding-bottom: 0;
+                @include media-breakpoint-up(md){
+                    margin-left: -18.55%;
+                }
+                @include media-breakpoint-up(lg){
+                    margin-left: 0;
+                    margin-left: -17%;
+                    max-width: 60rem;
+                    padding-top: 12rem;
+                }
+            }
+            &__offset{
+                bottom: auto;
+            }
+        }
+    }
+}

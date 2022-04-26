@@ -1,0 +1,60 @@
+<section class="lead-video overflow-hidden position-relative d-flex align-items-md-center">
+    <div class="hero-video hero-overlay">
+        <video id="js-hero-video" poster="images/@@posterImage" muted="" autoplay="" loop=""
+            style="object-fit: cover;width:100%;height:100%;" playsinline="">
+            <source type="video/mp4" src="@@videoSource">
+            <!-- <source type="video/mp4" src="https://player.vimeo.com/video/247880988.hd.mp4?h=65769a7948&autoplay=1&title=0&byline=0&portrait=0"> -->
+        </video>
+    </div>
+    <div class="hero-content w-100 position-relative">
+        <div class="container">
+            <div class="row justify-content-between align-items-center align-items-tb-start align-items-lg-center">
+                <div class="col-md-6 col-lg-5">
+                    <h1 class="text-light">@@h1Title</h1>
+                    <p class="text-light @@showHideDescription">
+                        @@heroDescription
+                    </p>
+                    <a href="#" class="btn btn-primary btn-bubble @@showHideCta">
+                        @@ctaText
+                    </a>
+                </div>
+                <div class="col-md-2 col-lg-1 text-end">
+                    <button type="button" class="btn-circle @@showHideButton" id="js-trigger-video">
+                        <img src="images/icon-pause.svg" alt="" class="img-pause">
+                    </button>
+                    <figcaption class="lead-video-figcaption @@showHideCaption text-light">
+                        <p class="eyebrow-2 fst-italic text-end">
+                            @@figCaption
+                        </p>
+                    </figcaption>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lead-video-bg">
+        <div class="d-none d-md-block lead-video-bg-svg lead-video-bg-lg">
+            <svg width="1440" height="327" viewBox="0 0 1440 327" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="bottom-wave"
+                    d="M0 151.642C229.84 234.085 256.113 261.56 482.665 253.824C994.809 236.336 1088.24 17.4882 1440 0.5C1440 0.5 1440 116.261 1440 325.782L0 326.029C0 217.104 0 151.642 0 151.642Z"
+                    fill="#00524C" />
+                <path
+                    d="M1439 0.5C1287.11 0.5 1030.78 108.632 959.834 141.336C888.883 174.04 470.65 341.767 0 141.336C0 234.591 0 276.084 0 265.816C347.42 360.655 689.758 316.731 1027.01 134.044C1174.68 54.0527 1334.5 0.5 1439 0.5Z"
+                    fill="#4FB075" />
+            </svg>
+
+        </div>
+        <div class="d-md-none lead-video-bg-svg lead-video-lg-sm">
+            <svg width="375" height="72" viewBox="0 0 375 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="bottom-wave"
+                    d="M0.23872 44.3963L206.284 48.8567L298.037 36.2748L375 4.27478V71.2748H0L0 47.472V45.2424"
+                    fill="#00524C" />
+                <path
+                    d="M374.713 0.0357785C364.199 3.11357 375.005 -0.270239 360.963 6.20225C334.28 18.5011 176.996 81.578 0 6.20225C0 41.2724 0 56.8767 0 53.0152C167.568 66.4893 292.473 51.924 374.713 9.31944C375.116 9.11088 374.809 8.81821 374.713 8.02348C374.577 6.89446 374.653 5.1428 374.713 3.72019C374.771 2.33985 374.619 1.52672 374.713 0.83818C374.774 0.389369 375.327 -0.143977 374.713 0.0357785Z"
+                    fill="#4FB075" />
+            </svg>
+        </div>
+    </div>
+</section>
+
+
+<script src="scripts/lead-video.js"></script>

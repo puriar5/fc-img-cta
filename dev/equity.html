@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'Foodcorps - Equity Inclusion'})
+    <link rel="stylesheet" href="css/styles/page-equity.min.css" />
+</head>
+
+<body>
+
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html', {
+                'headerSkin':   'theme-header--white',
+                'menuSkin'  :   'menu-toggler--white',
+            })
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--left" data-focus="#first-link">
+                <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+            </div>
+            <main class="theme-main">
+
+
+                <!-- Leadspace Video -->
+                @@include('includes/modules/section/lead-video.html',{
+                    'h1Title'               :       'Equity & Inclusion',
+                    'showHideDescription'   :       'd-none',
+                    'videoSource'           :       'http://s3-us-west-2.amazonaws.com/hikercms/6/115/426/1646839460400.mp4',
+                    'posterImage'           :       'hero-what-poster@2x.jpg',
+                    'showHideCta'           :       'd-none',
+                    'showHideCaption'       :       'd-none',
+                })
+                <!-- /Leadspace Video -->
+                
+                <!-- image L text r reverse -->
+                @@include('includes/modules/section/image-l-text-r--reverse.html',{
+                    'modifier'      :       'image-l-text-r--reverse',
+                })
+                <!-- image L text r reverse -->
+
+                 <!-- Shifting -->
+                 @@include('includes/modules/section/shifting.html',{
+                    'hasSvg' : 'hasNoSvg',
+                    'themeModifier'  : 'light',
+                    'modifier'  : 'horizontal',
+                    'reverseModifier': 'default', 
+                })
+                <!-- Shifting -->
+
+                 <!-- Two column body text -->
+                 @@include('includes/modules/section/two-col-body-text.html', {
+                    'bgcolor': 'bg-sand',
+                    'description'   :   '<p>Our mission, vision, policies, procedures, and Board agreements have been recently revisited to acknowledge systemic racism and classism, how they inform the problem we’re trying to solve, and how we must address them in order to achieve our mission. We actively work with other organizations and institutions to address systemic inequalities. We identify as a</p> <p> social justice organization and invite external partners to hold us accountable to our commitment. We require anti-oppression training programs for staff and board. And we are constantly finding and refining ways to engage funding and industry partners about our commitment to undoing racism and classism. This work is critical to achieving our shared goals.</p>'
+                })
+
+                <!-- Tab accordion horizontal -->
+                @@include('includes/modules/section/tab-accordion-horizontal.html',{
+                    'bgColor'   : 'bg-sand',
+                    'titleShowHide' :   'd-none',
+                    'hasSvg' : 'hasNoSvg',
+                    'themeModifier'  : 'light',
+                    'modifier'  : 'horizontal',
+                    'reverseModifier': 'default', 
+                })
+                <!-- Tab accordion horizontal -->
+                
+                <!-- Select grid 2 2 -->
+                @@include('includes/modules/section/select-grid-2-2--03.html',{
+                    'bgColor'                               :   '',
+                    'h2Title'                               :   'Resources',
+                })
+                <!-- Select grid 2 2 -->
+
+                <!-- Image cta -->
+                @@include('includes/modules/section/image-cta-box-a.html', {
+                    'overlay'   :   'overlay-4',
+                    'bgColor'   : 'bg-light',
+                    'thumb': 'images/img-cta-04@2x.jpg',
+                    'showHideEyebrow':'d-none',
+                    'title': 'Headline EDI Report Lorem',
+                    'image-ctabox-aModifier':'image-ctabox-a--titlemargin',
+                    'text': 'Lorem ipsum dolor sit amet',
+                    'btnTxt': 'CTA to page'
+                })
+                <!-- Image cta -->
+            </main>
+        </div>
+        @@include('includes/footer.html')
+        @@include('includes/scripts.html')
+        
+    </div>
+</body>
+
+</html>

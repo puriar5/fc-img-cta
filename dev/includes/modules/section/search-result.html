@@ -1,0 +1,52 @@
+<section class="search-result bg-light">
+    <div class="search-result-form bg-sand position-relative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="wpcf7-form init wpcf7-acceptance-as-validation form-inline">
+                        <div class="d-flex position-relative">
+                            <div class="form-group w-100 mb-0">
+                                <input type="text" class="form-control" id="searchInput" aria-describedby="emailHelp"
+                                    placeholder="What are you looking for?" />
+                            </div>
+                            <div class="form-group form-submit mb-0">
+                                <input type="submit" class="btn btn-primary" value="Search">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <header
+                    class="search-result-header d-md-flex align-items-lg-end position-relative mb-8 mb-md-12 mb-lg-15">
+                    <figure class="bodymoving search-result-header-figure mb-4 mb-md-0">
+                        <div class="js-bodymoving" data-path="images/icon-point.json"></div>
+                    </figure>
+                    <!-- <figure class="search-result-header-figure mb-4 mb-md-0">
+                        <img src="images/icon-point.svg" alt="">
+                    </figure> -->
+                    <div class="search-result-header-content ms-md-10 ms-lg-11 mb-lg-6">
+                        <h2 class="mb-2 mb-md-3 mb-lg-0">Search results for “Lorem”</h2>
+                        <p class="body-3">About (xx) results</p>
+                    </div>
+                </header>
+                <div class="search-result-main">
+                    <div class="search-result-main-title d-flex align-items-end mb-6 mb-lg-8">
+                        <h4 class="mb-0">Site pages</h4>
+                        <span class="page-num ms-4">(xx)</span>
+                    </div>
+                    <div class="search-result-content">
+                        @@for (var i = 0; i < results.list.length; i++) { @@include('../cards/card-a02.html',
+                            `+(JSON.stringify(results.list[i]))+`) } </div> <div
+                            class="search-result-cta text-center mt-6 mt-md-10 mt-lg-13">
+                            <a href='' class='btn btn-primary btn-bubble' title='title'>Load more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

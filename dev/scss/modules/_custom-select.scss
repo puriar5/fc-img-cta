@@ -1,0 +1,99 @@
+.custom-select {
+    position: relative;
+
+    select {
+        display: none;
+    }
+}
+
+.select-selected {
+    background-color: $light;
+    color: rgba($secondary, 0.5);
+    padding: 1.6rem 2.5rem;
+    border: 0.1rem solid $secondary;
+    border-radius: 1.1rem;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    &::after {
+        content: $icon-form-arrow-down;
+        position: absolute;
+        right: 2.1rem;
+        font-family: '#{$icomoon-font-family}';
+        font-size: 1.55rem;
+        color: $secondary;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.2s ease;
+    }
+
+    /*style the arrow inside the select element:*/
+
+    &.select-selected--is-active {
+        &::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        /*point the arrow upwards when the select box is open (active):*/
+    }
+
+    &--is-active {
+        border-bottom: none;
+        border-radius: 11px 11px 0 0;
+    }
+}
+
+/*style items (options):*/
+.select-items {
+    border: 1px solid $secondary;
+    border-top: none;
+    background-color: $light;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 0 0 3.6rem;
+    z-index: 99;
+    border-radius: 0 0 1.1rem 1.1rem;
+
+    >div {
+        color: $secondary;
+        cursor: pointer;
+        user-select: none;
+        transition: all 0.2s ease;
+        background-color: transparent;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        padding: 1.6rem 3.2rem 1.6rem 3.2rem;
+        
+        @include media-breakpoint-up(md) {
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+        
+        @include media-breakpoint-up(lg) {
+            font-size: 2.5rem;
+            line-height: 3rem;
+        }
+
+        &:hover {
+            background-color: $sand;
+        }
+    }
+
+    &--is-hide {
+        display: none;
+    }
+}

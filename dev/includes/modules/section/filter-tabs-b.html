@@ -1,0 +1,938 @@
+<section class="filter-tabs" id="filterTab">
+    <div class="filter-tabs-nav bg-sand">
+        <div class="container">
+            <div class="d-none d-md-block">
+                <ul class="nav nav-pills mb-3 d-flex align-items-center justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="nav-tab-01" data-bs-toggle="tab" data-bs-target="#nav-01"
+                            type="button" role="tab" aria-controls="nav-01" aria-selected="true">All</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="nav-tab-02" data-bs-toggle="tab" data-bs-target="#nav-02" type="button"
+                            role="tab" aria-controls="nav-02" aria-selected="false">News</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="nav-tab-03" data-bs-toggle="tab" data-bs-target="#nav-03" type="button"
+                            role="tab" aria-controls="nav-03" aria-selected="false">Stories</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="nav-tab-04" data-bs-toggle="tab" data-bs-target="#nav-04" type="button"
+                            role="tab" aria-controls="nav-04" aria-selected="false">Resources</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="nav-tab-05" data-bs-toggle="tab" data-bs-target="#nav-05" type="button"
+                            role="tab" aria-controls="nav-05" aria-selected="false">
+                            <i class="icon-search"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="d-md-none">
+                <div class="pill-filter pill-filter--pc">
+                    <button class="pill-filter--btn btn btn-primary active">
+                        All
+                    </button>
+                    <button class="pill-filter--btn btn btn-primary">
+                        News
+                    </button>
+                    <button class="pill-filter--btn btn btn-primary">
+                        Stories
+                    </button>
+                    <button class="pill-filter--btn btn btn-primary">
+                        Resources
+                    </button>
+                    <button class="pill-filter--btn btn btn-primary">
+                        <i class="icon-search"></i>
+                    </button>
+                </div>
+        
+                <div class="pill-filter--sp custom-select mb-10">
+                    <select>
+                        <option>All</option>
+                        <option>News</option>
+                        <option>Stories</option>
+                        <option>Resources</option>
+                        <option><i class="icon-search"></i></option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content" id="nav-tabContent">
+        <!-- TAB 01 Starts -->
+        <div class="tab-pane fade show active nav-01" id="nav-01" role="tabpanel" aria-labelledby="nav-tab-01">
+            @@include('skillet-grid-a.html',{
+                'bgColor'       :       'bg-light',
+                'dataColor'     :       'light'
+            })
+            
+
+
+            @@include('two-col-link-text-icon.html',{
+                'dataColor'     :       'light',
+                'bgColor'       :       'bg-light',
+                'iconName': 'images/icon-question.svg',
+                'bodyMoving'    :   true,
+                'bodyMovingPath': 'images/icon-question.json',
+                'seeAllCta'     :   true,
+            })
+
+            <section class="newsletter-signup-b position-relative overflow-hidden" data-color="sand">
+                <svg width="1442" height="1228" viewBox="0 0 1442 1228" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.296"
+                        d="M0 12.0173L40.056 17.1453C80.11 22.1133 160.222 32.3703 240.333 31.5673C320.444 30.7673 400.556 18.9083 480.667 9.93434C560.777 0.800337 640.889 -5.60966 721 7.21034C801.111 20.0303 881.222 52.0793 961.333 64.4183C1041.44 76.5963 1121.56 69.2253 1201.67 58.8093C1281.78 48.3933 1361.89 34.9333 1401.94 28.3623L1442 21.6323V1227.76H0V12.0173Z"
+                        fill="#EAE0D5" />
+                </svg>
+                <div class="newsletter-signup-b__inner position-relative">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 col-lg-6">
+                                <div class="form-wrapper">
+                                    <h3 class="mb-6 mb-lg-10">Newsletter</h3>
+                                    <p>Sign up for our nesletter and keep up with FoodCorps’ latest updates and stories.</p>
+                                    <div class="form-group mb-8 mb-lg-10">
+                                        <label for="emailid">Email address*</label>
+                                        <input type="email" class="form-control" id="emailid">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-yellow" value="Continue">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!-- Section Post -->
+             <section class="section-post section-post--center text-light bg-transition" data-color="dark-green">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2>Stories</h2>
+                            <p>
+                                Get inspired by stories about our engagement with schools and districts, our corps members’ direct service in schools, and visions of healthy and equitable food future for all kids.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Section Post -->
+
+            <!-- Section Quote Single Dark -->
+            <section class="quote-single-dark bg-transition position-relative bg-dark-green overflow-hidden" data-color="dark-green">
+                <figure class="thumbnail-img quote-single-dark__thumb">
+                    <svg width="726" height="511" viewBox="0 0 726 511" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.135324"
+                            d="M632.871 65.4818C698.345 108.203 733.076 194.242 724.601 272.54C716.125 350.987 664.611 421.843 599.303 459.057C533.83 496.271 454.729 499.843 369.148 505.649C283.567 511.454 191.505 519.492 125.035 482.278C58.5639 445.064 17.6844 362.598 4.88876 268.67C-7.74068 174.891 7.71378 69.6497 74.1845 26.9281C140.655 -15.7936 258.142 4.15314 364.828 13.8288C471.513 23.5044 567.563 22.909 632.871 65.4818Z"
+                            fill="#4FB075" />
+                    </svg>
+                </figure>
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-10 col-lg-8">
+                            <div class="slider-quote position-relative">
+                                <div class="swiper-wrapper">
+                                    <div class="item swiper-slide">
+                                        <article class="content text-white">
+                                            <h3>
+                                                Lorem ipsum quote or testimonial dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                            </h3>
+                                            <a href="#" class="link-text link-primary link-wobble" title="title">Read Story CTA</a>
+                                        </article>
+                                    </div>
+                                    <div class="item swiper-slide">
+                                        <article class="content text-white">
+                                            <h3>
+                                                Lorem ipsum quote or testimonial dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                            </h3>
+                                            <a href="#" class="link-text link-primary link-wobble" title="title">Read Story CTA</a>
+                                        </article>
+                                    </div>
+                                    <div class="item swiper-slide">
+                                        <article class="content text-white">
+                                            <h3>
+                                                Lorem ipsum quote or testimonial dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                            </h3>
+                                            <a href="#" class="link-text link-primary link-wobble" title="title">Read Story CTA</a>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="slider__controls slider-01-control slider-paginate">
+                                    <div class="slider__pagination"></div>
+                                </div>
+                                <div class="slider__controls slider-01-control slider__buttons">
+                                    <div class="slider__button-prev">
+                                        <i class="icon-arrow-left"></i>
+                                    </div>
+                                    <div class="slider__button-next">
+                                        <i class="icon-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <script src="scripts/slider-quote.js"></script>
+            <!-- /Section Quote Single Dark -->
+
+            @@include('skillet-grid-b.html',{
+                'bgColor'       :       'bg-dark-green',
+                'dataColor'     :       'dark-green'
+            })
+
+            @@include('benefit-of-service-01.html',{
+                'bgColor'       :       "bg-sand"
+            })
+
+
+        </div>
+        <!-- TAB 01 Ends -->
+
+        <!-- TAB 02 Starts -->
+        <div class="tab-pane fade nav-02" id="nav-02" role="tabpanel" aria-labelledby="nav-tab-02">
+            @@include('skillet-grid-a.html',{
+                'bgColor'       :       'bg-light',
+                'dataColor'     :       'light'
+            })
+
+
+            @@include('two-col-link-text-icon.html',{
+                'bgColor'       :       'bg-light',
+                'dataColor'     :       'light',
+                'iconName': 'images/icon-question.svg',
+                'bodyMoving'    :   true,
+                'bodyMovingPath': 'images/icon-question.json',
+                'seeAllCta'     :   false,
+            })
+
+            <section class="newsletter-signup-b position-relative overflow-hidden bg-transition" data-color="light">
+                <svg width="1442" height="1228" viewBox="0 0 1442 1228" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.296"
+                        d="M0 12.0173L40.056 17.1453C80.11 22.1133 160.222 32.3703 240.333 31.5673C320.444 30.7673 400.556 18.9083 480.667 9.93434C560.777 0.800337 640.889 -5.60966 721 7.21034C801.111 20.0303 881.222 52.0793 961.333 64.4183C1041.44 76.5963 1121.56 69.2253 1201.67 58.8093C1281.78 48.3933 1361.89 34.9333 1401.94 28.3623L1442 21.6323V1227.76H0V12.0173Z"
+                        fill="#EAE0D5" />
+                </svg>
+                <div class="newsletter-signup-b__inner position-relative">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 col-lg-6">
+                                <div class="form-wrapper">
+                                    <h3 class="mb-6 mb-lg-10">Newsletter</h3>
+                                    <p>Sign up for our nesletter and keep up with FoodCorps’ latest updates and stories.</p>
+                                    <div class="form-group mb-8 mb-lg-10">
+                                        <label for="emailid">Email address*</label>
+                                        <input type="email" class="form-control" id="emailid">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-yellow" value="Continue">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            @@include('skillet-grid-b.html',{
+                'bgColor'       :       'bg-dark-green',
+                'dataColor'     :       'dark-green',
+                'showHideCta'   :       'd-none'
+            })
+            @@include('skillet-grid-a.html',{
+                'bgColor'       :       'bg-dark-green',
+                'dataColor'     :       'dark-green'
+            })
+             <!--Skillet Grid D -->
+             @@include('skillet-grid-d.html',{
+                'svgModifier'       :       'skillet-grid-d--hasSvg',
+                'bgColor'           :       'bg-light',
+                'showTitle'         :       false,
+                'h4Title'           :       '',
+                'articleCount'      :       '5',
+                'loadMore'          :       false,
+                'pagination'        :       true,
+                "cardb06"  : {
+                    "list": [
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       '',
+                            'videoPost'             :       false,
+                            'audioPost'             :       false,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       true,
+                            'metaExternal'          :       'Lorem News Platform Name'
+                        },
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       'card-b06--video',
+                            'videoPost'             :       true,
+                            'audioPost'             :       false,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       true,
+                            'metaExternal'          :       'Lorem News Platform Name • Subscription required'
+                        },
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       'card-b06--audio',
+                            'videoPost'             :       false,
+                            'audioPost'             :       true,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       false,
+                            'metaExternal'          :       ''
+                        },
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       '',
+                            'videoPost'             :       false,
+                            'audioPost'             :       false,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       false,
+                            'metaExternal'          :       ''
+                        },
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       '',
+                            'videoPost'             :       false,
+                            'audioPost'             :       false,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       false,
+                            'metaExternal'          :       ''
+                        },
+                    ]
+                },
+            })
+            <!-- Skillet Grid D -->
+        </div>
+        <!-- TAB 02 Ends -->
+
+        <!-- TAB 03 Starts -->
+        <div class="tab-pane fade nav-03" id="nav-03" role="tabpanel" aria-labelledby="nav-tab-03">
+             <!-- Section Post -->
+             <section class="section-post section-post--center text-light bg-dark-green">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2>Stories</h2>
+                            <p>
+                                Get inspired by stories about our engagement with schools and districts, our corps members’ direct service in schools, and visions of healthy and equitable food future for all kids.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Section Post -->
+            <!-- Section Quote Single Dark -->
+            <section class="quote-single-dark bg-transition position-relative bg-dark-green overflow-hidden" data-color="dark-green">
+                <figure class="thumbnail-img quote-single-dark__thumb">
+                    <svg width="726" height="511" viewBox="0 0 726 511" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.135324"
+                            d="M632.871 65.4818C698.345 108.203 733.076 194.242 724.601 272.54C716.125 350.987 664.611 421.843 599.303 459.057C533.83 496.271 454.729 499.843 369.148 505.649C283.567 511.454 191.505 519.492 125.035 482.278C58.5639 445.064 17.6844 362.598 4.88876 268.67C-7.74068 174.891 7.71378 69.6497 74.1845 26.9281C140.655 -15.7936 258.142 4.15314 364.828 13.8288C471.513 23.5044 567.563 22.909 632.871 65.4818Z"
+                            fill="#4FB075" />
+                    </svg>
+                </figure>
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-10 col-lg-8">
+                            <div class="slider-quote position-relative">
+                                <div class="swiper-wrapper">
+                                    <div class="item swiper-slide">
+                                        <article class="content text-white">
+                                            <h3>
+                                                Lorem ipsum quote or testimonial dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                            </h3>
+                                            <a href="#" class="link-text link-primary link-wobble" title="title">Read Story CTA</a>
+                                        </article>
+                                    </div>
+                                    <div class="item swiper-slide">
+                                        <article class="content text-white">
+                                            <h3>
+                                                Lorem ipsum quote or testimonial dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                            </h3>
+                                            <a href="#" class="link-text link-primary link-wobble" title="title">Read Story CTA</a>
+                                        </article>
+                                    </div>
+                                    <div class="item swiper-slide">
+                                        <article class="content text-white">
+                                            <h3>
+                                                Lorem ipsum quote or testimonial dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                            </h3>
+                                            <a href="#" class="link-text link-primary link-wobble" title="title">Read Story CTA</a>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="slider__controls slider-01-control slider-paginate">
+                                    <div class="slider__pagination"></div>
+                                </div>
+                                <div class="slider__controls slider-01-control slider__buttons">
+                                    <div class="slider__button-prev">
+                                        <i class="icon-arrow-left"></i>
+                                    </div>
+                                    <div class="slider__button-next">
+                                        <i class="icon-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <script src="scripts/slider-quote.js"></script>
+            <!-- /Section Quote Single Dark -->
+
+            <section class="newsletter-signup-b position-relative overflow-hidden bg-transition" data-color="dark-green">
+                <svg width="1442" height="1228" viewBox="0 0 1442 1228" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.296"
+                        d="M0 12.0173L40.056 17.1453C80.11 22.1133 160.222 32.3703 240.333 31.5673C320.444 30.7673 400.556 18.9083 480.667 9.93434C560.777 0.800337 640.889 -5.60966 721 7.21034C801.111 20.0303 881.222 52.0793 961.333 64.4183C1041.44 76.5963 1121.56 69.2253 1201.67 58.8093C1281.78 48.3933 1361.89 34.9333 1401.94 28.3623L1442 21.6323V1227.76H0V12.0173Z"
+                        fill="#EAE0D5" />
+                </svg>
+                <div class="newsletter-signup-b__inner position-relative">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 col-lg-6">
+                                <div class="form-wrapper">
+                                    <h3 class="mb-6 mb-lg-10">Newsletter</h3>
+                                    <p>Sign up for our nesletter and keep up with FoodCorps’ latest updates and stories.</p>
+                                    <div class="form-group mb-8 mb-lg-10">
+                                        <label for="emailid">Email address*</label>
+                                        <input type="email" class="form-control" id="emailid">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-yellow" value="Continue">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            @@include('skillet-grid-b.html',{
+                'bgColor'       :       'bg-dark-green',
+                'dataColor'     :       'dark-green',
+                'showHideCta'   :       'd-none'
+            })
+
+            <!-- Skillet CTA Box -->
+            @@include('skillet-cta-box.html',{
+                'title'             :       'Racism in School Food—And What We Can Do About It',
+                'cta'               :       'Read story',
+                'showEyebrow'       :       true,
+                'bgColor'           :       '',
+                'background'        :       'images/fpo-skillet-story-img@2x.png'
+            })
+            <!-- /Skillet CTA Box -->
+
+            <section class="skillet-grid-b bg-transition" data-color="sand">
+                <div class="container">
+                    <div class="row skillet-grid-b-wrapper">
+                        <div class="col-md-4">
+                            <article class="card-b06 card-b06--video position-relative swiper-slide d-md-flex" data-js-href="">
+                                <figure class="card-b06-figure overflow-hidden position-relative">
+                                    <img src="images/fpo-story-img@2x.png"
+                                        alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                        class="img-thumb position-absolute object-fit w-100 h-100">
+                                    <img src="images/icon-play.svg" alt="" class="img-play">
+                                </figure>
+                                <div class="card-b06-content ms-md-4 mt-2 mt-md-0 d-flex flex-column">
+                                    <span class="meta-date d-block eyebrow-4 mb-1 mb-md-0 text-primary">
+                                        month xx, 2022
+                                    </span>
+                                    <p class="subheadline-2-semibold mb-2 mb-md-1">
+                                        Lorem Ipsum News Headline Copy Dolor Sit Amet
+                                    </p>
+                                    <span class='card-b06-footer eyebrow-3 position-relative mt-auto' title='title'>Video</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="card-b06 position-relative swiper-slide d-md-flex" data-js-href="href://">
+                                <figure class="card-b06-figure overflow-hidden position-relative">
+                                    <img src="images/fpo-story-img@2x.png"
+                                        alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                        class="img-thumb position-absolute object-fit w-100 h-100">
+                                </figure>
+                                <div class="card-b06-content ms-md-4 mt-2 mt-md-0 d-flex flex-column">
+                                    <span class="meta-date d-block eyebrow-4 mb-1 mb-md-0 text-primary">
+                                        month xx, 2022
+                                    </span>
+                                    <p class="subheadline-2-semibold mb-2 mb-md-1">
+                                        Lorem Ipsum News Headline Copy Dolor Sit Amet
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="card-b06 card-b06--audio position-relative swiper-slide d-md-flex"
+                                data-js-href="href://">
+                                <figure class="card-b06-figure overflow-hidden position-relative">
+                                    <img src="images/fpo-story-img@2x.png"
+                                        alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                        class="img-thumb position-absolute object-fit w-100 h-100">
+                                </figure>
+                                <div class="card-b06-content ms-md-4 mt-2 mt-md-0 d-flex flex-column">
+                                    <span class="meta-date d-block eyebrow-4 mb-1 mb-md-0 text-primary">
+                                        month xx, 2022
+                                    </span>
+                                    <p class="subheadline-2-semibold mb-2 mb-md-1">
+                                        Lorem Ipsum News Headline Copy Dolor Sit Amet
+                                    </p>
+                                    <span class='card-b06-footer eyebrow-3 position-relative mt-auto' title='title'>Audio</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="card-b06 card-b06--video position-relative swiper-slide d-md-flex" data-js-href="">
+                                <figure class="card-b06-figure overflow-hidden position-relative">
+                                    <img src="images/fpo-story-img@2x.png"
+                                        alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                        class="img-thumb position-absolute object-fit w-100 h-100">
+                                    <img src="images/icon-play.svg" alt="" class="img-play">
+                                </figure>
+                                <div class="card-b06-content ms-md-4 mt-2 mt-md-0 d-flex flex-column">
+                                    <span class="meta-date d-block eyebrow-4 mb-1 mb-md-0 text-primary">
+                                        month xx, 2022
+                                    </span>
+                                    <p class="subheadline-2-semibold mb-2 mb-md-1">
+                                        Lorem Ipsum News Headline Copy Dolor Sit Amet
+                                    </p>
+                                    <span class='card-b06-footer eyebrow-3 position-relative mt-auto' title='title'>Video</span>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="card-b06 position-relative swiper-slide d-md-flex" data-js-href="">
+                                <figure class="card-b06-figure overflow-hidden position-relative">
+                                    <img src="images/fpo-story-img@2x.png"
+                                        alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                        class="img-thumb position-absolute object-fit w-100 h-100">
+                                </figure>
+                                <div class="card-b06-content ms-md-4 mt-2 mt-md-0 d-flex flex-column">
+                                    <span class="meta-date d-block eyebrow-4 mb-1 mb-md-0 text-primary">
+                                        month xx, 2022
+                                    </span>
+                                    <p class="subheadline-2-semibold mb-2 mb-md-1">
+                                        Lorem Ipsum News Headline Copy Dolor Sit Amet
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="card-b06 card-b06--audio position-relative swiper-slide d-md-flex"
+                                data-js-href="">
+                                <figure class="card-b06-figure overflow-hidden position-relative">
+                                    <img src="images/fpo-story-img@2x.png"
+                                        alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                        class="img-thumb position-absolute object-fit w-100 h-100">
+                                </figure>
+                                <div class="card-b06-content ms-md-4 mt-2 mt-md-0 d-flex flex-column">
+                                    <span class="meta-date d-block eyebrow-4 mb-1 mb-md-0 text-primary">
+                                        month xx, 2022
+                                    </span>
+                                    <p class="subheadline-2-semibold mb-2 mb-md-1">
+                                        Lorem Ipsum News Headline Copy Dolor Sit Amet
+                                    </p>
+                                    <span class='card-b06-footer eyebrow-3 position-relative mt-auto' title='title'>Audio</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Skillet Grid D -->
+            @@include('skillet-grid-d.html',{
+                'svgModifier'       :       'skillet-grid-d--hasSvg',
+                'bgColor'           :       'bg-light',
+                'showTitle'         :       false,
+                'h4Title'           :       '',
+                'articleCount'      :       '5',
+                'loadMore'          :       false,
+                'pagination'        :       true,
+                "cardb06"  : {
+                    "list": [
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       '',
+                            'videoPost'             :       false,
+                            'audioPost'             :       false,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       true,
+                            'metaExternal'          :       'Lorem News Platform Name'
+                        },
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       'card-b06--video',
+                            'videoPost'             :       true,
+                            'audioPost'             :       false,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       true,
+                            'metaExternal'          :       'Lorem News Platform Name • Subscription required'
+                        },
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       'card-b06--audio',
+                            'videoPost'             :       false,
+                            'audioPost'             :       true,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       false,
+                            'metaExternal'          :       ''
+                        },
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       '',
+                            'videoPost'             :       false,
+                            'audioPost'             :       false,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       false,
+                            'metaExternal'          :       ''
+                        },
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       '',
+                            'videoPost'             :       false,
+                            'audioPost'             :       false,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       false,
+                            'metaExternal'          :       ''
+                        },
+                    ]
+                },
+            })
+            <!-- Skillet Grid D -->
+            
+
+        </div>
+        <!-- TAB 03 Ends -->
+
+        <!-- TAB 04 Starts -->
+        <div class="tab-pane fade nav-04" id="nav-04" role="tabpanel" aria-labelledby="nav-tab-04">
+            <section class="select-grid-2-2 select-grid-2-2--support overflow-hidden bg-transition" data-color="light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <header class="select-grid-2-2-header mb-4 mb-md-11 mb-lg-15">
+                                <h2 class="mb-0">Resources</h2>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 order-2 order-md-1">
+                            <div class="slider-02">
+                                <div class="tab-content slider__wrap swiper-wrapper" id="myTabContent">
+                                    <div class="tab-pane swiper-slide fade show active" id="lesson" role="tabpanel"
+                                        aria-labelledby="lesson-tab">
+                                        <h3>Lesson plans</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="tab-pane-cta"><a href="lesson-plans.html" class="btn btn-primary btn-bubble mt-6">CTA Button</a></div>
+                                    </div>
+                                    <div class="tab-pane swiper-slide fade" id="program" role="tabpanel"
+                                        aria-labelledby="program-tab">
+                                        <h3>Program guide</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="tab-pane-cta"><a href="program-guide.html" class="btn btn-primary btn-bubble mt-6">CTA Button</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offset-md-1 col-md-11 col-lg-6 order-1 order-md-2">
+                            <div class="slider-02">
+                                <ul class="nav slider__wrap swiper-wrapper" id="myTab" role="tablist">
+                                    <li class="nav-item swiper-slide yellow-tab" role="presentation">
+                                        <a class="position-relative d-flex align-items-center active" id="lesson-tab"
+                                            data-bs-toggle="tab" data-bs-target="#lesson" role="tab" aria-controls="lesson"
+                                            aria-selected="true">
+                                            <figure class="nav-item-figure">
+                                                <img src="images/lesson-tab-bg-active@2x.png" alt=""
+                                                    class="object-fit w-100 h-100 active">
+                                                <img src="images/lesson-tab-bg@2x.png" alt="" class="object-fit w-100 h-100">
+                                            </figure>
+                                            <div class="nav-item-content position-relative">
+                                                <h6>Lesson plans</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item swiper-slide" role="presentation">
+                                        <a class="position-relative d-flex align-items-center" id="program-tab"
+                                            data-bs-toggle="tab" data-bs-target="#program" role="tab" aria-controls="program"
+                                            aria-selected="false">
+                                            <figure class="nav-item-figure">
+                                                <img src="images/program-tab-bg-active@2x.png" alt=""
+                                                    class="object-fit w-100 h-100 active">
+                                                <img src="images/program-tab-bg@2x.png" alt="" class="object-fit w-100 h-100">
+                                            </figure>
+                                            <div class="nav-item-content position-relative">
+                                                <h6>Program guide</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider__controls d-block d-md-none slider-02-control">
+                                <div class="slider__pagination"></div>
+                                <div class="slider__button-prev">
+                                    <i class="icon-arrow-left"></i>
+                                </div>
+                                <div class="slider__button-next">
+                                    <i class="icon-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="scripts/select-grid-2-2.js"></script>
+            </section>
+            @@include('skillet-grid-c.html',{
+                'bgColor'           :       '',
+            })
+            @@include('search-resources.html',{
+                'bgColor'       :   'bg-light',
+                'showHideHeader':   'd-none',
+                "results"  : {
+                    "list": [
+                        {
+                        'imgLocation'                   :   'images/fpo-search-img-02@2x.png',
+                        'title'                         :   'Resource title lorem ipsum dolor',
+                        },
+                        {
+                        'imgLocation'                   :   'images/fpo-search-img-02@2x.png',
+                        'title'                         :   'Resource title lorem ipsum dolor',
+                        },
+                        {
+                        'imgLocation'                   :   'images/resource-icon-img@2x.png',
+                        'title'                         :   'Resource title lorem ipsum dolor',
+                        },
+                        {
+                        'imgLocation'                   :   'images/fpo-search-img-03@2x.png',
+                        'title'                         :   'Resource title lorem ipsum dolor',
+                        },
+                        {
+                        'imgLocation'                   :   'images/fpo-search-img-02@2x.png',
+                        'title'                         :   'Resource title lorem ipsum dolor',
+                        },
+                        {
+                        'imgLocation'                   :   'images/resource-icon-img@2x.png',
+                        'title'                         :   'Resource title lorem ipsum dolor',
+                        },
+                        {
+                        'imgLocation'                   :   'images/fpo-search-img-03@2x.png',
+                        'title'                         :   'Resource title lorem ipsum dolor',
+                        },
+                        {
+                        'imgLocation'                   :   'images/fpo-search-img-02@2x.png',
+                        'title'                         :   'Resource title lorem ipsum dolor',
+                        },
+                        {
+                        'imgLocation'                   :   'images/resource-icon-img@2x.png',
+                        'title'                         :   'Resource title lorem ipsum dolor',
+                        },
+                    ]
+                },
+            })
+
+        </div>
+        <!-- TAB 04 Ends -->
+
+        <!-- TAB 05 Starts -->
+        <div class="tab-pane fade nav-05" id="nav-05" role="tabpanel" aria-labelledby="nav-tab-05">
+            <!-- Search Result -->
+            <section class="search-result search-result--skillet bg-light">
+                <div class="search-result-form position-relative">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <form class="wpcf7-form init wpcf7-acceptance-as-validation form-inline">
+                                    <div class="d-flex position-relative">
+                                        <div class="form-group w-100 mb-0">
+                                            <input type="text" class="form-control" id="searchInput" aria-describedby="emailHelp"
+                                                placeholder="What are you looking for?" />
+                                        </div>
+                                        <div class="form-group form-submit mb-0">
+                                            <input type="submit" class="btn btn-primary" value="Search">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <header
+                                class="search-result-header d-md-flex align-items-lg-end position-relative mb-8 mb-md-12 mb-lg-15">
+                                <figure class="bodymoving search-result-header-figure mb-4 mb-md-0">
+                                    <div class="js-bodymoving" data-path="images/icon-point.json"></div>
+                                </figure>
+                                <!-- <figure class="search-result-header-figure mb-4 mb-md-0">
+                                    <img src="images/icon-point.svg" alt="">
+                                </figure> -->
+                                <div class="search-result-header-content ms-md-10 ms-lg-11 mb-lg-6">
+                                    <h2 class="mb-2 mb-md-3 mb-lg-0">Search results for “Lorem”</h2>
+                                    <p class="body-3">About (xx) results</p>
+                                </div>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Search Result -->
+
+              <!--Skillet Grid D -->
+              @@include('skillet-grid-d.html',{
+                'svgModifier'       :       'skillet-grid-d--hasNoSvg',
+                'bgColor'           :       'bg-light',
+                'showTitle'         :       true,
+                'h4Title'           :       'News',
+                'articleCount'      :       '5',
+                'loadMore'          :       false,
+                'pagination'        :       false,
+                "cardb06"  : {
+                    "list": [
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       '',
+                            'videoPost'             :       false,
+                            'audioPost'             :       false,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       true,
+                            'metaExternal'          :       'Lorem News Platform Name'
+                        },
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       'card-b06--video',
+                            'videoPost'             :       true,
+                            'audioPost'             :       false,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       true,
+                            'metaExternal'          :       'Lorem News Platform Name • Subscription required'
+                        },
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       'card-b06--audio',
+                            'videoPost'             :       false,
+                            'audioPost'             :       true,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       false,
+                            'metaExternal'          :       ''
+                        },
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       '',
+                            'videoPost'             :       false,
+                            'audioPost'             :       false,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       false,
+                            'metaExternal'          :       ''
+                        },
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       '',
+                            'videoPost'             :       false,
+                            'audioPost'             :       false,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       false,
+                            'metaExternal'          :       ''
+                        },
+                    ]
+                },
+            })
+            <!-- Skillet Grid D -->
+
+              <!--Skillet Grid D -->
+              @@include('skillet-grid-d.html',{
+                'svgModifier'       :       'skillet-grid-d--hasNoSvg',
+                'bgColor'           :       'bg-light',
+                'showTitle'         :       true,
+                'h4Title'           :       'Stories',
+                'articleCount'      :       '26',
+                'loadMore'          :       true,
+                'pagination'        :       false,
+                "cardb06"  : {
+                    "list": [
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       '',
+                            'videoPost'             :       false,
+                            'audioPost'             :       false,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       true,
+                            'metaExternal'          :       'Lorem News Platform Name'
+                        },
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       'card-b06--video',
+                            'videoPost'             :       true,
+                            'audioPost'             :       false,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       true,
+                            'metaExternal'          :       'Lorem News Platform Name • Subscription required'
+                        },
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       'card-b06--audio',
+                            'videoPost'             :       false,
+                            'audioPost'             :       true,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       false,
+                            'metaExternal'          :       ''
+                        },
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       '',
+                            'videoPost'             :       false,
+                            'audioPost'             :       false,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       false,
+                            'metaExternal'          :       ''
+                        },
+                        {
+                            'imgThumb'              :       'fpo-news-img@2x.png',
+                            'cardB06Modifier'       :       '',
+                            'videoPost'             :       false,
+                            'audioPost'             :       false,
+                            'metaData'              :       'month xx, 2022',
+                            'subHeader'             :       'Lorem Ipsum News Headline Copy Dolor Sit Amet Duis aute irure dolor in reprehenderit',
+                            'isPostExternal'        :       false,
+                            'metaExternal'          :       ''
+                        },
+                    ]
+                },
+            })
+            <!-- Skillet Grid D -->
+
+            @@include('search-resources.html',{
+                'bgColor'       :   'bg-light',
+                "results"  : {
+                    "list": [
+                        {
+                        'imgLocation'                   :   'images/fpo-search-img-02@2x.png',
+                        'title'                         :   'Resource title lorem ipsum dolor',
+                        }
+                    ]
+                },
+            })
+        </div>
+        <!-- TAB 05 Ends -->
+    </div>
+</section>

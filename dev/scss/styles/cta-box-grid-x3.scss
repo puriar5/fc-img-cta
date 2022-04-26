@@ -1,0 +1,98 @@
+@import "../common-imports";
+
+.cta-box-grid-x3 {
+
+    overflow: hidden;
+    padding: 14rem 0 8rem;
+
+    @include media-breakpoint-up(md) {
+        padding: 18rem 0 4.6rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 24rem 0 0;
+    }
+
+    .boxgrid-slider {
+
+        @include media-breakpoint-up(lg) {
+            margin: 0 -31px;
+        }
+
+        .slider__pagination {
+            text-align: center;
+            margin: 23.5px 0 0;
+            @include media-breakpoint-up(md) {
+                margin: 80px 0 0;
+            }
+        }
+
+        .slider__controls {
+
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+
+            &.slider__buttons {
+                margin-top: 3rem;
+                @include media-breakpoint-up(lg) {
+                    display: none;
+                }
+                i {
+                    &::before {
+                        color: $dark-green;
+                    }
+                }
+            }
+            
+        }
+
+        .slider__controls .slider__button-prev,
+        .slider__controls .slider__button-next {
+            margin-top: 0px;
+        }
+
+        .swiper-wrapper {
+            @include media-breakpoint-up(lg) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+        .item {
+            &.swiper-slide {
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+                height: auto;
+                &-active {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                @include media-breakpoint-up(md) {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                @include media-breakpoint-up(lg) {
+                    width: 33.33%;
+                    padding: 0 31px;
+                }
+            }
+            .card-cta-box {
+                max-width: 100%;
+                height: 100%;
+                &__mask {
+                    // background: #ded1c1;
+                }
+                &:hover {
+                    .card-cta-box__mask {
+                        background: $yellow;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}

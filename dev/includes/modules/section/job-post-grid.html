@@ -1,0 +1,45 @@
+<section id="job-post-grid" class="job-post-grid @@bgColor">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                @@if (bodyMoving === true) {
+                    <figure class="bodymoving thumbnail-img job-post-grid__thumb mb-4 mb-md-8 mb-lg-13">
+                        <div class="js-bodymoving" data-path="@@bodyMovingPath"></div>
+                    </figure>
+                }
+                @@if (bodyMoving === false) {
+                    <figure class="thumbnail-img job-post-grid__thumb mb-4 mb-md-8 mb-lg-13">
+                        <img src="@@thumb" alt="Icon Career">
+                    </figure>
+                }
+                <h2 class="mb-4 mb-md-8 mb-lg-16">@@title</h2>
+                <div class="job-post-grid__list bg-sand">
+                    @@include('../cards/card-job.html', {
+                        'eyebrow': 'Remote in Connecticut',
+                        'title': 'Connecticut Program Coordinator',
+                        'para': 'Pellentesque porta est eu risus tristique, a bibendum diam eleifend. Nullam pellentesque lacinia purus. Proin vestibulum, nisl ac facilisis vulputate. Aliquam history libero tortor, vestibulum ut tellus eu, blandit consequat.',
+                        'cta': 'Learn more & Apply'
+                    })
+                    @@include('../cards/card-job.html', {
+                        'eyebrow': 'Remote',
+                        'title': 'Email Marketing Manager',
+                        'para': 'Pellentesque porta est eu risus tristique, a bibendum diam eleifend. Nullam pellentesque lacinia purus. Proin vestibulum, nisl ac facilisis vulputate. Aliquam history libero tortor, vestibulum ut tellus eu, blandit consequat.',
+                        'cta': 'Learn more & Apply'
+                    })
+                    @@include('../cards/card-job.html', {
+                        'eyebrow': 'Remote',
+                        'title': 'Manager of Foundation Partnerships',
+                        'para': 'Pellentesque porta est eu risus tristique, a bibendum diam eleifend. Nullam pellentesque lacinia purus. Proin vestibulum, nisl ac facilisis vulputate. Aliquam history libero tortor, vestibulum ut tellus eu, blandit consequat.',
+                        'cta': 'Learn more & Apply'
+                    })
+                    @@include('../cards/card-job.html', {
+                        'eyebrow': 'Remote',
+                        'title': 'Research & Evaluation Director',
+                        'para': 'Pellentesque porta est eu risus tristique, a bibendum diam eleifend. Nullam pellentesque lacinia purus. Proin vestibulum, nisl ac facilisis vulputate. Aliquam history libero tortor, vestibulum ut tellus eu, blandit consequat.',
+                        'cta': 'Learn more & Apply'
+                    })
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

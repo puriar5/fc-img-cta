@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'Foodcorps - Partner with us'})
+    <link rel="stylesheet" href="css/styles/page-partner-with-us.min.css" />
+</head>
+
+<body>
+
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html', {
+                <!-- 'headerSkin': 'theme-header--dark' -->
+            })
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--left" data-focus="#first-link">
+                <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+            </div>
+            <main class="theme-main">
+
+
+                <!-- Leadspace Wide Image -->
+                @@include('includes/modules/above-the-fold/wide-image.html',{
+                    'bgColor'           :       'bg-sand',
+                    'headerWide'        :       'header-wide',
+                    'h1Title'           :       'Corporate Partnerships',
+                    'linkText'          :       'Partner with us',
+                    'bgImgPath'         :       'hero-corporate-bg@2x.webp',
+                    'description'       :       '<p>FoodCorps’ corporate partners join with us to cultivate health, justice, and joy for all children. Partner with us today to help bring hands-on food education and healthy food to more classrooms and cafeterias, and to drive lasting policy change that makes it easier for schools to nourish our kids.</p>',
+                    'figcaption'        :       'Lorem ipsum image credit dolor',
+                    'anchorLink'        :       '#form-module-partner'
+                })
+                <!-- /Leadspace Wide Image -->
+
+
+                <!-- Our Values -->
+                @@include('includes/modules/section/our-values.html', {
+                    'title'     :   'Why companies partner with FoodCorps',
+                    'bgColor'   :   'bg-light',    
+                })
+                <!-- /Our Values -->
+
+
+                <!-- bullettext-l-image-r-curve-sandbg (Bullet Text L-image R(Curve + sand bg)) -->
+                @@include('includes/modules/section/bullettext-l-image-r.html',{
+                    'curveBg': 'bullettext-l-image-r--curvebg',
+                    'curveBgColor': 'bullettext-l-image-r--curvebg-sand',
+                    'eyebrowShowHide':'d-none',
+                    'title':'Ways to partner with FoodCorps',
+                    'subTitleShowHide':'d-none',
+                    'subTextShowHide':'d-none',
+                    'textColor': 'text-dark',
+                     'mainImg':'image_partner.png',
+                     'altMainImg':'happy people eating food on a park bench',
+                     'btnShowHide':'d-none',
+                     'offsetTextColor':'text-dark',
+                     'figCaption'   :   'Lorem ipsum image credit dolor',
+                     "results"  : {
+                         "list": [
+                             {
+                                 'listIconImg' : 'icon-partner.svg',
+                                 'altIcon' : 'hand shaking icon',
+                                 'listTitleShowHide' : 'd-block',
+                                 'listTitle' : 'Corporate philanthropy',
+                                 'listText' : 'This is a pivotal moment for food security and education. Our nation recognizes that the role schools play in our kids’ lives transcends academics, and that food and nutrition are a locus of racial justice. Corporate support enables us to keep driving deep change through food, from our AmeriCorps service program to our legislative advocacy work.'
+                             },
+                             {
+                                'listIconImg' : 'icon-partner.svg',
+                                'altIcon' : 'hand shaking icon',
+                                'listTitleShowHide' : 'd-block',
+                                'listTitle' : 'Cause marketing',
+                                'listText' : 'Partner with us on a cause marketing campaign tailored to your priorities and anchored in corporate social responsibility. Let’s connect you to FoodCorps in your consumers’ perceptions, elevate their awareness of our work, and inspire them to become advocates for kids’ food health in their local communities.'
+                            },
+                            {
+                                'listIconImg' : 'icon-partner.svg',
+                                'altIcon' : 'hand shaking icon',
+                                'listTitleShowHide' : 'd-block',
+                                'listTitle' : 'Sponsorship',
+                                'listText' : 'Elevate positive brand awareness and help grow a healthier future for America by sponsoring and underwriting FoodCorps’ priority initiatives and trainings. Your company can be our key ally at the forefront of our most urgent and highest-profile work.'
+                            },
+                         ]
+                     },
+                })
+                <!-- bullettext-l-image-r-curve-sandbg (Bullet Text L-image R(Curve + sand bg)) -->
+
+
+                <!-- Section Form Module -->
+                @@include('includes/modules/section/form-module.html',{
+                    'title'           :       'Become a FoodCorps Partner',
+                    'bodyMoving'      :   true,
+                    'bodyMovingPath'  : 'images/icon-partner-form.json',
+                    'text'            :       'Want to join us at the table? We welcome partnership requests of all kinds. Reach out today and help us bring hands-on food education and healthy food to schools all over America.',
+                })
+                <!-- /Section Form Module -->
+
+
+                <!-- Section Image CTA Box A -->
+                @@include('includes/modules/section/image-cta-box-a.html', {
+                    'overlay'   :   'overlay-1',
+                    'bgColor'   : 'bg-dark-green',
+                    'showHideEyebrow' : 'd-none',
+                    'thumb': 'images/img-cta-06@2x.jpg',
+                    'title': 'Bring FoodCorps to your district',
+                    'text': 'Lorem ipsum dolor sit amet',
+                    'btnTxt': 'CTA to page'
+                })
+                <!-- /Section Image CTA Box A -->
+
+
+
+            </main>
+        </div>
+        @@include('includes/footer.html')
+        @@include('includes/scripts.html')
+        
+    </div>
+</body>
+
+</html>

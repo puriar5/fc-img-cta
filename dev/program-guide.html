@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'FoodCorps | Program Guide'})
+        <link rel="stylesheet" href="css/styles/page-program-guide.min.css" />
+        
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html', {
+                    'headerSkin':   'theme-header--white',
+                    'menuSkin'  :   'menu-toggler--white',
+                    'aboutIsActive' :   'is-active'
+                })
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content h-100">
+                        @@include('./includes/offcanvas.html',{
+                        })
+                    </div>
+                </div>
+                <main class="theme-main">
+                    <!-- Lead Video -->
+                    @@include('includes/modules/section/lead-video.html',{
+                        'h1Title'               :       'FoodCorps Program Guide',
+                        'showHideDescription'   :       'd-none',
+                        'showHideButton'        :       'd-none',
+                        'posterImage'           :       'hero-program-guide@2x.jpg',
+                        'showHideCta'           :       '',
+                        'ctaText'               :       'Download full guide',
+                        'figCaption'            :       'Lorem ipsum photo credit dolor sit amet',
+                    })
+                    <!-- Lead Video -->
+
+                    <!-- Featured Icon -->
+                    @@include('includes/modules/section/featured-icon.html',{
+                        'bgColor'               :   'bg-light',
+                        'modifier'              :   'featured-icon--reverse',
+                        'iconName'              :   'icon-lesson.svg',
+                        'bodyMoving': true,
+                        'bodyMovingPath': 'images/icon-guide.json',
+                    })
+                    <!-- Featured Icon -->
+
+                    <!-- Two Col Body -->
+                <section class="two-col-body bg-transition" data-color="light">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>About the program guide</h2>
+                                <!-- <a href='' class='btn btn-primary btn-bubble' title='title'>The case for food</a> -->
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    The FoodCorps Program Guide is a set of resources for FoodCorps service members, designed to support effective FoodCorps programming in schools. 
+                                    Service members use this guide alongside FoodCorps’ in-person trainings.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Two Col Body -->
+
+
+                <!-- Section Column Bullet Text light -->
+                <section class="column-bullet-text @@bgColor @@textColor bg-transition" data-color="light">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="column-bullet-text__left mt-6 mt-md-9 mt-lg-22">
+                                    <p class="body-1 mb-1">Inside the program guide</p>
+                                    <ul class="ordered-list">
+                                        <li>Resources for planning and evaluating your service</li>
+                                        <li>Tips for getting to know your school community</li>
+                                        <li>Teaching approaches and considerations</li>
+                                        <li>Best practice in classroom management</li>
+                                        <li>Tips for cooking with students</li>
+                                        <li>Tips for building and maintaining school gardens</li>
+                                        <li>Activities to engage students in the cafeteria</li>
+                                        <li>Best practices for safety during hands-on activities</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="column-bullet-text__right mt-6 mt-md-9 mt-lg-22">
+                                    <p class="body-1 mb-1">Key FoodCorps tools</p>
+                                    <p>The guide also includes key FoodCorps tools, some of which are required during your year of service.</p>
+                                    <ul class="ordered-list">
+                                        <li>FoodCorps Menu & Action Plan</li>
+                                        <li>Healthy School Progress Report</li>
+                                        <li>School & Community Guide</li>
+                                        <li>Observation & Coaching Tool</li>
+                                    </ul>
+                                    <a href='' class='btn btn-primary d-inline-block btn-bubble mt-6 mt-lg-8' title='title'>Download full guide</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                
+                <!-- /Section Column Bullet Text Dark -->
+
+                <!-- Tab accordion horizontal -->
+
+                <section
+                    class="c-tab-accordion c-tab-accordion--horizontal c-tab-accordion--hasNoSvg c-tab-accordion--light c-tab-accordion--default bg-transition"
+                    data-color="sand">
+                    <div class="c-tab-accordion__hasBg hasSvg">
+                        <svg width="1441" height="734" viewBox="0 0 1441 734" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M790.337 349.415C645.573 349.415 312.625 302.872 0 522.5V716C180.965 523.01 395.669 397.181 790.337 349.415Z"
+                                fill="#4FB075" />
+                            <path class="quote-svg-bg" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1441 0.360107C1384.39 282.485 1131.13 353.543 866.331 349.79C601.534 346.037 192.965 349.688 2.84314e-05 671V734C107.798 734 588.578 734 1441 734V0.360107Z"
+                                fill="#00524C" />
+                        </svg>
+                    </div>
+
+                    <div class="container">
+                        <h3 class="c-tab-accordion--title mb-b @@titleShowHide">Explore by section</h3>
+                        <dl id="gridtab-1">
+                            <dt>
+                                <div class="h5">Introduction to FoodCorps</div>
+                                <div class="circle-icon"><i class="icon-arrow-down"></i></div>
+                            </dt>
+                            <dd>
+                                <div class="gridtab-content gridtab-content-list grid">
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dt>
+                                <div class="h5">Getting to know your community</div>
+                                <div class="circle-icon"><i class="icon-arrow-down"></i></div>
+                            </dt>
+                            <dd>
+                                <div class="gridtab-content gridtab-content-list grid">
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dt>
+                                <div class="h5">Teaching hands-on lessons</div>
+                                <div class="circle-icon"><i class="icon-arrow-down"></i></div>
+                            </dt>
+                            <dd>
+                                <div class="gridtab-content gridtab-content-list grid">
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dt>
+                                <div class="h5">Learning models 
+                                    to inform hands-on education</div>
+                                <div class="circle-icon"><i class="icon-arrow-down"></i></div>
+                            </dt>
+                            <dd>
+                                <div class="gridtab-content gridtab-content-list grid">
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dt>
+                                <div class="h5">Meeting the needs of all learners</div>
+                                <div class="circle-icon"><i class="icon-arrow-down"></i></div>
+                            </dt>
+                            <dd>
+                                <div class="gridtab-content gridtab-content-list grid">
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dt>
+                                <div class="h5">Building and maintaining school gardens</div>
+                                <div class="circle-icon"><i class="icon-arrow-down"></i></div>
+                            </dt>
+                            <dd>
+                                <div class="gridtab-content gridtab-content-list grid">
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dt>
+                                <div class="h5">Cooking with students</div>
+                                <div class="circle-icon"><i class="icon-arrow-down"></i></div>
+                            </dt>
+                            <dd>
+                                <div class="gridtab-content gridtab-content-list grid">
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dt>
+                                <div class="h5">Activities to engage students in the cafeteria</div>
+                                <div class="circle-icon"><i class="icon-arrow-down"></i></div>
+                            </dt>
+                            <dd>
+                                <div class="gridtab-content gridtab-content-list grid">
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dt>
+                                <div class="h5">Glossary, references, and appendix</div>
+                                <div class="circle-icon"><i class="icon-arrow-down"></i></div>
+                            </dt>
+                            <dd>
+                                <div class="gridtab-content gridtab-content-list grid">
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                    <div class="gridtab-content-list--item g-col-12 g-col-md-6">
+                                        <div class="gridtab-content-list--icon"><i class="icon-check"></i></div>
+                                        <div class="gridtab-content-list--content">
+                                            <div class="subheadline-2-semibold">
+                                                Introduction
+                                            </div>
+                                            <div class="gridtab-content-list--paragraph ">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                                incididunt
+                                            </div>
+                                            <a href="#" class="link-text text-primary link-wobble">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+
+                </section>
+
+                <script src="scripts/tab-accordion-horizontal.js"></script>
+
+                <!-- Tab accordion horizontal -->
+
+                <!-- Bullet text l image r -->
+                <section
+                    class="bullettext-l-image-r bullettext-l-image-r--reversed bullettext-l-image-r--narrow bullettext-l-image-r--curvebg bullettext-l-image-r--curvebg-dark-green pt-8 pt-md-0 position-relative">
+                    <div class="bullettext-l-image-r__bg d-block">
+                        <svg width="1441" height="734" viewBox="0 0 1441 734" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M790.337 349.415C645.573 349.415 312.625 302.872 0 522.5V716C180.965 523.01 395.669 397.181 790.337 349.415Z"
+                                fill="#4FB075" />
+                            <path class="quote-svg-bg" fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1441 0.360107C1384.39 282.485 1131.13 353.543 866.331 349.79C601.534 346.037 192.965 349.688 2.84314e-05 671V734C107.798 734 588.578 734 1441 734V0.360107Z"
+                                fill="#00524C" />
+                        </svg>
+                    </div>
+                    <div class="bullettext-l-image-r__wrapper position-relative">
+                        <div class="container-fluid">
+                            <div class="row justify-content-lg-start">
+                                <div class="col-md-7 col-lg-6">
+                                    <div class="bullettext-l-image-r__text text-dark">
+                                        <div class="mb-lg-16 mb-7">
+                                            <h2>Healthy school toolkit</h2>
+                                            <p>FoodCorps’ Healthy School Toolkit is a set of resources designed to:</p>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="bullettext-l-image-r__list">
+                                                    <div class="bullettext-l-image-r__list--text">
+                                                        <p>Take a snapshot of your current school food environmet</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="bullettext-l-image-r__list">
+                                                    <div class="bullettext-l-image-r__list--text">
+                                                        <p>Guide your school community in creating a vision for the future</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="bullettext-l-image-r__list">
+                                                    <div class="bullettext-l-image-r__list--text">
+                                                        <p>Document your action plan for working toward that vision</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="bullettext-l-image-r__list">
+                                                    <div class="bullettext-l-image-r__list--text">
+                                                        <p>Evaluate and celebrate your school community’s history and progress over time</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p>Note that this toolkit was originally designed for FoodCorps AmeriCorps service members 
+                                            working in partnership withh schools It has been adapted for a broader audience.</p>
+                                        <a href="#" class="btn btn-primary btn-bubble mt-11" target="_blank">Download in English</a>
+                                        <a href="#" class="btn btn-primary btn-bubble mt-11" target="_blank">Download en Español</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-lg-6">
+                                    <div class="bullettext-l-image-r__img sticky-md-top">
+                                        <img src="images/image-toolkit@2x.png" alt="@@altMainImg" class="img-fluid">
+                                        <div class="bullettext-l-image-r__offset @@offsetTextColor fst-italic">
+                                            Lorem ipsum image credit dolor
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Bullet text l image r -->
+
+
+                     <!-- Section Image CTA Box A -->
+                     @@include('includes/modules/section/image-cta-box-a.html', {
+                        'overlay'   :   'overlay-1',
+                        'bgColor'   : 'bg-dark-green',
+                        'showHideEyebrow' : 'd-none',
+                        'thumb': 'images/img-cta-06@2x.jpg',
+                        'title': 'Bring FoodCorps to your district',
+                        'text': 'Lorem ipsum dolor sit amet',
+                        'btnTxt': 'CTA to page'
+                    })
+                    <!-- /Section Image CTA Box A -->
+
+
+
+                </main>
+            </div>
+            @@include('includes/footer.html')
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

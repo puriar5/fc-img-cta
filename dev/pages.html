@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'FoodCorps'})
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html', {
+                    <!-- 'headerSkin': 'theme-header--dark' -->
+                })
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--right" data-focus="#first-link">
+                    <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+                </div>
+                <main class="theme-main">
+                    <div class="container my-10">
+                        <div class="row">
+                            <div class="col">
+                                <div class="custom-select">
+                                    <select>
+                                        <option>Popular topics</option>
+                                        <option>Topic Lorem ipsum</option>
+                                        <option>Assumenda commodi, voluptates</option>
+                                        <option>Consectetur adipisicing</option>
+                                        <option>soluta provident</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section>
+                        <div class="container">
+                        </div>
+                    </section>
+                </main>
+            </div>
+            @@include('includes/footer.html')
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

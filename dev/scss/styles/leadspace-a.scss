@@ -1,0 +1,142 @@
+@import '../common-imports';
+
+.leadspace-a{
+    width: 100%;
+    padding-top: 13rem;
+    overflow: hidden;
+    @include media-breakpoint-up(md){
+        padding-top: 17rem;
+    }
+    @include media-breakpoint-up(lg){
+        min-height: 103.9rem;
+        padding-top: 23.7rem;
+    }
+    @include media-breakpoint-up(lg){
+        margin-top: -2rem;
+    }
+    .leadspace{
+        &-bg{
+            width: 100vw;
+            min-height: 30.8rem;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            @include media-breakpoint-up(md){
+                min-height: 39.5rem;
+            }
+            @include media-breakpoint-up(lg){
+                min-height: 80rem;
+            }
+            @media (min-width: 1431px){
+                height: 87.2rem;
+            }
+            @include media-breakpoint-down(lg){
+                text-align: right;
+            }
+
+            @include media-breakpoint-down(md){
+                margin-top: 0;
+            }
+
+            img{
+                pointer-events: none;
+                @include media-breakpoint-up(lg){
+                    position: absolute;
+                }
+            }
+            &-main{
+                width: 75.63vw;
+                top: 0;
+                right: 0;
+                @media(min-width: 1800px){
+                    width: 61vw;
+                }
+                @media (max-width: 1430px){
+                    width: 65vw;
+                    top: auto;
+                    bottom: 0;
+                }
+                @include media-breakpoint-down(lg){
+                    width: 67.6%;
+                    margin-bottom: -21.8rem;
+                }
+                
+                @media (max-width:800px){
+                    margin-bottom: -15.8rem;
+                }
+
+                @include media-breakpoint-down(md){
+                    width: 89.4%;
+                    margin-bottom: -13rem;
+                }
+                
+                @include media-breakpoint-down(md){
+                    display: none;
+                }
+                &-sm{
+                    width: 89.4%;
+                    margin-bottom: -7rem;
+                    @include media-breakpoint-up(sm){
+                        margin-bottom: -11rem;
+                    }
+                    @include media-breakpoint-up(md){
+                        display: none;
+                    }
+                }
+            }
+            &-curve{
+                bottom: 0;
+                width: 100vw;
+                @include media-breakpoint-up(xxl){
+                    right: -0.3rem;
+                }
+            }
+        }
+        &-content{
+            z-index: 9;
+            position: relative;
+            // padding-bottom: 10.1rem;
+            padding-bottom: 12.6rem;
+            @include media-breakpoint-up(sm){
+                padding-bottom: 24rem;
+            }
+            @include media-breakpoint-up(md){
+                padding-bottom: 8.5rem;
+                margin-bottom: 0;
+            }
+            @include media-breakpoint-up(tb){
+                padding-bottom: 15rem;
+            }
+            @include media-breakpoint-up(xxl){
+                padding-bottom: 6.8%;
+            }
+        }
+    }
+    &-figcaption{
+        margin-top: 9.8rem;
+        font-style: italic;
+        @include media-breakpoint-up(md){
+            color: $white;
+            margin-top: 13rem;
+        }
+        @include media-breakpoint-up(tb){
+            margin-top: 18rem;
+        }
+        @include media-breakpoint-up(xl){
+            margin-top: 15rem;
+        }
+        .eyebrow-2{
+            padding-right: 2.4rem;
+            @include media-breakpoint-up(sm){
+                padding-right: 2.4rem;
+            }
+            @include media-breakpoint-up(md){
+                padding-right: 0;
+                padding-left: 4rem;
+            }
+            @include media-breakpoint-up(lg){
+                padding-left: 0;
+            }
+        }
+    }
+}

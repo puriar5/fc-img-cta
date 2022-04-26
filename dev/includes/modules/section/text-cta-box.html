@@ -1,0 +1,27 @@
+<section class="text-cta-box position-relative">
+    <div class="text-cta-box-wrapper bg-primary">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-2 offset-md-1">
+                    @@if (bodyMoving === true) {
+                        <figure class="bodymoving text-cta-box-icon">
+                            <div class="js-bodymoving" data-path="@@bodyMovingPath"></div>
+                        </figure>
+                    }
+                    @@if (bodyMoving === false){
+                        <figure class="text-cta-box-icon">
+                            <img src="images/@@iconName" alt="image description">
+                        </figure>
+                    }
+                </div>
+                <div class="col-md-8 offset-md-2 offset-lg-0 col-lg-6">
+                    <div class="text-cta-box-content text-white">
+                        <h3 class="@@titleShowHide">@@h3Title</h3>
+                        <p>@@paragraph</p>
+                        <a href='' title='title'>@@linkText</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,40 @@
+<section class="two-col-link-text-icon pt-8 py-md-12 py-lg-20 @@bgColor bg-transition" data-color="@@dataColor">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-5 offset-lg-1">
+                <div class="left-col d-md-flex align-items-lg-center mb-4 mb-md-0 ms-md-1 ms-lg-0">
+                    @@if (bodyMoving === true) {
+                    <div class="bodymoving left-col-icon mb-4 mb-md-0">
+                        <div class="js-bodymoving" data-path="@@bodyMovingPath"></div>
+                    </div>
+                    }
+                    @@if(bodyMoving === false) {
+                    <figure class="left-col-icon mb-4 mb-md-0">
+                        <img src="@@iconName" alt="image description">
+                    </figure>
+                    }
+                    <div class="left-col-content ms-md-5 ms-lg-8">
+                        <h4>Media inquiries</h4>
+                        <p>For media inquiries, contact:</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex">
+                <div class="right-col mt-lg-15">
+                    <h6 class="mb-0">Katrina Kong</h6>
+                    <p class="body-3 mb-2 mb-md-4 mb-lg-6">Senior Director of Marketing & Communications</p>
+                    <a href='' class='link-text link-primary link-wobble' title='title'>katrina.kong@foodcorps.org</a>
+                </div>
+            </div>
+        </div>
+        @@if (seeAllCta === true){
+            <div class="two-col-link-text-icon-footer mt-10 mt-md-14 text-md-center">
+                <div class="row">
+                    <div class="col">
+                        <a href="" class='btn btn-primary btn-bubble js-trigger-news-tab' title='title'>See all news</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>

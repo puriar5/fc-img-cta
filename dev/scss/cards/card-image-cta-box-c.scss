@@ -1,0 +1,65 @@
+.card-image-cta-box-c {
+
+    h3 {
+        font-weight: 600;
+    }
+
+    &__content {
+        border-top-right-radius: 7.5rem;
+        border-bottom-left-radius: 7.5rem;
+        padding: 0.6rem;
+        position: relative;
+
+        @include media-breakpoint-up(lg) {
+            border-top-right-radius: 11.7rem;;
+            border-bottom-left-radius: 11.7rem;
+            padding: 0.9rem;
+        }
+
+        .thumbnail-img {
+            img {
+                min-height: 25.9rem;
+                @include media-breakpoint-only(md) {
+                    min-height: 25.8rem;
+                }
+            }
+        }
+
+        .inside {
+            position: absolute;
+            bottom: 3.5rem;
+            color: $light;
+            left: 3.5rem;
+            max-width: 72%;
+
+            @include media-breakpoint-up(md) {
+                max-width: 77%;
+            }
+
+            @include media-breakpoint-up(lg) {
+                left: 6.4rem;
+                bottom: 5.5rem;
+                max-width: 70%;
+            }
+
+            .body-1 {
+                font-weight: $font-weight-semibold;
+                font-size: 1.8rem;
+                line-height: 2rem;
+                @include media-breakpoint-up(md) {
+                    font-size: 2.6rem;
+                    line-height: 3.6rem;
+                }
+            }
+
+        }
+
+        .btn-dark {
+            font-size: 1.6rem;
+            line-height: 1.7rem;
+            padding: 1.05rem 2.2rem;
+        }
+
+    }
+
+}

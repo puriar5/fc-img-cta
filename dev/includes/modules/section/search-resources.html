@@ -1,0 +1,17 @@
+<section class="search-resources @@bgColor">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <header class="search-resources-header d-flex align-items-end mb-6 mb-lg-8 @@showHideHeader">
+                    <h4 class="mb-0">Resources</h4>
+                    <span class="page-num ms-4">(xx)</span>
+                </header>
+                <div class="search-resources-main d-md-flex flex-wrap">
+                    @@for (var i = 0; i < results.list.length; i++) { 
+                        @@include('../cards/card-a03.html', `+(JSON.stringify(results.list[i]))+`) 
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

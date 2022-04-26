@@ -1,0 +1,149 @@
+@import '../common-imports';
+
+.lead-video {
+    .hero {
+        &-content {
+            @include media-breakpoint-up(md){
+                padding-top: 16rem;
+            }
+            @include media-breakpoint-up(lg){
+                padding-top: 2rem;
+            }
+
+            h1,
+            .h1 {
+                @include media-breakpoint-up(lg) {
+                    margin-right: -10%;
+                }
+            }
+        }
+        &-overlay{
+            &::before{
+                @include media-breakpoint-down(lg){
+                    opacity: 0.49;
+                }
+            }
+            video{
+                @include media-breakpoint-down(lg){
+                    object-position: 0%;
+                }
+                @include media-breakpoint-down(md){
+                    object-position: center;
+                }
+            }
+        }
+    }
+
+    &-figcaption {
+        @include media-breakpoint-up(lg) {
+            margin-left: -18rem;
+        }
+        @include media-breakpoint-up(xxl) {
+            margin-top: 13rem;
+        }
+        @include media-breakpoint-up(xxxl) {
+            margin-top: 0;
+        }
+    }
+}
+
+
+.text-with-cta-box {
+    @include media-breakpoint-up(xl) {
+        padding-bottom: 0.5rem;
+    }
+}
+
+.icon-grid-three {
+    padding-bottom: 15rem;
+
+    @include media-breakpoint-up(md) {
+        padding-bottom: 20rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 40rem;
+    }
+}
+
+.image-bl-text-r {
+    margin-top: -22rem;
+
+    @include media-breakpoint-up(md) {
+        margin-top: -38rem;
+    }
+
+    @include media-breakpoint-up(tb) {
+        margin-top: -45rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-top: -69.4rem;
+    }
+
+    &__bg {
+        svg {
+            .quote-svg-bg {
+                fill: $light;
+            }
+        }
+    }
+
+    &__wrapper {
+        background: $light;
+        padding-bottom: 0;
+    }
+}
+
+
+.skillet-stories {
+    padding-top: 3.6rem;
+    @include media-breakpoint-up(md){
+        padding-top: 6rem;
+        padding-bottom: 10rem;
+    }
+    @include media-breakpoint-up(xl){
+        padding-top: 3.6rem;
+        padding-bottom: 12.4rem;
+    }
+    .food-court-card {
+        &__text {
+            .link-wobble {
+                &.link-text {
+                    color: $primary !important;
+
+                    &:after {
+                        background-color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .slider__controls {
+        .slider__pagination {
+            .swiper-pagination-bullet {
+                background: $sand;
+            }
+            
+            .swiper-pagination-bullet-active {
+                background: $yellow;
+            }
+        }
+        .slider__button-prev,
+        .slider__button-next{
+            i{
+                &::before{
+                    color: $dark-green;
+                    .bg-dark-green &{
+                        color: $light;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.form-module-partner{
+    padding-bottom: 4.8rem;
+}

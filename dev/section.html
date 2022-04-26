@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      @@include('includes/head.html',{'pageTitle':'FoodCorps Sections'})
+      <link rel="stylesheet" href="css/styles/page-home.min.css" />
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html', {
+                    <!-- 'headerSkin': 'theme-header--dark' -->
+                })
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+                </div>
+                
+                <main class="theme-main">
+                    <header class="mt-20 pt-20 mb-5">
+                        <div class="container pt-20">
+                            <div class="row">
+                                <div class="col">
+                                    <h1>Hero sections</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">image-l-text-r (Image L + text R Reversed)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/image-l-text-r--reverse.html',{
+                        'modifier'      :       'image-l-text-r--reverse',
+                    })
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">image-l-text-r (Image L + text R)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/image-l-text-r.html')
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">skillet-stories (Skillet Stories)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/skillet-stories.html')
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">bullettext-l-image-r (Bullet Text L-image R)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/bullettext-l-image-r.html',{
+                        'bgShowHide': 'd-none',
+                        'eyebrowShowHide':'d-none',
+                        'title':'Headline lorem ipsum',
+                        'subTitleShowHide':'d-none',
+                        'subTextShowHide':'d-none',
+                        'bgColor':'bg-dark-green',
+                        'textColor': 'text-white',
+                         'mainImg':'image_mission-vision@2x.png',
+                         'altMainImg':'happy people eating food on a park bench',
+                         'btnShowHide':'d-none',
+                         'offsetTextColor':'text-light',
+                         'figCaption'   :   'Lorem ipsum image credit dolor',
+                         "results"  : {
+                             "list": [
+                                 {
+                                     'listIconImg' : 'icon-star.svg',
+                                     'altIcon' : 'Star inside circle',
+                                     'listTitleShowHide' : 'd-block',
+                                     'listTitle' : 'Our Mission',
+                                     'listText' : 'Together with communities, FoodCorps connects kids to healthy food in school.'
+                                 },
+                                 {
+                                    'listIconImg' : 'icon-star.svg',
+                                    'altIcon' : 'Star inside circle',
+                                    'listTitleShowHide' : 'd-block',
+                                    'listTitle' : 'Our Vision',
+                                    'listText' : 'We are creating a future in which all our nation’s children—regardless of race, place or class—know what healthy food is, care where it comes from, and eat it every day.'
+                                },
+                                {
+                                    'listIconImg' : 'icon-star.svg',
+                                    'altIcon' : 'Star inside circle',
+                                    'listTitleShowHide' : 'd-block',
+                                    'listTitle' : 'Our Work',
+                                    'listText' : 'FoodCorps advances social health and justice through food by placing service members in schools across the nation; by supporting, influencing, and advocating for legislation and policy; and by providing resources for anyone passionate about bringing positive change to their community.'
+                                },
+                             ]
+                         },
+                    })
+                    
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">bullettext-l-image-r-light (Bullet Text L-image R (Light) )</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/bullettext-l-image-r.html',{
+                        'bgShowHide': 'd-none',
+                        'eyebrowShowHide':'d-block',
+                        'titleShowHide':'d-none',
+                        'subTitleShowHide':'d-block',
+                        'subTitle':'What service members do',
+                        'subTextShowHide':'d-block',
+                        'subText':'As a service member, you’ll implement FoodCorps’ evidence-based strategies to feed kids good food, teach them to know and love it, and help schools become healthier places for them to grow and learn. Most of your time will be spent teaching in the classroom and garden; there are also opportunities to work with school nutrition directors in supporting districtwide food systems change. Most service corps members do the following:',
+                        'bgColor':'bg-light',
+                        'textColor': 'text-dark',
+                         'mainImg':'image_what-sm-do@2x.png',
+                         'altMainImg':'happy people eating food on a park bench',
+                         'btnShowHide':'d-inline-block',
+                         'offsetTextColor':'text-dark',
+                         'figCaption'   :   'Lorem ipsum image credit dolor',
+                         "results"  : {
+                             "list": [
+                                 {
+                                     'listIconImg' : 'icon-star.svg',
+                                     'altIcon' : 'Star inside circle',
+                                     'listTitleShowHide' : 'd-block',
+                                     'listTitle' : 'Lead hands-on lessons',
+                                     'listText' : 'You’ll teach students to grow, cook, taste new foods, building their skills and enthusiasm, and changing their food preferences. You’ll collaborate with teachers on integrating food into the curriculum, and you may help organize field trips to local farms or visits from chefs.'
+                                 },
+                                 {
+                                    'listIconImg' : 'icon-star.svg',
+                                    'altIcon' : 'Star inside circle',
+                                    'listTitleShowHide' : 'd-block',
+                                    'listTitle' : 'Influence healthy school meals',
+                                    'listText' : 'You’ll cultivate a cafeteria experience that steers students towards the healthiest options and gets them excited to try new foods. You’ll get kids to try samples during taste tests and brainstorm great ideas about good eating with them. You may even work with food service directors and farmers to get local foods onto the lunch line.'
+                                },
+                                {
+                                    'listIconImg' : 'icon-star.svg',
+                                    'altIcon' : 'Star inside circle',
+                                    'listTitleShowHide' : 'd-block',
+                                    'listTitle' : 'Build a schoolwide culture of health',
+                                    'listText' : 'You’ll be an active, collaborative member of the school community, working to ensure that the whole school environment—from thallway to classroom to cafeteria—celebrates healthy food. You may plan family cooking nights and organize healthy fundraisers, too.'
+                                },
+                             ]
+                         },
+                    })
+                    
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">bullettext-l-image-r-light-reversed (Bullet Text L-image R (Light+Reversed) )</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/bullettext-l-image-r.html',{
+                        'bgShowHide': 'd-none',
+                        'eyebrowShowHide':'d-none',
+                        'bulletTextModifier':'bullettext-l-image-r--reversed',
+                        'title':'What impact will my donation have?',
+                        'subTitleShowHide':'d-none',
+                        'subTextShowHide':'d-none',
+                        'bgColor':'bg-light',
+                        'textColor': 'text-dark',
+                         'mainImg':'image_donation-impact@2x.png',
+                         'altMainImg':'child giving a thumbs up',
+                         'btnShowHide':'d-none',
+                         'offsetTextColor':'text-dark',
+                         'figCaption'   :   'Student eating school lunch at Aberdeen Elementary School in Aberdeen, NC.',
+                         "results"  : {
+                             "list": [
+                                 {
+                                     'listIconImg' : 'icon-star.svg',
+                                     'altIcon' : 'star inside circle',
+                                     'listTitleShowHide' : 'd-none',
+                                     'listText' : 'FoodCorps provides its programs at no cost to the districts we serve. Your donations enable transformative food education in often cash-strapped schools that otherwise would not have the means to partner with us.'
+                                 },
+                                 {
+                                    'listIconImg' : 'icon-star.svg',
+                                    'altIcon' : 'star inside circle',
+                                    'listTitleShowHide' : 'd-none',
+                                    'listText' : 'As part of the AmeriCorps service network, FoodCorps is accountable to the federal government for every dollar of our budget. Your support is responsibly spent and goes directly toward the implementation of our programs in schools.'
+                                },
+                             ]
+                         },
+                    })
+
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">bullettext-l-image-r-light-reversed (Bullet Text L-image R (Light+Reversed) )</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/bullettext-l-image-r.html',{
+                        'curveBg': 'bullettext-l-image-r--curvebg',
+                        'curveBgColor': 'bullettext-l-image-r--curvebg-sand',
+                        'type'        : 'narrow',
+                        'bgShowHide': 'd-block',
+                        'eyebrowShowHide':'d-none',
+                        'bulletTextModifier':'bullettext-l-image-r--reversed',
+                        'title':'What makes a district ready for FoodCorps?',
+                        'subTitleShowHide':'d-none',
+                        'subTextShowHide':'d-block',
+                        'subText':'You are:',
+                        'textColor': 'text-dark',
+                         'mainImg':'img_district@2x.png',
+                         'altMainImg':'child sitting in classroom with her friends and instructors',
+                         'btnShowHide':'d-none',
+                         'offsetTextColor':'text-dark',
+                         'figCaption'   :   'Lorem ipsum image credit dolor',
+                         "results"  : {
+                             "list": [
+                                 {
+                                     'listIconImg' : 'icon-check.svg',
+                                     'altIcon' : 'tick mark inside circle',
+                                     'listTitleShowHide' : 'd-none',
+                                     'listText' : 'Ready to think of food as a value center, not a cost center'
+                                 },
+                                 {
+                                    'listIconImg' : 'icon-check.svg',
+                                    'altIcon' : 'tick mark inside circle',
+                                    'listTitleShowHide' : 'd-none',
+                                    'listText' : 'Committed to making food and nutrition an essential part of each school day'
+                                },
+                                {
+                                    'listIconImg' : 'icon-check.svg',
+                                    'altIcon' : 'tick mark inside circle',
+                                    'listTitleShowHide' : 'd-none',
+                                    'listText' : 'Seeking new, scalable solutions to improve better health and equity for your students'
+                                },
+                                {
+                                    'listIconImg' : 'icon-check.svg',
+                                    'altIcon' : 'tick mark inside circle',
+                                    'listTitleShowHide' : 'd-none',
+                                    'listText' : 'A district with more than [XX]K students'
+                                },
+                             ]
+                         },
+                    })
+
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">bullettext-l-image-r-curve-greenbg (Bullet Text L-image R(Curve + green bg))</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/bullettext-l-image-r.html',{
+                        'curveBg': 'bullettext-l-image-r--curvebg',
+                        'curveBgColor': 'bullettext-l-image-r--curvebg-dark-green',
+                        'eyebrowShowHide':'d-none',
+                        'title':'FoodCorps benefits',
+                        'subTitleShowHide':'d-none',
+                        'subTextShowHide':'d-block',
+                        'subText':'FoodCorps is as committed to the wellbeing of our staff as we are to the students we serve. We’re proud to offer a strong package of benefits that include:',
+                        'bgColor':'',
+                        'textColor': 'text-white',
+                         'mainImg':'image-benefits.png',
+                         'altMainImg':'happy people eating food on a park bench',
+                         'btnShowHide':'d-none',
+                         'offsetTextColor':'text-light',
+                         'figCaption'   :   'Lorem ipsum image credit dolor',
+                         "results"  : {
+                             "list": [
+                                 {
+                                     'listIconImg' : 'icon-star.svg',
+                                     'altIcon' : 'Star inside circle',
+                                     'listTitleShowHide' : 'd-block',
+                                     'listTitle' : 'Health Insurance',
+                                     'listText' : 'Medical, dental, and vision insurance, Flexible Spending Accounts (FSA), life insurance, supplemental life insurance, disability insurance, and accidental death and dismemberment'
+                                 },
+                                 {
+                                    'listIconImg' : 'icon-star.svg',
+                                    'altIcon' : 'Star inside circle',
+                                    'listTitleShowHide' : 'd-block',
+                                    'listTitle' : 'Paid Time Off, Leave, and 401(k) Benefits',
+                                    'listText' : 'Generous PTO, parental leave, options for family and medical leave, and matching 401(k) contributions'
+                                },
+                                {
+                                    'listIconImg' : 'icon-star.svg',
+                                    'altIcon' : 'Star inside circle',
+                                    'listTitleShowHide' : 'd-block',
+                                    'listTitle' : 'Remote Work',
+                                    'listText' : 'The ability to work from home when needed'
+                                },
+                                {
+                                    'listIconImg' : 'icon-star.svg',
+                                    'altIcon' : 'Star inside circle',
+                                    'listTitleShowHide' : 'd-block',
+                                    'listTitle' : 'Half-Day Fridays',
+                                    'listText' : 'Four extra hours of weekend on Friday mornings or afternoons'
+                                },
+                                {
+                                    'listIconImg' : 'icon-star.svg',
+                                    'altIcon' : 'Star inside circle',
+                                    'listTitleShowHide' : 'd-block',
+                                    'listTitle' : 'Professional Development',
+                                    'listText' : 'Funding and time dedicated to your professional growth'
+                                },
+                                {
+                                    'listIconImg' : 'icon-star.svg',
+                                    'altIcon' : 'Star inside circle',
+                                    'listTitleShowHide' : 'd-block',
+                                    'listTitle' : 'Sabbatical Policy',
+                                    'listText' : 'One month of sabbatical after every three years of working at FoodCorps'
+                                },
+                             ]
+                         },
+                    })
+
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">bullettext-l-image-r-curve-sandbg (Bullet Text L-image R(Curve + sand bg))</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/bullettext-l-image-r.html',{
+                        'curveBg': 'bullettext-l-image-r--curvebg',
+                        'curveBgColor': 'bullettext-l-image-r--curvebg-sand',
+                        'eyebrowShowHide':'d-none',
+                        'title':'Ways to partner with FoodCorps',
+                        'subTitleShowHide':'d-none',
+                        'subTextShowHide':'d-none',
+                        'textColor': 'text-dark',
+                         'mainImg':'image_partner.png',
+                         'altMainImg':'happy people eating food on a park bench',
+                         'btnShowHide':'d-none',
+                         'offsetTextColor':'text-dark',
+                         'figCaption'   :   'Lorem ipsum image credit dolor',
+                         "results"  : {
+                             "list": [
+                                 {
+                                     'listIconImg' : 'icon-partner.svg',
+                                     'altIcon' : 'hand shaking icon',
+                                     'listTitleShowHide' : 'd-block',
+                                     'listTitle' : 'Corporate philanthropy',
+                                     'listText' : 'This is a pivotal moment for food security and education. Our nation recognizes that the role schools play in our kids’ lives transcends academics, and that food and nutrition are a locus of racial justice. Corporate support enables us to keep driving deep change through food, from our AmeriCorps service program to our legislative advocacy work.'
+                                 },
+                                 {
+                                    'listIconImg' : 'icon-partner.svg',
+                                    'altIcon' : 'hand shaking icon',
+                                    'listTitleShowHide' : 'd-block',
+                                    'listTitle' : 'Cause marketing',
+                                    'listText' : 'Partner with us on a cause marketing campaign tailored to your priorities and anchored in corporate social responsibility. Let’s connect you to FoodCorps in your consumers’ perceptions, elevate their awareness of our work, and inspire them to become advocates for kids’ food health in their local communities.'
+                                },
+                                {
+                                    'listIconImg' : 'icon-partner.svg',
+                                    'altIcon' : 'hand shaking icon',
+                                    'listTitleShowHide' : 'd-block',
+                                    'listTitle' : 'Sponsorship',
+                                    'listText' : 'Elevate positive brand awareness and help grow a healthier future for America by sponsoring and underwriting FoodCorps’ priority initiatives and trainings. Your company can be our key ally at the forefront of our most urgent and highest-profile work.'
+                                },
+                             ]
+                         },
+                    })
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">image-ctabox-a (Image CTA Box A)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'bgColor'   : 'bg-light',
+                        'thumb': 'images/img-cta-box-a.png',
+                        'title': 'Take action for food justice for kids',
+                        'text': 'Lorem ipsum dolor sit amet',
+                        'btnTxt': 'Button Primary'
+                    })
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'bgColor'   : 'bg-light',
+                        'thumb': 'images/become-a-service-member-cta.png',
+                        'showHide':'d-none',
+                        'title': 'Become a service member',
+                        'text': 'Lorem ipsum dolor sit amet',
+                        'btnTxt': 'CTA to page'
+                    })
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'bgColor'   : 'bg-light',
+                        'thumb': 'images/bring-fc-to yourdistrict-cta.png',
+                        'showHide':'d-none',
+                        'title': 'Bring FoodCorps to your district',
+                        'text': 'Lorem ipsum dolor sit amet',
+                        'btnTxt': 'CTA to page'
+                    })
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'bgColor'   : 'bg-light',
+                        'thumb': 'images/equity-inclusion-cta.png',
+                        'showHide':'d-none',
+                        'title': 'Headline EDI Report Lorem',
+                        'image-ctabox-aModifier':'image-ctabox-a--titlemargin',
+                        'text': 'Lorem ipsum dolor sit amet',
+                        'btnTxt': 'CTA to page'
+                    })
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'bgColor'   : 'bg-light',
+                        'thumb': 'images/what-wedo-batch-4-cta.png',
+                        'showHide':'d-none',
+                        'title': 'Headline impact numbers',
+                        'text': 'Lorem ipsum dolor sit amet',
+                        'btnTxt': 'CTA to page'
+                    })
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'bgColor'   : 'bg-light',
+                        'thumb': 'images/where-you-serve-cta.png',
+                        'showHide':'d-none',
+                        'title': 'Interested in becoming a service member?',
+                        'image-ctabox-aModifier':'image-ctabox-a--titlemargin',
+                        'text': 'Lorem ipsum dolor sit amet',
+                        'btnTxt': 'CTA to page'
+                    })
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">team-grid (Team Grid)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/team-grid.html',{
+                        'h2Title'           :       'Meet our team',
+                        "results"  : {
+                            "list": [
+                                {
+                                    'shapeImg' : 'images/team_alumni-1.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-2.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'iconShowHide' : 'd-inline-block'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-3.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-4.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-5.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-6.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-1.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-2.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-3.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-4.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'iconShowHide' : 'd-inline-block'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-5.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'iconShowHide' : 'd-inline-block'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-6.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'iconShowHide' : 'd-inline-block'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-1.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-1.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'iconShowHide' : 'd-inline-block'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-1.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'iconShowHide' : 'd-inline-block'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-1.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'iconShowHide' : 'd-inline-block'
+                                }
+                            ]
+                        },
+                    })
+
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">annual-report-grid (Annual report grid)</h4>
+                        <hr class="my-10">
+                    </div>
+
+                    <div class="container">
+                    @@include('includes/modules/repeator/annual-report-grid.html',{
+                        'year' : '2023',
+                        "results"  : {
+                            "list": [
+                                {
+                                    'imgLocation':'images/2021-ar@2x.png',
+                                    'btnText':'View report',
+                                    'title':'Annual Report'
+                                },
+                                {
+                                    'imgLocation':'images/2021-edi-report@2x.png',
+                                    'btnText':'View report',
+                                    'title':'Equity, Diversity, & Inclusion Report'
+                                },
+                                {
+                                    'imgLocation':'images/2020-afs@2x-yellow.png',
+
+                                    'btnText':'View report',
+                                    'title':'Audited Financial Statement'
+                                },
+                                {
+                                    'imgLocation':'images/990-form@2x.png',
+                                    'btnText':'View report',
+                                    'title':'FY 2021 990 Form'
+                                }
+                            ]
+
+                        },
+                    })
+                    </div>
+                    
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">two-column-intro-text (2 Column Intro Text)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/two-column-intro-text.html',{
+                        'title' : 'We believe big things are possible',
+                        'subTitle': 'Because the biggest things are at stake.',
+                        'bodyMovingPath': 'images/icon-lunch.json',
+                        'bodyMoving'            :   true,
+                        'paragraph': '<p>Not just kids’ wellbeing, but racial, social, and educational inequities — all of this is bound up in the life-giving and life-changing substance of food. When you get involved with FoodCorps, you’re feeding kids today and nourishing their futures by connecting them in body, mind, and spirit to the importance and joy of food as they grow.</p> <p>With FoodCorps, you can do that in four different ways:</p>'
+                    })
+
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">case-study (Case Study)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/case-study.html',{
+                        'title':'Rogue Valley, Oregon',
+                        'paragraph':'<p>The school year had just begun when wildfires devastated the communities of Phoenix and Talent, Oregon. Longtime FoodCorps partner <a href="https://www.rvfarm2school.org/">Rogue Valley Farm to School</a> (RVF2S) adapted its presence in Phoenix-Talent School District to make students’ mental health a priority. For service member Alicia Loebl, this meant teaching mindfulness and self-regulation practices, tailoring lessons to be responsive to students’ needs, and sometimes just being in community in the garden.</p><p>Alicia conducted pre- and post-lesson stress checks as part of a RVF2S evaluation to understand the effects of garden education on students coping with trauma. The results confirmed the program’s healing power: students felt better after being in the garden. An external evaluation found the benefits extended to teachers—both for their own healing and their relationship with students. The year of intense hardship built stronger bonds—and alignment—across the school community, says Rebecca Slosberg, Education Director at RVF2S. “One of the biggest things that we found,” says Rebecca, “is it’s all about relationship building.” </p>',
+                            "results"  : {
+                                "list": [
+                                    {
+                                    'imgLocation'                   :   'images/RV-img-1.png',
+                                    },
+                                    {
+                                    'imgLocation'                   :   'images/RV-img-2.png',
+                                    },
+                                    {
+                                    'imgLocation'                   :   'images/RV-img-3.png',
+                                    },
+                                ]
+                            },
+                    })
+
+                    @@include('includes/modules/section/case-study.html',{
+                        'title':'Portland, ME',
+                        'paragraph':'<p>FoodCorps service is often a stepping stone for school communities to make food education a regular part of school life. In Portland, Maine, ongoing service member support through partnerships with <a href="https://www.cultivatingcommunity.org/">Cultivating Community</a> and Portland Public Schools helped make the case for four full-time district-employed garden educator positions—an investment in hands-on learning for more kids. “If you’re trying to change culture or systems, one person can’t do that,” says FoodCorps alumna Lily Chaleff (ME ’17), Schools Program Manager at Cultivating Community. “There has to be community buy-in.” Ryan Parker, FoodCorps Maine’s Program Associate Director, like all our state program staff, works with school districts like PPS to make sure the structures are—or get—in place for lasting impact. With this long-term view, Ryan says, “we can impact an entire district for generations.”  </p>',
+                            "results"  : {
+                                "list": [
+                                    {
+                                    'imgLocation'                   :   'images/ME-img-1.png',
+                                    },
+                                    {
+                                    'imgLocation'                   :   'images/ME-img-2.png',
+                                    },
+                                    {
+                                    'imgLocation'                   :   'images/ME-img-3.png',
+                                    },
+                                ]
+                            },
+                    })
+
+                    @@include('includes/modules/section/case-study.html',{
+                        'title':'Cedar Rapids, IA',
+                        'paragraph':'<p>Strong relationships are a cornerstone of FoodCorps service. In Cedar Rapids, Iowa, FoodCorps began supporting the school district in partnership with <a href="https://www.extension.iastate.edu/linn/">Iowa State University Extension and Outreach in Linn County</a> in 2013. Ann Torbert, Dallas County Regional Director at ISU Extension, supervised seven generations of FoodCorps members in Cedar Rapids, and says they have been instrumental in the district’s local food sourcing initiatives since day one. “Each year, service members add their spin and encouragement to take our local foods work one next step,” she says. Years of building trust meant 2018-20 service member Dainese Pridgeon was seen as an integral member of the community—and its COVID-19 response. When schools closed in March, she immediately began helping cafeteria staff cook and bag meals for Cedar Rapids families five days a week. Dainese credits those who came before her: “It makes me so grateful to the first FoodCorps members, who let me do what I was doing.” </p>',
+                            "results"  : {
+                                "list": [
+                                    {
+                                    'imgLocation'                   :   'images/cedar-img-1.png',
+                                    },
+                                    {
+                                    'imgLocation'                   :   'images/cedar-img-2.png',
+                                    },
+                                    {
+                                    'imgLocation'                   :   'images/cedar-img-3.png',
+                                    },
+                                ]
+                            },
+                    })
+
+                    @@include('includes/modules/section/case-study.html',{
+                        'title':'Clarkston, GA',
+                        'paragraph':'<p>More than 60,000 refugees have made their first American home in Clarkston, Georgia, just east of Atlanta. FoodCorps service member Meggie Stewart, better known to her students as Farmer Meggie, served for two years with the <a href="https://www.rescue.org/united-states/atlanta-ga">International Rescue Committee</a> at Indian Creek Elementary in Clarkston. Meggie took extra care to connect with her students and nurture a sense of belonging, particularly with students who joined the community as refugees. “The school culture at Indian Creek was incredibly tight-knit,” she says. With support and guidance from IRC colleagues and members of the Clarkston community, Meggie celebrated the many cultures of students through her lessons—from the foods they grew in the gardens, like long beans and moringa, to recipes that reflected students’ taste preferences, like a love of garlic and spicy foods</p>',
+                            "results"  : {
+                                "list": [
+                                    {
+                                    'imgLocation'                   :   'images/clarkston-img-1@2x.png',
+                                    },
+                                    {
+                                    'imgLocation'                   :   'images/clarkston-img-1@2x.png',
+                                    },
+                                    {
+                                    'imgLocation'                   :   'images/clarkston-img-1@2x.png',
+                                    },
+                                    {
+                                        'imgLocation'                   :   'images/clarkston-img-1@2x.png',
+                                        },
+                                ]
+                            },
+                    })
+                </main>
+            </div>
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

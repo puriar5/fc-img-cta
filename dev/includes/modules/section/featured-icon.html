@@ -1,0 +1,18 @@
+<section class="featured-icon @@modifier position-relative @@bgColor bg-transition" data-color="light"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-11 offset-lg-1">
+                @@if (bodyMoving === true) {
+                    <div class="bodymoving featured-icon-figure">
+                        <div class="js-bodymoving" data-path="@@bodyMovingPath"></div>
+                    </div>
+                }
+                @@if(bodyMoving === false) {
+                    <figure class="featured-icon-figure">
+                        <img src="images/@@iconName" alt="image description">
+                    </figure>
+                }
+            </div>
+        </div>
+    </div>
+</section>

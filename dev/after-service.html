@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'FoodCorps | Where You Will Serve'})
+        <link rel="stylesheet" href="css/styles/page-afterservice.min.css" />
+        
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html')
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+                </div>
+                <main class="theme-main">
+                    
+                    
+                    <!-- Section Post -->
+                    @@include('includes/modules/section/section-post.html',{
+                        'showHide': 'd-none',
+                        'bgColor': 'bg-sand',
+                        'title': 'A Year of Service, a Lifetime of Support',
+                        'para': ''
+                    })
+                    <!-- /Section Post -->
+                    
+                    
+                    <!-- Lead Video -->
+                    @@include('includes/modules/section/lead-video.html',{
+                        'dataColor'             :       'dark-green',
+                        'h1Title'               :       '',
+                        'playThumb'             :       'images/icon-play.svg',
+                        'showHideDescription'   :       'd-none',
+                        'posterImage'           :       'video-still@2x.jpg',
+                        'videoSource'           :       'https://sample-videos.com/video123/mp4/480/big_buck_bunny_480p_20mb.mp4',
+                        'showHideCta'           :       'd-none',
+                        'showHideCaption'       :       'd-none',
+                    })
+                    <!-- /Lead Video -->
+
+
+                    <!-- Section Intro Text & CTA Grid -->
+                    <section class="intro-text-cta bg-transition" data-color="light">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-9 col-lg-5 col-xl-6">
+                                    @@include('includes/modules/cards/card-intro-text-cta.html',{
+                                        'title': 'Nuturing impactful careers for alumni',
+                                        'para': 'Our model for changing the system is about much more than your year of service. You’ll stay connected to FoodCorps throughout your career.'
+                                    })
+                                </div>
+                                <div class="col-md-11 col-lg-7 col-xl-6">
+                                    @@include('includes/modules/section/cta-box-grid-x2.html')
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /Section Intro Text & CTA Grid -->
+
+
+                    <!-- Section Column Text Fixed Scroll -->
+                    <section class="column-text-fixed-scroll bg-transition" data-color="light">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-5">
+                                    <div class="column-text-fixed-scroll__left sticky-md-top">
+                                        <span class="eyebrow-1 text-primary text-uppercase mb-1">Career development</span>
+                                        <h3 class="mb-8 mb-lg-16">Here are six core career paths where FoodCorps alumni are changing the world</h3>
+                                        <div class="pie-chart-box d-flex align-items-center">
+                                            <svg class="piechartd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+                                                <circle id="targetd" r="240" stroke="#d0d5e5" cx="500" cy="500" />
+                                                <circle id="targete" r="240" stroke="#707bb7" cx="500" cy="500" />
+                                            </svg>
+                                            <div class="pie-chart-box__content">
+                                                <h2 class="mb-1"><span id="countercolscroll"></span>%</h2>
+                                                <p>
+                                                    of alumni in public service/social impact
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 offset-lg-1 col-lg-6">
+                                    <div class="column-text-fixed-scroll__right">
+                                        <article class="card-text-with-icon">
+                                            <img src="images/icon-health-sm@2x.png" alt="Icon Health SM">
+                                            <div class="card-text-with-icon__content">
+                                                <p class="body-1 mb-0 mb-md-2">Nutrition & Public Health</p>
+                                                <p class="mb-4 mb-lg-8">
+                                                    Health educators, researchers, and clinical dieticians are the essential professionals who work to make our society healthier every day. They study, teach, communicate and practice safe and healthy food, sound nutrition, and good dietary habits.
+                                                </p>
+                                                <a href="" class="link-text link-primary link-wobble" title="title">Meet FoodCorps Alumni</a>
+                                            </div>
+                                        </article>
+                                        <article class="card-text-with-icon">
+                                            <img src="images/icon-edu@2x.png" alt="Icon Edu">
+                                            <div class="card-text-with-icon__content">
+                                                <p class="body-1 mb-0 mb-md-2">Education</p>
+                                                <p class="mb-4 mb-lg-8">
+                                                    Kids’ formative experiences in school are as critical to their development as what they eat. School teachers and leaders, and educational administrators teach, inspire, and nurture them, and prepare them for thriving lives as adults.
+                                                </p>
+                                                <a href="" class="link-text link-primary link-wobble" title="title">Meet FoodCorps Alumni</a>
+                                            </div>
+                                        </article>
+                                        <article class="card-text-with-icon">
+                                            <img src="images/icon-nonprofit@2x.png" alt="Icon Nonprofit">
+                                            <div class="card-text-with-icon__content">
+                                                <p class="body-1">Nonprofit Management</p>
+                                                <p class="mb-4 mb-lg-8">
+                                                    The nonprofit sector drives positive change in our world. It’s full of passionate people who dream of a better, more just society, and work tirelessly to create it in so many ways—from the arts to the streets, from the global environment to local needs.
+                                                </p>
+                                                <a href="" class="link-text link-primary link-wobble" title="title">Meet FoodCorps Alumni</a>
+                                            </div>
+                                        </article>
+                                        <article class="card-text-with-icon">
+                                            <img src="images/icon-food-sm@2x.png" alt="Icon Food">
+                                            <div class="card-text-with-icon__content">
+                                                <p class="body-1 mb-0 mb-md-2">School Food Leadership</p>
+                                                <p class="mb-4 mb-lg-8">
+                                                    School nutrition directors play the most powerful role in shaping the day-to-day operations of school food. They work with school leaders and food service staff to create sustainable cafeterias that truly nourish kids.
+                                                </p>
+                                                <a href="" class="link-text link-primary link-wobble" title="title">Meet FoodCorps Alumni</a>
+                                            </div>
+                                        </article>
+                                        <article class="card-text-with-icon">
+                                            <img src="images/icon-partner-bullet@2x.png" alt="Icon Partner">
+                                            <div class="card-text-with-icon__content">
+                                                <p class="body-1 mb-0 mb-md-2">Policy & Advocacy</p>
+                                                <p class="mb-4 mb-lg-8">
+                                                    Policy makers, influencers, and advocates are the voices who articulate and establish the guidelines and laws that guarantee healthy food for all. Policy and advocacy workers lead us, ultimately, toward a more just society.
+                                                </p>
+                                                <a href="" class="link-text link-primary link-wobble" title="title">Meet FoodCorps Alumni</a>
+                                            </div>
+                                        </article>
+                                        <article class="card-text-with-icon">
+                                            <img src="images/icon-protect@2x.png" alt="Icon Protect">
+                                            <div class="card-text-with-icon__content">
+                                                <p class="body-1 mb-0 mb-md-2">Agriculture & Food Protection</p>
+                                                <p class="mb-4 mb-lg-8">
+                                                    It all starts with the food we grow and produce. Of all the ways to work toward healthier food in society, a career in agriculture and local food systems is the most truly rooted in place.
+                                                </p>
+                                                <a href="" class="link-text link-primary link-wobble" title="title">Meet FoodCorps Alumni</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <script src="scripts/chart-d.js"></script>
+                    <!-- /Section Column Text Fixed Scroll -->
+
+
+                    <!-- Section Image BL Text R -->
+                    @@include('includes/modules/section/image-bl-text-r.html',{
+                        'bodyMoving'            :   true,
+                        'bodyMovingPath': 'images/icon-training-red.json',
+                    })
+                    <!-- /Section Image BL Text R -->
+
+
+                    <!-- Section Text L Image R -->
+                    <section class="text-l-image-r bg-transition bg-dark-green text-white" data-color="dark-green">
+                        <div class="container-fluid">
+                            <div class="row flex-column-reverse flex-md-row">
+                                <div class="col-md-6">
+                                    <div class="text-l-image-r__left">
+                                        <h3>Alumni grants</h3>
+                                        <p>
+                                            FoodCorps distributes $25,000 annually through dedicated alumni grants. FoodCorps alumni can apply for grants up to $5,000 to support personal professional development, service projects, seed funding, community COVID relief, and more. 
+                                        </p>
+                                        <h4>Alumni council</h4>
+                                        <p>
+                                            T​​he FoodCorps Alumni Council is a cohort of six FoodCorps alumni who advise on FoodCorps’ virtual career fairs, grant applications, and policy engagement. Each council member is expected to spend 10 hours monthly working on alumni projects and receives a $500 stipend. Council members serve from January to the end of May. 
+                                        </p>
+                                        <h3>Online resources</h3>
+                                        <p>
+                                            Alumni gain lifetime access to two ever-growing online resources: The Toolshed and FoodCorps Connect. The Toolshed is an online library chock-full of how-to tools for healthy food education programming, sourcing healthy foods in school, community organizing, and more. FoodCorps Alumni Connect is an online community for alumni and current service members to seek out and connect with career mentors, build their network, and find jobs. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-l-image-r__right sticky-md-top">
+                                        <div class="d-flex justify-content-end">
+                                            <figure class="thumbnail-img">
+                                                <img src="images/img_network resources@2x.png" alt="Thumbnail Image">
+                                            </figure>
+                                        </div>
+                                        <div class="caption d-flex justify-content-end">
+                                            <figcaption>Lorem ipsum image credit dolor</figcaption>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /Section Text L Image R -->
+
+
+                    <!-- Section Skillet Stories -->
+                    <section class="skillet-stories text-light bg-dark-green">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h2>From the Skillet</h2>
+                                    <div class="slider">
+                                        <div class="slider__wrap swiper-wrapper">
+                                            <div class="item swiper-slide">
+                                                @@include('includes/modules/cards/card-food-court.html',{
+                                                    'bgShape' :       'bg-yellow',
+                                                    'shapeImg' :       'images/fpo-story-img.png'
+                                                })
+                                            </div>
+                                            <div class="item swiper-slide">
+                                                @@include('includes/modules/cards/card-food-court.html',{
+                                                    'bgShape' :       'bg-primary',
+                                                    'shapeImg' :       'images/fpo-story-img-2.png'
+                                                })
+                                            </div>
+                                            <div class="item swiper-slide">
+                                                @@include('includes/modules/cards/card-food-court.html',{
+                                                    'bgShape' :       'bg-yellow',
+                                                    'shapeImg' :       'images/fpo-story-img.png'
+                                                })
+                                            </div>
+                                            <div class="item swiper-slide">
+                                                @@include('includes/modules/cards/card-food-court.html',{
+                                                    'bgShape' :       'bg-primary',
+                                                    'shapeImg' :       'images/fpo-story-img-2.png'
+                                                })
+                                            </div>
+                                            <div class="item swiper-slide">
+                                                @@include('includes/modules/cards/card-food-court.html',{
+                                                    'bgShape' :       'bg-yellow',
+                                                    'shapeImg' :       'images/fpo-story-img.png'
+                                                })
+                                            </div>
+                                            <div class="item swiper-slide">
+                                                @@include('includes/modules/cards/card-food-court.html',{
+                                                    'bgShape' :       'bg-primary',
+                                                    'shapeImg' :       'images/fpo-story-img-2.png'
+                                                })
+                                            </div>
+                                        </div>
+                                        <div class="slider__controls slider-01-control">
+                                            <div class="slider__pagination"></div>
+                                            <div class="slider__button-prev">
+                                                <i class="icon-arrow-left"></i>
+                                            </div>
+                                            <div class="slider__button-next">
+                                                <i class="icon-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script src="scripts/skillet-stories.js"></script>
+                    </section>
+                    <!-- /Section Skillet Stories -->
+
+
+                </main>
+            </div>
+            @@include('includes/footer.html')
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

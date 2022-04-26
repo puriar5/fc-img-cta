@@ -1,0 +1,145 @@
+.form {
+	&-group {
+		&:not(:last-child) {
+
+			margin-bottom: 3rem;
+
+			@include media-breakpoint-up(md) {
+				margin-bottom: 4.2rem;
+			}
+		}
+
+		&:nth-last-child(2) {
+			margin-bottom: 0;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 0.6rem;
+		}
+
+		.form {
+			&-control {
+				padding: 1.2rem 0;
+				border: 0;
+				border-bottom: 0.1rem solid $dark;
+				background-color: transparent;
+				color: $dark;
+				border-radius: 0;
+
+				&::placeholder {
+					color: $dark;
+					opacity: 0.5;
+				}
+
+				&:focus {
+					box-shadow: none;
+				}
+			}
+		}
+
+		[type="checkbox"] {
+			+label {
+				display: inline-block;
+			}
+		}
+
+		.select-note {
+			opacity: 0.5;
+		}
+
+		.check-note {
+			margin-bottom: 1.8rem;
+		}
+
+		.custom {
+			&-checkbox {
+				.wpcf7-list-item {
+					display: block;
+					margin: 0;
+
+					&:last-child {
+						label {
+							.wpcf7-list-item-label {
+								margin-bottom: 0;
+							}
+						}
+					}
+
+					label {
+						margin-bottom: 0;
+
+						input {
+							display: none;
+							cursor: pointer;
+							padding: 0;
+							margin: 0;
+
+							&:checked+.wpcf7-list-item-label::after {
+								content: '';
+								display: block;
+								position: absolute;
+								top: 0.2rem;
+								left: 0.8rem;
+								width: 0.9rem;
+								height: 1.6rem;
+								border: solid $primary;
+								border-width: 0 0.3rem 0.3rem 0;
+								transform: rotate(45deg);
+							}
+						}
+
+						.wpcf7-list-item-label {
+							display: inline-block;
+							position: relative;
+							cursor: pointer;
+							padding-left: 3.6rem;
+							margin-bottom: 1.5rem;
+
+							&:before {
+								content: '';
+								background-color: $light;
+								border-radius: 0.5rem;
+								position: absolute;
+								left: 0;
+								top: 0;
+								cursor: pointer;
+								width: 2.4rem;
+								height: 2.4rem;
+							}
+
+						}
+					}
+
+				}
+			}
+		}
+	}
+
+	&-inline {
+		.form {
+			&-control {
+				@extend .body-4;
+
+				&::placeholder {
+					@extend .body-4;
+				}
+
+				padding: 2.1rem 0;
+			}
+
+			&-submit {
+				position: absolute;
+				right: 0;
+				bottom: 1.1rem;
+				display: flex;
+				flex-direction: row-reverse;
+
+				.btn {
+					@extend .body-4;
+					padding: 0.9rem 2.2rem 1.2rem;
+				}
+			}
+		}
+	}
+}

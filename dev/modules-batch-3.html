@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'FoodCorps Sections'})
+</head>
+
+<body>
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html', {
+                <!-- 'headerSkin': 'theme-header--dark' -->
+            })
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--left" data-focus="#first-link">
+                <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+            </div>
+            <main class="theme-main">
+
+                <header class="mt-20 py-20">
+                    <div class="container">
+                        <div class="row mt-20">
+                            <div class="col text-center m">
+                                <h1>tab with accordion vertical</h1>
+                                <hr class="my-10" />
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+
+                @@include('includes/modules/section/tab-accordion-vertical.html',{
+                    'hasSvg' : 'hasSvg',
+                    'themeModifier'  : 'dark',
+                    'modifier'  : 'vertical',
+                    'reverseModifier': 'reverse', 
+                })
+                @@include('includes/modules/section/tab-accordion-vertical2.html',{
+                    'hasSvg' : 'hasSvg',
+                    'themeModifier'  : 'dark',
+                    'modifier'  : 'vertical',
+                    'reverseModifier': 'reverse', 
+                })
+
+                <div class="">
+
+                <header class="mt-20 py-20">
+                  <div class="container">
+                      <div class="row mt-20">
+                          <div class="col text-center m">
+                              <h1>tab with accordion horizontal</h1>
+                              <hr class="my-10" />
+                          </div>
+                      </div>
+                  </div>
+              </header>
+                @@include('includes/modules/section/tab-accordion-horizontal.html',{
+                    'hasSvg' : 'hasNoSvg',
+                    'themeModifier'  : 'light',
+                    'modifier'  : 'horizontal',
+                    'reverseModifier': 'default', 
+                })
+                <header class="mt-20 py-20">
+                  <div class="container">
+                      <div class="row mt-20">
+                          <div class="col text-center m">
+                              <h1>Shifting Module</h1>
+                              <hr class="my-10" />
+                          </div>
+                      </div>
+                  </div>
+              </header>
+                @@include('includes/modules/section/shifting.html',{
+                    'hasSvg' : 'hasNoSvg',
+                    'themeModifier'  : 'light',
+                    'modifier'  : 'horizontal',
+                    'reverseModifier': 'default', 
+                })
+            </div>
+                <section>
+                    <div class="container">
+                    </div>
+                </section>
+            </main>
+        </div>
+        
+        @@include('includes/scripts.html')
+    </div>
+</body>
+
+</html>

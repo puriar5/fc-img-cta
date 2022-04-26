@@ -1,0 +1,293 @@
+<article class="single-post">
+    <div class="container position-relative">
+        <div
+            class="
+                post-header
+                position-relative
+                @@if ( withFeature === true){
+                    post-content--withFeature
+                }
+                @@if(withoutFeature === true) {
+                    post-content--withoutFeature
+                }
+            "
+        >
+            <div class="post-header--background">
+                <span class="visually-hidden">Food Crops Background</span>
+            </div>
+            <div class="post-header-content">
+                <div class="row">
+                    <div class="col-md-11 col-lg-9 offset-lg-1">
+                        <div class="eyebrow text-success mb-2">Lorem article type</div>
+                        <h1 class="h2 mb-4">
+                            Lorem ipsum article news press releases stories resources headline dolor sit
+                        </h1>
+                        <div class="post-excerpt">
+                            Aenean venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante.
+                        </div>
+                        <div class="post-meta subheadline-4-medium">
+                            <div class="post-meta--author">By Loremname Lastname — Month XX, 2022</div>
+                            <div class="post-meta--reading">Reading time — 5 mins</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="
+                post-content
+                @@if ( withFeature === true){
+                    post-content--withFeature
+                }
+                @@if(withoutFeature === true) {
+                    post-content--withoutFeature
+                }
+            "
+        >
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-11 col-lg-9 offset-lg-1">
+                    @@if ( withFeature === true) {
+                    <div class="post-featured post-featured--wrap">
+                        <figure class="post-featured--image position-relative">
+                            <img src="images/single-image@2x.png" alt="" />
+                        </figure>
+                        <div class="post-featured--image__caption caption">Lorem ipsum image credit dolor</div>
+                    </div>
+                    }
+                    @@if ( withFeatureVideo === true) {
+                    <div class="post-featured post-featured--wrap ">
+                        <figure class="post-featured--video position-relative">
+                            @@include('./single-video.html')
+                        </figure>
+                        <div class="post-featured--image__caption caption">Lorem ipsum image credit dolor</div>
+                    </div>
+                    }
+                    @@if ( withFeatureAudio === true) {
+                    <div class="post-featured post-featured--wrap ">
+                        <figure class="post-featured--audio position-relative">
+                            <img src="images/audio-fpo-img@2x.png" alt="" />
+                            <div class="post-featured--audio-container position-relative text-center">
+                                <img src="images/icon-audio.svg" alt="" />
+                                @@include('./module-audio.html',{
+                                    'title'     :       'Lorem audio file title'
+                                })
+                            </div>
+                        </figure>
+                    </div>
+                    }
+
+                    <div class="post-content--single">
+                        <div class="post-content--single__content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Morbi quis commodo odio aenean sed
+                                adipiscing diam donec adipiscing. Mattis aliquam faucibus purus in massa tempor nec.
+                                Augue ut lectus arcu bibendum at varius. Magna etiam tempor orci eu. Nibh tellus
+                                molestie nunc non. Massa tincidunt dui ut ornare lectus sit amet est placerat. Commodo
+                                nulla facilisi nullam vehicula ipsum a arcu cursus. Nullam ac tortor vitae purus. Nibh
+                                tortor id aliquet lectus proin nibh nisl condimentum id. Ultrices tincidunt arcu non
+                                sodales neque sodales ut etiam sit.
+                            </p>
+                            <p>
+                                Enim ut tellus elementum sagittis vitae et leo duis. Tincidunt praesent semper feugiat
+                                nibh sed pulvinar. Odio euismod lacinia at quis risus sed. Massa eget egestas purus
+                                viverra accumsan in nisl. Adipiscing enim eu turpis egestas pretium aenean pharetra.
+                                Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Cras fermentum
+                                odio eu feugiat pretium nibh ipsum. Turpis egestas pretium aenean pharetra magna ac
+                                placerat vestibulum.
+                            </p>
+                            <blockquote class="wp-block-quote">
+                                <p>
+                                    <strong>
+                                        Lorem ipsum quote dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt.
+                                    </strong>
+                                </p>
+                                <cite><em>—Loremname Lastname</em></cite>
+                            </blockquote>
+                            <p>
+                                Ornare arcu odio ut sem. Sit amet consectetur adipiscing elit pellentesque habitant
+                                morbi tristique. Tristique nulla aliquet enim tortor at auctor urna nunc. Volutpat
+                                maecenas volutpat blandit aliquam. Cursus risus at ultrices mi tempus imperdiet nulla.
+                                Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Quisque sagittis
+                                purus sit amet. Gravida rutrum quisque non tellus orci.
+                            </p>
+                            <figure class="wp-block-image size-full is-resized">
+                                <img
+                                    src="images/single-image@2x.png"
+                                    alt=""
+                                    class="wp-image-2045"
+                                    width="840"
+                                    height="466"
+                                    srcset="
+                                        images/single-image@2x.png 954w,
+                                        images/single-image@2x.png 300w,
+                                        images/single-image@2x.png 768w
+                                    "
+                                    sizes="(max-width: 840px) 100vw, 840px"
+                                />
+                                <figcaption>Lorem ipsum image credit dolor</figcaption>
+                            </figure>
+
+                            @@include('./single-video.html')
+                            @@include('./single-video.html')
+                            @@include('./single-slider.html')
+                            <h4>Build a schoolwide culture of health</h4>
+                            <p>
+                                Ornare arcu odio ut sem. Sit amet consectetur adipiscing elit pellentesque habitant
+                                morbi tristique. Tristique nulla aliquet enim tortor at auctor urna nunc. Volutpat
+                                maecenas volutpat blandit aliquam. Cursus risus at ultrices mi tempus imperdiet nulla.
+                                Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Quisque sagittis
+                                purus sit amet. Gravida rutrum quisque non tellus orci.
+                            </p>
+
+                            <div class="post-content--single-twoColumnGallery">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 mb-6 mb-md-0">
+                                        <figure class="">
+                                            <img src="images/single-image@2x.png" />
+                                        </figure>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <figure class="">
+                                            <img src="images/single-image@2x.png" />
+                                        </figure>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="caption">
+                                            Lorem photo captions venenatis fermentum lectus, commodo interdum ex.
+                                            Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum
+                                            placerat.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            @@include('./module-audio.html',{
+                                'title'     :       'Lorem audio file title'
+                            })
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Morbi quis commodo odio aenean sed
+                                adipiscing diam donec adipiscing. Mattis aliquam faucibus purus in massa tempor nec.
+                                Augue ut lectus arcu bibendum at varius. Magna etiam tempor orci eu. Nibh tellus
+                                molestie nunc non. Massa tincidunt dui ut ornare lectus sit amet est placerat. Commodo
+                                nulla facilisi nullam vehicula ipsum a arcu cursus. Nullam ac tortor vitae purus. Nibh
+                                tortor id aliquet lectus proin nibh nisl condimentum id. Ultrices tincidunt arcu non
+                                sodales neque sodales ut etiam sit.
+                            </p>
+                            <p>
+                                Enim ut tellus elementum sagittis vitae et leo duis. Tincidunt praesent semper feugiat
+                                nibh sed pulvinar. Odio euismod lacinia at quis risus sed. Massa eget egestas purus
+                                viverra accumsan in nisl. Adipiscing enim eu turpis egestas pretium aenean pharetra.
+                                Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Cras fermentum
+                                odio eu feugiat pretium nibh ipsum. Turpis egestas pretium aenean pharetra magna ac
+                                placerat vestibulum.
+                            </p>
+                            <!-- Details bottom -->
+                            <div class="details-bottom">
+                                <ul>
+                                    <li class="details-bottom__listWithCtaTextLink">
+                                        <span class="icon">
+                                            <i class="icon-hand"></i>
+                                        </span>
+                                        <div>
+                                            <p class="body-1">
+                                                Lorem links to relevant pages or external links or any kind of links explainer copy
+                                            </p>
+                                            <div class="details-bottom__link">
+                                                <a href="" class="link-text link-primary link-wobble" title="title">
+                                                    Lorem Impact Page CTA
+                                                </a>
+                                            </div>
+                                            <div class="details-bottom__link">
+                                                <a href="" class="link-text link-primary link-wobble" title="title">
+                                                    Lorem Impact Page CTA
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="details-bottom__listWithCtaButton">
+                                        <span class="icon">
+                                            <i class="icon-hand"></i>
+                                        </span>
+                                        <div>
+                                            <p class="body-1">
+                                                Lorem links to relevant pages or external links or any kind of links explainer copy
+                                            </p>
+                                            <div class="details-bottom__link">
+                                                <a href='' class='btn btn-primary btn-bubble' title='title'>@@linkText</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Details bottom -->
+                            <div class="footnote caption">
+                                Lorem footnote copy venenatis fermentum lectus, commodo interdum ex. Pellentesque sit amet enim ante. Aliquam feugiat, magna eget bibendum placerat, quam est feugiat enim, vitae ullamcorper dui lectus fringilla.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="col-12 col-md-1 post-social-share">
+                    <div class="post-social-share__label subheadline-4-medium mb-0 mb-md-3 me-3 me-md-0">Share</div>
+                    <div class="social-share">
+                        <ul class="social-share__list">
+                            <li class="social-share__item">
+                                <a href="#" class="social-share__link">
+                                    <i class="fab fa-facebook-f">
+                                        <svg version="1.2" viewBox="0 0 24 24">
+                                            <g>
+                                                <path
+                                                    d="M13,10h3v3h-3v7h-3v-7H7v-3h3V8.745c0-1.189,0.374-2.691,1.118-3.512C11.862,4.41,12.791,4,13.904,4H16v3h-2.1   C13.402,7,13,7.402,13,7.899V10z"
+                                                />
+                                            </g>
+                                        </svg>
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="social-share__item">
+                                <a href="#" class="social-share__link">
+                                    <i class="fab fa-twitter">
+                                        <svg
+                                            style="
+                                                fill-rule: evenodd;
+                                                clip-rule: evenodd;
+                                                stroke-linejoin: round;
+                                                stroke-miterlimit: 2;
+                                            "
+                                            version="1.1"
+                                            viewBox="0 0 512 512"
+                                        >
+                                            <path
+                                                d="M161.014,464.013c193.208,0 298.885,-160.071 298.885,-298.885c0,-4.546 0,-9.072 -0.307,-13.578c20.558,-14.871 38.305,-33.282 52.408,-54.374c-19.171,8.495 -39.51,14.065 -60.334,16.527c21.924,-13.124 38.343,-33.782 46.182,-58.102c-20.619,12.235 -43.18,20.859 -66.703,25.498c-19.862,-21.121 -47.602,-33.112 -76.593,-33.112c-57.682,0 -105.145,47.464 -105.145,105.144c0,8.002 0.914,15.979 2.722,23.773c-84.418,-4.231 -163.18,-44.161 -216.494,-109.752c-27.724,47.726 -13.379,109.576 32.522,140.226c-16.715,-0.495 -33.071,-5.005 -47.677,-13.148l0,1.331c0.014,49.814 35.447,93.111 84.275,102.974c-15.464,4.217 -31.693,4.833 -47.431,1.802c13.727,42.685 53.311,72.108 98.14,72.95c-37.19,29.227 -83.157,45.103 -130.458,45.056c-8.358,-0.016 -16.708,-0.522 -25.006,-1.516c48.034,30.825 103.94,47.18 161.014,47.104"
+                                                style="fill-rule: nonzero"
+                                            />
+                                        </svg>
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="social-share__item">
+                                <a href="#" class="social-share__link">
+                                    <i class="fab fa-linkedin-in">
+                                        <?xml version="1.0" ?>
+                                        <svg baseProfile="tiny" id="Layer_1" version="1.2" viewBox="0 0 24 24">
+                                            <g>
+                                                <path
+                                                    d="M8,19H5V9h3V19z M19,19h-3v-5.342c0-1.392-0.496-2.085-1.479-2.085c-0.779,0-1.273,0.388-1.521,1.165C13,14,13,19,13,19h-3   c0,0,0.04-9,0-10h2.368l0.183,2h0.062c0.615-1,1.598-1.678,2.946-1.678c1.025,0,1.854,0.285,2.487,1.001   C18.683,11.04,19,12.002,19,13.353V19z"
+                                                />
+                                            </g>
+                                            <g><ellipse cx="6.5" cy="6.5" rx="1.55" ry="1.5" /></g>
+                                        </svg>
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</article>
+<script src="scripts/single-video.js"></script>

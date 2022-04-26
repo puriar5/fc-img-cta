@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'FoodCorps'})
+        <!-- <link rel="stylesheet" href="css/styles/page-home.min.css" /> -->
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html', {
+                    <!-- 'headerSkin': 'theme-header--dark' -->
+                })
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+                </div>
+                <main class="theme-main">
+                    @@include('includes/modules/section/search-result.html',{
+                        "results"  : {
+                            "list": [
+                                {
+                                'imgLocation'                   :   'images/change-tab-bg-active@2x.png',
+                                'title'                         :   'Lorem | Headline Of Page Search Result Term Exists On',
+                                'category'                      :   '<a href="">Uncategorized</a>, <a href="">lorem</a>, <a href="">Ipsum</a>',
+                                'eyebrow1'                      :   'https://foodcorps.org/pagename',
+                                'description'                  :   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor quis nostrud exercitation ullamco enim ad minim veniam, quis nostrud exercitation…'
+                                },
+                                {
+                                'imgLocation'                   :   'images/mega-feat-thumb-01.png',
+                                'title'                         :   'Lorem | Headline Of Page Search Result Term Exists On',
+                                'category'                      :   '<a href="">lorem</a>',
+                                'eyebrow1'                      :   'https://foodcorps.org/pagename',
+                                'description'                  :   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor quis nostrud exercitation ullamco enim ad minim veniam, quis nostrud exercitation…'
+                                },
+                                {
+                                'imgLocation'                   :   'images/fpo-search-img@2x.png',
+                                'title'                         :   'Lorem | Headline Of Page Search Result Term Exists On',
+                                'category'                      :   '<a href="">lorem</a>',
+                                'eyebrow1'                      :   'https://foodcorps.org/pagename',
+                                'description'                  :   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor quis nostrud exercitation ullamco enim ad minim veniam, quis nostrud exercitation…'
+                                },
+                                {
+                                'imgLocation'                   :   'images/fpo-search-img@2x.png',
+                                'title'                         :   'Lorem | Headline Of Page Search Result Term Exists On',
+                                'category'                      :   '<a href="">lorem</a>',
+                                'eyebrow1'                      :   'https://foodcorps.org/pagename',
+                                'description'                  :   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor quis nostrud exercitation ullamco enim ad minim veniam, quis nostrud exercitation…'
+                                },
+                                {
+                                'imgLocation'                   :   'images/fpo-search-img@2x.png',
+                                'title'                         :   'Lorem | Headline Of Page Search Result Term Exists On',
+                                'category'                      :   '<a href="">lorem</a>',
+                                'eyebrow1'                      :   'https://foodcorps.org/pagename',
+                                'description'                  :   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor quis nostrud exercitation ullamco enim ad minim veniam, quis nostrud exercitation…'
+                                }
+                            ]
+                        },
+                    })
+
+                    @@include('includes/modules/section/search-resources.html',{
+                        "results"  : {
+                            "list": [
+                                {
+                                'imgLocation'                   :   'images/fpo-search-img-02@2x.png',
+                                'title'                         :   'Resource title lorem ipsum dolor',
+                                },
+                                {
+                                'imgLocation'                   :   'images/fpo-search-img-02@2x.png',
+                                'title'                         :   'Resource title lorem ipsum dolor',
+                                },
+                                {
+                                'imgLocation'                   :   'images/resource-icon-img@2x.png',
+                                'title'                         :   'Resource title lorem ipsum dolor',
+                                },
+                                {
+                                'imgLocation'                   :   'images/fpo-search-img-03@2x.png',
+                                'title'                         :   'Resource title lorem ipsum dolor',
+                                },
+                                {
+                                'imgLocation'                   :   'images/fpo-search-img-02@2x.png',
+                                'title'                         :   'Resource title lorem ipsum dolor',
+                                },
+                                {
+                                'imgLocation'                   :   'images/resource-icon-img@2x.png',
+                                'title'                         :   'Resource title lorem ipsum dolor',
+                                },
+                                {
+                                'imgLocation'                   :   'images/fpo-search-img-03@2x.png',
+                                'title'                         :   'Resource title lorem ipsum dolor',
+                                },
+                                {
+                                'imgLocation'                   :   'images/fpo-search-img-02@2x.png',
+                                'title'                         :   'Resource title lorem ipsum dolor',
+                                },
+                                {
+                                'imgLocation'                   :   'images/resource-icon-img@2x.png',
+                                'title'                         :   'Resource title lorem ipsum dolor',
+                                },
+                            ]
+                        },
+                    })
+                </main>
+            </div>
+            @@include('includes/footer.html')
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

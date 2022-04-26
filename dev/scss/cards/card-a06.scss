@@ -1,0 +1,17 @@
+.card-a06{
+    &-figure {
+        height: 22.6rem;
+        @include media-breakpoint-up(md){
+            height: 16.8rem;
+        }
+        @include media-breakpoint-up(lg){
+            height: 23.1rem;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 1.3rem;
+            object-fit: cover;
+        }
+    }
+}

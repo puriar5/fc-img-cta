@@ -1,0 +1,41 @@
+.form-group .wpcf7-form-control-wrap{
+    display: block;
+}
+
+.wpcf7-not-valid-tip{
+    position: absolute;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    margin-top: 43px !important;
+    margin-left: 0 !important;
+}
+
+
+.logged-in{
+    @include media-breakpoint-down(xl){
+        margin-top: -4.6rem;
+        .theme-header{
+            top: 4.6rem;
+            .menu-toggler{
+                top: calc(3.4rem + 4.6rem);
+            }
+            &.sticky{
+                top: 0;
+                .menu-toggler{
+                    top: calc(3.4rem);
+                }
+            }
+        }
+        .leadspace-a{
+            padding-top: calc(17rem + 4.6rem)
+        }
+    }
+    @include media-breakpoint-down(md){
+        .leadspace-a{
+            padding-top: calc(13rem + 4.6rem)
+        }
+    }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      @@include('includes/head.html',{'pageTitle':'FoodCorps Sections'})
+      <link rel="stylesheet" href="css/styles/page-home.min.css" />
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html', {
+                    <!-- 'headerSkin': 'theme-header--dark' -->
+                })
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+                </div>
+                
+                <main class="theme-main">
+                    <header class="mt-20 pt-20 mb-5">
+                        <div class="container pt-20">
+                            <div class="row">
+                                <div class="col">
+                                    <h1>Image CTA Box A</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">image-ctabox-a (Image CTA Box A - About)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'bgColor'   : 'bg-light',
+                        'overlay'   : 'overlay-1',
+                        'thumb': 'images/img-cta-01-sm@2x.jpg',
+                        'showHideEyebrow':'d-none',
+                        'title': 'Take action for food justice for kids',
+                        'text': 'Lorem ipsum dolor sit amet',
+                        'btnTxt': 'Join us'
+                    })
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">image-ctabox-a (Image CTA Box A - Become a Service Member)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'overlay'   : 'overlay-2',
+                        'bgColor'   : 'bg-light',
+                        'showHideEyebrow': '',
+                        'ifreverse': 'image-ctabox-a__reverse',
+                        'thumb': 'images/img-cta-02@2x.jpg',
+                        'imageformobile': 'images/mobile-img-apply@2x.png',
+                        'eyebrow': 'STEP 6',
+                        'title': 'Ready to apply?',
+                        'text': 'Lorem ipsum image credit dolor',
+                        'btnTxt': 'Apply now'
+                    })
+
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">image-ctabox-a (Image CTA Box A - Careers / Change the system)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'overlay'   :   'overlay-3',
+                        'ifreverse' : '',
+                        'image-ctabox-aModifier': '',
+                        'bgColor'   : 'bg-light',
+                        'thumb': 'images/img-cta-03@2x.jpg',
+                        'showHideEyebrow':'d-none',
+                        'title': 'Become a service member',
+                        'text': 'Lorem ipsum dolor sit amet',
+                        'btnTxt': 'CTA to page'
+                    })
+
+
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">image-ctabox-a (Image CTA Box A - Equity Inclusion)</h4>
+                        <hr class="my-10">
+                    </div>
+                    
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'overlay'   :   'overlay-4',
+                        'bgColor'   : 'bg-light',
+                        'thumb': 'images/img-cta-04@2x.jpg',
+                        'showHideEyebrow':'d-none',
+                        'title': 'Headline EDI Report Lorem',
+                        'image-ctabox-aModifier':'image-ctabox-a--titlemargin',
+                        'text': 'Lorem ipsum dolor sit amet',
+                        'btnTxt': 'CTA to page'
+                    })
+
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">image-ctabox-a (Image CTA Box A - Funder)</h4>
+                        <hr class="my-10">
+                    </div>
+
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'overlay'   :   'overlay-5',
+                        'bgColor'   : 'bg-dark-green',
+                        'ifreverse': "",
+                        'image-ctabox-aModifier': '',
+                        'eyebrow': '',
+                        'showHideEyebrow' : 'd-none',
+                        'thumb': 'images/img-cta-05@2x.jpg',
+                        'title': 'Support FoodCorps',
+                        'text': 'Lorem ipsum image credit dolor',
+                        'btnTxt': 'Learn how'
+                    })
+
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">image-ctabox-a (Image CTA Box A - Lesson plan / Bring Fc / Partner With Us / Program Guide)</h4>
+                        <hr class="my-10">
+                    </div>
+
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'overlay'   :   'overlay-6',
+                        'bgColor'   : 'bg-dark-green',
+                        'showHideEyebrow' : 'd-none',
+                        'thumb': 'images/img-cta-06@2x.jpg',
+                        'title': 'Bring FoodCorps to your district',
+                        'text': 'Lorem ipsum dolor sit amet',
+                        'btnTxt': 'CTA to page'
+                    })
+
+
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">image-ctabox-a (Image CTA Box A - Support Our Work)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'overlay'   :   'overlay-7',
+                        'ifreverse' : '',
+                        'image-ctabox-aModifier': '',
+                        'bgColor'   : 'bg-light',
+                        'thumb': 'images/img-cta-07@2x.jpg',
+                        'title': 'Lorem donate headline',
+                        'text': 'Students watering plants at PS109 in Bronx, NY',
+                        'btnTxt': 'Donate',
+                        'showHideEyebrow': 'd-none'
+                    })
+
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">image-ctabox-a (Image CTA Box A - What we Do)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'overlay'   :   'overlay-1',
+                        'bgColor'   : 'bg-dark-green',
+                        'showHideEyebrow' : 'd-none',
+                        'thumb': 'images/img-cta-08@2x.jpg',
+                        'title': 'Headline impact numbers',
+                        'text': 'Lorem ipsum dolor sit amet',
+                        'btnTxt': 'CTA to page'
+                    })
+
+
+                    <div class="container my-10">
+                        <h4 class="text-primary mb-8">image-ctabox-a (Image CTA Box A - Where you will serve)</h4>
+                        <hr class="my-10">
+                    </div>
+
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'overlay'   :   'overlay-8',
+                        'bgColor'   : 'bg-light',
+                        'thumb': 'images/img-cta-09@2x.jpg',
+                        'showHideEyebrow':'d-none',
+                        'title': 'Interested in becoming a service member?',
+                        'image-ctabox-aModifier':'image-ctabox-a--titlemargin',
+                        'text': 'Lorem ipsum dolor sit amet',
+                        'btnTxt': 'Learn more'
+                    })
+                </main>
+            </div>
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'Foodcorps - Change The System'})
+    <link rel="stylesheet" href="css/styles/page-change-system.min.css" />
+</head>
+
+<body>
+
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html')
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--left" data-focus="#first-link">
+                <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+            </div>
+            <main class="theme-main">
+                <section class="text-header-b position-relative bg-primary">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7 col-lg-5">
+                                <h1 class="mb-4 mb-md-0 @@textColor">More Than Food. More than Schools.</h1>
+                            </div>
+                            <div class="offset-lg-1 col-md-5 col-lg-6">
+                                <div class="text-header-b-content @@showhideDescription">
+                                    <p class="sub-header">Food is an engine for change, and it takes all of us to power it</p>
+                                    <p>Policy matters. Together, we can create a more just food system for our nation’s kids.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-header-b-bg">
+                        <div class="text-header-b-bg-svg">
+                            <svg width="1440" height="214" viewBox="0 0 1440 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="wave-bg" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 179L104.987 202L214.338 179L527.021 93L786.85 156L1011.51 93H1440V214H0V179Z"
+                                    fill="#EAE0D5" />
+                                <path
+                                    d="M1440 0V124.375C1344.29 116.323 1248.55 122.46 1152.8 142.785C1009.17 173.273 960.666 185.147 864.6 186.746C768.533 188.345 678.238 135.812 528.734 135.812C379.23 135.812 363.237 181.405 225.879 200.68C134.306 213.53 59.013 208.885 -0.000976562 186.746V176.699C96.5906 202.296 192.658 191.951 288.2 145.665C431.513 76.2372 502.452 77.8464 576.4 86.4389C650.347 95.0313 768.533 131.259 864.6 123.255C924.161 118.293 983.722 94.2561 1043.28 69.8376L1049.05 67.4739L1054.81 65.1117C1087.47 51.7365 1120.14 38.6094 1152.8 28.813C1245.98 0.864389 1339.17 0.0259317 1388.52 0.00077795L1440 0Z"
+                                    fill="#00524C" />
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+
+                
+                <!-- Select grid 2 2 -->
+                @@include('includes/modules/section/select-grid-2-2--04.html',{
+                    'bgColor'                               : 'bg-sand',
+                    'h2Title'                               :   'Build something locally',
+                })
+                <!-- Select grid 2 2 -->
+
+
+                <!-- Section Newsletter Signup B -->
+                @@include('includes/modules/section/newsletter-signup-b.html',{
+                    'bgColor'       :       'bg-sand'
+                })
+                <!-- /Section Newsletter Signup B -->
+
+
+                <!-- Section Resources Link Grid -->
+                @@include('includes/modules/section/resources-link-grid.html',{
+                    'bodyMoving'            :   true,
+                    'bodyMovingPath'        : 'images/icon-power.json',
+                })
+                <!-- /Section Resources Link Grid -->
+
+
+                <!-- Section Image CTA Box A -->
+                @@include('includes/modules/section/image-cta-box-a.html', {
+                    'overlay'   :   'overlay-3',
+                    'bgColor'   : 'bg-light',
+                    'thumb': 'images/become-a-service-member-cta.png',
+                    'showHide':'d-none',
+                    'title': 'Become a service member',
+                    'text': 'Lorem ipsum dolor sit amet',
+                    'btnTxt': 'CTA to page'
+                })
+                <!-- /Section Image CTA Box A -->
+
+
+
+            </main>
+        </div>
+        @@include('includes/footer.html')
+        @@include('includes/scripts.html')
+    </div>
+</body>
+
+</html>

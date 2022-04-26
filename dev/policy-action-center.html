@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'Foodcorps - Policy Action Center'})
+    <link rel="stylesheet" href="css/styles/page-policy-action-center.min.css" />
+</head>
+
+<body>
+
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html', {
+                'headerSkin':   'theme-header--white',
+                'menuSkin'  :   'menu-toggler--white',
+            })
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--left" data-focus="#first-link">
+                <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+            </div>
+            <main class="theme-main">
+
+
+                <!-- Leadspace lead video -->
+                @@include('includes/modules/section/lead-video-01.html',{
+                    'h1Title'               :       'Take Action',
+                    'heroDescription'       :       'Here are today’s most critical policy positions and policy change opportunities, where your advocacy and support can make a direct difference.',
+                    'showHideButton'        :       'd-none',
+                    'posterImage'           :       'hero-policy@2x.jpg',
+                    'showHideCta'           :       '',
+                    'ctaText'               :       'Sign up for policy alerts',
+                    'figCaption'            :       'Lorem ipsum image credit dolor',
+                    'bodyMoving'            :   true,
+                    'bodyMovingPath'        : 'images/icon-policy.json',
+                })
+                <!-- /Leadspace lead video -->
+
+                <!-- Policy Grid -->
+                @@include('includes/modules/section/policy-grid.html', {
+                    'bgColor': 'bg-light',
+                })
+                <!-- Policy Grid -->
+                
+                
+                <!-- Tab Accortion -->
+                @@include('includes/modules/section/tab-accordion-vertical2.html',{
+                    'hasSvg' : 'hasSvg',
+                    'themeModifier'  : 'dark',
+                    'modifier'  : 'vertical',
+                    'reverseModifier': 'reverse', 
+                })
+                <!-- Tab Accortion -->
+                
+                
+                <!-- Skillet Stories with Footnote -->
+                <section class="skillet-stories text-light bg-dark-green">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2>Policy news from the Skillet</h2>
+                                <div class="slider">
+                                    <div class="slider__wrap swiper-wrapper">
+                                        <div class="item swiper-slide">
+                                            @@include('includes/modules/cards/card-food-court.html',{
+                                                'bgShape' :       'bg-yellow',
+                                                'shapeImg' :       'images/fpo-story-img.png'
+                                            })
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            @@include('includes/modules/cards/card-food-court.html',{
+                                                'bgShape' :       'bg-primary',
+                                                'shapeImg' :       'images/fpo-story-img-2.png'
+                                            })
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            @@include('includes/modules/cards/card-food-court.html',{
+                                                'bgShape' :       'bg-yellow',
+                                                'shapeImg' :       'images/fpo-story-img.png'
+                                            })
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            @@include('includes/modules/cards/card-food-court.html',{
+                                                'bgShape' :       'bg-primary',
+                                                'shapeImg' :       'images/fpo-story-img-2.png'
+                                            })
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            @@include('includes/modules/cards/card-food-court.html',{
+                                                'bgShape' :       'bg-yellow',
+                                                'shapeImg' :       'images/fpo-story-img.png'
+                                            })
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            @@include('includes/modules/cards/card-food-court.html',{
+                                                'bgShape' :       'bg-primary',
+                                                'shapeImg' :       'images/fpo-story-img-2.png'
+                                            })
+                                        </div>
+                                    </div>
+                                    <div class="slider__controls slider-01-control">
+                                        <div class="slider__pagination"></div>
+                                        <div class="slider__button-prev">
+                                            <i class="icon-arrow-left"></i>
+                                        </div>
+                                        <div class="slider__button-next">
+                                            <i class="icon-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <div class="skillet-stories-footnote eyebrow-1 fst-italic mt-24 mt-md-16 mt-lg-24 pe-xl-2">
+                                    <p>FoodCorps is a non-partisan, non-profit organization. FoodCorps staff and FoodCorps AmeriCorps members may not
+                                        participate in advocacy or lobbying activities during work time charged to a Corporation for National and Community
+                                        Service funded grant or while earning AmeriCorps service hours. No federal funds were used to prepare or distribute
+                                        advocacy content. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="scripts/skillet-stories.js"></script>
+                </section>
+                <!-- Skillet Stories -->
+            </main>
+        </div>
+        @@include('includes/footer.html')
+        @@include('includes/scripts.html')
+        
+    </div>
+</body>
+
+</html>

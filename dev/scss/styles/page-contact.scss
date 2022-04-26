@@ -1,0 +1,131 @@
+.wForm {
+    background: none;
+    padding: 0;
+}
+
+.wFormTitle {
+    border: none;
+    display: none;
+}
+
+.wFormContainer {
+    border: none;
+}
+
+.wForm .htmlSection {
+    display: none;
+}
+
+.wForm .labelsAbove .preField {
+    padding-bottom: 4px;
+    font-size: 20px;
+    line-height: 1.5px;
+    font-family: 'Basier Circle';
+    font-weight: normal;
+    display: block;
+    padding: 0;
+    line-height: 1;
+    margin: 0 0 10px;
+    width: 100%;
+}
+
+.oneField {
+    padding: 0 !important;
+    margin: 0 0 25px !important;
+}
+
+.oneField br {
+    display: none;
+}
+
+.wForm .inputWrapper {
+    display: block;
+    width: 100%;
+}
+
+.wForm .inputWrapper input {
+    border: none;
+    border-bottom: 1px solid #231f20;
+    border-radius: 0px;
+    background: none;
+}
+
+.wForm .inputWrapper input:focus {
+    outline: 0;
+}
+
+.wForm .oneField .inputWrapper input[type="text"] {
+    width: 100% !important;
+    height: 38px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: 'Basier Circle';
+}
+
+.wForm .oneField .inputWrapper input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.wForm .oneField .inputWrapper #tfa_1,
+.wForm .oneField .inputWrapper #tfa_2,
+.wForm .oneField .inputWrapper #tfa_1873,
+.wForm .oneField .inputWrapper #tfa_1874 {
+    width: 100% !important;
+}
+
+.wForm .inputWrapper select#tfa_1875 {
+    width: 100%;
+    border-radius: 3px;
+    height: 62px;
+    font-family: 'Basier Circle';
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.wForm .inputWrapper select#tfa_1875:focus {
+    outline: 0;
+}
+
+.wForm .actions input[type="submit"] {
+    background: #4fb075;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    width: 225px;
+    border-radius: 30px;
+    font-size: 19px;
+    line-height: 17px;
+    font-family: 'Basier Circle';
+    padding: 22px 10px;
+}
+
+.wFormFooter {
+    display: none;
+}
+
+.wForm .oneField .inputWrapper table tr {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 15px;
+}
+
+.wForm .oneField .inputWrapper table tr td {
+    width: 33.33%;
+    margin: 0 0 8px;
+    font-family: 'Basier Circle';
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.wForm form .oneChoice label, .wForm form .oneChoice .label {
+    padding-left: 7px;
+}
+
+.wForm form .errFld {
+    border: none;
+}
+
+.text-cta-box{
+    background-color: #fbfef9;
+}

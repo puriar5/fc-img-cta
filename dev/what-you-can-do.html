@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'FoodCorps'})
+        <link rel="stylesheet" href="css/styles/page-what.min.css" />
+        
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html', {
+                    'headerSkin':   'theme-header--white',
+                    'menuSkin'  :   'menu-toggler--white',
+                    'whatIsActive': 'is-active'
+                })
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+                </div>
+                <main class="theme-main">
+                    @@include('includes/modules/section/lead-video.html',{
+                        'dataColor'             :       'dark-green',
+                        'h1Title'               :       'What You Can Do',
+                        'heroDescription'       :       'Together with communities and partners like you, we can cultivate health, justice, and joy for all children through the power of food in school.',
+                        'videoSource'           :       'http://s3-us-west-2.amazonaws.com/hikercms/6/115/426/1644008677664.mp4',
+                        'posterImage'           :       'hero-what-poster@2x.jpg',
+                        'showHideCta'           :       'd-none',
+                        'showHideCaption'       :       'd-none',
+                    })
+                    @@include('includes/modules/section/two-column-intro-text.html',{
+                        'title' : 'We believe big things are possible',
+                        'subTitle': 'Because the biggest things are at stake.',
+                        'bodyMovingPath': 'images/icon-lunch.json',
+                        'bodyMoving'            :   true,
+                        'paragraph': '<p>Not just kids’ wellbeing, but racial, social, and educational inequities — all of this is bound up in the life-giving and life-changing substance of food. When you get involved with FoodCorps, you’re feeding kids today and nourishing their futures by connecting them in body, mind, and spirit to the importance and joy of food as they grow.</p> <p>With FoodCorps, you can do that in four different ways:</p>'
+                    })
+                    @@include('includes/modules/section/select-grid-2-2--02.html',{
+                        'bgColor'                               : '',
+                        'h2Title'                               :   'How to get involved',
+                    })
+                </main>
+            </div>
+            @@include('includes/footer.html')
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

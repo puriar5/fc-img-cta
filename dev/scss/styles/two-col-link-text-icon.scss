@@ -1,0 +1,48 @@
+@import '../common-imports';
+
+.two-col-link-text-icon {
+    .left-col {
+        &-icon {
+            @include media-breakpoint-up(md) {
+                flex: 0 0 9.6rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                flex: 0 0 18.4rem
+            }
+
+            .js-bodymoving {
+                height: 9.4rem;
+
+                @include media-breakpoint-up(md) {
+                    height: 9.6rem;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    height: 18.4rem;
+                }
+            }
+        }
+
+        &-content {
+
+            h4,
+            .h4 {
+                margin-bottom: 0.4rem;
+
+                @include media-breakpoint-up(lg) {
+                    margin-bottom: 0.6rem;
+                }
+            }
+        }
+    }
+
+    .right-col {
+        .link-text {
+            @include media-breakpoint-down(md) {
+                font-size: 1.8rem;
+                line-height: 1.8rem;
+            }
+        }
+    }
+}

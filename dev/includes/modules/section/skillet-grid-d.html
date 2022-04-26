@@ -1,0 +1,68 @@
+<section class="skillet-grid-d @@svgModifier position-relative @@bgColor overflow-hidden">
+    <div class="skillet-grid-d__hasBg hasSvg">
+        <svg width="1441" height="734" viewBox="0 0 1441 734" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M790.337 349.415C645.573 349.415 312.625 302.872 0 522.5V716C180.965 523.01 395.669 397.181 790.337 349.415Z"
+                fill="#4FB075" />
+            <path class="quote-svg-bg" fill-rule="evenodd" clip-rule="evenodd"
+                d="M1441 0.360107C1384.39 282.485 1131.13 353.543 866.331 349.79C601.534 346.037 192.965 349.688 2.84314e-05 671V734C107.798 734 588.578 734 1441 734V0.360107Z"
+                fill="#00524C" />
+        </svg>
+    </div>
+    <div class="skillet-grid-d-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 offset-lg-1">
+                    @@if (showTitle === true){
+                        <header class="skillet-grid-d-header d-flex align-items-end mb-6 mb-md-4 mb-lg-8">
+                            <h4 class="mb-0">@@h4Title</h4>
+                            <p class="ps-4 ps-md-3">(@@articleCount)</p>
+                        </header>
+                    }
+                    <div class="skillet-grid-d-container">
+                        @@for (var i = 0; i < cardb06.list.length; i++) {
+                            @@include('../cards/card-b06.html',`+(JSON.stringify(cardb06.list[i]))+`)
+                        }
+                    </div>
+                    <div class="skillet-grid-d-footer">
+                        @@if (loadMore === true) {
+                            <div class="skillet-grid-b-footer-cta text-center pt-8 pt-md-10 pt-lg-13">
+                                <a href='' class='btn btn-outline btn-bubble' title='title'>Load More</a>
+                            </div>
+                        }
+                        @@if (pagination === true) {
+                            <div class="skillet-grid-b-footer-pagination text-center pt-16 pt-md-14 pt-lg-19">
+                                <div class="pagination list-unstyled d-flex justify-content-center align-items-center jspagination">
+                                    <ul class="page-numbers d-flex align-items-center flex-wrap">
+                                        <li><a class="previous page-number" href="">
+                                                <button type="button" class="btn">
+                                                    <i class="icon-arrow-left"></i>
+                                                </button>
+                                            </a>
+                                        </li>
+                                        <li><span aria-current="page" class="page-number current">1</span></li>
+                                        <li><a class="page-number" href="">2</a></li>
+                                        <li><a class="page-number" href="">3</a></li>
+                                        <li><a class="page-number" href="">…</a></li>
+                                        <!-- <li><a class="page-number" href="">4</a></li>
+                                        <li><a class="page-number" href="">5</a></li>
+                                        <li><a class="page-number" href="">6</a></li> -->
+                                        <li><a class="page-number" href="">7</a></li>
+                                        <li><a class="page-number" href="">8</a></li>
+                                        <li><a class="page-number" href="">9</a></li>
+                                        <li><a class="next page-number" href="">
+                                                <button type="button" class="btn">
+                                                    <i class="icon-arrow-right"></i>
+                                                </button>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

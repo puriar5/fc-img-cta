@@ -1,0 +1,140 @@
+@import "../common-imports";
+
+.pill-filter {
+    max-width: 100%;
+    margin: 2.3rem 0;
+    &--btn {
+        font-size: 1.4rem !important;
+        padding: 1.05rem 2rem;
+        color: #231f20;
+        margin: 0.8rem 0.5rem;
+        width: 165px;
+        background-color: rgba($color: $yellow, $alpha: 0.38);
+        &.active {
+            background-color: $purple;
+            color: $light;
+        }
+        &:first-child{
+            margin-left: 0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        @include media-breakpoint-up(lg) {
+            width: 170px;
+        min-width: 170px;
+        font-size: 1.6rem !important;
+        margin: 0 2.3rem 1rem;
+        }
+    }
+    &--sp {
+        display: block;
+        font-weight: 600;
+        font-size: 1.4rem;
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+        .btn {
+            margin: 1.2rem 0;
+            width: 100%;
+            font-size: 1.4rem !important;
+            padding: 1.1rem 0;
+        }
+
+        .select-selected {
+            padding: 0.4rem 2.5rem;
+            text-align: center;
+            border-radius: 2.5rem;
+            font-size: 1.4rem;
+            background-color: $purple;
+            color: white;
+            border: 0.3rem solid $purple !important;
+            &::after {
+                font-size: 1rem;
+                top: inherit;
+                color: white;
+                transform: translateY(0);
+            }
+            &--is-active {
+                background-color: $purple;
+                border: 0.3rem solid $purple !important;
+                &::after {
+                    transform: translateY(-3%) rotate(180deg);
+                }
+            }
+        }
+
+        .select-items {
+            position: relative;
+            border: none;
+            padding: 0 0 1.4rem;
+            background: none;
+            & > div {
+                background-color: rgba($color: $yellow, $alpha: 0.38);
+                border-radius: 2.5rem;
+                margin: 20px auto;
+                max-width: 19.8rem;
+                font-size: 1.4rem;
+                text-align: center;
+                padding: 0.7rem;
+                &:last-child {
+                    background-color: transparent;
+                }
+                &.active {
+                    background-color: #707bb7;
+                    color: white;
+                }
+            }
+        }
+        &.select-default{
+            .select-selected{
+                border: 0.3rem solid $primary !important;
+                color: $primary !important;
+                background-color: transparent;
+                &::after {
+                    transform: translateY(0);
+                    color: $primary !important;
+                }
+                &--is-active {
+                    &::after {
+                        transform: translateY(-3%) rotate(180deg);
+                    }
+                }
+            }
+        }
+
+        &.post-filter-selected{
+            .select-selected{
+                 border: 0.3rem solid #707bb7 !important;
+                background-color: #707bb7;
+                color: white !important;
+                &::after {
+                    color: white;
+                    transform: translateY(0);
+                }
+                &--is-active {
+                    border: 0.3rem solid $primary !important;
+                    color: $primary !important;
+                    background-color: transparent;
+                    &::after {
+                        transform: translateY(-3%) rotate(180deg);
+                        color: $primary !important;
+                    }
+                }
+            }
+        }
+    }
+    &--pc {
+        display: none;
+        @include media-breakpoint-up(md) {
+            display: block;
+        }
+        .btn{
+            &-primary{
+                &:focus{
+                    background-color: rgba($color: $yellow, $alpha: 0.38);
+                }
+            }
+        }
+    }
+}

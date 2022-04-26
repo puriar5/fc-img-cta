@@ -1,0 +1,45 @@
+.card-a02{
+    &-left{
+        height: 17.6rem;
+        @include media-breakpoint-up(md){
+            height: 12.4rem;
+            flex: 0 0 16.5rem;
+            max-width: 16.5rem;
+        }
+        @include media-breakpoint-up(lg){
+            height: 15rem;
+            flex: 0 0 20rem;
+            max-width: 20rem;
+        }
+    }
+    &-figure{
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 1.8rem;
+        }
+    }
+    &-content{
+        @include media-breakpoint-up(md){
+            padding-left: 1.6rem;
+        }
+        @include media-breakpoint-up(lg){
+            margin-top: 1.7rem;
+            padding-left: 1.8rem;
+        }
+        p{
+            strong{
+                font-weight: 600;
+                @include media-breakpoint-up(lg){
+                    line-height: 2.4rem;
+                }
+            }
+        }
+        .eyebrow-1{
+            @include media-breakpoint-up(lg){
+                line-height: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./includes/head.html',{'pageTitle':'FoodCorps Menu'})
+    <link rel="stylesheet" href="css/styles/home.min.css" />
+</head>
+
+<body class="page-template-template-homepage" ontouchstart="">
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('./includes/header.html')
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--right" data-focus="#first-link">
+                <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+            </div>
+            <main class="theme-main mt-20 pt-20 mb-20">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="text-center mt-20">Food Corps</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <aside class="sidebar">
+                                <ul class="list-group ml-0" id="anchorListWrap">
+                                    <li class="list-group-item d-flex align-item-center justify-content-center py-3">
+                                        <a href="styleguide.html" target="_blank"
+                                            class="nav-link nav-link-primary text-center link link-primary p-0">Styleguide</a>
+                                    </li>
+                                    <li class="list-group-item d-flex align-item-center justify-content-center py-3">
+                                        <a href="hero.html" target="_blank"
+                                            class="nav-link nav-link-primary text-center link link-primary p-0">Hero</a>
+                                    </li>
+                                    <li class="list-group-item d-flex align-item-center justify-content-center py-3">
+                                        <a href="section.html" target="_blank"
+                                            class="nav-link nav-link-primary text-center link link-primary p-0">Modules A</a>
+                                    </li>
+                                    <li class="list-group-item d-flex align-item-center justify-content-center py-3">
+                                        <a href="section-b.html" target="_blank"
+                                            class="nav-link text-center nav-link-primary link link-primary p-0">Modules B</a>
+                                    </li>
+                                    <li class="list-group-item d-flex align-item-center justify-content-center py-3">
+                                        <a href="modules-batch-3.html" target="_blank"
+                                            class="nav-link text-center nav-link-primary link link-primary p-0">Modules Batch 3</a>
+                                    </li>
+                                    <li class="list-group-item d-flex align-item-center justify-content-center py-3">
+                                        <a href="modules-skillet.html" target="_blank"
+                                            class="nav-link text-center nav-link-primary link link-primary p-0">Modules Skillet</a>
+                                    </li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+                <section>
+                    <div class="container">
+                    </div>
+                </section>
+            </main>
+        </div>
+        @@include('includes/footer.html')
+        @@include('includes/scripts.html')
+    </div>
+</body>
+
+</html>

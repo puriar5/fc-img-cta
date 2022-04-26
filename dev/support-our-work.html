@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'FoodCorps | Support Our Work'})
+    <link rel="stylesheet" href="css/styles/page-support.min.css" />
+
+</head>
+
+<body>
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html', {
+            'headerSkin': 'theme-header--white',
+            'menuSkin' : 'menu-toggler--white',
+            })
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--left" data-focus="#first-link">
+                <div class="pushy-content h-100">
+                    @@include('./includes/offcanvas.html',{
+                    })
+                </div>
+            </div>
+            <main class="theme-main">
+
+                <section class="lead-video lead-video--icon-description overflow-hidden position-relative d-flex align-items-md-center">
+                    <div class="hero-video hero-overlay">
+                        <video id="js-hero-video" poster="images/hero-support@2x.jpg" muted="" autoplay="" loop=""
+                            style="object-fit: cover;width:100%;height:100%;" playsinline="">
+                            <source type="video/mp4" src="@@videoSource">
+                        </video>
+                    </div>
+                    <div class="hero-content w-100 position-relative">
+                        <div class="container">
+                            <div
+                                class="row justify-content-between align-items-center align-items-tb-start align-items-lg-center">
+                                <div class="col-md-6 col-lg-5">
+                                    <h1 class="text-light">Support FoodCorps</h1>
+                                    <a href="#" class="btn btn-primary btn-bubble @@showHideCta">
+                                        Donate
+                                    </a>
+                                </div>
+                                <div class="col-md-2 col-lg-1 text-end">
+                                    <figcaption class="lead-video-figcaption @@showHideCaption text-light">
+                                        <p class="eyebrow-2 fst-italic text-end">
+                                            Students with a freshly harvested beet at Mar Vista Elementary School
+                                            (Oxnard)
+                                        </p>
+                                    </figcaption>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lead-video-bg">
+                        <div class="d-none d-md-block lead-video-bg-svg lead-video-bg-lg">
+                            <svg width="1440" height="327" viewBox="0 0 1440 327" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="bottom-wave"
+                                    d="M0 151.642C229.84 234.085 256.113 261.56 482.665 253.824C994.809 236.336 1088.24 17.4882 1440 0.5C1440 0.5 1440 116.261 1440 325.782L0 326.029C0 217.104 0 151.642 0 151.642Z"
+                                    fill="#00524C" />
+                                <path
+                                    d="M1439 0.5C1287.11 0.5 1030.78 108.632 959.834 141.336C888.883 174.04 470.65 341.767 0 141.336C0 234.591 0 276.084 0 265.816C347.42 360.655 689.758 316.731 1027.01 134.044C1174.68 54.0527 1334.5 0.5 1439 0.5Z"
+                                    fill="#4FB075" />
+                            </svg>
+                        </div>
+                        <div class="d-md-none lead-video-bg-svg lead-video-lg-sm">
+                            <svg width="375" height="72" viewBox="0 0 375 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="bottom-wave"
+                                    d="M0.23872 44.3963L206.284 48.8567L298.037 36.2748L375 4.27478V71.2748H0L0 47.472V45.2424"
+                                    fill="#00524C" />
+                                <path
+                                    d="M374.713 0.0357785C364.199 3.11357 375.005 -0.270239 360.963 6.20225C334.28 18.5011 176.996 81.578 0 6.20225C0 41.2724 0 56.8767 0 53.0152C167.568 66.4893 292.473 51.924 374.713 9.31944C375.116 9.11088 374.809 8.81821 374.713 8.02348C374.577 6.89446 374.653 5.1428 374.713 3.72019C374.771 2.33985 374.619 1.52672 374.713 0.83818C374.774 0.389369 375.327 -0.143977 374.713 0.0357785Z"
+                                    fill="#4FB075" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Add icon and description -->
+
+                    <div class="icn-description"
+                        data-color="light">
+                        <div class="container">
+                            <div class="row justify-content-end">
+                                <div class="col-md-8 col-lg-6 text-end">
+                                    <div class="icn-description-wrapper">
+                                        <figure class="icn-description-figure">
+                                            <img src="images/icon-americorp.svg" alt="image description">
+                                        </figure>
+                                        <div class="description text-light">
+                                            <p>
+                                                FoodCorps is proud to be part of the
+                                                AmeriCorps Service Network. We receive a portion of our funding from the
+                                                agency.
+                                                For the rest, we rely on corporate and foundation partners, and on
+                                                individuals.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="scripts/lead-video.js"></script>
+                </section>
+
+                <section class="select-grid-2-2 select-grid-2-2--support overflow-hidden bg-dark-green">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <header class="select-grid-2-2-header mb-4 mb-md-11 mb-lg-15">
+                                    <h2 class="mb-0">Lorem Ipsum Headline</h2>
+                                </header>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 order-2 order-md-1">
+                                <div class="slider-02">
+                                    <div class="tab-content slider__wrap swiper-wrapper" id="myTabContent">
+                                        <div class="tab-pane swiper-slide fade show active" id="donate" role="tabpanel"
+                                            aria-labelledby="donate-tab">
+                                            <h3>Donate</h3>
+                                            <p>Our work to connect kids to healthy food in school wouldn’t be possible without your support. Donate online or learn about other ways you can give.</p>
+                                            <div class="tab-pane-cta"><a href="#" class="btn btn-primary btn-bubble mt-6">Donate</a></div>
+                                        </div>
+                                        <div class="tab-pane swiper-slide fade" id="corp-partners" role="tabpanel"
+                                            aria-labelledby="corp-partners-tab">
+                                            <h3>Corporate Partners</h3>
+                                            <p>We collaborate with corporations to work towards the vision of each child having access to healthy food in school. Learn how to become a corporate partner.</p>
+                                            <div class="tab-pane-cta"><a href="#" class="btn btn-primary btn-bubble mt-6">Partner</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offset-md-1 col-md-11 col-lg-6 order-1 order-md-2">
+                                <div class="slider-02">
+                                    <ul class="nav slider__wrap swiper-wrapper" id="myTab" role="tablist">
+                                        <li class="nav-item swiper-slide yellow-tab" role="presentation">
+                                            <a class="position-relative d-flex align-items-center active" id="donate-tab"
+                                                data-bs-toggle="tab" data-bs-target="#donate" role="tab" aria-controls="donate"
+                                                aria-selected="true">
+                                                <figure class="nav-item-figure">
+                                                    <img src="images/donate-tab-bg-active@2x.png" alt=""
+                                                        class="object-fit w-100 h-100 active">
+                                                    <img src="images/donate-tab-bg@2x.png" alt="" class="object-fit w-100 h-100">
+                                                </figure>
+                                                <div class="nav-item-content position-relative">
+                                                    <h6>Donate</h6>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item swiper-slide" role="presentation">
+                                            <a class="position-relative d-flex align-items-center" id="corp-partners-tab"
+                                                data-bs-toggle="tab" data-bs-target="#corp-partners" role="tab" aria-controls="corp-partners"
+                                                aria-selected="false">
+                                                <figure class="nav-item-figure">
+                                                    <img src="images/corp-partners-tab-bg-active@2x.png" alt=""
+                                                        class="object-fit w-100 h-100 active">
+                                                    <img src="images/corp-partners-tab-bg@2x.png" alt="" class="object-fit w-100 h-100">
+                                                </figure>
+                                                <div class="nav-item-content position-relative">
+                                                    <h6>Corporate Partners</h6>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="slider__controls d-block d-md-none slider-02-control">
+                                    <div class="slider__pagination"></div>
+                                    <div class="slider__button-prev">
+                                        <i class="icon-arrow-left"></i>
+                                    </div>
+                                    <div class="slider__button-next">
+                                        <i class="icon-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="scripts/select-grid-2-2.js"></script>
+                </section>
+
+                @@include('includes/modules/section/bullettext-l-image-r.html',{
+                    'bgShowHide':   'd-none',
+                    'eyebrowShowHide':'d-none',
+                    'bulletTextModifier':'bullettext-l-image-r--reversed',
+                    'title':'What impact will my donation have?',
+                    'subTitleShowHide':'d-none',
+                    'subTextShowHide':'d-none',
+                    'bgColor':'bg-sand',
+                    'textColor': 'text-dark',
+                     'mainImg':'image_donation-impact@2x.png',
+                     'altMainImg':'child giving a thumbs up',
+                     'btnShowHide':'d-none',
+                     'offsetTextColor':'text-dark',
+                     'figCaption'   :   'Student eating school lunch at Aberdeen Elementary School in Aberdeen, NC.',
+                     "results"  : {
+                         "list": [
+                             {
+                                 'listIconImg' : 'icon-star.svg',
+                                 'altIcon' : 'star inside circle',
+                                 'listTitleShowHide' : 'd-none',
+                                 'listText' : 'FoodCorps provides its programs at no cost to the districts we serve. Your donations enable transformative food education in often cash-strapped schools that otherwise would not have the means to partner with us.'
+                             },
+                             {
+                                'listIconImg' : 'icon-star.svg',
+                                'altIcon' : 'star inside circle',
+                                'listTitleShowHide' : 'd-none',
+                                'listText' : 'As part of the AmeriCorps service network, FoodCorps is accountable to the federal government for every dollar of our budget. Your support is responsibly spent and goes directly toward the implementation of our programs in schools.'
+                            },
+                         ]
+                     },
+                })
+                
+
+
+                @@include('includes/modules/section/quote-l-image-r-slider.html',{
+                    'bgColor'           :       'bg-dark-green',
+                    'quoteSkin'         :       'quote-l-image-r--white',
+                    'quoteModifier'     :       'quote-l-image-r--slider',
+                    'iconQuote'         :       'icon-quote-primary@2x.png',
+                    'linkText'          :       'Read Story CTA',
+                    'mainFigure'        :       'fpo-quote-img-2@2x.webp',
+                    'figCaption'        :       'Lorem ipsum image credit dolor',
+                    'bodyMoving'        :       true,
+                    'bodyMovingPath'    :       'images/icon-quote-green.json',
+                    'bodyMoving'        :       true,
+                    'bodyMovingPath'    :       'images/icon-quote-green.json',
+                })
+
+
+                @@include('includes/modules/section/image-cta-box-a.html', {
+                    'ifreverse' : '',
+                    'image-ctabox-aModifier': '',
+                    'bgColor'   : 'bg-light',
+                    'thumb': 'images/Img-donate@1.2x.png',
+                    'title': 'Lorem donate headline',
+                    'text': 'Students watering plants at PS109 in Bronx, NY',
+                    'btnTxt': 'Donate',
+                    'showHide': 'd-none'
+                })
+            </main>
+        </div>
+        @@include('includes/footer.html')
+        @@include('includes/scripts.html')
+    </div>
+</body>
+
+</html>

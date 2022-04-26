@@ -1,0 +1,38 @@
+
+.card-job {
+
+    border-bottom: 1px solid $secondary;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+    @include media-breakpoint-up(md) {
+        padding-bottom: 3.2rem;
+        margin-bottom: 5rem;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 6.6rem;
+        margin-bottom: 6.6rem;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    h4 {
+        font-family: 'Basier Circle';
+        @include media-breakpoint-up(lg) {
+            font-size: 3.2rem;
+            line-height: 3.6rem;
+        }
+    }
+
+    p {
+        margin-bottom: 2.5rem;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 2.4rem;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 4rem;
+        }
+    }
+
+}

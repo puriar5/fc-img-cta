@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="719px" viewBox="0 0 1440 719" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>quote-bg-white</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.0-About" transform="translate(0.000000, -2252.000000)">
+            <g id="quote-bg-white" transform="translate(0.000000, 2252.360000)">
+                <path d="M789.337486,348.054886 C644.572889,348.054886 312.955702,305.607614 0.330701776,525.236144 C-0.817735724,578.751769 1.48695178,673.336136 0.330701776,718.226955 C181.295255,525.236144 394.668743,395.820511 789.337486,348.054886 Z" id="quote-corner-wave" fill="#4FB075"></path>
+                <path d="M1440,0 C1383.39063,282.125 1129.79688,352.182827 865,348.429886 C600.203125,344.676944 192.964553,348.429886 0,669.742386 C0,669.742386 0,718.503281 0,718.503281 C98.8358632,718.503281 578.835863,718.503281 1440,718.503281 C1440,330.492111 1440,90.9910176 1440,0 Z" id="quote-wave-light" fill="#FBFEF9"></path>
+            </g>
+        </g>
+    </g>
+</svg>

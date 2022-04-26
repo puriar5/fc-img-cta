@@ -1,0 +1,42 @@
+@import '../common-imports';
+
+.text-header-b {
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 10.5rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-bottom: 7rem;
+    }
+
+    &-bg {
+        &-svg {
+            svg {
+                path {
+                    fill: $primary;
+                }
+
+                .wave-bg {
+                    fill: $light;
+                }
+            }
+        }
+    }
+}
+
+
+.theme-main {
+    section {
+        &:last-child {
+            .container {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+.c-tab-accordion{
+    @include media-breakpoint-up(lg){
+        padding: 12rem 0;
+    }
+}

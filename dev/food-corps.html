@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'FoodCorps food crops'})
+        <link rel="stylesheet" href="css/styles/page-home.min.css" />
+        
+    </head>
+    <body class="prevent-scrolling">
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html', {
+                    <!-- 'headerSkin': 'theme-header--dark' -->
+                })
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+                </div>
+                <main class="theme-main" id="view-main">
+                   <div class="fc-heart">
+                       <div class="fc-heart-content">
+                           <section class="fc-heart-sequence">
+                               <div class="fc-heart-stage">
+                                   <canvas></canvas>
+                               </div>
+                           </section>
+                       </div>
+                   </div>
+                   
+                </main>
+            </div>
+            <!-- @@include('includes/footer.html') -->
+            
+            @@include('includes/script-foodcrops.html')
+        </div>
+    </body>
+</html>

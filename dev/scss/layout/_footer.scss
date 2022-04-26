@@ -1,0 +1,330 @@
+.#{$global} {
+    &-footer {
+        z-index: 9;
+        margin-top: -6.5rem;
+
+        @include media-breakpoint-up(md) {
+            margin-top: -10rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-top: -13rem;
+        }
+
+        .container {
+            @include media-breakpoint-down(lg) {
+                padding-left: 3.9rem;
+                padding-right: 3.9rem;
+            }
+
+            @include media-breakpoint-down(md) {
+                padding-left: 3.6rem;
+                padding-right: 3.6rem;
+            }
+        }
+
+        @extend .body-4;
+        color: $secondary;
+        border-top-left-radius: 6.4rem;
+        border-top-right-radius: 6.4rem;
+        padding: 6.4rem 0 2.7rem;
+
+        @include media-breakpoint-up(md) {
+            border-top-left-radius: 10rem;
+            border-top-right-radius: 10rem;
+            padding: 10.8rem 0 6rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            border-top-left-radius: 13.8rem;
+            border-top-right-radius: 13.8rem;
+            padding: 9.2rem 0 6.8rem;
+        }
+
+        &-top {
+            margin-bottom: 4.8rem;
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 8.8rem;
+            }
+        }
+
+        &-navigation {
+            margin-bottom: 6rem;
+            counter-reset: li;
+
+            @include media-breakpoint-up(md) {
+                margin-bottom: 0;
+                margin-left: -0.8rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin-left: 0;
+            }
+
+            li {
+                @extend .h3;
+                font-weight: $font-weight-semibold;
+            }
+
+            li {
+                margin-bottom: 3.2rem;
+                list-style: none;
+
+
+                @include media-breakpoint-up(md) {
+                    margin-bottom: 4.8rem;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    margin-bottom: 6.5rem;
+                }
+
+                a {
+                    position: relative;
+
+                    &::before {
+                        font-size: 1.6rem;
+                        line-height: 1.6rem;
+                        font-family: $font-family-base;
+                        color: $primary;
+                        content: counter(li, decimal-leading-zero);
+                        counter-increment: li;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        transition: 0.5s ease all;
+                    }
+
+                    &:hover {
+                        padding-left: 2.4rem;
+
+                        @include media-breakpoint-up(lg) {
+                            padding-left: 3.5rem;
+                        }
+
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-header {
+            position: relative;
+            margin-left: 5rem;
+
+            @include media-breakpoint-up(md) {
+                margin-left: 5.8rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin-left: 0;
+            }
+
+            &::before {
+                content: "";
+                background-image: url("data:image/svg+xml,%0A%3Csvg width='60px' height='55px' viewBox='0 0 60 55' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Symbols' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='icon_news' transform='translate(-4.000000, -2.000000)' fill='%2300524C' fill-rule='nonzero'%3E%3Cpath d='M45.190213,10.0879632 L45.190213,43.6709437 C45.190213,45.0040193 43.7319666,45.8402586 42.5589145,45.1798759 C36.3452297,41.681813 30.3941203,39.0286801 24.7076985,37.2178732 L23.8539197,36.9543651 C23.838307,38.2407903 23.8757989,39.5233512 23.966384,40.8021655 C24.0413444,41.8604028 24.1344876,42.6671041 24.2733903,43.494178 C24.3887471,44.1810503 24.4967967,44.7067347 24.8317457,46.2528717 C25.4483174,49.0986803 23.2534497,51.7343783 20.1344621,52.2564687 C19.9216658,52.2920888 19.7069655,52.3173955 19.4913849,52.3322771 C16.358229,52.5485592 13.5484585,50.5477552 13.3454282,47.6815199 C13.3304414,47.4699452 13.3305982,47.2576032 13.3458735,47.0457464 C13.4595997,45.4688534 13.4925057,44.9332326 13.5099086,44.2371756 C13.5308626,43.3990844 13.509371,42.5874397 13.4344096,41.5291887 C13.2810493,39.3641572 12.9754739,37.2093415 12.5175252,35.0641943 C12.4713836,34.8480559 12.4681204,34.632838 12.5020433,34.4271603 C10.6701471,34.163292 8.81370999,33.9617812 6.9338083,33.8228059 C6.01554671,33.7549218 5.30559762,32.9996301 5.30559762,32.0906056 L5.30559762,21.6683013 C5.30559762,20.7448401 6.03753167,19.9828014 6.97166598,19.9337072 C12.6215913,19.6367701 18.5332419,18.5072523 24.7076985,16.5410338 C30.8975502,14.5699127 36.8390719,11.9210541 42.5342924,8.59315419 C43.7072652,7.9077486 45.190213,8.74238341 45.190213,10.0879632 Z M16.0955592,35.0108321 L16.1616554,35.3347061 C16.5427465,37.3100243 16.8039173,39.2941863 16.9450678,41.2868477 C17.0274944,42.4504876 17.051868,43.3709734 17.0280679,44.3228954 C17.0088244,45.0925745 16.9740313,45.6589112 16.8562211,47.2924321 C16.8526765,47.3415923 16.8526404,47.3905314 16.8560864,47.4391787 C16.9126251,48.2373516 17.9244473,48.9578582 19.2458958,48.8666385 C19.3466515,48.8596833 19.4469293,48.8478635 19.5461204,48.8312598 C20.820508,48.6179389 21.5543964,47.7366519 21.3903403,46.9794454 C21.0433509,45.3777301 20.929107,44.8219091 20.8015509,44.062397 C20.6437839,43.1229999 20.5381512,42.2081275 20.4557258,41.0445065 C20.3365087,39.3614851 20.3029294,37.6726746 20.3549666,35.9782914 C18.9537284,35.6225477 17.5349074,35.3073308 16.101326,35.0316715 L16.0955592,35.0108321 Z M52.7792892,35.3969779 L52.9105342,35.5187853 L59.415042,42.1968262 C60.0886057,42.88836 60.066756,43.9879882 59.366239,44.6529145 C58.7095044,45.2762828 57.6894337,45.2962857 57.0094908,44.7265447 L56.8782456,44.6047374 L50.373738,37.9266964 C49.7001741,37.2351626 49.722024,36.1355345 50.4225409,35.4706082 C51.0792755,34.8472398 52.0993462,34.827237 52.7792892,35.3969779 Z M41.6709822,13.0780063 C36.5654302,15.8447401 31.2707227,18.1014617 25.7881122,19.847366 C22.2090427,20.9870992 18.7052168,21.8596746 15.2768186,22.4643899 L15.278453,31.3486553 C18.8664259,31.968738 22.369831,32.8230099 25.7881122,33.911541 C30.9012582,35.5397915 36.1950965,37.8103886 41.6709822,40.7216609 L41.6709822,13.0780063 Z M11.7583959,22.9942188 C10.774123,23.1166469 9.79626574,23.2162912 8.82482839,23.2931341 L8.82482839,30.4942881 C9.80885075,30.5858492 10.7868753,30.6940816 11.7588917,30.8189864 L11.7583959,22.9942188 Z M64.5459822,24.5633859 C65.517791,24.5633859 66.3055976,25.34109 66.3055976,26.3004366 C66.3055976,27.2597832 65.517791,28.0374873 64.5459822,28.0374873 L55.1613669,28.0374873 C54.1895581,28.0374873 53.4017515,27.2597832 53.4017515,26.3004366 C53.4017515,25.34109 54.1895581,24.5633859 55.1613669,24.5633859 L64.5459822,24.5633859 Z M59.366239,8.8358306 C60.066756,9.50075682 60.0886057,10.600385 59.415042,11.2919188 L52.9105342,17.9699597 C52.2369704,18.6614934 51.1230579,18.6830631 50.4225409,18.0181368 C49.722024,17.3532105 49.7001741,16.2535824 50.373738,15.5620486 L56.8782456,8.8840077 C57.5518095,8.19247391 58.6657221,8.17090426 59.366239,8.8358306 Z' id='Shape' transform='translate(35.805598, 30.348262) rotate(-18.000000) translate(-35.805598, -30.348262) '%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                width: 3.8rem;
+                height: 3.4rem;
+                background-repeat: no-repeat;
+                background-size: 3.8rem 3.4rem;
+                position: absolute;
+                left: -5.2rem;
+                top: 0;
+
+                @include media-breakpoint-up(md) {
+                    left: -5.7rem;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    top: -0.8rem;
+                    left: -8.5rem;
+                    width: 6.1rem;
+                    height: 5.7rem;
+                    background-repeat: no-repeat;
+                    background-size: 6.1rem 5.7rem;
+                }
+            }
+        }
+
+        &-right {
+            &-top {
+                margin-bottom: 4.8rem;
+
+                @include media-breakpoint-up(md) {
+                    margin-bottom: 3rem;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    margin-bottom: 5.4rem;
+                }
+
+                .form-inline {
+                    .form-submit {
+                        .btn {
+                            font-size: 1.4rem;
+                            line-height: 1.6rem;
+                            padding: 1.1rem 2.9rem;
+                            @include media-breakpoint-up(md) {
+                                padding: 1.1rem 2.2rem;
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+
+                .form-submitted {
+                    background-color: $light;
+                    padding: 0.5rem 0.5rem 0.5rem 1.3rem;
+                    border-radius: 1.5rem;
+                    margin-top: 2.3rem;
+
+                    @include media-breakpoint-up(md) {
+                        margin-top: 2.1rem;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        margin-top: 2.4rem;
+                    }
+
+                    a {
+                        display: flex;
+
+                        i {
+                            font-size: 2rem;
+
+                            &::before {
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-links {
+                margin-bottom: -2.4rem;
+
+                @include media-breakpoint-up(lg) {
+                    margin-bottom: -3.5rem;
+                }
+
+                li {
+                    @extend .h5;
+                    flex: 0 0 50%;
+                    margin-bottom: 2.4rem;
+
+                    @include media-breakpoint-up(lg) {
+                        margin-bottom: 3.5rem;
+                    }
+
+                    a {
+                        &:hover {
+                            color: $dark-green;
+                        }
+                    }
+                }
+            }
+
+            &-bottom {
+                p {
+                    max-width: 11.8rem;
+                    margin-right: 2.4rem;
+                    margin-bottom: 0;
+                    font-weight: $font-weight-medium;
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+
+                    @include media-breakpoint-up(lg) {
+                        margin-right: 2.6rem;
+                        line-height: 2rem;
+                    }
+                }
+
+                .footer-logo {
+                    img {
+                        @include media-breakpoint-down(lg) {
+                            height: 3.5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .social {
+            &-links {
+                margin: 4.8rem 0;
+
+                @include media-breakpoint-up(md) {
+                    margin: 4.4rem 0 5.9rem;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    margin: 7.4rem 0;
+                }
+
+                li {
+                    &:not(&:last-child) {
+                        margin-right: 2.5rem;
+
+                        @include media-breakpoint-up(lg) {
+                            margin-right: 3.2rem;
+                        }
+                    }
+
+                    i {
+                        font-size: 2.7rem;
+
+                        @include media-breakpoint-up(lg) {
+                            font-size: 4.2rem;
+                        }
+                    }
+
+                    a {
+                        &:hover {
+                            i {
+                                &::before {
+                                    color: $dark-green;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-bottom {
+            a {
+                text-decoration: underline;
+                font-size: 1.4rem;
+                line-height: 2rem;
+
+                @include media-breakpoint-up(lg) {
+                    margin-top: 0.6rem;
+                    font-size: 1.6rem;
+                }
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+
+            p {
+                font-size: 1.4rem;
+                line-height: 2rem;
+
+                @include media-breakpoint-up(lg) {
+                    margin-top: 0.6rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        &-simple{
+            &-content{
+                font-weight: $font-family-base;
+            }
+        }
+    }
+}

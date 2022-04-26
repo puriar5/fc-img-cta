@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'Foodcorps - Careers'})
+    <link rel="stylesheet" href="css/styles/page-careers.min.css" />
+</head>
+
+<body>
+
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html', {
+                <!-- 'headerSkin': 'theme-header--dark' -->
+            })
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--left" data-focus="#first-link">
+                <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+            </div>
+            <main class="theme-main">
+
+
+                <!-- Leadspace Wide Image -->
+                @@include('includes/modules/above-the-fold/wide-image.html',{
+                    'bgColor'           :       'bg-sand',
+                    'headerWide'        :       'header-wide',
+                    'h1Title'           :       'Careers at FoodCorps',
+                    'linkText'          :       'Current job openings',
+                    'bgImgPath'         :       'img-careers@1.5x.png',
+                    'description'       :       '<p><strong>We believe people fuel change</strong>. We invest in people who model practical and humble leadership, give them exceptional training and experiences, and connect them to each other, cultivating social capital at every level. That goes for our students, our service members, and yes—our staff.</p><p>That’s just one of the six core values that guide our work every day. Here are the others:</p>',
+                    'figcaption'        :       'Lorem ipsum image credit dolor',
+                    'anchorLink'        :       '#job-post-grid'
+                })
+                <!-- /Leadspace Wide Image -->
+
+
+                <!-- Our Values -->
+                @@include('includes/modules/section/our-values.html', {
+                    'title'     :   'Our values',
+                    'bgColor'   :   'bg-light',    
+                })
+                <!-- /Our Values -->
+
+
+                <!-- Section Quote Single Dark -->
+                <section class="quote-single-dark bg-transition position-relative bg-sand overflow-hidden" data-color="sand">
+                    <figure class="thumbnail-img quote-single-dark__thumb">
+                        <svg width="726" height="511" viewBox="0 0 726 511" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.135324"
+                                d="M632.871 65.4818C698.345 108.203 733.076 194.242 724.601 272.54C716.125 350.987 664.611 421.843 599.303 459.057C533.83 496.271 454.729 499.843 369.148 505.649C283.567 511.454 191.505 519.492 125.035 482.278C58.5639 445.064 17.6844 362.598 4.88876 268.67C-7.74068 174.891 7.71378 69.6497 74.1845 26.9281C140.655 -15.7936 258.142 4.15314 364.828 13.8288C471.513 23.5044 567.563 22.909 632.871 65.4818Z"
+                                fill="#4FB075" />
+                        </svg>
+                    </figure>
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-10 col-lg-8">
+                                <div class="slider-quote position-relative">
+                                    <div class="swiper-wrapper">
+                                        <div class="item swiper-slide">
+                                            <article class="content text-dark-green">
+                                                <h3>
+                                                    Lorem ipsum quote or testimonial dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                                </h3>
+                                                <a href="#" class="link-text link-primary link-wobble" title="title">Read Story CTA</a>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="slider__controls slider-01-control slider-paginate">
+                                        <div class="slider__pagination"></div>
+                                    </div>
+                                    <div class="slider__controls slider-01-control slider__buttons">
+                                        <div class="slider__button-prev">
+                                            <i class="icon-arrow-left"></i>
+                                        </div>
+                                        <div class="slider__button-next">
+                                            <i class="icon-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <script src="scripts/slider-quote.js"></script>
+                <!-- /Section Quote Single Dark -->
+
+                
+                <!-- Section Image Left Text Right -->
+                <section class="image-l-text-r py-10 bg-transition bg-sand position-relative" data-color="sand">
+                    <div class="image-l-text-r__img">
+                        <img src="images/image_action@2x.png" width="620" height="719" alt="happy people eating food on a park bench"
+                            class="img-fluid">
+                            <div class="image-l-text-r__offset fst-italic">
+                                Lorem ipsum </br> image credit dolor
+                            </div>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <div class="col-md-6">
+                                <div class="image-l-text-r__text">
+                                    <h2>Action for Equity and Inclusion</h2>
+                                    <p>In pursuing our vision, FoodCorps embraces equity, diversity, and inclusion as strategic and moral imperatives in our work. And we are convinced that for that service to be effective, we must not replicate the imbalances we see in society at large; we are working toward becoming a model for the change we seek. Learn more about taking equity and inclusion 
+                                        <a href="#">here</a>.
+                                    </p>
+                                    <p>
+                                        Read our first annual Equity, Diversity, and Inclusion report to learn more about our journey.
+                                    </p>
+                                    <a href="#" class="btn btn-primary btn-bubble">Read report</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Section Image Left Text Right -->
+
+
+                <!-- Section Bullet Text Large Image Right -->
+                @@include('includes/modules/section/bullettext-l-image-r.html',{
+                    'curveBg': 'bullettext-l-image-r--curvebg',
+                    'curveBgColor': 'bullettext-l-image-r--curvebg-dark-green',
+                    'eyebrowShowHide':'d-none',
+                    'title':'FoodCorps benefits',
+                    'subTitleShowHide':'d-none',
+                    'subTextShowHide':'d-block',
+                    'subText':'FoodCorps is as committed to the wellbeing of our staff as we are to the students we serve. We’re proud to offer a strong package of benefits that include:',
+                    'textColor': 'text-white',
+                     'mainImg':'image-benefits.png',
+                     'altMainImg':'happy people eating food on a park bench',
+                     'btnShowHide':'d-none',
+                     'offsetTextColor':'text-light',
+                     'figCaption': 'Lorem ipsum image credit dolor',
+                     "results"  : {
+                         "list": [
+                             {
+                                 'listIconImg' : 'icon-star.svg',
+                                 'altIcon' : 'Star inside circle',
+                                 'listTitleShowHide' : 'd-block',
+                                 'listTitle' : 'Health Insurance',
+                                 'listText' : 'Medical, dental, and vision insurance, Flexible Spending Accounts (FSA), life insurance, supplemental life insurance, disability insurance, and accidental death and dismemberment'
+                             },
+                             {
+                                'listIconImg' : 'icon-star.svg',
+                                'altIcon' : 'Star inside circle',
+                                'listTitleShowHide' : 'd-block',
+                                'listTitle' : 'Paid Time Off, Leave, and 401(k) Benefits',
+                                'listText' : 'Generous PTO, parental leave, options for family and medical leave, and matching 401(k) contributions'
+                            },
+                            {
+                                'listIconImg' : 'icon-star.svg',
+                                'altIcon' : 'Star inside circle',
+                                'listTitleShowHide' : 'd-block',
+                                'listTitle' : 'Remote Work',
+                                'listText' : 'The ability to work from home when needed'
+                            },
+                            {
+                                'listIconImg' : 'icon-star.svg',
+                                'altIcon' : 'Star inside circle',
+                                'listTitleShowHide' : 'd-block',
+                                'listTitle' : 'Half-Day Fridays',
+                                'listText' : 'Four extra hours of weekend on Friday mornings or afternoons'
+                            },
+                            {
+                                'listIconImg' : 'icon-star.svg',
+                                'altIcon' : 'Star inside circle',
+                                'listTitleShowHide' : 'd-block',
+                                'listTitle' : 'Professional Development',
+                                'listText' : 'Funding and time dedicated to your professional growth'
+                            },
+                            {
+                                'listIconImg' : 'icon-star.svg',
+                                'altIcon' : 'Star inside circle',
+                                'listTitleShowHide' : 'd-block',
+                                'listTitle' : 'Sabbatical Policy',
+                                'listText' : 'One month of sabbatical after every three years of working at FoodCorps'
+                            },
+                         ]
+                     },
+                })
+                <!-- /Section Bullet Text Large Image Right -->
+
+
+                <!-- Section Quote Single Dark -->
+                <section class="quote-single-dark bg-transition position-relative bg-dark-green overflow-hidden" data-color="dark-green">
+                    <figure class="thumbnail-img quote-single-dark__thumb">
+                        <svg width="726" height="511" viewBox="0 0 726 511" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.135324"
+                                d="M632.871 65.4818C698.345 108.203 733.076 194.242 724.601 272.54C716.125 350.987 664.611 421.843 599.303 459.057C533.83 496.271 454.729 499.843 369.148 505.649C283.567 511.454 191.505 519.492 125.035 482.278C58.5639 445.064 17.6844 362.598 4.88876 268.67C-7.74068 174.891 7.71378 69.6497 74.1845 26.9281C140.655 -15.7936 258.142 4.15314 364.828 13.8288C471.513 23.5044 567.563 22.909 632.871 65.4818Z"
+                                fill="#4FB075" />
+                        </svg>
+                    </figure>
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-10 col-lg-8">
+                                <div class="slider-quote position-relative">
+                                    <div class="swiper-wrapper">
+                                        <div class="item swiper-slide">
+                                            <article class="content text-white">
+                                                <h3>
+                                                    Lorem ipsum quote or testimonial dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                                </h3>
+                                                <a href="#" class="link-text link-primary link-wobble" title="title">Read Story CTA</a>
+                                            </article>
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            <article class="content text-white">
+                                                <h3>
+                                                    Lorem ipsum quote or testimonial dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                                </h3>
+                                                <a href="#" class="link-text link-primary link-wobble" title="title">Read Story CTA</a>
+                                            </article>
+                                        </div>
+                                        <div class="item swiper-slide">
+                                            <article class="content text-white">
+                                                <h3>
+                                                    Lorem ipsum quote or testimonial dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                                </h3>
+                                                <a href="#" class="link-text link-primary link-wobble" title="title">Read Story CTA</a>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="slider__controls slider-01-control slider-paginate">
+                                        <div class="slider__pagination"></div>
+                                    </div>
+                                    <div class="slider__controls slider-01-control slider__buttons">
+                                        <div class="slider__button-prev">
+                                            <i class="icon-arrow-left"></i>
+                                        </div>
+                                        <div class="slider__button-next">
+                                            <i class="icon-arrow-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <script src="scripts/slider-quote.js"></script>
+                <!-- /Section Quote Single Dark -->
+
+
+                <!-- Section Job Post Grid -->
+                @@include('includes/modules/section/job-post-grid.html', {
+                    'thumb': 'images/icon-career@2x.png',
+                    'title': 'Open positions',
+                    'bgColor': 'bg-light',
+                    'bodyMoving'            :   true,
+                    'bodyMovingPath': 'images/icon-career.json',
+                })
+                <!-- /Section Job Post Grid -->
+
+
+                <!-- Section Image CTA Box A -->
+                @@include('includes/modules/section/image-cta-box-a.html', {
+                    'overlay'   :   'overlay-3',
+                    'ifreverse' : '',
+                    'image-ctabox-aModifier': '',
+                    'bgColor'   : 'bg-light',
+                    'thumb': 'images/img-cta-03@2x.jpg',
+                    'showHide':'d-none',
+                    'title': 'Become a service member',
+                    'text': 'Lorem ipsum dolor sit amet',
+                    'btnTxt': 'CTA to page'
+                })
+                <!-- /Section Image CTA Box A -->
+
+
+
+            </main>
+        </div>
+        @@include('includes/footer.html')
+        @@include('includes/scripts.html')
+        
+    </div>
+</body>
+
+</html>

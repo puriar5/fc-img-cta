@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'FoodCorps'})
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html', {
+                    <!-- 'headerSkin': 'theme-header--dark' -->
+                })
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+                </div>
+                <main class="theme-main">
+
+                    @@include('includes/modules/section/contact-form.html')
+                    @@include('includes/modules/section/text-cta-box.html',{
+                        'bodyMoving'            :   true,
+                        'bodyMovingPath'        : 'images/icon-question.json',
+                        'iconName'      :       'icon-question.svg',
+                        'h3Title'       :       'Are you interested in a career at FoodCorps?',
+                        'titleShowHide' :       'd-none',
+                        'paragraph'     :       'Want to volunteer or want to learn what joining the corps would be like in a specific state? Contact the state’s staff members via the Connect section of the state’s page.',
+                        'linkText'      :       'Lorem page cta'
+
+                    })
+                </main>
+            </div>
+            @@include('includes/footer.html')
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

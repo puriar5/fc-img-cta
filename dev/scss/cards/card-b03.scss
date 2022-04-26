@@ -1,0 +1,27 @@
+.card-b03{
+    &-figure{
+        img{
+            width: 9.6rem;
+            height: 9.6rem;
+            @include media-breakpoint-up(lg){
+                width: 18.4rem;
+                height: 18.4rem;
+            }
+        }
+    }
+    &-body{
+        font-family: $font-family-sans-serif !important;
+        line-height: 2.2rem;
+        @include media-breakpoint-up(md){
+            line-height: 2.4rem;
+        }
+        @include media-breakpoint-up(lg){
+            line-height: 3rem;
+        }
+        h4,.h4{
+            @include media-breakpoint-up(lg){
+                margin-right: -10%;
+            }
+        }
+    }
+}

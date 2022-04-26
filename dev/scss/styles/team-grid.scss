@@ -1,0 +1,97 @@
+@import "../common-imports";
+
+.team-grid {
+    padding-bottom: 10rem;
+    padding-top: 6rem;
+    @include media-breakpoint-up(lg) {
+        padding-top: 9rem;
+    }
+
+    &__index {
+        &__alumni {
+            display: flex;
+            line-height: 2rem;
+            font-size: 1.6rem;
+        }
+    }
+    .icon-carrot {
+        margin: 0 0.5rem;
+        &::before {
+            color: $orange;
+        }
+    }
+    &__content {
+        margin: 3rem 0 -5.2rem;
+        @include media-breakpoint-up(md) {
+            margin-top: 6.4rem;
+        }
+        h6 {
+            margin: 2rem 0 0;
+        }
+        p {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            margin-bottom: 0.5rem;
+            @include media-breakpoint-up(md) {
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+            }
+            @include media-breakpoint-up(lg) {
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+            }
+        }
+        small {
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            @include media-breakpoint-up(md) {
+                line-height: 2.2rem;
+            }
+            @include media-breakpoint-up(lg) {
+                font-size: 1.4rem;
+            }
+        }
+        .row{
+            margin-right: -0.8rem;
+            margin-left: -0.8rem;
+            &>[class*=col-]{
+                padding-right: 0.8rem;
+                padding-left: 0.8rem;
+            }
+        }
+    }
+    .form-inline .form-submit {
+        position: relative;
+        text-align: left;
+        margin: 20px 0;
+        right: inherit;
+        bottom: inherit;
+        .btn {
+            font-size: 1.8rem;
+            padding: 1.6rem 2.4rem;
+            margin-right: auto;
+            &:focus {
+                color: white;
+            }
+        }
+        @include media-breakpoint-up(md) {
+            position: absolute;
+            text-align: center;
+            margin: 0;
+            right: 0;
+            bottom: 1.1rem;
+        }
+    }
+    .post-team-no-result {
+        margin-top: 3.6rem;
+        h3 {
+            font-weight: 600;
+        }
+    }
+    .form-group {
+        .form-control {
+            font-size: 2.5rem;
+        }
+    }
+
+}

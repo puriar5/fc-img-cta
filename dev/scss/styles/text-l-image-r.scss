@@ -1,0 +1,118 @@
+@import "../common-imports";
+
+
+.text-l-image-r {
+
+    padding: 0 0 3.6rem;
+    @include media-breakpoint-up(md) {
+        padding: 4.8rem 0;
+    }
+    @include media-breakpoint-up(lg) {
+        padding: 11rem 0;
+    }
+
+    .container-fluid {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        @include media-breakpoint-up(md) {
+            padding-left: 3.2rem;
+            padding-right: 0;
+        }
+        @include media-breakpoint-up(lg) {
+            padding-left: 4.4%;
+        }
+        @include media-breakpoint-up(xl) {
+            padding-left: 13.40%;
+        }
+        @media screen and (min-width: 1700px) {
+            padding-left: 16.7%;
+        }
+    }
+
+    &__left {
+        padding-top: 3.2rem;
+        @include media-breakpoint-up(md) {
+            padding-top: 6.8rem;
+        }
+        @include media-breakpoint-up(lg) {
+            padding-top: 11rem;
+        }
+        h3 {
+            font-weight: $font-weight-semibold;
+            margin-bottom: 0.8rem;
+            @include media-breakpoint-up(md) {
+                margin-bottom: 0.4rem; 
+            }
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 1.2rem; 
+            }
+        }
+        h4 {
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+            margin-bottom: 0.8rem;
+            margin-top: 1.6rem;
+            font-family: 'Basier Circle';
+            font-weight: $font-weight-semibold;
+            @include media-breakpoint-up(md) {
+                margin-top: 2rem;
+            }
+            @include media-breakpoint-up(lg) {
+                margin-top: 3rem;
+                margin-bottom: 0.4rem;
+                font-size: 2.6rem;
+                line-height: 3.6rem;
+            }
+        }
+        p {
+            margin-bottom: 0;
+            & + h3 {
+                margin-top: 3.2rem;
+                @include media-breakpoint-up(md) {
+                    margin-top: 4.2rem;
+                }
+                @include media-breakpoint-up(lg) {
+                    margin-top: 7.2rem;
+                }
+            }
+        }
+    }
+
+    &__right {
+        .thumbnail-img {
+            margin-right: -3.5rem;
+            max-width: 27.4rem;
+            @include media-breakpoint-up(md) {
+                max-width: 30.6rem;
+                margin-right: 0;
+            }
+            @include media-breakpoint-up(lg) {
+                max-width: 60.3rem;
+            }
+        }
+        .caption {
+            margin-top: 0.8rem;
+            @include media-breakpoint-up(md) {
+                padding-right: 3.2rem;
+            }
+            @include media-breakpoint-up(lg) {
+                padding-right: 8rem;
+            }
+            @include media-breakpoint-up(xl) {
+                margin-top: -7rem;
+            }
+        }
+        figcaption {
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            font-style: italic;
+            text-align: right;
+            @include media-breakpoint-up(lg) {
+                max-width: 8.5rem;
+                font-size: 1.4rem;
+                line-height: normal;
+            }
+        }
+    }
+
+}

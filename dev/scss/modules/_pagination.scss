@@ -1,0 +1,57 @@
+.pagination {
+    .page-numbers {
+        li {
+            &:first-child{
+                .page-number{
+                    padding-left: 0;
+                }
+            }
+            &:last-child{
+                .page-number{
+                    padding-right: 0;
+                }
+            }
+            .page-number {
+                padding: 0 0.6rem;
+                transition: all ease-in-out .2s;
+                display: inline-block;
+                @include media-breakpoint-up(md){
+                    padding: 0 1.2rem;
+                }
+                &.current{
+                    font-weight: $font-weight-semibold;
+                }
+
+                .btn {
+                    padding: 0;
+                    border: 0;
+
+                    i {
+                        font-size: 3.2rem;
+                        color: $dark-green;
+                        &.icon-arrow-left{
+                            padding-right: 2.8rem;
+                        }
+                        &.icon-arrow-right{
+                            padding-left: 2.8rem;
+                        }
+                    }
+                }
+                &.previous{
+                    &:hover {
+                        @include media-breakpoint-up(md) {
+                            transform: translateX(-1rem);
+                        }
+                    }
+                }
+                &.next{
+                    &:hover {
+                        @include media-breakpoint-up(md) {
+                            transform: translateX(1rem);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

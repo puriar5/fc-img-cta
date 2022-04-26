@@ -1,0 +1,116 @@
+.card-partner {
+    // height: 23.3rem;
+    cursor: pointer;
+    border-radius: 1.3rem;
+
+    &-figure {
+        height: 17rem;
+
+        @include media-breakpoint-up(md) {
+            height: 12.5rem;
+        }
+
+        @include media-breakpoint-up(tb) {
+            height: 17rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            height: 23.3rem;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: 0.3s ease-in opacity;
+        }
+    }
+
+    &-content {
+        overflow-x: hidden;
+        overflow-y: auto;
+        // transform: translateY(-100%);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 9;
+        color: $white;
+        transition: top 0.5s ease-out;
+        padding: 0 1.6rem;
+        height: 13rem;
+
+        @include media-breakpoint-up(lg) {
+            padding: 0 2rem;
+            height: 10rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: 15.2rem;
+            padding: 0 3.8rem;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #f7f7f7;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar {
+            width: 6px;
+            background-color: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: $purple;
+        }
+
+    }
+
+
+    &-bg {
+        width: 0.1rem;
+        height: 0.1rem;
+        min-width: 0.1rem;
+        border-radius: 50%;
+        transition: all 0.3s ease-out;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+        transform: translateZ(0);
+
+        .card-partner {
+
+            &-content {
+                top: 1.9rem;
+
+                @include media-breakpoint-up(lg) {
+                    top: 1.2rem;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    top: 4.3rem;
+                }
+            }
+
+            &-bg {
+                transform: scale(500) translateZ(0);
+            }
+        }
+    }
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+
+        .card-partner:hover .card-partner-bg {
+            transform: translate(-50%, -50%);
+            width: 100rem;
+            height: 100rem;
+            min-width: 50rem;
+        }
+    }
+}

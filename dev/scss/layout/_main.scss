@@ -1,0 +1,29 @@
+.#{$global} {
+    &-app {
+        min-height: 100vh;
+    }
+    &-wrap {
+        flex: 1 0 auto;
+    }
+    &-main {
+        // background-color: $white;
+        section{
+            &:last-child{
+                .container{
+                    padding-bottom: 6.5rem;
+                    @include media-breakpoint-up(md){
+                        padding-bottom: 10rem;
+                    }
+                    @include media-breakpoint-up(lg){
+                        padding-bottom: 13rem;
+                    }
+                }
+            }
+        }
+        .btn{
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+}

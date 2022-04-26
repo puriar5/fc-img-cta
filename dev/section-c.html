@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'FoodCorps Sections'})
+</head>
+
+<body>
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html', {
+                <!-- 'headerSkin': 'theme-header--dark' -->
+            })
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--left" data-focus="#first-link">
+                <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+            </div>
+            <main class="theme-main">
+
+                <header class="mt-20 py-20">
+                    <div class="container">
+                        <div class="row mt-20">
+                            <div class="col text-center m">
+                                <h1>Sections C</h1>
+                                <hr class="my-10" />
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">Filter Tabs</h4>
+                    <hr class="my-10">
+                </div>
+
+                <!-- Section Filter Tabs -->
+                @@include('includes/modules/section/filter-tabs.html')
+                <!-- /Section Filter Tabs -->
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">Form Module</h4>
+                    <hr class="my-10">
+                </div>
+
+                <!-- Column Text With Bg -->
+                @@include('includes/modules/section/column-txt-withbg.html')
+                <!-- /Column Text With Bg -->
+
+                
+                <div class="container position-relative py-10 my-10">
+                    <h4 class="text-primary mb-8">Skillet CTA Box</h4>
+                    <hr class="my-10">
+                </div>
+
+                <!-- Skillet CTA Box -->
+                @@include('includes/modules/section/skillet-cta-box.html',{
+                    'title'           :       'Lorem headline for The Skillet',
+                    'cta'          :       'Lorem CTA',
+                    'showEyebrow'       :       true,
+                    'bgColor' : 'bg-white',
+                    'background': 'images/skillet-cta-img@2x.png'
+                })
+                <!-- /Skillet CTA Box -->
+
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">Form Module</h4>
+                    <hr class="my-10">
+                </div>
+
+                <!-- Section Form Module -->
+                @@include('includes/modules/section/form-module.html',{
+                    'title'           :       'Become a FoodCorps Partner',
+                    'bodyMoving'      :   true,
+                    'bodyMovingPath'  : 'images/icon-partner-form.json',
+                    'para'          :       'Want to join us at the table? We welcome partnership requests of all kinds. Reach out today and help us bring hands-on food education and healthy food to schools all over America.',
+                    'text': 'Want to join us at the table? We welcome partnership requests of all kinds. Reach out today and help us bring hands-on food education and healthy food to schools all over America.'
+                })
+                <!-- /Section Form Module -->
+
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">Contacts Grid X3</h4>
+                    <hr class="my-10">
+                </div>
+
+                <!-- Section Contacts Grid X3 -->
+                @@include('includes/modules/section/contacts-grid-x3.html', {
+                    'title': 'Lorem contacts by state',
+                })
+                <!-- /Section Contacts Grid X3 -->
+
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">Job Post Grid</h4>
+                    <hr class="my-10">
+                </div>
+
+                <!-- Section Job Post Grid -->
+                @@include('includes/modules/section/job-post-grid.html', {
+                    'thumb': 'images/icon-career@2x.png',
+                    'title': 'Open positions',
+                    'bodyMoving'            :   true,
+                    'bodyMovingPath': 'images/icon-career.json',
+                })
+                <!-- /Section Job Post Grid -->
+
+
+                <!-- Section Quote Single Dark -->
+                @@include('includes/modules/section/quote-single-dark.html', {
+                    'bgColor': 'bg-dark-green',
+                    'textColor': 'text-white',
+                    'bgThumb': 'images/single-quote-bg@2x.png'
+                })
+                <!-- /Section Quote Single Dark -->
+
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">CTA Box Card</h4>
+                    <hr class="my-10">
+                </div>
+
+
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            @@include('includes/modules/cards/card-cta-box.html',{
+                                'showHide': 'd-none',
+                                'title': '',
+                                'para' : 'If you’re ready to apply to be part of the next corps of service members, you can apply here.',
+                                'bgColor': 'bg-light',
+                                'btnText': 'Resources'
+                            })
+                        </div>
+                        <div class="col-md-4">
+                            @@include('includes/modules/cards/card-cta-box.html',{
+                                'showHide': 'd-block',
+                                'title': 'Application open until Month XX, 2022',
+                                'para' : 'If you’re ready to apply to be part of the next corps of service members, you can apply here.',
+                                'bgColor': 'bg-light',
+                                'btnText': 'Apply now'
+                            })
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">Text with CTA Box Card</h4>
+                    <hr class="my-10">
+                </div>
+
+
+                <!-- Section Text with Box Card -->
+                <section class="text-with-cta-box position-relative">
+                    <div class="container position-relative">
+                        @@include('includes/modules/cards/card-cta-box.html',{
+                            'showHide': 'd-block',
+                            'title': 'Application open until Month XX, 2022',
+                            'para' : 'If you’re ready to apply to be part of the next corps of service members, you can apply here.',
+                            'bgColor': 'bg-light',
+                            'btnText': 'Apply now'
+                        })
+                        <div class="row justify-content-md-center justify-content-xl-start">
+                            <div class="col-md-10 col-xl-7 offset-xl-2">
+                                <p>
+                                    As a FoodCorps service member, you can help kids learn what healthy food is, care where it comes from, and eat it every day. You’ll teach them to plant, grow, cook, and love it. 
+                                    FoodCorps recruits talented leaders for a year of full time paid public service building healthy school food environments in limited-resource communities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Section Text with Box Card -->
+
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">CTA BOX Grid Card X3</h4>
+                    <hr class="my-10">
+                </div>
+
+
+                <!-- CTA Box Grid X3 -->
+                @@include('includes/modules/section/cta-box-grid-x3.html', {
+                    'bgColor': 'bg-sand'
+                })
+                <!-- /CTA Box Grid X3 -->
+
+
+                <div class="container py-10 my-10">
+                    <h4 class="text-primary mb-8">Our Values</h4>
+                    <hr class="my-10">
+                </div>
+                
+                <!-- Our Values -->
+                @@include('includes/modules/section/our-values.html', {
+                    'title'     :   'Our values',
+                    'bgColor'   :   'bg-light',    
+                })
+                <!-- /Our Values -->
+
+
+                <section>
+                    <div class="container">
+                    </div>
+                </section>
+            </main>
+        </div>
+        @@include('includes/scripts.html')
+        @@include('includes/footer.html')
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+@import '../common-imports';
+
+.featured-icon {
+    z-index: 9;
+
+    &-figure {
+        img, .js-bodymoving {
+            height: 9.6rem;
+            margin-bottom: 2.8rem;
+
+            @include media-breakpoint-up(md) {
+                margin-top: -7.6rem;
+                margin-bottom: 4.4rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                height: 18.4rem;
+                margin-top: -13.5rem;
+                margin-bottom: 11rem;
+            }
+        }
+
+    }
+    .description{
+        @include media-breakpoint-up(md){
+            max-width: 44.82%;
+        }
+    }
+   
+
+    &--reversed {
+        padding-bottom: 0.8rem;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 28.8rem;
+            z-index: -1;
+            width: 100%;
+            height: calc(100% - 28.8rem);
+            background-color: $primary;
+        }
+        @include media-breakpoint-up(lg){
+            margin-top: -20%;
+        }
+        .featured-icon {
+            &-figure {
+                text-align: right;
+                img{
+                    margin-bottom: 3.6rem;
+                    margin-top: 0;
+                }
+            }
+        }
+        .description{
+            text-align: right;
+            margin-left: auto;
+        }
+        .container{
+            .row{
+                .col-lg-11{
+                    >* {
+                        @include media-breakpoint-up(lg) {
+                            margin-right: 9.3%;
+                        }
+                    }
+                }
+            }
+        }
+        &[class*='bg-']{
+            background-color: transparent !important;
+        }
+        &.bg-dark-green{
+            &::before{
+                background-color: $dark-green;
+            }
+        }
+    }
+    &--reverse{
+        .featured-icon{
+            &-figure{
+                text-align: right;
+                @include media-breakpoint-up(lg){
+                    margin-right: 9.33%;
+                }
+            }
+        }
+    }
+}

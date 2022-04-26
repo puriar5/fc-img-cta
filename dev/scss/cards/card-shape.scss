@@ -1,0 +1,15 @@
+.shape {
+    &-1 {
+        max-width: 30rem;
+        height:24rem;
+        border-radius: 0 10.5rem;
+        padding: 0.5rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10rem;
+        }
+    }
+}

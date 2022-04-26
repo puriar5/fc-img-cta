@@ -1,0 +1,27 @@
+<section class="two-column-intro-text position-relative bg-sand">
+    <div class="container">
+        @@if (bodyMoving === true) {
+            <div class="bodymoving two-column-intro-text__icon">
+                <div class="js-bodymoving" data-path="@@bodyMovingPath"></div>
+            </div>
+        }
+        @@if (bodyMoving === false){
+            <div class="two-column-intro-text__icon @@iconShowHide">
+                <img src="images/icon-lunch.svg" alt="Lunch Icon">
+            </div>
+        }
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="two-column-intro-text_title">
+                    <h2>
+                        @@title
+                    </h2>
+                    <h4>@@subTitle</h4>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                @@paragraph
+            </div>
+        </div>
+    </div>
+</section> 

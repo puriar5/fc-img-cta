@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'Foodcorps - Careers'})
+    <link rel="stylesheet" href="css/styles/page-donate.min.css" />
+</head>
+
+<body>
+
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html', {
+            'headerSkin': 'theme-header--white',
+            'menuSkin' : 'menu-toggler--white',
+            })
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--left" data-focus="#first-link">
+                <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+            </div>
+            <main class="theme-main">
+
+
+                <!-- Text Header B -->
+                @@include('includes/modules/above-the-fold/text-header-b.html',{
+                'bgColor' : 'bg-primary',
+                'h1Title' : 'Donate to FoodCorps',
+                'textColor' : 'text-light',
+                'showhideDescription' : 'd-none',
+                })
+                <!-- /Text Header B -->
+
+                <section class="donation-amount my-20">
+                    <div class="container">
+                        <h4 class="text-primary">Donation Amount Module</h4>
+                        <p class="eyebrow-1 text-dark-green">Will come here</p>
+                    </div>
+                </section>
+
+                <!-- Tab with accordion horizontal -->
+                @@include('includes/modules/section/tab-accordion-horizontal.html',{
+                    'bgColor'   :   'bg-sand',
+                    'h3Title'   :   'Other ways to give',    
+                    'hasSvg' : 'hasNoSvg',
+                    'themeModifier'  : 'light',
+                    'modifier'  : 'horizontal',
+                    'reverseModifier': 'default', 
+                })
+
+            </main>
+        </div>
+        <footer class="theme-footer-simple py-5 bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="theme-footer-simple-content eyebrow-1 text-light">
+                            <p>© 2021 FoodCorps, Inc – All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        @@include('includes/scripts.html')
+
+    </div>
+</body>
+
+</html>

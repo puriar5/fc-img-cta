@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'FoodCorps'})
+        <link rel="stylesheet" href="css/styles/page-team.min.css" />
+        
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html', {
+                    <!-- 'headerSkin': 'theme-header--dark' -->
+                })
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+                </div>
+                <main class="theme-main">
+                    @@include('includes/modules/above-the-fold/wide-image.html',{
+                        'bgColor'           :       'bg-sand',
+                        'h1Title'           :       'Our Teams',
+                        'linkShowHide'      :       'd-none',
+                        'bgImgPath'         :       'hero-team-bg@2x.webp',
+                        'description'       :       '<p>Our staff trains and supports our teams in the field, sets our strategy for growing healthy schools, and collaborates on ongoing assessment of FoodCorps’ direction and growth. Our team reflects the diversity of backgrounds, expertise, and passions we want to see in the world through our service.</p>',
+                        'figcaption'        :       'Lorem ipsum image credit dolor'
+                    })
+                    @@include('includes/modules/section/team-grid.html',{
+                        'h2Title'           :       'Meet our team',
+                        "results"  : {
+                            "list": [
+                                {
+                                    'shapeImg' : 'images/team-img-01.jpg',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'pronounShowHide' : 'd-block',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-2.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'pronounShowHide' : 'd-block',
+                                    'iconShowHide' : 'd-inline-block'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-3.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'pronounShowHide' : 'd-block',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-4.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'pronounShowHide' : 'd-block',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-5.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'pronounShowHide' : 'd-block',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-6.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'pronounShowHide' : 'd-block',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-1.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'pronounShowHide' : 'd-block',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-2.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'pronounShowHide' : 'd-block',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-3.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'pronounShowHide' : 'd-block',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-4.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'pronounShowHide' : 'd-block',
+                                    'iconShowHide' : 'd-inline-block'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-5.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'pronounShowHide' : 'd-block',
+                                    'iconShowHide' : 'd-inline-block'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-6.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'pronounShowHide' : 'd-block',
+                                    'iconShowHide' : 'd-inline-block'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-1.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'pronounShowHide' : 'd-block',
+                                    'iconShowHide' : 'd-none'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-1.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'pronounShowHide' : 'd-block',
+                                    'iconShowHide' : 'd-inline-block'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-1.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'pronounShowHide' : 'd-block',
+                                    'iconShowHide' : 'd-inline-block'
+                                },
+                                {
+                                    'shapeImg' : 'images/team_alumni-1.png',
+                                    'bgShape' : 'bg-primary',
+                                    'name' : 'Javonne Alonzo',
+                                    'designation' : 'NJ/NY Program Coordinator & FoodCorps Alum',
+                                    'pronouns' : 'she/her',
+                                    'pronounShowHide' : 'd-block',
+                                    'iconShowHide' : 'd-inline-block'
+                                }
+                            ]
+                        },
+                    })
+                    @@include('includes/modules/section/text-cta-box.html',{
+                        'bodyMoving'            :   true,
+                        'bodyMovingPath'        : 'images/icon-career.json',
+                        'iconName'      :       'icon-career.svg',
+                        'h3Title'       :       'Are you interested in a career at FoodCorps?',
+                        'titleShowHide' :       'd-block',
+                        'paragraph'     :       'We always want to hear from people who are passionate about food justice and committed to serving kids in schools.',
+                        'linkText'      :       'Lorem page cta'
+
+                    })
+                </main>
+            </div>
+            @@include('includes/footer.html')
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

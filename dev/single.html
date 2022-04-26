@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'FoodCorps'})
+    </head>
+    <body class="single-post">
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html', {
+                    <!-- 'headerSkin': 'theme-header--dark' -->
+                })
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+                </div>
+                <main class="theme-main">
+                    @@include('includes/modules/single/single.html', {
+                        variation: 'withFeature',
+                        withFeature: true,
+                        withFeatureVideo: false,
+                        withFeatureAudio: false,
+                        withoutFeature: false,
+                        'linkText': 'Lorem cta text'
+                    })
+
+                    <section class="skillet-grid-b bg-dark-green">
+                        <div class="container">
+                            <div class="skillet-grid-b-header">
+                                <div class="row">
+                                    <div class="col">
+                                        <h3 class="mb-6 mb-md-8">Recommended articles</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row skillet-grid-b-wrapper">
+                                <div class="col-md-4">
+                                    <article class="card-b06 card-b06--video position-relative swiper-slide d-md-flex" data-js-href="">
+                                        <figure class="card-b06-figure overflow-hidden position-relative">
+                                            <img src="images/fpo-story-img@2x.png"
+                                                alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                                class="img-thumb position-absolute object-fit w-100 h-100">
+                                            <img src="images/icon-play.svg" alt="" class="img-play">
+                                        </figure>
+                                        <div class="card-b06-content ms-md-4 mt-2 mt-md-0 d-flex flex-column">
+                                            <span class="meta-date d-block eyebrow-4 mb-1 mb-md-0 text-primary">
+                                                month xx, 2022
+                                            </span>
+                                            <p class="subheadline-2-semibold mb-2 mb-md-1">
+                                                Lorem Ipsum News Headline Copy Dolor Sit Amet
+                                            </p>
+                                            <span class='card-b06-footer eyebrow-3 position-relative mt-auto' title='title'>Video</span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-md-4">
+                                    <article class="card-b06 position-relative swiper-slide d-md-flex" data-js-href="href://">
+                                        <figure class="card-b06-figure overflow-hidden position-relative">
+                                            <img src="images/fpo-story-img@2x.png"
+                                                alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                                class="img-thumb position-absolute object-fit w-100 h-100">
+                                        </figure>
+                                        <div class="card-b06-content ms-md-4 mt-2 mt-md-0 d-flex flex-column">
+                                            <span class="meta-date d-block eyebrow-4 mb-1 mb-md-0 text-primary">
+                                                month xx, 2022
+                                            </span>
+                                            <p class="subheadline-2-semibold mb-2 mb-md-1">
+                                                Lorem Ipsum News Headline Copy Dolor Sit Amet
+                                            </p>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-md-4">
+                                    <article class="card-b06 card-b06--audio position-relative swiper-slide d-md-flex"
+                                        data-js-href="href://">
+                                        <figure class="card-b06-figure overflow-hidden position-relative">
+                                            <img src="images/fpo-story-img@2x.png"
+                                                alt="FoodCorps Applauds USDA for Sending Schools an Additional $750M"
+                                                class="img-thumb position-absolute object-fit w-100 h-100">
+                                        </figure>
+                                        <div class="card-b06-content ms-md-4 mt-2 mt-md-0 d-flex flex-column">
+                                            <span class="meta-date d-block eyebrow-4 mb-1 mb-md-0 text-primary">
+                                                month xx, 2022
+                                            </span>
+                                            <p class="subheadline-2-semibold mb-2 mb-md-1">
+                                                Lorem Ipsum News Headline Copy Dolor Sit Amet
+                                            </p>
+                                            <span class='card-b06-footer eyebrow-3 position-relative mt-auto' title='title'>Audio</span>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+            @@include('includes/footer.html')
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

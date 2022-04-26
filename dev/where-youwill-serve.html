@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'FoodCorps | Where You Will Serve'})
+        <link rel="stylesheet" href="css/styles/page-whereyouwill.min.css" />
+        
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html')
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+                </div>
+                <main class="theme-main">
+                    
+                    
+                    <!-- Section Post -->
+                    @@include('includes/modules/section/section-post.html',{
+                        'showHide': '',
+                        'bgColor': 'bg-sand',
+                        'title': 'Where You’ll Serve',
+                        'para': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+                    })
+                    <!-- /Section Post -->
+
+
+                    <!-- Section Geo Map -->
+                    @@include('includes/modules/section/geo-map.html')
+                    <!-- /Section Geo Map -->
+
+
+                    <!-- Section Quote Single Dark -->
+                    <section class="quote-single-dark position-relative overflow-hidden bg-light">
+                        <figure class="thumbnail-img quote-single-dark__thumb">
+                            <img src="images/single-quote-bg@2x.png" alt="Single Quote Background">
+                        </figure>
+                        <div class="container">
+                            <div class="row justify-content-md-center">
+                                <div class="col-md-10 col-lg-8">
+                                    <div class="slider-quote position-relative">
+                                        <div class="swiper-wrapper">
+                                            <div class="item swiper-slide">
+                                                <article class="content text-dark-green">
+                                                    <h3>
+                                                        FoodCorps has given me a chance to make tangible change in the community I grew up in. It’s incredibly rewarding to watch kids get excited about healthy food.
+                                                    </h3>
+                                                    <p>
+                                                        —Erika Van Dyke, former service member
+                                                    </p>
+                                                </article>
+                                            </div>
+                                            <div class="item swiper-slide">
+                                                <article class="content text-dark-green">
+                                                    <h3>
+                                                        FoodCorps has given me a chance to make tangible change in the community I grew up in. It’s incredibly rewarding to watch kids get excited about healthy food.
+                                                    </h3>
+                                                    <p>
+                                                        —Erika Van Dyke, former service member
+                                                    </p>
+                                                </article>
+                                            </div>
+                                            <div class="item swiper-slide">
+                                                <article class="content text-dark-green">
+                                                    <h3>
+                                                        FoodCorps has given me a chance to make tangible change in the community I grew up in. It’s incredibly rewarding to watch kids get excited about healthy food.
+                                                    </h3>
+                                                    <p>
+                                                        —Erika Van Dyke, former service member
+                                                    </p>
+                                                </article>
+                                            </div>
+                                        </div>
+                                        <div class="slider__controls slider-01-control slider-paginate">
+                                            <div class="slider__pagination"></div>
+                                        </div>
+                                        <div class="slider__controls slider-01-control slider__buttons">
+                                            <div class="slider__button-prev">
+                                                <i class="icon-arrow-left"></i>
+                                            </div>
+                                            <div class="slider__button-next">
+                                                <i class="icon-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <script src="scripts/slider-quote.js"></script>
+                    <!-- /Section Quote Single Dark -->
+
+
+                    <!-- Section Contacts Grid X3 -->
+                    @@include('includes/modules/section/contacts-grid-x3.html', {
+                        'title': 'Lorem contacts by state',
+                    })
+                    <!-- /Section Contacts Grid X3 -->
+
+
+                    <!-- Section Image CTA Box A -->
+                    @@include('includes/modules/section/image-cta-box-a.html', {
+                        'overlay'   :   'overlay-1',
+                        'bgColor'   : 'bg-light',
+                        'thumb': 'images/img-cta-09@2x.jpg',
+                        'showHideEyebrow':'d-none',
+                        'title': 'Interested in becoming a service member?',
+                        'image-ctabox-aModifier':'image-ctabox-a--titlemargin',
+                        'text': 'Lorem ipsum dolor sit amet',
+                        'btnTxt': 'Learn more'
+                    })
+                    <!-- /Section Image CTA Box A -->
+
+
+                </main>
+            </div>
+            @@include('includes/footer.html')
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<section class="our-values @@bgColor">
+    <div class="container">
+        <header class="our-values-header">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h2 class="mb-16 mb-md-22 mb-lg-31">@@title</h2>
+                </div>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col">
+                <div class="our-values-slider">
+                    <div class="swiper-wrapper">
+                        <div class="item swiper-slide">
+                            @@include('../cards/card-text-image.html', {
+                                'thumb': 'images/icon-sparkles@2x.png',
+                                'eyebrow': '01',
+                                'title': 'We believe big things are possible',
+                                'para': 'We are committed to building a solution that matches the vast scale of the problem, and to approaching and evaluating our work with a rigor that makes our ambitious vision a reality.'
+                            })
+                        </div>
+                        <div class="item swiper-slide">
+                            @@include('../cards/card-text-image.html', {
+                                'thumb': 'images/icon-table@2x.png',
+                                'eyebrow': '02',
+                                'title': 'We believe in making space for everyone at the table',
+                                'para': 'The nature of our work—ensuring that all our nation’s children have equitable access to food education and nourishing food in school—compels us to celebrate collaboration across different perspectives, identities, and lived experiences. Everyone gets a seat—and a say.'
+                            })
+                        </div>
+                        <div class="item swiper-slide">
+                            @@include('../cards/card-text-image.html', {
+                                'thumb': 'images/icon-root@2x.png',
+                                'eyebrow': '03',
+                                'title': 'We believe healthy food has healthy roots',
+                                'para': 'So the food we share is truly nourishing, we strive for it to be good for the people who grow, harvest, prepare, and eat it, and for the lands and waters where it is produced.'
+                            })
+                        </div>
+                        <div class="item swiper-slide">
+                            @@include('../cards/card-text-image.html', {
+                                'thumb': 'images/icon-root@2x.png',
+                                'eyebrow': '04',
+                                'title': 'We believe in trying new things',
+                                'para': 'We celebrate curiosity and innovation, and seek to continually improve, adapt and evolve our approach in order to hone our program, strenghthen our impact, and build a better FoodCorps.'
+                            })
+                        </div>
+                        <div class="item swiper-slide">
+                            @@include('../cards/card-text-image.html', {
+                                'thumb': 'images/icon-curiosity@2x.png',
+                                'eyebrow': '05',
+                                'title': 'We believe it takes a more just organization to create a more just world',
+                                'para': 'To achieve our mission, it is critical that we champion diversity, foster a community of inclusion, and center equity in both our end goal and the road we take to get there.'
+                            })
+                        </div>
+                    </div>
+                    <div class="slider__controls">
+                        <div class="slider__pagination"></div>
+                    </div>
+                    <div class="slider__controls slider__buttons">
+                        <div class="slider__button-prev">
+                            <i class="icon-arrow-left"></i>
+                        </div>
+                        <div class="slider__button-next">
+                            <i class="icon-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="scripts/our-values.js"></script>

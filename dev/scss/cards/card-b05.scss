@@ -1,0 +1,66 @@
+.card-b05 {
+    position: relative;
+    z-index: 9;
+    &-figure {
+        padding-bottom: calc(230 / 303 * 100%);
+
+        @include media-breakpoint-up(md) {
+            padding-bottom: calc(230 / 300 * 100%);
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-bottom: calc(400 / 522 * 100%);
+        }
+    }
+
+    img {
+        border-radius: 4.2rem;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        object-position: center center;
+    }
+
+    &-content {
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            left: 5.4rem;
+            bottom: 4rem;
+            color: $light;
+            padding-right: 13%;
+        }
+
+        .eyebrow-3 {
+            @include media-breakpoint-up(lg) {
+                color: $sand;
+            }
+        }
+
+        .sub-header {
+            @include media-breakpoint-up(lg) {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+        }
+
+        .btn-narrow {
+            padding: 1.1rem 2.7rem;
+            @include media-breakpoint-up(md){
+                padding: 1.1rem 3.2rem;
+            }
+            @media(min-width: 768px) and (max-width: 1024px){
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+            }
+            @include media-breakpoint-up(lg){
+                padding: 1.05rem 2.2rem;
+            }
+        }
+    }
+
+}

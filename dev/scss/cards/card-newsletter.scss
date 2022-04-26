@@ -1,0 +1,33 @@
+.card-newsletter {
+
+    &__icon {
+        margin-bottom: 1.6rem;
+        max-width: 9.6rem;
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 5rem;
+            max-width: 13.8rem;
+        }
+    }
+
+    form {
+        .form-control {
+            font-size: 1.6rem;
+            line-height: 2rem;
+            padding-right: 12rem;
+        }
+        .btn-primary {
+            font-size: 1.8rem;
+            line-height: 1.6rem;
+            padding: 1.5rem 4rem;
+            @include media-breakpoint-up(md) {
+                position: absolute;
+                top: -0.3rem;
+                right: 0;
+                padding: 1.05rem 2.2rem;
+                font-size: 1.6rem;
+                line-height: 1.7rem;
+            }
+        }
+    }
+
+}

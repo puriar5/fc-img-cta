@@ -1,0 +1,355 @@
+@import '../common-imports';
+
+.filter-tabs {
+    .tab-content {
+        .tab-pane {
+            section {
+                &:last-child {
+                    .container {
+                        padding-bottom: 11rem !important;
+                        
+                        @include media-breakpoint-up(md) {
+                            padding-bottom: 13rem !important;
+                        }
+
+                        @include media-breakpoint-up(lg) {
+                            padding-bottom: 13rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.filter-tabs {
+    padding-top: 0;
+
+    .nav {
+        margin-bottom: -1.6rem !important;
+
+        .nav-item {
+            margin-bottom: 1.6rem;
+        }
+    }
+
+    &-nav {
+        padding-bottom: 3rem;
+    }
+
+    .pill-filter--sp {
+        margin-bottom: 0 !important;
+    }
+}
+
+.skillet-grid-a {
+    padding-bottom: 8rem;
+
+    @include media-breakpoint-up(md) {
+        padding-bottom: 3.2rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 0;
+    }
+
+    &.bg-dark-green {
+        padding-top: 1.6rem;
+    }
+}
+
+.skillet-grid-b {
+    position: relative;
+    z-index: 9;
+
+    @include media-breakpoint-up(tb) {
+        padding-top: 6rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-top: 11.6rem;
+    }
+}
+
+.section-post {
+    padding-top: 6rem;
+
+    @include media-breakpoint-up(md) {
+        padding-top: 9rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 7.6rem;
+    }
+}
+
+.skillet-cta-box {
+    &__content {
+        .row {
+            .col-sm-7 {
+                @include media-breakpoint-down(lg) {
+                    width: 70%;
+                }
+
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                }
+
+                h2,
+                .h2 {
+                    @include media-breakpoint-down(xl) {
+                        font-size: 2.8rem;
+                        line-height: 3.2rem;
+                    }
+
+                    @include media-breakpoint-down(md) {
+                        font-size: 2.2rem;
+                        line-height: 2.6rem;
+                    }
+                }
+            }
+        }
+
+        h2,
+        .h2 {
+            @include media-breakpoint-up(lg) {
+                padding: 0 5%;
+            }
+        }
+    }
+}
+
+
+
+.quote-single-dark {
+    @include media-breakpoint-up(xxl) {
+        padding-bottom: 3.6rem;
+    }
+
+    article {
+        color: $secondary !important;
+
+        .bg-dark-green & {
+            color: $light !important;
+        }
+    }
+}
+
+
+.benefits-of-service {
+    margin-top: -13rem;
+
+    @include media-breakpoint-up(md) {
+        margin-top: -25rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-top: -26rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        margin-top: -38.8rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 2rem;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-bottom: 4rem;
+    }
+}
+
+.filter-tabs .tab-content .tab-pane section:last-child.benefits-of-service .benefits-of-service-wrapper .container {
+    padding-bottom: 0 !important;
+}
+
+
+.newsletter-signup-b {
+    &__inner {
+        @include media-breakpoint-down(md) {
+            padding: 6rem 0;
+        }
+    }
+}
+
+.select-grid-2-2 {
+    padding: 6rem 0;
+
+    @include media-breakpoint-up(md) {
+        padding: 8rem 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 9rem 0 12rem;
+    }
+
+    .slider__wrap {
+        @include media-breakpoint-up(lg) {
+            margin-top: 0;
+        }
+    }
+
+    &-header {
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 12.8rem !important;
+        }
+    }
+}
+
+.search-result {
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+
+    @include media-breakpoint-up(md) {
+        padding-bottom: 4rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 6rem;
+    }
+
+    &-form {
+        @include media-breakpoint-down(lg) {
+            padding: 8rem 0 6rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 5rem 0 4rem;
+        }
+    }
+}
+
+
+
+
+.filter-tabs {
+    &-nav {
+        .nav-pills {
+            @include media-breakpoint-down(lg) {
+                margin-bottom: -1.6rem !important;
+                justify-content: space-between !important;
+                margin-left: -1.5rem;
+                margin-right: -1.5rem;
+            }
+            .nav-item {
+                &:not(:last-child) {
+                    .nav-link {
+                        @include media-breakpoint-up(md) {
+                            min-width: 12rem;
+                        }
+
+                        @include media-breakpoint-up(lg) {
+                            min-width: 13rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #nav-01,
+    .nav-01 {
+        .skillet-grid-b {}
+    }
+
+    #nav-02,
+    .nav-02 {
+        padding-top: 0;
+
+        .skillet-grid-d {
+            margin-top: -7rem;
+
+            @include media-breakpoint-up(md) {
+                margin-top: -14rem;
+            }
+
+            @include media-breakpoint-up(tb) {
+                margin-top: -20rem;
+            }
+
+            @include media-breakpoint-up(xxxl) {
+                margin-top: -26rem;
+            }
+        }
+    }
+
+    #nav-03,
+    .nav-03 {
+        margin-bottom: 0;
+
+        .quote-single-dark {
+            padding-bottom: 6rem;
+
+            @include media-breakpoint-up(md) {
+                padding-bottom: 10rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                padding-bottom: 13.6rem;
+            }
+        }
+
+        .skillet-grid-b {
+            @include media-breakpoint-up(lg) {
+                padding-bottom: 29rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding-top: 10rem;
+            }
+
+            @include media-breakpoint-down(tb) {
+                padding-top: 6rem;
+            }
+        }
+
+        .skillet-cta-box {
+            @include media-breakpoint-up(lg) {
+                margin-top: -20rem;
+            }
+
+            &+.skillet-grid-b {
+                padding-top: 24rem;
+                margin-top: -15rem;
+                padding-bottom: 20rem;
+                position: relative;
+                z-index: 9;
+
+                &+.skillet-grid-d {
+                    background-color: transparent !important;
+                    margin-top: -25rem;
+
+                    @include media-breakpoint-up(md) {
+                        margin-top: -32rem;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        margin-top: -43rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #nav-05,
+    .nav-05 {
+        .skillet-grid-d {
+            @include media-breakpoint-down(md) {
+                padding-bottom: 6rem;
+            }
+
+            &+.skillet-grid-d {
+                @include media-breakpoint-up(md) {
+                    padding-top: 1.4rem;
+                }
+
+                padding-bottom: 6rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+
+.card-intro-text-c {
+
+    p {
+        @include media-breakpoint-up(xl) {
+            padding-right: 11rem;
+        }
+    }
+
+}

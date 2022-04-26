@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'Foodcorps - Become a Foodcorps Service Member'})
+    <link rel="stylesheet" href="css/styles/page-become-member.min.css" />
+</head>
+
+<body>
+
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap position-relative">
+            @@include('includes/header.html', {
+                'headerSkin':   'theme-header--white',
+                'menuSkin'  :   'menu-toggler--white',
+            })
+            <!-- Pushy Menu -->
+            <div class="pushy pushy--left" data-focus="#first-link">
+                <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+            </div>
+            <main class="theme-main">
+
+                <!-- Leadspace Video -->
+                @@include('includes/modules/section/lead-video.html',{
+                    'dataColor'             :       'light',
+                    'h1Title'               :       'Become a FoodCorps Service Member',
+                    'showHideDescription'   :       'd-none',
+                    'showHideButton'        :       'd-none',
+                    'posterImage'           :       'hero-sm@2x.jpg',
+                    'showHideCta'           :       'd-none',
+                    'figCaption'            :       'Lorem ipsum image credit dolor',
+                })
+                <!-- /Leadspace Video -->
+
+
+                <!-- Section Text with Box Card -->
+                @@include('includes/modules/section/text-with-cta-box.html', {
+                    'bgColor': 'bg-light',
+                    'para': 'As a FoodCorps service member, you can help kids learn what healthy food is, care where it comes from, and eat it every day. You’ll teach them to plant, grow, cook, and love it. FoodCorps recruits talented leaders for a year of full time paid public service building healthy school food environments in limited-resource communities.'
+                })
+                <!-- /Section Text with Box Card -->
+                
+                
+                <!-- /Bullettext -->
+                @@include('includes/modules/section/bullettext-l-image-r.html',{
+                    'bgShowHide': 'd-none',
+                    'eyebrowShowHide':'d-block',
+                    'titleShowHide':'d-none',
+                    'subTitleShowHide':'d-block',
+                    'subTitle':'What service members do',
+                    'subTextShowHide':'d-block',
+                    'subText':'As a service member, you’ll implement FoodCorps’ evidence-based strategies to feed kids good food, teach them to know and love it, and help schools become healthier places for them to grow and learn. Most of your time will be spent teaching in the classroom and garden; there are also opportunities to work with school nutrition directors in supporting districtwide food systems change. Most service corps members do the following:',
+                    'bgColor':'bg-light',
+                    'textColor': 'text-dark',
+                     'mainImg':'image_what-sm-do@2x.png',
+                     'altMainImg':'happy people eating food on a park bench',
+                     'btnShowHide':'d-inline-block',
+                     'offsetTextColor':'text-dark',
+                     'figCaption'   :   'Lorem ipsum image credit dolor',
+                     "results"  : {
+                         "list": [
+                             {
+                                 'listIconImg' : 'icon-star.svg',
+                                 'altIcon' : 'Star inside circle',
+                                 'listTitleShowHide' : 'd-block',
+                                 'listTitle' : 'Lead hands-on lessons',
+                                 'listText' : 'You’ll teach students to grow, cook, taste new foods, building their skills and enthusiasm, and changing their food preferences. You’ll collaborate with teachers on integrating food into the curriculum, and you may help organize field trips to local farms or visits from chefs.'
+                             },
+                             {
+                                'listIconImg' : 'icon-star.svg',
+                                'altIcon' : 'Star inside circle',
+                                'listTitleShowHide' : 'd-block',
+                                'listTitle' : 'Influence healthy school meals',
+                                'listText' : 'You’ll cultivate a cafeteria experience that steers students towards the healthiest options and gets them excited to try new foods. You’ll get kids to try samples during taste tests and brainstorm great ideas about good eating with them. You may even work with food service directors and farmers to get local foods onto the lunch line.'
+                            },
+                            {
+                                'listIconImg' : 'icon-star.svg',
+                                'altIcon' : 'Star inside circle',
+                                'listTitleShowHide' : 'd-block',
+                                'listTitle' : 'Build a schoolwide culture of health',
+                                'listText' : 'You’ll be an active, collaborative member of the school community, working to ensure that the whole school environment—from thallway to classroom to cafeteria—celebrates healthy food. You may plan family cooking nights and organize healthy fundraisers, too.'
+                            },
+                         ]
+                     },
+                })
+                <!-- /Bullettext -->
+
+
+                <!-- Section Column Bullet Text Dark -->
+                @@include('includes/modules/section/column-bullet-text.html', {
+                    'bgColor': 'bg-dark-green',
+                    'textColor': 'text-light'
+                })
+                <!-- /Section Column Bullet Text Dark -->
+
+
+                <!-- Section Quote Single Dark -->
+                @@include('includes/modules/section/quote-single-dark.html', {
+                    'bgColor': 'bg-dark-green',
+                    'textColor': 'text-white',
+                    'bgThumb': 'images/single-quote-bg@2x.png'
+                })
+                <!-- /Section Quote Single Dark -->
+
+
+                <!-- Section Wide Image Centered -->
+                <section class="wide-image wide-image-centered header-wide @@bgColor">
+                    <div class="wide-image-wrapper position-relative">
+                        <div class="wide-image-content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-6">
+                                        <div class="wide-image-description text-light">
+                                            <h2 class="eyebrow-1 mb-1 text-yellow">STEP 3</h2>
+                                            <h3 class="mb-3">Where you’ll serve</h3>
+                                            <p>FoodCorps currently serves schools and districts across the country in 12 states and the District of Columbia. You
+                                                can choose up to three preferred states, and even specific service sites, in your application. We encourage you to
+                                                serve in your local community, as we are looking to empower local leaders. Keep in mind that we do not provide
+                                                housing.</p>
+                                            <p>Want to know what it’s like to serve in a particular community?</p>
+                                            <a href='' class='btn btn-primary btn-bubble' title='title'>See a map of states</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="wide-image-figcaption eyebrow-2 text-end fst-italic">
+                                            <p class="text-white">Lorem ipsum image credit dolor</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wide-image-bg overflow-hidden">
+                            <img src="images/sm-step-bg@2x.webp" alt="" class="wide-image-bg-main">
+                        </div>
+                    </div>
+                </section>
+                <!-- /Section Wide Image Centered -->
+
+
+                <!-- Benefits Of Service -->
+                @@include('includes/modules/section/benefit-of-service.html')
+                <!-- /Benefits Of Service -->
+
+
+                <!-- Text Card Slider -->
+                @@include('includes/modules/section/text-card-slider.html',{
+                    'quoteBg'           :       'quote-bg-white.svg',
+                    'quoteSkin'         :       'quote-l-image-r--white',
+                    'iconQuote'         :       'icon-quote-primary@2x.png',
+                    'h3Title'           :       'Lorem ipsum quote from The Skillet story dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+                    'linkText'          :       'Read Story CTA',
+                    'mainFigure'        :       'fpo-quote-img-2@2x.webp',
+                    'figCaption'        :       'Lorem ipsum image credit dolor',
+                })
+                <!-- /Text Card Slider -->
+
+                
+                <!-- Image CTA Box A -->
+                @@include('includes/modules/section/image-cta-box-a.html', {
+                    'overlay'   : 'overlay-2',
+                    'bgColor'   : 'bg-light',
+                    'showHide': '',
+                    'ifreverse': 'image-ctabox-a__reverse',
+                    'thumb': 'images/img-cta-02@2x.jpg',
+                    'imageformobile': 'images/mobile-img-apply@2x.png',
+                    'eyebrow': 'STEP 6',
+                    'title': 'Ready to apply?',
+                    'text': 'Lorem ipsum image credit dolor',
+                    'btnTxt': 'Apply now'
+                })
+                <!-- /Image CTA Box A -->
+
+
+                <!-- Application Timeline -->
+                @@include('includes/modules/section/application-timeline.html')
+                <!-- /Application Timeline -->
+
+
+                <!-- Section Stay In Loop -->
+                @@include('includes/modules/section/stay-in-loop.html',{
+                    'bgColor'     : 'bg-light'
+                })
+                <!-- /Section Stay In Loop -->
+
+
+
+            </main>
+        </div>
+        @@include('includes/footer.html')
+        @@include('includes/scripts.html')
+        
+    </div>
+</body>
+
+</html>

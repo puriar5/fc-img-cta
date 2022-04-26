@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'FoodCorps Leadspace/Above the fold'})
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                <main class="theme-main">
+                    @@include('includes/header.html', {
+                        <!-- 'headerSkin': 'theme-header--dark' -->
+                    })
+                    <!-- Pushy Menu -->
+                    <div class="pushy pushy--left" data-focus="#first-link">
+                        <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+                    </div>
+                    <div class="container mt-20 pt-20">
+                        <header class="pt-10">
+                            <div class="row">
+                                <div class="col">
+                                    <header class="heading-d01 text-center">
+                                        <h2>Hero Sections</h2>
+                                        <p>
+                                            Heading title design 01. Feel free
+                                            to use anywhere you need.
+                                        </p>
+                                    </header>
+                                    <hr class="mt-10" />
+                                </div>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="container py-10 my-10">
+                        <h4 class="text-primary mt-20 mb-8">lead-video (Lead Video poster only with cta with icon description)</h4>
+                        <hr class="my-10">
+                    </div>
+                    <section class="lead-video lead-video--icon-description overflow-hidden position-relative d-flex align-items-md-center">
+                        <div class="hero-video hero-overlay">
+                            <video id="js-hero-video" poster="images/hero-support@2x.jpg" muted="" autoplay="" loop=""
+                                style="object-fit: cover;width:100%;height:100%;" playsinline="">
+                                <source type="video/mp4" src="@@videoSource">
+                            </video>
+                        </div>
+                        <div class="hero-content w-100 position-relative">
+                            <div class="container">
+                                <div
+                                    class="row justify-content-between align-items-center align-items-tb-start align-items-lg-center">
+                                    <div class="col-md-6 col-lg-5">
+                                        <h1 class="text-light">Support FoodCorps</h1>
+                                        <a href="#" class="btn btn-primary btn-bubble @@showHideCta">
+                                            Donate
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-lg-1 text-end">
+                                        <figcaption class="lead-video-figcaption @@showHideCaption text-light">
+                                            <p class="eyebrow-2 fst-italic text-end">
+                                                Students with a freshly harvested beet at Mar Vista Elementary School
+                                                (Oxnard)
+                                            </p>
+                                        </figcaption>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lead-video-bg">
+                            <div class="d-none d-md-block lead-video-bg-svg lead-video-bg-lg">
+                                <svg width="1440px" height="320px" viewBox="0 0 1440 315" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="1.0-About" transform="translate(0.000000, -407.000000)" fill-rule="nonzero">
+                                            <g id="lead-video-curve" transform="translate(0.000000, 407.000000)">
+                                                <path class="bottom-wave"
+                                                    d="M1.81772709e-12,151.142173 C229.840389,233.584921 256.113183,261.05999 482.664816,253.32408 C994.80916,235.836225 1088.24427,16.9882026 1440,0 C1440,0 1440,104.760583 1440,314.281749 L1.81772709e-12,314.52871 C1.81772709e-12,205.604352 1.81772709e-12,151.142173 1.81772709e-12,151.142173 Z"
+                                                    id="bottom-wave-copy" fill="#00524C"></path>
+                                                <path
+                                                    d="M0,0 C151.894518,0 408.216516,108.131939 479.167245,140.835791 C550.117974,173.539642 968.350972,341.266915 1439.00069,140.835791 C1439.00069,234.090682 1439.00069,275.584003 1439.00069,265.315753 C1091.58098,360.154846 749.243192,316.230922 411.987336,133.54398 C264.316447,53.5526544 104.497745,0 0,0 Z"
+                                                    id="thin-wave" fill="#4FB075"
+                                                    transform="translate(719.500347, 156.964930) scale(-1, 1) translate(-719.500347, -156.964930) ">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="d-md-none lead-video-bg-svg lead-video-lg-sm">
+                                <svg width="375px" height="72px" viewBox="0 0 375 72" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="1.0-About" transform="translate(-226.000000, -649.000000)"
+                                            fill-rule="nonzero">
+                                            <g id="lead-video-curve-sm" transform="translate(226.000000, 649.000000)">
+                                                <polyline id="Path-3" fill="#00524C" class="bottom-wave"
+                                                    points="0.238719782 44.3963488 206.284485 48.8566569 298.037443 36.2747808 375 4.27478083 375 71.2747808 0 71.2747808 4.06575815e-17 47.4719657 4.06575815e-17 45.2424048">
+                                                </polyline>
+                                                <path
+                                                    d="M0.286993658,0.0357785295 C10.8011839,3.11357443 -0.00454061463,-0.270239635 14.0374744,6.20225168 C40.7197642,18.5011196 198.003759,81.5779587 375,6.20225168 C375,41.2724205 375,56.8767254 375,53.0151664 C207.431696,66.4892844 82.5273607,51.9240428 0.286993658,9.31944178 C-0.115602171,9.11087711 0.191128826,8.81821063 0.286993658,8.02347738 C0.423181201,6.89446304 0.347223739,5.14280043 0.286993658,3.72018758 C0.228553356,2.33984869 0.380607282,1.52672122 0.286993658,0.838180168 C0.225973548,0.389368888 -0.327077547,-0.14397719 0.286993658,0.0357785295 Z"
+                                                    id="Path" fill="#4FB075"
+                                                    transform="translate(187.500000, 28.935668) scale(-1, 1) translate(-187.500000, -28.935668) ">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+    
+                        <!-- Add icon and description -->
+    
+                        <div class="icn-description"
+                            data-color="light">
+                            <div class="container">
+                                <div class="row justify-content-end">
+                                    <div class="col-md-8 col-lg-6 text-end">
+                                        <div class="icn-description-wrapper">
+                                            <figure class="icn-description-figure">
+                                                <img src="images/icon-americorp.svg" alt="image description">
+                                            </figure>
+                                            <div class="description text-light">
+                                                <p>
+                                                    FoodCorps is proud to be part of the
+                                                    AmeriCorps Service Network. We receive a portion of our funding from the
+                                                    agency.
+                                                    For the rest, we rely on corporate and foundation partners, and on
+                                                    individuals.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script src="scripts/lead-video.js"></script>
+                    </section>
+
+
+                    <div class="container py-10 my-10">
+                        <h4 class="text-primary mb-8">lead-video (Lead Video poster only with cta)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/lead-video.html',{
+                        'h1Title'               :       'Take Action',
+                        'heroDescription'       :       'Here are today’s most critical policy positions and policy change opportunities, where your advocacy and support can make a direct difference.',
+                        'showHideButton'        :       'd-none',
+                        'posterImage'           :       'hero-policy@2x.jpg',
+                        'showHideCta'           :       '',
+                        'ctaText'               :       'Sign up for policy alerts',
+                        'figCaption'            :       'Lorem ipsum image credit dolor',
+                    })
+
+                    <div class="container py-10 my-10">
+                        <h4 class="text-primary mb-8">lead-video (Lead Video poster only with cta)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/lead-video.html',{
+                        'h1Title'               :       'Support FoodCorps',
+                        'showHideDescription'   :       'd-none',
+                        'showHideButton'        :       'd-none',
+                        'posterImage'           :       'hero-support@2x.jpg',
+                        'showHideCta'           :       '',
+                        'ctaText'               :       'Donate',
+                        'figCaption'            :       'Students with a freshly harvested beet at Mar Vista Elementary School (Oxnard)',
+                    })
+
+                    <div class="container py-10 my-10">
+                        <h4 class="text-primary mb-8">lead-video (Lead Video poster only)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/lead-video.html',{
+                        'h1Title'               :       'Become a FoodCorps Service Member',
+                        'showHideDescription'   :       'd-none',
+                        'showHideButton'        :       'd-none',
+                        'posterImage'           :       'hero-sm@2x.jpg',
+                        'showHideCta'           :       'd-none',
+                        'figCaption'            :       'Students with a freshly harvested beet at Mar Vista Elementary School (Oxnard)',
+                    })
+
+                    <div class="container py-10 my-10">
+                        <h4 class="text-primary mb-8">lead-video (Lead Video with description)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/lead-video.html',{
+                        'h1Title'               :       'What You Can Do',
+                        'heroDescription'       :       'Together with communities and partners like you, we can cultivate health, justice, and joy for all children through the power of food in school.',
+                        'videoSource'           :       'http://s3-us-west-2.amazonaws.com/hikercms/6/115/426/1644008677664.mp4',
+                        'posterImage'           :       'hero-what-poster@2x.jpg',
+                        'showHideCta'           :       'd-none',
+                        'showHideCaption'       :       'd-none',
+                    })
+                    <div class="container py-10 my-10">
+                        <h4 class="text-primary mb-8">lead-video (Lead Video)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/section/lead-video.html',{
+                        'h1Title'               :       'About FoodCorps',
+                        'showHideDescription'   :       'd-none',
+                        'posterImage'           :       'hero-about-poster@2x.jpg',
+                        'videoSource'           :       'https://sample-videos.com/video123/mp4/480/big_buck_bunny_480p_20mb.mp4',
+                        'showHideCta'           :       'd-none',
+                        'showHideCaption'       :       'd-none',
+                    })
+                    <div class="container pt-10 mt-10">
+                        <h4 class="text-primary mb-8">text-header-b (Text Header B)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/above-the-fold/text-header-b.html',{
+                        'showhideFigure'    :       'd-none',
+                        'bgColor'           :       'bg-primary',
+                        'h1Title'           :       'Our Funders & Partners',
+                        'linkText'          :       'Become a partner',
+                        'pDescription'      :       '<p>FoodCorps’ work to connect kids to healthy food in school wouldn’t be possible without the generosity of our funding partners.</p>',
+                        'showHideFigCaption':       'd-none',
+                    })
+
+                    <div class="container pt-10 mt-10">
+                        <h4 class="text-primary mb-8">wide-image (Wide Image)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/above-the-fold/wide-image.html',{
+                        'h1Title'           :       'Our Teams',
+                        'linkShowHide'      :       'd-none',
+                        'bgImgPath'         :       'hero-team-bg@2x.webp',
+                        'description'       :       '<p>Our staff trains and supports our teams in the field, sets our strategy for growing healthy schools, and collaborates on ongoing assessment of FoodCorps’ direction and growth. Our team reflects the diversity of backgrounds, expertise, and passions we want to see in the world through our service.</p>',
+                        'figcaption'        :       'Lorem ipsum image credit dolor'
+                    })
+
+                    <div class="container py-10 my-10">
+                        <h4 class="text-primary mb-8">wide-image (Wide Image Annual Reports)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/above-the-fold/wide-image.html',{
+                        'h1Title'           :       'Annual Reports & Financials',
+                        'linkShowHide'      :       'd-none',
+                        'bgImgPath'         :       'hero-annual-bg@2x.webp',
+                        'description'       :       '<p>Learn more about FoodCorps programs, resource investments, and fiscal stewardship over the years.<br><br><br><br></p>',
+                        'figcaption'        :       'Lorem ipsum image credit dolor'
+                    })
+                    <div class="container py-10 my-10">
+                        <h4 class="text-primary mb-8">wide-image (Wide Image Board)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/above-the-fold/wide-image.html',{
+                        'h1Title'           :       'Our Board',
+                        'linkShowHide'      :       'd-none',
+                        'bgImgPath'         :       'hero-board-bg@2x.webp',
+                        'description'       :       '<p>Our Board brings business acumen, policy expertise, education leadership, and the lived experience of FoodCorps alumni to impact the organization’s strategic decisions. While diverse in their backgrounds, they are united in their passion for food justice and education equity.</p>',
+                        'figcaption'        :       'Lorem ipsum image credit dolor'
+                    })
+                    <div class="container py-10 my-10">
+                        <h4 class="text-primary mb-8">wide-image (Wide Image Corporate - Header Wide)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/above-the-fold/wide-image.html',{
+                        'headerWide'        :       'header-wide',
+                        'h1Title'           :       'Corporate Partnerships',
+                        'linkText'          :       'Partner with us',
+                        'bgImgPath'         :       'hero-corporate-bg@2x.webp',
+                        'description'       :       '<p>FoodCorps’ corporate partners join with us to cultivate health, justice, and joy for all children. Partner with us today to help bring hands-on food education and healthy food to more classrooms and cafeterias, and to drive lasting policy change that makes it easier for schools to nourish our kids.</p>',
+                        'figcaption'        :       'Lorem ipsum image credit dolor'
+                    })
+
+                    <div class="container py-10 my-10">
+                        <h4 class="text-primary mb-8">wide-image (Wide Image - Centered)</h4>
+                        <hr class="my-10">
+                    </div>
+
+                    <section class="wide-image wide-image-centered header-wide @@bgColor">
+                        <div class="wide-image-wrapper position-relative">
+                            <div class="wide-image-content">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-8 col-lg-6">
+                                            <div class="wide-image-description text-light">
+                                                <h2 class="eyebrow-1 mb-1 text-yellow">STEP 3</h2>
+                                                <h3 class="mb-3">Where you’ll serve</h3>
+                                                <p>FoodCorps currently serves schools and districts across the country in 12 states and the District of Columbia. You
+                                                    can choose up to three preferred states, and even specific service sites, in your application. We encourage you to
+                                                    serve in your local community, as we are looking to empower local leaders. Keep in mind that we do not provide
+                                                    housing.</p>
+                                                <p>Want to know what it’s like to serve in a particular community?</p>
+                                                <a href='' class='btn btn-primary btn-bubble' title='title'>See a map of states</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="wide-image-figcaption eyebrow-2 text-end fst-italic">
+                                                <p class="text-white">Lorem ipsum image credit dolor</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wide-image-bg overflow-hidden">
+                                <img src="images/sm-step-bg@2x.webp" alt="" class="wide-image-bg-main">
+                            </div>
+                        </div>
+                    </section>
+                    
+                    
+                    <div class="container py-10 my-10">
+                        <h4 class="px-8 text-primary mb-8">Leadspace A (leadspace-a)</h4>
+                        <hr class="my-10">
+                    </div>
+                    @@include('includes/modules/above-the-fold/leadspace-a.html',{
+                        'bgImgPath'             : 'hero-home@2x.png',
+                        'bgImgSm'             : 'hero-home-sm@2x.png',
+                        'bgCurvePath'           : 'hero-curve.svg',
+                        'bgColor'               : 'bg-sand',
+                        'headline'              : 'Food can change everything. And school is the place to start.',
+                        'heroContent'           : 'Our vision: By 2030, every kid in America — regardless of race, place, or class — will have access to hands-on food education and healthy food in schools.',
+                        'linkText'              : 'The Case for Food in Schools'
+                        
+                    })
+                    <hr class="my-10" />
+                    <section>
+                        <div class="container">
+                        </div>
+                    </section>
+                </main>
+            </div>
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

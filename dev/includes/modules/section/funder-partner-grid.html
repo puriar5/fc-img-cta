@@ -1,0 +1,39 @@
+<div class="funder-partner-grid bg-sand">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="slider @@sliderName">
+                    <div class="slider__wrap swiper-wrapper">
+                        @@for (var i = 0; i < partners.list.length; i++) { 
+                                <div class="item swiper-slide">
+                                @@include('../cards/card-partner.html', `+(JSON.stringify(partners.list[i]))+`) 
+                            </div>
+                        }
+                    </div>
+                    <div class="slider__controls @@sliderName-control">
+                        <div class="slider__pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="funder-partner-grid-header mt-8 mt-lg-10">
+            <div class="row">
+                <div class="col-md-7 order-2 order-md-1">
+                    <h3>@@h3Title</h3>
+                    <p>@@headerDescription</p>
+                </div>
+                <div class="offset-md-1 col-md-3 col-lg-2 order-1 order-md-2">
+                    <div class="slider__navigation @@sliderName-control d-flex justify-content-around justify-content-md-between mb-6 mb-md-0">
+                        <div class="slider__button-prev">
+                            <i class="icon-arrow-left"></i>
+                        </div>
+                        <div class="slider__button-next">
+                            <i class="icon-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+</div>
+<script src="scripts/funder-partner-grid.js"></script>

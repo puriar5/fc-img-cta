@@ -1,0 +1,23 @@
+<article class="card-newsletter">
+    @@if (bodyMoving === true) {
+        <figure class="bodymoving card-newsletter__icon">
+            <div class="js-bodymoving" data-path="@@bodyMovingPath"></div>
+        </figure>
+    }
+    @@if (bodyMoving === false) {
+        <figure class="card-newsletter__icon">
+            <img src="images/icon-newsletter@2x.png" alt="Icon Newsletter">
+        </figure>
+    }
+    <h5 class="mb-0">Newsletter</h5>
+    <p class="mb-4 mb-lg-8">
+        Sign up here to get emails about FoodCorps programs, service member opportunities, policy updates, and more. 
+        (We promise not to send too many emails.)
+    </p>
+    <form action="#">
+        <div class="form-group position-relative">
+            <input type="email" class="form-control" placeholder="Your email address">
+            <button type="submit" class="btn btn-primary mt-5 mt-md-0">Sign up</button>
+        </div>
+    </form>
+</article>

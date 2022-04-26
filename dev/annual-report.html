@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'FoodCorps'})
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                @@include('includes/header.html', {
+                    <!-- 'headerSkin': 'theme-header--dark' -->
+                })
+                <!-- Pushy Menu -->
+                <div class="pushy pushy--left" data-focus="#first-link">
+                    <div class="pushy-content h-100">@@include('./includes/offcanvas.html')</div>
+                </div>
+                <main class="theme-main">
+                    @@include('includes/modules/above-the-fold/wide-image.html',{
+                        'bgColor'           :       'bg-sand',
+                        'h1Title'           :       'Annual Reports and Financials',
+                        'linkShowHide'      :       'd-none',
+                        'bgImgPath'         :       'hero-annual-bg@2x.webp',
+                        'description'       :       '<p>Learn more about FoodCorps programs, resource investments, and fiscal stewardship over the years.<br><br><br><br></p>',
+                        'figcaption'        :       'Lorem ipsum image credit dolor'
+                    })
+                    <section class="annual-report">
+                    <div class="container">
+                    <div class="annual-report-filter">
+                            <div class="pill-filter pill-filter--pc">
+                                <button class="pill-filter--btn btn btn-primary active">
+                                    2019 – Present
+                                </button>
+                                <button class="pill-filter--btn btn btn-primary">
+                                    2015 – 2018
+                                </button>
+                                <button class="pill-filter--btn btn btn-primary">
+                                    2011 – 2014
+                                </button>
+                            </div>  
+                        <!-- pc filter -->
+                        <div class="pill-filter--sp custom-select mb-5">
+                            <select>
+                                <option>2019 – Present</option>
+                                <option>2015 – 2018</option>
+                                <option>2011 – 2014</option>
+                                <option>Clear Filter</option>
+                            </select>
+                        </div>
+                          <!-- sp filter -->
+                    </div>
+                    <!-- FILTER END -->
+                    <div class="annual-report-grid-wrapper">
+                    @@include('includes/modules/repeator/annual-report-grid.html',{
+                        'year' : '2023',
+                        "results"  : {
+                            "list": [
+                                {
+                                    'imgLocation':'images/2021-ar@2x.png',
+                                    'btnText':'View report',
+                                    'title':'Annual Report'
+                                },
+                                {
+                                    'imgLocation':'images/2021-edi-report@2x.png',
+                                    'btnText':'View report',
+                                    'title':'Equity, Diversity, & Inclusion Report'
+                                },
+                                {
+                                    'imgLocation':'images/2020-afs@2x-yellow.png',
+
+                                    'btnText':'View report',
+                                    'title':'Audited Financial Statement'
+                                },
+                                {
+                                    'imgLocation':'images/990-form@2x.png',
+                                    'btnText':'View report',
+                                    'title':'FY 2021 990 Form'
+                                }
+                            ]
+
+                        },
+                    })
+                    @@include('includes/modules/repeator/annual-report-grid.html',{
+                        'year' : '2022',
+                        "results"  : {
+                            "list": [
+                                {
+                                    'imgLocation':'images/2020-ar@2x.png',
+                                    'btnText':'View report',
+                                    'title':'Annual Report'
+                                },
+                                {
+                                    'imgLocation':'images/2020-afs@2x.png',
+                                    'btnText':'View report',
+                                    'title':'Audited Financial Statement'
+                                },
+                                {
+                                    'imgLocation':'images/990-form@2x.png',
+                                    'btnText':'View report',
+                                    'title':'FY 2022 990 Form'
+                                }
+                            ]
+
+                        },
+                    })
+                    @@include('includes/modules/repeator/annual-report-grid.html',{
+                        'year' : '2021',
+                        "results"  : {
+                            "list": [
+                                {
+                                    'imgLocation':'images/2019-ar@2x.png',
+                                    'btnText':'View report',
+                                    'title':'Annual Report'
+                                },
+                                {
+                                    'imgLocation':'images/2020-afs@2x-yellow.png',
+                                    'btnText':'View report',
+                                    'title':'Audited Financial Statement'
+                                },
+                                {
+                                    'imgLocation':'images/990-form@2x.png',
+                                    'btnText':'View report',
+                                    'title':'FY 2023 990 Form'
+                                }
+                            ]
+
+                        },
+                    })
+                </div>
+                    </div>
+                </section>
+                    <!-- GRID END -->
+                </main>
+            </div>
+            @@include('includes/footer.html')
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

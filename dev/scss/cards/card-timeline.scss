@@ -1,0 +1,48 @@
+.card-timeline {
+    background: $primary;
+    border-radius: 9.3rem;
+    max-width: 19.8rem;
+    height: 27.5rem;
+    padding: 2.2rem 3.2rem;
+
+    @include media-breakpoint-between(lg, xl) {
+        padding: 2rem 2rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 30rem;
+    }
+
+    h4 {
+        @include media-breakpoint-between(lg, xl) {
+            font-size: 2.4rem;
+        }
+    }
+
+    p {
+        line-height: 2.4rem;
+        margin-top: -2.4rem;
+        @include media-breakpoint-between(lg, xl) {
+            font-size: 1.6rem;
+            line-height: 2rem;
+        }
+    }
+
+    &.active {
+        background: $yellow;
+    }
+
+    &__spinner {
+        display: block;
+        margin: 0 auto;
+        height: 4.9rem;
+        width: 4.9rem;
+        border-radius: 10rem;
+        background: $white;
+        border-radius: 10rem;
+        transform: translateY(-50%);
+        border: 0.8rem solid #00524c;
+        margin: 35px auto 0;
+    }
+    
+}

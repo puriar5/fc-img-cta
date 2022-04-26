@@ -1,0 +1,65 @@
+<section class="application-timeline bg-dark-green">
+    <div class="container">
+        <h3 class="text-center text-white mb-9 mb-lg-13">Application timeline</h3>
+        <div class="timeline-slider position-relative">
+            <div class="swiper-wrapper">
+                <div class="item swiper-slide">
+                    @@include('../cards/card-timeline.html', {
+                        'year': '2022',
+                        'month': 'Jan 10',
+                        'title': 'Application period opens'
+                    })
+                </div>
+                <div class="item swiper-slide">
+                    @@include('../cards/card-timeline.html', {
+                        'year': '2022',
+                        'month': 'March',
+                        'title': 'States review application as they are submitted'
+                    })
+                </div>
+                <div class="item swiper-slide">
+                    @@include('../cards/card-timeline.html', {
+                        'year': '2022',
+                        'month': 'Mar 31',
+                        'isActive': 'active',
+                        'title': 'Application deadline'
+                    })
+                </div>
+                <div class="item swiper-slide">
+                    @@include('../cards/card-timeline.html', {
+                        'year': '2022',
+                        'month': 'April',
+                        'title': 'First round of phone interviews'
+                    })
+                </div>
+                <div class="item swiper-slide">
+                    @@include('../cards/card-timeline.html', {
+                        'year': '2022',
+                        'month': 'May',
+                        'title': 'Virtual site interviews take place'
+                    })
+                </div>
+                <div class="item swiper-slide">
+                    @@include('../cards/card-timeline.html', {
+                        'year': '2022',
+                        'month': 'June',
+                        'title': 'Decisions and offers sent to applicants'
+                    })
+                </div>
+            </div>
+            <div class="slider__controls">
+                <div class="slider__pagination"></div>
+            </div>
+            <div class="slider__controls slider__buttons">
+                <div class="slider__button-prev">
+                    <i class="icon-arrow-left"></i>
+                </div>
+                <div class="slider__button-next">
+                    <i class="icon-arrow-right"></i>
+                </div>
+            </div>
+            <div class="horizontal-line"></div>
+        </div>
+    </div>
+</section>
+<script src="scripts/timeline-slider.js"></script>

@@ -1,0 +1,93 @@
+@import "../common-imports";
+
+.policy-grid {
+    position: relative;
+}
+
+.skillet-stories {
+    overflow: hidden;
+    padding-bottom: 16.2rem;
+    padding-top: 4rem;
+
+    @include media-breakpoint-up(md) {
+        padding-top: 4.7rem;
+        padding-bottom: 6rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-top: 4.7rem;
+        padding-bottom: 10rem;
+    }
+
+    h2 {
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 0.5rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 0;
+        }
+    }
+
+    .shape-1 {
+        @include media-breakpoint-down(lg) {
+            margin-right: -10%;
+        }
+    }
+
+    .food-court-card {
+        &__text {
+            h3 {
+                @include media-breakpoint-down(lg) {
+                    font-size: 2.4rem;
+                    line-height: 3.2rem;
+                    margin-bottom: 1.8rem;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 0.8rem;
+                }
+            }
+        }
+
+        .my-15 {
+            @include media-breakpoint-down(sm) {
+                margin-top: 1rem !important;
+            }
+        }
+    }
+
+    &-footnote {
+        font-weight: $font-weight-normal;
+        font-size: 1.4rem;
+        line-height: 2rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 1.6rem;
+            line-height: normal;
+        }
+    }
+
+    .slider__wrap {
+        @include media-breakpoint-down(md) {
+            min-height: 57.5rem;
+        }
+    }
+
+    .slider__controls {
+        .slider__pagination {
+            margin-top: 2rem;
+
+            @include media-breakpoint-up(md) {
+                margin-top: 0;
+            }
+        }
+
+        .slider__button-next,
+        .slider__button-prev {
+            @include media-breakpoint-down(md) {
+                margin-top: 7rem;
+            }
+        }
+    }
+}

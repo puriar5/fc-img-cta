@@ -1,0 +1,89 @@
+@import "../common-imports";
+
+.column-bullet-text {
+    overflow: hidden;
+    padding: 4.5rem 0;
+    color: $secondary !important;
+
+    @include media-breakpoint-up(md) {
+        padding: 7rem 0 7.6rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 7rem 0 6.8rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 11.5rem 0;
+    }
+
+    .container {
+        @include media-breakpoint-between(md, lg) {
+            padding: 0 9rem;
+        }
+
+        .row {
+            @include media-breakpoint-up(lg) {
+                margin: 0 -2.4rem;
+            }
+
+            [class*="col-"] {
+                @include media-breakpoint-up(lg) {
+                    padding: 0 2.4rem;
+                }
+            }
+        }
+    }
+
+    .body-1 {
+        font-weight: $font-weight-semibold;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 2.6rem;
+            line-height: 3.6rem;
+        }
+    }
+
+    &__left {
+        .body-1 {
+            margin-top: -1.6rem;
+
+            @include media-breakpoint-up(md) {
+                margin-top: 0;
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin-top: 5.8rem;
+            }
+        }
+
+        h3,
+        .h3 {
+            font-weight: $font-weight-semibold;
+        }
+    }
+
+    &.bg-dark-green {
+        color: $light !important;
+    }
+
+    .ordered-list {
+        li {
+            &::marker {
+
+                .bg-light &,
+                .bg-sand & {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
+
+.bg-dark-green {
+    .column-bullet-text {
+        color: $light !important;
+    }
+}

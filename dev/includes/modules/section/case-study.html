@@ -1,0 +1,41 @@
+<section class="case-study bg-transition" data-color="light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 offset-lg-1">
+                <div class="case-study__text">
+                    <h3>@@title</h3>
+                    @@paragraph
+                </div>
+                <div class="slider">
+                    <div class="slider__wrap swiper-wrapper">
+                        <div class="item swiper-slide">
+                            @@include('../cards/card-a06.html',{
+                            'imgLocation' : 'images/RV-img-1.png',
+                            })
+                        </div>
+                        <div class="item swiper-slide">
+                            @@include('../cards/card-a06.html',{
+                            'imgLocation' : 'images/RV-img-2.png',
+                            })
+                        </div>
+                        <div class="item swiper-slide">
+                            @@include('../cards/card-a06.html',{
+                            'imgLocation' : 'images/RV-img-3.png',
+                            })
+                        </div>
+                    </div>
+                    <div class="slider__controls slider-01-control">
+                        <div class="slider__pagination"></div>
+                        <div class="slider__button-prev">
+                            <i class="icon-arrow-left"></i>
+                        </div>
+                        <div class="slider__button-next">
+                            <i class="icon-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<script src="scripts/case-study.js"></script>

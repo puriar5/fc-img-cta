@@ -1,0 +1,37 @@
+<div class="cta-box-grid-x2">
+    <div class="cta-box-grid-x2-slider">
+        <div class="swiper-wrapper">
+            <div class="item swiper-slide">
+                @@include('../cards/card-cta-box.html',{
+                    'showHide': 'd-none',
+                    'title': '',
+                    'para' : 'Lorem ipsum dolor sit amet sed do eiusmod tempor',
+                    'bgColor': 'bg-light',
+                    'btnText': 'Apply to serve'
+                })
+            </div>
+            <div class="item swiper-slide">
+                @@include('../cards/card-cta-box.html',{
+                    'showHide': 'd-none',
+                    'title': '',
+                    'para' : 'Lorem ipsum dolor sit amet sed do eiusmod tempor',
+                    'bgColor': 'bg-light',
+                    'btnText': 'Alumni portal'
+                })
+            </div>
+        </div>
+        <div class="slider__controls">
+            <div class="slider__pagination"></div>
+        </div>
+        <div class="slider__controls slider__buttons">
+            <div class="slider__button-prev">
+                <i class="icon-arrow-left"></i>
+            </div>
+            <div class="slider__button-next">
+                <i class="icon-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/box-grid-x2-slider.js"></script>
